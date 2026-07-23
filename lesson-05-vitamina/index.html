@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>维生素A精讲 · 晓晓老师的营养课堂（注册营养师考点·第5课）</title>
+<style>
+  :root{
+    --paper:#fbf7ee; --ink:#2f2a25; --board:#1f4d3a; --board2:#2c6b51; --chalk:#f3f7f2;
+    --accent:#e8743b; --accent2:#3a8dde; --warn:#d8443c; --ok:#2e9e6b; --gold:#e0a83a;
+    --card:#ffffff; --line:#e7ddc9; --soft:#f4ede0;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;
+    font-family:"Songti SC","SimSun","宋体",STSong,serif;
+    background:radial-gradient(1200px 500px at 80% -10%, #fff6e6 0%, transparent 60%),var(--paper);
+    color:var(--ink);line-height:1.95;font-size:19px;padding-bottom:150px;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 18px 40px;}
+  header.hero{background:linear-gradient(135deg,var(--board),var(--board2));color:var(--chalk);
+    border-radius:0 0 26px 26px;padding:30px 22px 26px;box-shadow:0 10px 30px rgba(31,77,58,.25);position:relative;overflow:hidden;}
+  header.hero::after{content:"⚡";position:absolute;right:-10px;top:-10px;font-size:120px;opacity:.10;transform:rotate(12deg);}
+  .hero .tag{display:inline-block;background:rgba(255,255,255,.15);padding:3px 12px;border-radius:20px;font-size:13px;letter-spacing:1px;}
+  .hero h1{margin:12px 0 6px;font-size:30px;letter-spacing:1px;}
+  .hero .meta{font-size:14px;opacity:.92;margin-top:6px;}
+  .hero .meta b{color:#ffe2b0;}
+  nav.toc{position:sticky;top:0;z-index:30;background:rgba(251,247,238,.92);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:8px 0;margin:0 0 8px;}
+  nav.toc .inner{max-width:900px;margin:0 auto;padding:0 14px;display:flex;gap:8px;flex-wrap:wrap;}
+  nav.toc a{font-size:13.5px;text-decoration:none;color:var(--board);background:var(--soft);border:1px solid var(--line);
+    padding:4px 11px;border-radius:20px;transition:.2s;}
+  nav.toc a:hover{background:var(--board);color:#fff;}
+  section{margin:26px 0;}
+  .sec-head{display:flex;align-items:center;gap:10px;margin:6px 0 14px;}
+  .sec-head .no{background:var(--accent);color:#fff;font-weight:700;width:34px;height:34px;display:grid;place-items:center;
+    border-radius:10px;flex:none;font-size:17px;box-shadow:0 4px 10px rgba(232,116,59,.35);}
+  .sec-head h2{font-size:23px;margin:0;}
+  .sec-head .sub{font-size:13px;color:#8a7f6e;margin-left:auto;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin:14px 0;box-shadow:0 6px 18px rgba(120,90,40,.06);}
+  .card h3{margin:0 0 8px;font-size:19px;color:var(--board);}
+  .card p{margin:10px 0;}
+  .narrate{color:#3a352e;margin:10px 0;}
+  .mnemonic{background:linear-gradient(135deg,#fff4dd,#ffe9c4);border:1px dashed var(--gold);border-radius:14px;padding:14px 18px;margin:14px 0;position:relative;}
+  .mnemonic .label{font-size:12px;color:#a9791f;font-weight:700;letter-spacing:2px;}
+  .mnemonic .big{font-size:22px;font-weight:800;color:#9a5b00;margin:4px 0 2px;letter-spacing:1px;}
+  .mnemonic .note{font-size:15px;color:#6b5a3a;}
+  .trap{border-left:5px solid var(--warn);background:#fdf0ee;border-radius:0 12px 12px 0;padding:12px 16px;margin:12px 0;}
+  .trap .t{font-weight:800;color:var(--warn);font-size:15px;margin-bottom:4px;}
+  .trap .t::before{content:"⚠️ ";}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15.5px;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(120,90,40,.07);}
+  th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;}
+  th{background:var(--soft);color:var(--board);font-weight:700;}
+  .steps{counter-reset:s;margin:10px 0;}
+  .step{display:flex;gap:12px;align-items:flex-start;margin:10px 0;}
+  .step::before{counter-increment:s;content:counter(s);flex:none;width:28px;height:28px;background:var(--accent2);color:#fff;border-radius:50%;display:grid;place-items:center;font-weight:700;}
+  .step .b{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;flex:1;}
+  .chat{border:1px solid var(--line);border-radius:16px;background:#fff;padding:8px 14px;margin:14px 0;}
+  .msg{display:flex;gap:10px;margin:12px 0;align-items:flex-start;}
+  .msg .av{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:20px;color:#fff;}
+  .av.tea{background:linear-gradient(135deg,var(--board),var(--board2));}
+  .av.stu{background:linear-gradient(135deg,#f0a93b,#e8743b);}
+  .bubble{background:var(--soft);border-radius:14px;padding:9px 14px;max-width:88%;}
+  .msg.stu .bubble{background:#eef5fb;}
+  .who{font-size:12px;color:#9b8f7c;margin-bottom:2px;}
+  .ask{border:2px solid var(--accent2);border-radius:16px;background:#f3f9ff;padding:14px 16px;margin:16px 0;}
+  .ask .q{font-weight:700;color:#1f5fa8;}
+  .ask .q::before{content:"🙋 晓晓老师：";}
+  textarea{width:100%;min-height:64px;margin-top:10px;border:1px solid var(--line);border-radius:10px;padding:10px;font-family:inherit;font-size:16px;resize:vertical;background:#fff;}
+  .btn{display:inline-flex;align-items:center;gap:6px;cursor:pointer;border:none;border-radius:24px;padding:9px 18px;font-size:15px;font-weight:700;color:#fff;background:var(--accent);box-shadow:0 5px 14px rgba(232,116,59,.3);transition:.15s;margin-top:10px;}
+  .btn:hover{transform:translateY(-1px);}
+  .btn.blue{background:var(--accent2);box-shadow:0 5px 14px rgba(58,141,222,.3);}
+  .btn.ghost{background:#fff;color:var(--board);border:1px solid var(--board);box-shadow:none;}
+  .feedback{margin-top:10px;font-size:15px;display:none;}
+  .feedback.show{display:block;}
+  .feedback .ok{color:var(--ok);font-weight:700;}
+  .feedback .tip{color:var(--accent);}
+  .model{background:#fff;border:1px dashed var(--board2);border-radius:12px;padding:10px 14px;margin-top:10px;font-size:15px;color:#3a5a4c;}
+  .model b{color:var(--board);}
+  .quiz{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px 18px;margin:14px 0;}
+  .quiz .stem{font-weight:600;margin-bottom:10px;}
+  .opt{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:9px 13px;margin:7px 0;cursor:pointer;font-size:15.5px;transition:.15s;font-family:inherit;color:var(--ink);}
+  .opt:hover{background:#ecf3ff;}
+  .opt.correct{background:#e7f7ee;border-color:var(--ok);color:#1c6b45;font-weight:700;}
+  .opt.wrong{background:#fdeceb;border-color:var(--warn);}
+  .quiz .ans{display:none;margin-top:8px;font-size:14.5px;color:#4a4034;background:var(--soft);border-radius:10px;padding:9px 12px;}
+  .quiz .ans.show{display:block;}
+  .feynman{background:linear-gradient(135deg,#eef7ff,#eafaf1);border:1px solid #cfe6d8;border-radius:16px;padding:16px 18px;margin:14px 0;}
+  .feynman h3{color:var(--board);margin-top:0;}
+  .rubric{font-size:14.5px;color:#4a554c;margin:8px 0;}
+  .rubric li{margin:4px 0;}
+  .svgwrap{margin:14px 0;text-align:center;}
+  .svgwrap svg{width:100%;max-width:680px;height:auto;background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px;}
+  footer{text-align:center;color:#a89c87;font-size:13px;margin-top:30px;}
+  .divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:30px 0;}
+
+  /* ===== 全局播放 dock（字幕不遮挡讲解，位于最底部） ===== */
+  #playerbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(20,28,24,.94);color:#eafff4;
+    padding:8px 14px 10px;box-shadow:0 -8px 22px rgba(0,0,0,.28);backdrop-filter:blur(6px);
+    transform:translateY(0);transition:transform .25s;}
+  #playerbar.hide{transform:translateY(110%);}
+  #playerbar .subline{font-size:15.5px;line-height:1.5;margin-bottom:6px;color:#eafff4;
+    border-left:3px solid var(--accent);padding-left:8px;max-height:46px;overflow:auto;}
+  #playerbar .subline b{color:#ffd9a8;}
+  #playerbar .pctrl{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  #playerbar button{font-family:inherit;cursor:pointer;border:none;border-radius:18px;padding:6px 12px;font-size:13.5px;
+    background:rgba(255,255,255,.16);color:#eafff4;transition:.15s;}
+  #playerbar button:hover{background:rgba(255,255,255,.3);}
+  #playerbar #playbtn{background:var(--accent);color:#fff;font-weight:700;min-width:78px;}
+  #playerbar .spd{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;opacity:.9;}
+  #playerbar .spd button{padding:3px 8px;font-size:12px;}
+  #playerbar .spd button.on{background:var(--accent2);color:#fff;}
+  #seek{flex:1;min-width:120px;height:6px;accent-color:var(--accent);cursor:pointer;}
+  #idxlbl{font-size:12.5px;opacity:.85;min-width:54px;text-align:center;}
+  #reopen{position:fixed;right:14px;bottom:14px;z-index:60;display:none;border:none;border-radius:24px;
+    background:var(--accent);color:#fff;font-family:inherit;font-weight:700;font-size:14px;padding:10px 16px;box-shadow:0 6px 16px rgba(232,116,59,.4);cursor:pointer;}
+  #reopen.show{display:block;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="tag">🎓 第5课 · 一节高中生物课的量 · 注册营养师考点</span>
+  <h1>维生素A（Vitamin A）精讲</h1>
+  <div class="meta">
+    主讲：<b>晓晓老师</b>（XiaoxiaoNeural 神经网络语音）　|　课时：约 45 分钟（1 课时）　|　来源：<b>注册营养师考试宝典 · 考点|20 维生素A</b> 系列
+  </div>
+  <div class="meta">配套：温故复习 + 口诀 + 案例图 + 易错点 + 解题三步法 + 不定时提问 + 改编练习题 + 费曼复述　<span style="background:#fff;color:#1f4d3a;border-radius:20px;padding:2px 10px;font-size:12px;">点 ▶ 听晓晓老师讲</span></div>
+</header>
+
+<nav class="toc"><div class="inner">
+    <a href="#s1">① 温故</a>
+    <a href="#s2">② 两类来源</a>
+    <a href="#s3">③ 视觉机制</a>
+    <a href="#s4">④ 功能·缺乏</a>
+    <a href="#s5">⑤ 过量中毒</a>
+    <a href="#s6">⑥ 当量·摄入·来源</a>
+    <a href="#s7">⑦ 易错点</a>
+    <a href="#s8">⑧ 三步法</a>
+    <a href="#s9">⑨ 提问互动</a>
+    <a href="#s10">⑩ 改编题</a>
+    <a href="#s11">⑪ 费曼复述</a>
+</div></nav>
+
+<div class="wrap">
+  <section id="s1">
+    <div class="sec-head"><div class="no">1</div><h2>温故知新：先复习四大块，再开讲微量营养素</h2><div class="sub">衔接 · 5分钟</div></div>
+    <div class="card">
+      <p class="narrate">同学们好，我是晓晓老师。前四课我们把宏量营养素和能量四大块全讲完了：蛋白质——必需氨基酸9种、谷类缺赖氨酸豆类缺蛋氨酸；碳水化合物——蔗无乳有麦也有、GI/GL、添加糖最好25克；脂类——必需脂肪酸只有亚油酸和α-亚麻酸、HDL好LDL坏；能量——1千卡=4.184千焦、基础代谢是大头、EER=基础代谢×活动水平、BMI中国24超28胖。</p>
+      <p class="narrate">今天，我们跨进一个全新的大门——微量营养素，也就是维生素和矿物质。先从一个最经典、也最常考的维生素开讲：维生素A。</p>
+      <p class="narrate">为什么从A讲起？因为维生素A和高中生物课学的‘视觉’‘暗适应’直接挂钩，而且它‘缺了会瞎、多了会中毒’，是个特别能考‘双刃剑’的明星考点。</p>
+      <p class="narrate">今天的主线：维生素A有哪两类来源 → 它怎么帮我们‘看暗处’（视紫红质/暗适应）→ 缺了会怎样（夜盲→干眼→失明）→ 多了又怎样（中毒/胡萝卜素血症）→ 视黄醇当量怎么算、吃多少（男770女660、UL3000）→ 食物从哪来。沿着这条线，题就跑不掉了。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 前四课口诀速回（闭眼能背才算会）</div>
+    <div class="big">蛋白9种互补 · 蔗无乳有麦也有 · 必需脂肪两兄弟 · 1kcal=4.184kJ · 基础代谢是大头 · BMI中国24超28胖</div>
+    <div class="note">本节课新口诀会在每一节用 <b>🔑</b> 标出，最后费曼复述时把它们串成一条线。今天进入第⑤大块：<b>微量营养素 · 维生素A</b>。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s1')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s2">
+    <div class="sec-head"><div class="no">2</div><h2>核心精讲一：维生素A是什么？两类来源 + 三种形态</h2><div class="sub">9分钟</div></div>
+    <div class="card">
+      <p class="narrate">先搞清：维生素A不是一种物质，是一个‘家族’。按来源分两大类。</p>
+      <p class="narrate">第一类，已经形成的维生素A（英文叫 preformed vitamin A），直接来自动物性食物，吃进去就能用。它又有三种化学形态：视黄醇——储存和转运的主力，活性最高；视黄醛——和‘看东西’最相关，一会儿讲视觉会用到；视黄酸——管细胞生长和基因表达。动物肝脏、鱼肝油、蛋黄、全奶里都是这类。</p>
+      <p class="narrate">第二类，维生素A原，也叫类胡萝卜素，是植物里的色素，比如胡萝卜里的β-胡萝卜素。它本身不是维生素A，要在身体里‘变身’成视黄醇才能用，所以叫‘原’或‘前体’。其中β-胡萝卜素活性最高，α-胡萝卜素、γ-胡萝卜素、β-隐黄素也有这本事。</p>
+      <p class="narrate">关键认知：植物性食物只提供‘类胡萝卜素’（VA原），动物性食物才提供‘已形成的VA’。而且类胡萝卜素只会‘按需转化’，吃多了也不会VA中毒——这点后面考中毒时要反着用。</p>
+      <p class="narrate">口诀：‘VA两大家，动物已成形、植物是VA原；醇储运、醛看眼、酸管生长；β-胡萝卜素最活跃’。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 维生素A两类来源 & 三种形态</div>
+    <div class="big">动物→已形成的VA（醇·醛·酸）　植物→VA原（类胡萝卜素）</div>
+    <div class="note">视黄醇(储运,活性最高) · 视黄醛(视觉) · 视黄酸(生长分化)。β-胡萝卜素是VA原里<b>活性最高</b>的，但它是‘前体’，需转化。</div>
+  </div>
+  <table>
+    <thead><tr><th>来源</th><th>代表物质 / 形态</th><th>食物举例</th><th>记忆点</th></tr></thead>
+    <tbody>
+      <tr><td>已形成的VA（动物性）</td><td>视黄醇、视黄醛、视黄酸</td><td>动物肝脏、鱼肝油、蛋黄、全奶、奶油</td><td>吃进即用，可蓄积→会中毒</td></tr>
+      <tr><td>VA原 / 类胡萝卜素（植物性）</td><td>β-胡萝卜素(最活跃)、α/γ-胡萝卜素、β-隐黄素</td><td>胡萝卜、南瓜、深绿蔬菜、芒果</td><td>需转化、按需、不致VA中毒</td></tr>
+    </tbody>
+  </table>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s2')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s3">
+    <div class="sec-head"><div class="no">3</div><h2>核心精讲二：视觉机制（视紫红质 &amp; 暗适应）</h2><div class="sub">10分钟</div></div>
+    <div class="card">
+      <p class="narrate">这是本课最精彩、也最像高中生物的一段。我们视网膜里有两类感光细胞：视锥细胞管白天明视觉和色觉，视杆细胞管暗光下的暗视觉。</p>
+      <p class="narrate">视杆细胞里有一种感光物质叫视紫红质，它由两部分拼成：一个‘视蛋白’，加上一个‘11-顺式视黄醛’——注意，这个11-顺式视黄醛就是从维生素A变来的！</p>
+      <p class="narrate">光线照进来时，11-顺式视黄醛会‘掰直’变成全反式视黄醛，视紫红质随之分解、产生神经信号，我们就‘看见’了。之后身体再把全反式视黄醛慢慢变回11-顺式，重新合成视紫红质，这个过程需要维生素A参与。</p>
+      <p class="narrate">所以维生素A不够时，11-顺式视黄醛造不出来，视紫红质合成减少，眼睛从亮处到暗处‘重新合成感光物质’变慢——这就是暗适应能力下降。严重了，暗处完全看不清，就是夜盲症。这也是高中生物原话：维生素A维持暗视觉，缺乏导致夜盲症。</p>
+      <p class="narrate">记一句：‘视杆里有视紫红质，VA变出11-顺视黄醛；光一照就分解传信号，VA不够暗适应变慢→夜盲’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 220" role="img" aria-label="视紫红质循环与维生素A的关系">
+    <rect x="20" y="20" width="150" height="64" rx="10" fill="#1f4d3a"/>
+    <text x="95" y="46" fill="#fff" font-size="14" text-anchor="middle" font-weight="700">视杆细胞</text>
+    <text x="95" y="68" fill="#ffe2b0" font-size="12" text-anchor="middle">暗视觉</text>
+    <rect x="200" y="20" width="200" height="64" rx="10" fill="#2c6b51"/>
+    <text x="300" y="44" fill="#fff" font-size="13.5" text-anchor="middle" font-weight="700">视紫红质 = 视蛋白</text>
+    <text x="300" y="66" fill="#fff" font-size="12.5" text-anchor="middle">+ 11-顺式视黄醛(来自VA)</text>
+    <rect x="430" y="20" width="220" height="64" rx="10" fill="#e8743b"/>
+    <text x="540" y="44" fill="#fff" font-size="13.5" text-anchor="middle" font-weight="700">光照→全反式视黄醛</text>
+    <text x="540" y="66" fill="#fff" font-size="12.5" text-anchor="middle">视紫红质分解→神经信号(看见)</text>
+    <path d="M170 52 L198 52" stroke="#333" stroke-width="2" marker-end="url(#ar)"/>
+    <path d="M400 52 L428 52" stroke="#333" stroke-width="2" marker-end="url(#ar)"/>
+    <path d="M540 90 C540 130 300 130 300 132" stroke="#3a8dde" stroke-width="2.5" fill="none" marker-end="url(#ar2)"/>
+    <text x="430" y="120" fill="#1f5fa8" font-size="12.5">重新合成11-顺式视黄醛（需维生素A参与）</text>
+    <defs>
+      <marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#333"/></marker>
+      <marker id="ar2" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#3a8dde"/></marker>
+    </defs>
+    <rect x="20" y="150" width="640" height="52" rx="10" fill="#fdf0ee" stroke="#d8443c"/>
+    <text x="340" y="172" fill="#b5302a" font-size="13" text-anchor="middle" font-weight="700">⚠️ VA缺乏 → 11-顺式视黄醛不足 → 视紫红质↓ → 暗适应变慢 → 夜盲症</text>
+    <text x="340" y="192" fill="#b5302a" font-size="12" text-anchor="middle">（视杆细胞负责暗视觉；视锥细胞负责明视觉/色觉）</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 视觉机制口诀</div>
+    <div class="big">视杆有视紫红质 · VA变11-顺视黄醛 · 光一照就分解 · VA不够暗适应慢→夜盲</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s3')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s4">
+    <div class="sec-head"><div class="no">4</div><h2>核心精讲三：生理功能 &amp; 缺乏症（缺了会怎样）</h2><div class="sub">10分钟</div></div>
+    <div class="card">
+      <p class="narrate">除了看东西，维生素A还是个‘多面手’。生理功能记五条：第一，维持正常视觉，尤其暗视觉；第二，维护上皮组织健康，包括皮肤、呼吸道、消化道、泌尿生殖道黏膜；第三，促进细胞生长分化、骨骼发育和生殖；第四，维持免疫功能、抗感染；第五，类胡萝卜素还能抗氧化、帮助防癌。</p>
+      <p class="narrate">缺了维生素A，症状按严重程度递进：最早是暗适应能力下降——在电影院找座位慢、黄昏看不清；再发展就是夜盲症。眼睛方面进一步变成眼干燥症（干眼病），结膜出现毕脱斑，角膜软化甚至穿孔、失明，这是儿童VA缺乏最严重的后果。</p>
+      <p class="narrate">上皮方面：皮肤变得干燥、毛囊角化，摸起来像鸡皮疙瘩；黏膜干燥导致抵抗力下降、容易感冒感染。儿童还会生长发育迟缓。另外VA还影响铁代谢，缺乏时常伴贫血。</p>
+      <p class="narrate">所以缺乏表现可以串成一条线：暗适应下降 → 夜盲 → 干眼/失明（眼睛）；皮肤角化、易感染（上皮）；发育迟缓、贫血（全身）。</p>
+      <p class="narrate">口诀：‘VA缺乏一条龙：夜盲干眼会失明，皮肤角化易感染，小孩不长还贫血’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 190" role="img" aria-label="维生素A缺乏后果一条龙">
+    <rect x="20" y="20" width="150" height="56" rx="10" fill="#1f4d3a"/>
+    <text x="95" y="44" fill="#fff" font-size="14" text-anchor="middle" font-weight="700">VA缺乏</text>
+    <text x="95" y="64" fill="#ffe2b0" font-size="12" text-anchor="middle">根因</text>
+    <rect x="190" y="20" width="160" height="56" rx="10" fill="#3a8dde"/>
+    <text x="270" y="44" fill="#fff" font-size="13" text-anchor="middle" font-weight="700">眼睛</text>
+    <text x="270" y="64" fill="#fff" font-size="11.5" text-anchor="middle">暗适应↓→夜盲→干眼→失明</text>
+    <rect x="365" y="20" width="150" height="56" rx="10" fill="#e8743b"/>
+    <text x="440" y="44" fill="#fff" font-size="13" text-anchor="middle" font-weight="700">上皮</text>
+    <text x="440" y="64" fill="#fff" font-size="11.5" text-anchor="middle">皮肤角化·易感染</text>
+    <rect x="530" y="20" width="130" height="56" rx="10" fill="#e0a83a"/>
+    <text x="595" y="44" fill="#fff" font-size="13" text-anchor="middle" font-weight="700">全身</text>
+    <text x="595" y="64" fill="#fff" font-size="11.5" text-anchor="middle">发育迟缓·贫血</text>
+    <path d="M170 48 L188 48" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+    <path d="M350 48 L363 48" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+    <path d="M515 48 L528 48" stroke="#333" stroke-width="2" marker-end="url(#a)"/>
+    <defs><marker id="a" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#333"/></marker></defs>
+    <text x="340" y="115" fill="#8a7f6e" font-size="12.5" text-anchor="middle">最早信号 = 暗适应能力下降（早于夜盲）；干眼病/角膜软化是最严重的眼部后果</text>
+    <text x="340" y="140" fill="#8a7f6e" font-size="12.5" text-anchor="middle">儿童VA缺乏最重要临床表现：干眼病、生长发育迟缓、反复感染</text>
+    <text x="340" y="170" fill="#3a5a4c" font-size="12" text-anchor="middle">⚠️ 类胡萝卜素抗氧化防癌；但吸烟者补β-胡萝卜素制剂反而可能增肺癌风险</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 功能五条 & 缺乏一条龙</div>
+    <div class="big">视觉·上皮·生长·免疫·抗氧化　|　缺：夜盲→干眼→失明；角化易感染；不长还贫血</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s4')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s5">
+    <div class="sec-head"><div class="no">5</div><h2>核心精讲四：过量与中毒（双刃剑的另一面）</h2><div class="sub">9分钟</div></div>
+    <div class="card">
+      <p class="narrate">维生素A是脂溶性，能在肝脏里囤积，所以‘补多了会中毒’——这是它和多数水溶性维生素最大的不同。但注意一个大坑：中毒只来自‘已形成的维生素A’，也就是动物肝脏和含视黄醇的补剂。</p>
+      <p class="narrate">急性中毒常发生在一次吃太多，比如小孩误食大量鱼肝油或动物肝脏：恶心、呕吐、头痛、视力模糊。慢性中毒是长期过量：头痛、脱发、肝大、皮肤干燥瘙痒、骨头疼。最要命的是致畸——孕妇大剂量VA会导致胎儿畸形，所以孕早期尤其要控制动物肝脏和VA补剂。</p>
+      <p class="narrate">而植物里的β-胡萝卜素、类胡萝卜素，吃再多也不会VA中毒，顶多让你‘变黄’：胡萝卜素血症，手掌脚底皮肤发黄，但巩膜（眼白）不黄，停吃就退，完全无害。这要和‘黄疸’区分——黄疸是巩膜也黄。</p>
+      <p class="narrate">一句话总结中毒考点：‘VA中毒只怪动物肝和补剂，不怪胡萝卜；胡萝卜吃多=皮肤发黄（无害）’。</p>
+      <p class="narrate">另外提醒：类胡萝卜素补充剂对吸烟者反而可能增加肺癌风险，吸烟的人别乱补β-胡萝卜素制剂。</p>
+  <div class="trap"><div class="t">核心大坑</div>维生素A<b>中毒只来自动物肝脏 + 含视黄醇(retinol)的补剂</b>；植物性类胡萝卜素/胡萝卜吃多<b>不致VA中毒</b>，只引起胡萝卜素血症（无害）。</div>
+  <table>
+    <thead><tr><th>对比</th><th>维生素A过量（中毒）</th><th>胡萝卜素血症</th></tr></thead>
+    <tbody>
+      <tr><td>来源</td><td>动物肝、鱼肝油、retinol补剂</td><td>β-胡萝卜素/类胡萝卜素（植物）</td></tr>
+      <tr><td>表现</td><td>急性：恶心呕吐头痛视力模糊；慢性：脱发肝大骨痛；致畸</td><td>手掌足底皮肤黄染，巩膜不黄</td></tr>
+      <tr><td>危害</td><td>有（尤其孕妇致畸、肝损）</td><td>无害，停食即退</td></tr>
+      <tr><td>鉴别</td><td>—</td><td>与黄疸区别：黄疸巩膜也黄</td></tr>
+    </tbody>
+  </table>
+  <div class="mnemonic">
+    <div class="label">🔑 中毒口诀</div>
+    <div class="big">VA中毒怪肝和补剂，不怪胡萝卜；胡萝卜吃多=变黄(无害)</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s5')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s6">
+    <div class="sec-head"><div class="no">6</div><h2>核心精讲五：视黄醇当量、参考摄入量、食物来源</h2><div class="sub">10分钟</div></div>
+    <div class="card">
+      <p class="narrate">怎么量化维生素A？用‘视黄醇当量’。教材第9版常说的 RE（视黄醇当量）：1微克视黄醇 = 1微克RE = 6微克β-胡萝卜素 = 12微克其他类胡萝卜素。也就是说，植物里的β-胡萝卜素要6份才抵1份动物里的视黄醇，转化效率很低——所以‘吃胡萝卜补VA’见效慢，但胜在安全不会过量。</p>
+      <p class="narrate">较真一下：2023版DRIs把单位改名为RAE，食物β-胡萝卜素按1/12算、其他类胡萝卜素1/24；老教材的6/12是RE。考试若考‘视黄醇当量’，按教材RE的6/12记就够了，认准‘效率低、要乘系数’这个本质。</p>
+      <p class="narrate">吃多少？中国DRIs：成人男性每天推荐约770微克RAE，女性约660微克RAE。注意很多老资料写男800女700，那是2013版；2023版已更新为770/660。但可耐受最高量UL都是3000微克RAE每天，成人、孕妇、乳母都一样。</p>
+      <p class="narrate">食物来源分两类记：已形成的VA——动物肝脏（猪肝鸡肝含量极高）、鱼肝油、鱼卵、全奶、奶油、蛋黄；VA原——深绿色蔬菜（菠菜、西兰花、空心菜）和橙黄色蔬果（胡萝卜、南瓜、红薯、芒果、柿子）。吸收要脂肪帮忙，所以胡萝卜炒着吃比生吃好。</p>
+      <p class="narrate">口诀：‘当量RE：醇1=胡萝6=其他12；男770女660，UL三千万(3000)莫超；肝蛋奶+深绿橙黄蔬果’。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 视黄醇当量 & 摄入量</div>
+    <div class="big">RE：1µg视黄醇=1RE=6µg β-胡萝卜素=12µg 其他类胡萝卜素</div>
+    <div class="note">RDA（DRIs 2023）：男 <b>770</b> / 女 <b>660</b> µg RAE/d（旧版 800/700）。<b>UL = 3000 µg RAE/d</b>（成人/孕妇/乳母同）。RAE新算法：食物β-胡萝卜素按 1/12、其他 1/24。</div>
+  </div>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 150" role="img" aria-label="维生素A食物来源">
+    <rect x="20" y="20" width="310" height="110" rx="12" fill="#fdf0ee" stroke="#d8443c"/>
+    <text x="175" y="48" fill="#b5302a" font-size="15" text-anchor="middle" font-weight="700">已形成的VA（动物性）</text>
+    <text x="175" y="74" font-size="13" text-anchor="middle">动物肝脏(含量极高)</text>
+    <text x="175" y="96" font-size="13" text-anchor="middle">鱼肝油·鱼卵·全奶·奶油·蛋黄</text>
+    <text x="175" y="118" font-size="12" text-anchor="middle">⚠ 吃多会蓄积中毒</text>
+    <rect x="350" y="20" width="310" height="110" rx="12" fill="#eafaf1" stroke="#2e9e6b"/>
+    <text x="505" y="48" fill="#1c6b45" font-size="15" text-anchor="middle" font-weight="700">VA原（植物性）</text>
+    <text x="505" y="74" font-size="13" text-anchor="middle">深绿蔬菜：菠菜·西兰花·空心菜</text>
+    <text x="505" y="96" font-size="13" text-anchor="middle">橙黄蔬果：胡萝卜·南瓜·红薯·芒果</text>
+    <text x="505" y="118" font-size="12" text-anchor="middle">脂溶性→配脂肪吸收更好(胡萝卜炒着吃)</text>
+  </svg>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s6')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s7">
+    <div class="sec-head"><div class="no">7</div><h2>红绿灯：高频易错点</h2><div class="sub">5分钟</div></div>
+    <div class="card">
+      <p class="narrate">好，进入红绿灯时间，我把维生素A这章最高频的易错点集中点一遍。</p>
+      <p class="narrate">易错一：β-胡萝卜素不等于维生素A本身，它是VA原/前体，要在体内转化，效率低（6份β-胡萝卜素才抵1份视黄醇，按RE算）。</p>
+      <p class="narrate">易错二：维生素A中毒只来自动物肝脏和含视黄醇的补剂；胡萝卜、类胡萝卜素不致VA中毒，只引起胡萝卜素血症（皮肤黄、无害）。</p>
+      <p class="narrate">易错三：夜盲是VA缺乏‘最早’的表现吗？不——暗适应能力下降更早，夜盲是进一步发展的结果；干眼病、角膜软化是最严重的眼部后果，可致盲。</p>
+      <p class="narrate">易错四：视紫红质在视杆细胞（暗视觉），VA维持暗视觉；11-顺式视黄醛是视紫红质的组分。</p>
+      <p class="narrate">易错五：UL=3000微克RAE每天；急性中毒常因一次大量（如儿童误食肝/鱼肝油），慢性长期过量；孕妇大剂量VA致畸，要特别当心。</p>
+      <p class="narrate">易错六：视黄醇当量按教材RE是1=6=12；2023版RAE为1=12=24，本质都是‘转化效率低、要乘系数’。</p>
+      <p class="narrate">易错七：VA是脂溶性，吸收需要脂肪和胆汁；胆疾患、脂肪泻人群容易缺乏。</p>
+      <p class="narrate">易错八：参考摄入量男高于女；2023版男770女660（老版写800/700）；类胡萝卜素抗氧化防癌，但吸烟者不宜补β-胡萝卜素制剂。</p>
+  <div class="trap"><div class="t">易错1：β-胡萝卜素≠VA</div>它是<b>VA原/前体</b>，需体内转化；效率低（RE：6µg β-胡萝卜素=1µg RE）。题目把“β-胡萝卜素就是VA”当正确→排除。</div>
+  <div class="trap"><div class="t">易错2：中毒来源</div>VA中毒只来<b>动物肝+retinol补剂</b>；胡萝卜/类胡萝卜素<b>不致VA中毒</b>，只胡萝卜素血症(无害)。“吃胡萝卜会VA中毒”必错。</div>
+  <div class="trap"><div class="t">易错3：缺乏顺序</div><b>暗适应↓ 早于 夜盲</b>；夜盲早于干眼/失明。题干把“夜盲是最早症状”当正确→掉坑。</div>
+  <div class="trap"><div class="t">易错4：视紫红质位置</div>在<b>视杆细胞</b>（暗视觉）；11-顺式视黄醛是其组分。视锥细胞管明视觉/色觉。</div>
+  <div class="trap"><div class="t">易错5：UL与致畸</div><b>UL=3000 µg RAE/d</b>；孕妇大剂量VA<b>致畸</b>，孕早期严控动物肝与VA补剂。</div>
+  <div class="trap"><div class="t">易错6：当量换算</div>教材RE：1µg视黄醇=1RE=<b>6µg β-胡萝卜素</b>=12µg 其他类胡萝卜素；2023 RAE为 1/12、1/24。</div>
+  <div class="trap"><div class="t">易错7：脂溶性</div>吸收需<b>脂肪+胆汁</b>；胆疾患/脂肪泻易缺乏。</div>
+  <div class="trap"><div class="t">易错8：摄入量</div>男&gt;女；2023版 <b>男770/女660</b> µg RAE（旧版800/700）；吸烟者不宜补β-胡萝卜素制剂。</div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s7')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s8">
+    <div class="sec-head"><div class="no">8</div><h2>解题三步法（注册营养师全是选择题）</h2><div class="sub">4分钟</div></div>
+    <div class="card">
+      <p class="narrate">注册营养师全是选择题，送你一套通用三步法。</p>
+      <p class="narrate">第一步，审题定性：先看问的是来源分类、视觉机制、缺乏症、过量中毒、视黄醇当量换算，还是参考摄入量和食物来源，先给题目定性，别急着看选项。</p>
+      <p class="narrate">第二步，定位考点：来源就背动物已成形、植物是VA原；视觉就背视杆细胞+视紫红质+暗适应；缺乏就背暗适应↓→夜盲→干眼；中毒就背只怪肝和补剂、不怪胡萝卜；当量就背RE 1=6=12、UL3000。</p>
+      <p class="narrate">第三步，排除反着坑：直接排除‘β-胡萝卜素就是VA’‘吃胡萝卜会VA中毒’‘夜盲是最早症状’‘VA水溶性随尿排’这些反向表述，剩下的就是答案。</p>
+  <div class="steps">
+    <div class="step"><div class="b"><b>第一步 · 审题定性：</b>先看问哪一类——来源分类？视觉机制？缺乏症？过量中毒？当量换算？摄入量/食物来源？先定性，不急着看选项。</div></div>
+    <div class="step"><div class="b"><b>第二步 · 定位考点：</b>来源→动物已成形/植物VA原；视觉→视杆+视紫红质+暗适应；缺乏→暗适应↓→夜盲→干眼；中毒→只怪肝/补剂不怪胡萝卜；当量→RE 1=6=12、UL3000。</div></div>
+    <div class="step"><div class="b"><b>第三步 · 排除反坑：</b>直接排除“β-胡萝卜素就是VA”“吃胡萝卜会VA中毒”“夜盲是最早症状”“VA水溶性随尿排”这类反向表述，剩下的就是答案。</div></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s8')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s9">
+    <div class="sec-head"><div class="no">9</div><h2>晓晓老师不定时提问 · 模拟课堂（费曼）</h2><div class="sub">互动</div></div>
+    <div class="card">
+      <p class="narrate">讲完重点，我们来模拟上课提问。我先和班里的同学演练，然后轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。</p>
+      <p class="narrate">第一个问题：用你自己的话解释，为什么‘吃胡萝卜不能当鱼肝油治夜盲、但能预防夜盲’，夜盲到底是怎么来的？</p>
+      <p class="narrate">第二个问题：为什么营养师劝孕妇别吃太多动物肝脏？把VA中毒、致畸和UL这条逻辑串起来说。</p>
+  <div class="chat">
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">小明，你奶奶说‘多吃胡萝卜就能治夜盲’，这话对一半还是全错？</div></div></div>
+    <div class="msg stu"><div class="av stu">🧒</div><div><div class="who">学生·小明</div><div class="bubble">嗯……胡萝卜里有维生素A吧？那应该能治？</div></div></div>
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">方向偏了！胡萝卜里是<b>β-胡萝卜素（VA原）</b>，不是VA本身，要转化、效率低，所以能‘预防’夜盲却‘治’得慢；真正直接管用、能快速纠正缺乏的是动物肝里的<b>已形成的VA</b>。夜盲的根源是VA不够→视紫红质合成少→暗适应变慢。但反过来，胡萝卜吃再多也不会VA中毒，这点比吃肝安全。</div></div></div>
+  </div>
+
+  <div class="ask" data-keywords="β-胡萝卜素|VA原|视黄醇|视紫红质|暗适应|夜盲|转化|效率|已形成的VA" data-model="胡萝卜里是<b>β-胡萝卜素（维生素A原）</b>，不是VA本身，要在体内转化、效率低，所以能<b>预防</b>夜盲但见效慢、不能当‘药’快速治。真正直接用的是动物性食物里的<b>已形成的VA</b>（视黄醇）。夜盲的根因：VA不足→11-顺式视黄醛不够→视紫红质合成减少→从亮到暗‘重新感光’变慢。而且胡萝卜吃多只变黄、不致VA中毒，比吃肝安全。">
+    <div class="q">提问一：用你自己的话解释，为什么“吃胡萝卜不能当鱼肝油治夜盲、但能预防夜盲”？夜盲到底是怎么来的？（打字回答，晓晓老师会点评）</div>
+    <textarea placeholder="例如：因为胡萝卜里的是……"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+  <div class="ask" data-keywords="致畸|胎儿|畸形|UL|3000|蓄积|中毒|动物肝|retinol|孕妇" data-model="维生素A是<b>脂溶性</b>，可在肝脏<b>蓄积</b>。成人UL=3000 µg RAE/d；动物肝脏（尤其猪肝鸡肝）<b>VA含量极高</b>，孕妇若长期大量吃，摄入可能超过UL，大剂量VA有<b>致畸</b>风险，影响胎儿发育。所以营养师劝孕妇别吃太多动物肝脏、也别乱吃含retinol的VA补剂。">
+    <div class="q">提问二：为什么营养师劝孕妇别吃太多动物肝脏？把VA中毒、致畸和UL这条逻辑串起来说。</div>
+    <textarea placeholder="先想清楚：VA为什么能在体内攒起来？UL多少？孕妇怕什么？"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s9')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s10">
+    <div class="sec-head"><div class="no">10</div><h2>改编练习题（单选，仿注册营养师真题）</h2><div class="sub">自测</div></div>
+    <div class="card">
+      <p class="narrate">下面 8 道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，维生素A缺乏最早出现的是？第二题，视紫红质存在于哪种细胞？第三题，关于类胡萝卜素正确的是？第四题，维生素A中毒主要来自？第五题，胡萝卜素血症的特点是？第六题，视黄醇当量换算？第七题，成人可耐受最高摄入量是？第八题，关于维生素A错误的是？</p>
+  <div class="quiz" data-ans="A">
+    <div class="stem">1.【改编 2024RD真题】维生素A缺乏时，最早出现的症状是：</div>
+    <button class="opt" onclick="choose(this)">A. 暗适应能力下降</button>
+    <button class="opt" onclick="choose(this)">B. 夜盲症</button>
+    <button class="opt" onclick="choose(this)">C. 眼干燥症（干眼病）</button>
+    <button class="opt" onclick="choose(this)">D. 皮肤毛囊角化</button>
+    <div class="ans">✅ 答案：A。VA缺乏<b>最早</b>是暗适应能力下降，夜盲、干眼是后续更严重表现。题干把“夜盲是最早”当正确即陷阱。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">2. 视紫红质（rhodopsin）主要存在于视网膜的：</div>
+    <button class="opt" onclick="choose(this)">A. 视锥细胞</button>
+    <button class="opt" onclick="choose(this)">B. 视杆细胞</button>
+    <button class="opt" onclick="choose(this)">C. 晶状体</button>
+    <button class="opt" onclick="choose(this)">D. 角膜</button>
+    <div class="ans">✅ 答案：B。视紫红质在<b>视杆细胞</b>，负责暗视觉；视锥细胞管明视觉/色觉。VA维持暗视觉即源于此。</div>
+  </div>
+  <div class="quiz" data-ans="D">
+    <div class="stem">3. 关于类胡萝卜素（维生素A原），正确的是：</div>
+    <button class="opt" onclick="choose(this)">A. 它本身就是维生素A，可直接利用</button>
+    <button class="opt" onclick="choose(this)">B. 只存在于动物性食物中</button>
+    <button class="opt" onclick="choose(this)">C. 摄入过多会引起维生素A急性中毒</button>
+    <button class="opt" onclick="choose(this)">D. 需在体内转化为视黄醇，且过量不致维生素A中毒</button>
+    <div class="ans">✅ 答案：D。类胡萝卜素是<b>VA原/前体</b>，需转化、效率低；过量只致胡萝卜素血症（无害），<b>不致VA中毒</b>。A/B/C均错。</div>
+  </div>
+  <div class="quiz" data-ans="C">
+    <div class="stem">4. 维生素A过量中毒最主要的来源是：</div>
+    <button class="opt" onclick="choose(this)">A. 胡萝卜、南瓜等橙黄色蔬果</button>
+    <button class="opt" onclick="choose(this)">B. 深绿色叶菜</button>
+    <button class="opt" onclick="choose(this)">C. 动物肝脏和含视黄醇的补充剂</button>
+    <button class="opt" onclick="choose(this)">D. 全谷物</button>
+    <div class="ans">✅ 答案：C。VA中毒只来自<b>已形成的VA</b>（动物肝、鱼肝油、retinol补剂）。植物性类胡萝卜素不致VA中毒。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">5. 关于胡萝卜素血症，正确的是：</div>
+    <button class="opt" onclick="choose(this)">A. 巩膜（眼白）也会发黄</button>
+    <button class="opt" onclick="choose(this)">B. 手掌足底皮肤黄染、巩膜不黄、无害</button>
+    <button class="opt" onclick="choose(this)">C. 是维生素A急性中毒的表现</button>
+    <button class="opt" onclick="choose(this)">D. 需立即药物解毒</button>
+    <div class="ans">✅ 答案：B。胡萝卜素血症=皮肤（尤其手掌足底）黄染、<b>巩膜不黄</b>、停食即退、无害；借此与黄疸（巩膜也黄）鉴别。它<b>不是</b>VA中毒。</div>
+  </div>
+  <div class="quiz" data-ans="C">
+    <div class="stem">6.【改编】按教材视黄醇当量(RE)换算，1 µg 视黄醇相当于：</div>
+    <button class="opt" onclick="choose(this)">A. 1 µg β-胡萝卜素</button>
+    <button class="opt" onclick="choose(this)">B. 2 µg β-胡萝卜素</button>
+    <button class="opt" onclick="choose(this)">C. 6 µg β-胡萝卜素</button>
+    <button class="opt" onclick="choose(this)">D. 24 µg β-胡萝卜素</button>
+    <div class="ans">✅ 答案：C。教材RE：1µg视黄醇=1RE=<b>6µg β-胡萝卜素</b>=12µg 其他类胡萝卜素（2023 RAE 为 1/12，本质都是转化效率低）。</div>
+  </div>
+  <div class="quiz" data-ans="D">
+    <div class="stem">7. 中国DRIs中，成人维生素A的可耐受最高摄入量(UL)约为：</div>
+    <button class="opt" onclick="choose(this)">A. 600 µg RAE/d</button>
+    <button class="opt" onclick="choose(this)">B. 1000 µg RAE/d</button>
+    <button class="opt" onclick="choose(this)">C. 2000 µg RAE/d</button>
+    <button class="opt" onclick="choose(this)">D. 3000 µg RAE/d</button>
+    <div class="ans">✅ 答案：D。<b>UL=3000 µg RAE/d</b>（成人、孕妇、乳母相同；≈10000 IU 已形成的VA）。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">8. 关于维生素A，下列说法错误的是：</div>
+    <button class="opt" onclick="choose(this)">A. 为脂溶性维生素，吸收需脂肪和胆汁</button>
+    <button class="opt" onclick="choose(this)">B. 属于水溶性维生素，摄入过多可随尿液排出</button>
+    <button class="opt" onclick="choose(this)">C. 缺乏可致暗适应能力下降与夜盲</button>
+    <button class="opt" onclick="choose(this)">D. 类胡萝卜素具有抗氧化、防癌作用</button>
+    <div class="ans">✅ 答案：B。VA是<b>脂溶性</b>，可在体内蓄积、过量中毒，<b>不随尿排</b>；A/C/D均正确。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s10')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s11">
+    <div class="sec-head"><div class="no">11</div><h2>费曼记忆小测：用自己的话讲一遍</h2><div class="sub">收尾</div></div>
+    <div class="card">
+      <p class="narrate">最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。</p>
+      <p class="narrate">问题：为什么缺维生素A会夜盲？为什么吃动物肝脏多会中毒、而吃胡萝卜只会变黄？一天到底该吃多少（男770女660、UL3000）？把视觉机制、中毒双刃剑、参考摄入量这条逻辑串起来。</p>
+      <p class="narrate">课堂小结口诀复习：来源‘动物已成形、植物是VA原；醇储运、醛看眼、酸管生长’；视觉‘视杆有视紫红质，VA变11-顺视黄醛，光一照就分解，VA不够暗适应慢→夜盲’；缺乏‘夜盲干眼会失明，皮肤角化易感染，小孩不长还贫血’；中毒‘只怪肝和补剂，不怪胡萝卜’；当量‘醇1=胡萝6=其他12，男770女660，UL三千万’。</p>
+  <div class="feynman">
+    <h3>🧠 费曼复述任务</h3>
+    <p>合上页面，试着给一个“完全不懂营养的朋友”讲清楚下面这个问题。能讲明白，说明你真懂了（费曼学习法：教是最好的学）。</p>
+    <p><b>问题：</b>“为什么缺维生素A会夜盲？为什么吃动物肝脏多会中毒、而吃胡萝卜只会变黄？一天该吃多少合适？”</p>
+    <textarea id="feynmanBox" placeholder="在这里用大白话写一段 3-5 句话的解释……"></textarea>
+    <button class="btn" onclick="feynmanCheck()">自我对照 · 看评分清单</button>
+    <div class="feedback" id="feynmanFeedback"></div>
+    <ul class="rubric">
+      <li>✅ 提到 视紫红质在视杆细胞、VA变11-顺式视黄醛，VA不足→暗适应慢→夜盲</li>
+      <li>✅ 提到 VA是脂溶性、可蓄积；中毒只来自动物肝/retinol补剂，不来自胡萝卜</li>
+      <li>✅ 提到 胡萝卜素血症（皮肤黄、无害）与黄疸区别</li>
+      <li>✅ 提到 摄入量：男770/女660 µg RAE，UL 3000 µg RAE</li>
+    </ul>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s11')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    本节为「营养刷题」第4课，依据「注册营养师考试宝典」公众号·考点|20 维生素A系列及历年真题整理改编，并对照《中国居民膳食营养素参考摄入量(2023版)》《营养与食品卫生学》第9版　｜　晓晓老师语音由 Edge-TTS XiaoxiaoNeural 神经网络语音合成，字幕固定底部不遮挡讲解　｜　仅供学习备考使用
+  </footer>
+</div>
+
+<div id="playerbar" class="hide">
+  <div class="subline" id="subline"><b>晓晓老师：</b>点击任意「▶ 听晓晓老师讲这段」，或点「📖 从头播放」，晓晓老师逐句讲解，字幕显示在此处，不遮挡上方讲解。</div>
+  <div class="pctrl">
+    <button onclick="prevSent()">⏮ 上一句</button>
+    <button id="playbtn" onclick="togglePlay()">▶ 播放</button>
+    <button onclick="nextSent()">下一句 ⏭</button>
+    <input id="seek" type="range" min="0" max="100" value="0" oninput="onSeek(this.value)" title="拖动可调整播放位置" />
+    <span id="idxlbl">0 / 0</span>
+    <span class="spd">语速
+      <button id="s08" onclick="Player.setSpeed(0.8)">0.8x</button>
+      <button id="s10" class="on" onclick="Player.setSpeed(1)">1x</button>
+      <button id="s12" onclick="Player.setSpeed(1.2)">1.2x</button>
+      <button id="s15" onclick="Player.setSpeed(1.5)">1.5x</button>
+    </span>
+    <button onclick="playAll()">📖 从头播放</button>
+    <button onclick="hidePlayer()">收起</button>
+  </div>
+</div>
+<button id="reopen" onclick="showPlayer()">▶ 晓晓老师</button>
+
+<script>
+const SECTIONS_AUDIO = {"s1": ["audio/s1_0.mp3", "audio/s1_1.mp3", "audio/s1_2.mp3", "audio/s1_3.mp3"], "s2": ["audio/s2_0.mp3", "audio/s2_1.mp3", "audio/s2_2.mp3", "audio/s2_3.mp3", "audio/s2_4.mp3"], "s3": ["audio/s3_0.mp3", "audio/s3_1.mp3", "audio/s3_2.mp3", "audio/s3_3.mp3", "audio/s3_4.mp3"], "s4": ["audio/s4_0.mp3", "audio/s4_1.mp3", "audio/s4_2.mp3", "audio/s4_3.mp3", "audio/s4_4.mp3"], "s5": ["audio/s5_0.mp3", "audio/s5_1.mp3", "audio/s5_2.mp3", "audio/s5_3.mp3", "audio/s5_4.mp3"], "s6": ["audio/s6_0.mp3", "audio/s6_1.mp3", "audio/s6_2.mp3", "audio/s6_3.mp3", "audio/s6_4.mp3"], "s7": ["audio/s7_0.mp3", "audio/s7_1.mp3", "audio/s7_2.mp3", "audio/s7_3.mp3", "audio/s7_4.mp3", "audio/s7_5.mp3", "audio/s7_6.mp3", "audio/s7_7.mp3", "audio/s7_8.mp3"], "s8": ["audio/s8_0.mp3", "audio/s8_1.mp3", "audio/s8_2.mp3", "audio/s8_3.mp3"], "s9": ["audio/s9_0.mp3", "audio/s9_1.mp3", "audio/s9_2.mp3"], "s10": ["audio/s10_0.mp3"], "s11": ["audio/s11_0.mp3", "audio/s11_1.mp3", "audio/s11_2.mp3"]};
+const SECTIONS_TEXT  = {"s1": ["同学们好，我是晓晓老师。前四课我们把宏量营养素和能量四大块全讲完了：蛋白质——必需氨基酸9种、谷类缺赖氨酸豆类缺蛋氨酸；碳水化合物——蔗无乳有麦也有、GI/GL、添加糖最好25克；脂类——必需脂肪酸只有亚油酸和α-亚麻酸、HDL好LDL坏；能量——1千卡=4.184千焦、基础代谢是大头、EER=基础代谢×活动水平、BMI中国24超28胖。", "今天，我们跨进一个全新的大门——微量营养素，也就是维生素和矿物质。先从一个最经典、也最常考的维生素开讲：维生素A。", "为什么从A讲起？因为维生素A和高中生物课学的‘视觉’‘暗适应’直接挂钩，而且它‘缺了会瞎、多了会中毒’，是个特别能考‘双刃剑’的明星考点。", "今天的主线：维生素A有哪两类来源 → 它怎么帮我们‘看暗处’（视紫红质/暗适应）→ 缺了会怎样（夜盲→干眼→失明）→ 多了又怎样（中毒/胡萝卜素血症）→ 视黄醇当量怎么算、吃多少（男770女660、UL3000）→ 食物从哪来。沿着这条线，题就跑不掉了。"], "s2": ["先搞清：维生素A不是一种物质，是一个‘家族’。按来源分两大类。", "第一类，已经形成的维生素A（英文叫 preformed vitamin A），直接来自动物性食物，吃进去就能用。它又有三种化学形态：视黄醇——储存和转运的主力，活性最高；视黄醛——和‘看东西’最相关，一会儿讲视觉会用到；视黄酸——管细胞生长和基因表达。动物肝脏、鱼肝油、蛋黄、全奶里都是这类。", "第二类，维生素A原，也叫类胡萝卜素，是植物里的色素，比如胡萝卜里的β-胡萝卜素。它本身不是维生素A，要在身体里‘变身’成视黄醇才能用，所以叫‘原’或‘前体’。其中β-胡萝卜素活性最高，α-胡萝卜素、γ-胡萝卜素、β-隐黄素也有这本事。", "关键认知：植物性食物只提供‘类胡萝卜素’（VA原），动物性食物才提供‘已形成的VA’。而且类胡萝卜素只会‘按需转化’，吃多了也不会VA中毒——这点后面考中毒时要反着用。", "口诀：‘VA两大家，动物已成形、植物是VA原；醇储运、醛看眼、酸管生长；β-胡萝卜素最活跃’。"], "s3": ["这是本课最精彩、也最像高中生物的一段。我们视网膜里有两类感光细胞：视锥细胞管白天明视觉和色觉，视杆细胞管暗光下的暗视觉。", "视杆细胞里有一种感光物质叫视紫红质，它由两部分拼成：一个‘视蛋白’，加上一个‘11-顺式视黄醛’——注意，这个11-顺式视黄醛就是从维生素A变来的！", "光线照进来时，11-顺式视黄醛会‘掰直’变成全反式视黄醛，视紫红质随之分解、产生神经信号，我们就‘看见’了。之后身体再把全反式视黄醛慢慢变回11-顺式，重新合成视紫红质，这个过程需要维生素A参与。", "所以维生素A不够时，11-顺式视黄醛造不出来，视紫红质合成减少，眼睛从亮处到暗处‘重新合成感光物质’变慢——这就是暗适应能力下降。严重了，暗处完全看不清，就是夜盲症。这也是高中生物原话：维生素A维持暗视觉，缺乏导致夜盲症。", "记一句：‘视杆里有视紫红质，VA变出11-顺视黄醛；光一照就分解传信号，VA不够暗适应变慢→夜盲’。"], "s4": ["除了看东西，维生素A还是个‘多面手’。生理功能记五条：第一，维持正常视觉，尤其暗视觉；第二，维护上皮组织健康，包括皮肤、呼吸道、消化道、泌尿生殖道黏膜；第三，促进细胞生长分化、骨骼发育和生殖；第四，维持免疫功能、抗感染；第五，类胡萝卜素还能抗氧化、帮助防癌。", "缺了维生素A，症状按严重程度递进：最早是暗适应能力下降——在电影院找座位慢、黄昏看不清；再发展就是夜盲症。眼睛方面进一步变成眼干燥症（干眼病），结膜出现毕脱斑，角膜软化甚至穿孔、失明，这是儿童VA缺乏最严重的后果。", "上皮方面：皮肤变得干燥、毛囊角化，摸起来像鸡皮疙瘩；黏膜干燥导致抵抗力下降、容易感冒感染。儿童还会生长发育迟缓。另外VA还影响铁代谢，缺乏时常伴贫血。", "所以缺乏表现可以串成一条线：暗适应下降 → 夜盲 → 干眼/失明（眼睛）；皮肤角化、易感染（上皮）；发育迟缓、贫血（全身）。", "口诀：‘VA缺乏一条龙：夜盲干眼会失明，皮肤角化易感染，小孩不长还贫血’。"], "s5": ["维生素A是脂溶性，能在肝脏里囤积，所以‘补多了会中毒’——这是它和多数水溶性维生素最大的不同。但注意一个大坑：中毒只来自‘已形成的维生素A’，也就是动物肝脏和含视黄醇的补剂。", "急性中毒常发生在一次吃太多，比如小孩误食大量鱼肝油或动物肝脏：恶心、呕吐、头痛、视力模糊。慢性中毒是长期过量：头痛、脱发、肝大、皮肤干燥瘙痒、骨头疼。最要命的是致畸——孕妇大剂量VA会导致胎儿畸形，所以孕早期尤其要控制动物肝脏和VA补剂。", "而植物里的β-胡萝卜素、类胡萝卜素，吃再多也不会VA中毒，顶多让你‘变黄’：胡萝卜素血症，手掌脚底皮肤发黄，但巩膜（眼白）不黄，停吃就退，完全无害。这要和‘黄疸’区分——黄疸是巩膜也黄。", "一句话总结中毒考点：‘VA中毒只怪动物肝和补剂，不怪胡萝卜；胡萝卜吃多=皮肤发黄（无害）’。", "另外提醒：类胡萝卜素补充剂对吸烟者反而可能增加肺癌风险，吸烟的人别乱补β-胡萝卜素制剂。"], "s6": ["怎么量化维生素A？用‘视黄醇当量’。教材第9版常说的 RE（视黄醇当量）：1微克视黄醇 = 1微克RE = 6微克β-胡萝卜素 = 12微克其他类胡萝卜素。也就是说，植物里的β-胡萝卜素要6份才抵1份动物里的视黄醇，转化效率很低——所以‘吃胡萝卜补VA’见效慢，但胜在安全不会过量。", "较真一下：2023版DRIs把单位改名为RAE，食物β-胡萝卜素按1/12算、其他类胡萝卜素1/24；老教材的6/12是RE。考试若考‘视黄醇当量’，按教材RE的6/12记就够了，认准‘效率低、要乘系数’这个本质。", "吃多少？中国DRIs：成人男性每天推荐约770微克RAE，女性约660微克RAE。注意很多老资料写男800女700，那是2013版；2023版已更新为770/660。但可耐受最高量UL都是3000微克RAE每天，成人、孕妇、乳母都一样。", "食物来源分两类记：已形成的VA——动物肝脏（猪肝鸡肝含量极高）、鱼肝油、鱼卵、全奶、奶油、蛋黄；VA原——深绿色蔬菜（菠菜、西兰花、空心菜）和橙黄色蔬果（胡萝卜、南瓜、红薯、芒果、柿子）。吸收要脂肪帮忙，所以胡萝卜炒着吃比生吃好。", "口诀：‘当量RE：醇1=胡萝6=其他12；男770女660，UL三千万(3000)莫超；肝蛋奶+深绿橙黄蔬果’。"], "s7": ["好，进入红绿灯时间，我把维生素A这章最高频的易错点集中点一遍。", "易错一：β-胡萝卜素不等于维生素A本身，它是VA原/前体，要在体内转化，效率低（6份β-胡萝卜素才抵1份视黄醇，按RE算）。", "易错二：维生素A中毒只来自动物肝脏和含视黄醇的补剂；胡萝卜、类胡萝卜素不致VA中毒，只引起胡萝卜素血症（皮肤黄、无害）。", "易错三：夜盲是VA缺乏‘最早’的表现吗？不——暗适应能力下降更早，夜盲是进一步发展的结果；干眼病、角膜软化是最严重的眼部后果，可致盲。", "易错四：视紫红质在视杆细胞（暗视觉），VA维持暗视觉；11-顺式视黄醛是视紫红质的组分。", "易错五：UL=3000微克RAE每天；急性中毒常因一次大量（如儿童误食肝/鱼肝油），慢性长期过量；孕妇大剂量VA致畸，要特别当心。", "易错六：视黄醇当量按教材RE是1=6=12；2023版RAE为1=12=24，本质都是‘转化效率低、要乘系数’。", "易错七：VA是脂溶性，吸收需要脂肪和胆汁；胆疾患、脂肪泻人群容易缺乏。", "易错八：参考摄入量男高于女；2023版男770女660（老版写800/700）；类胡萝卜素抗氧化防癌，但吸烟者不宜补β-胡萝卜素制剂。"], "s8": ["注册营养师全是选择题，送你一套通用三步法。", "第一步，审题定性：先看问的是来源分类、视觉机制、缺乏症、过量中毒、视黄醇当量换算，还是参考摄入量和食物来源，先给题目定性，别急着看选项。", "第二步，定位考点：来源就背动物已成形、植物是VA原；视觉就背视杆细胞+视紫红质+暗适应；缺乏就背暗适应↓→夜盲→干眼；中毒就背只怪肝和补剂、不怪胡萝卜；当量就背RE 1=6=12、UL3000。", "第三步，排除反着坑：直接排除‘β-胡萝卜素就是VA’‘吃胡萝卜会VA中毒’‘夜盲是最早症状’‘VA水溶性随尿排’这些反向表述，剩下的就是答案。"], "s9": ["讲完重点，我们来模拟上课提问。我先和班里的同学演练，然后轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。", "第一个问题：用你自己的话解释，为什么‘吃胡萝卜不能当鱼肝油治夜盲、但能预防夜盲’，夜盲到底是怎么来的？", "第二个问题：为什么营养师劝孕妇别吃太多动物肝脏？把VA中毒、致畸和UL这条逻辑串起来说。"], "s10": ["下面 8 道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，维生素A缺乏最早出现的是？第二题，视紫红质存在于哪种细胞？第三题，关于类胡萝卜素正确的是？第四题，维生素A中毒主要来自？第五题，胡萝卜素血症的特点是？第六题，视黄醇当量换算？第七题，成人可耐受最高摄入量是？第八题，关于维生素A错误的是？"], "s11": ["最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。", "问题：为什么缺维生素A会夜盲？为什么吃动物肝脏多会中毒、而吃胡萝卜只会变黄？一天到底该吃多少（男770女660、UL3000）？把视觉机制、中毒双刃剑、参考摄入量这条逻辑串起来。", "课堂小结口诀复习：来源‘动物已成形、植物是VA原；醇储运、醛看眼、酸管生长’；视觉‘视杆有视紫红质，VA变11-顺视黄醛，光一照就分解，VA不够暗适应慢→夜盲’；缺乏‘夜盲干眼会失明，皮肤角化易感染，小孩不长还贫血’；中毒‘只怪肝和补剂，不怪胡萝卜’；当量‘醇1=胡萝6=其他12，男770女660，UL三千万’。"]};
+const SECTIONS_ORDER = ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11"];
+
+// 展平为全局播放列表（按章节顺序）
+const PLAYLIST = [];
+SECTIONS_ORDER.forEach(id=>{
+  const paths = SECTIONS_AUDIO[id]||[];
+  const texts = SECTIONS_TEXT[id]||[];
+  paths.forEach((p,i)=> PLAYLIST.push({src:p, text:texts[i]||'', sec:id}));
+});
+
+const Player = {
+  audio: new Audio(),
+  idx: 0,
+  playing: false,
+  speed: 1.0,
+  init(){
+    this.audio.preload='auto';
+    this.audio.addEventListener('timeupdate', ()=>this.onTime());
+    this.audio.addEventListener('ended', ()=>this.next(true));
+    this.audio.addEventListener('loadedmetadata', ()=>this.onTime());
+    this.audio.addEventListener('error', ()=>this.onErr());
+    this.updateIdx();
+    this.updateBtn();
+  },
+  load(i, autoplay){
+    if(i<0 || i>=PLAYLIST.length) return;
+    this.idx=i;
+    const item=PLAYLIST[i];
+    setSub(item.text);
+    this.audio.src=item.src;
+    this.audio.playbackRate=this.speed;
+    this.updateIdx();
+    if(autoplay){
+      const sec=document.getElementById(item.sec);
+      if(sec) sec.scrollIntoView({behavior:'smooth',block:'center'});
+      this.playing=true; this.updateBtn();
+      this.audio.play().catch(()=>{ this.fallback(item.text); });
+    }
+  },
+  play(){ if(!this.audio.src){ this.load(this.idx,false);} this.playing=true; this.updateBtn(); this.audio.play().catch(()=>{}); },
+  pause(){ this.playing=false; this.updateBtn(); this.audio.pause(); },
+  toggle(){ if(this.playing) this.pause(); else this.play(); },
+  next(auto){
+    if(auto && !this.playing) return;
+    const n=this.idx+1;
+    if(n>=PLAYLIST.length){ this.playing=false; this.updateBtn(); this.updateIdx();
+      setSub('—— 本课讲解结束啦，去做做改编题、用费曼法复述一遍 💡'); return; }
+    this.load(n,true);
+  },
+  prev(){ let n=this.idx-1; if(n<0) n=0; this.load(n,true); },
+  seek(v){ try{ this.audio.currentTime=parseFloat(v); }catch(e){} },
+  onTime(){
+    const a=this.audio;
+    const s=document.getElementById('seek');
+    if(a.duration && s){ s.max=Math.floor(a.duration); s.value=Math.floor(a.currentTime); }
+    if(PLAYLIST[this.idx]) setSub(PLAYLIST[this.idx].text);
+  },
+  onErr(){
+    if(this.playing){ this.fallback(PLAYLIST[this.idx] ? PLAYLIST[this.idx].text : ''); }
+  },
+  fallback(t){
+    if(!('speechSynthesis' in window)){ this.next(true); return; }
+    const u=new SpeechSynthesisUtterance(t); u.lang='zh-CN'; u.rate=this.speed; u.pitch=1.06;
+    u.onend=()=>{ this.next(true); };
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  },
+  setSpeed(v){
+    this.speed=v; this.audio.playbackRate=v;
+    document.querySelectorAll('#playerbar .spd button').forEach(b=>b.classList.remove('on'));
+    const map={0.8:'s08',1:'s10',1.2:'s12',1.5:'s15'};
+    const el=document.getElementById(map[v]); if(el) el.classList.add('on');
+  },
+  updateIdx(){ const e=document.getElementById('idxlbl'); if(e) e.textContent=(this.idx+1)+' / '+PLAYLIST.length; },
+  updateBtn(){ const b=document.getElementById('playbtn'); if(b) b.textContent=this.playing?'⏸ 暂停':'▶ 播放'; }
+};
+
+function setSub(t){ const e=document.getElementById('subline'); if(e) e.innerHTML='<b>晓晓老师：</b>'+t; }
+function playSection(id){
+  const i=PLAYLIST.findIndex(p=>p.sec===id);
+  document.getElementById('playerbar').classList.remove('hide');
+  document.getElementById('reopen').classList.remove('show');
+  if(i<0) return;
+  Player.load(i, true);
+}
+function playAll(){ Player.load(0,true); document.getElementById('playerbar').classList.remove('hide'); document.getElementById('reopen').classList.remove('show'); }
+function prevSent(){ Player.prev(); }
+function nextSent(){ Player.next(false); }
+function togglePlay(){ Player.toggle(); }
+function onSeek(v){ Player.seek(v); }
+function hidePlayer(){ document.getElementById('playerbar').classList.add('hide'); document.getElementById('reopen').classList.add('show'); }
+function showPlayer(){ document.getElementById('playerbar').classList.remove('hide'); document.getElementById('reopen').classList.remove('show'); }
+
+function checkAsk(btn){
+  const box=btn.closest('.ask'); const ta=box.querySelector('textarea'); const val=(ta.value||'').trim();
+  const fb=box.querySelector('.feedback'); const model=box.querySelector('.model');
+  const keys=(box.dataset.keywords||'').split('|').filter(Boolean);
+  if(!val){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写点什么再提交哦～哪怕一句话也行 😊</span>'; return; }
+  const hit=keys.some(k=>val.includes(k));
+  fb.className='feedback show';
+  fb.innerHTML = hit ? '<span class="ok">👍 说到位了！</span> 你抓住了关键词，晓晓老师给你点个赞。'
+                     : '<span class="tip">🤔 方向还差点意思～</span> 别急，看看下面的标准答案，再试着用自己的话讲一遍。';
+  model.className='model'; model.innerHTML='<b>晓晓老师的标准答案：</b>'+box.dataset.model;
+}
+function choose(btn){
+  const q=btn.closest('.quiz'); if(q.dataset.done) return;
+  const correct=q.dataset.ans;
+  q.querySelectorAll('.opt').forEach(o=>{ o.disabled=true;
+    const t=o.textContent.trim();
+    if(t.startsWith(correct+'.')||t.startsWith(correct+'．')) o.classList.add('correct');
+    else if(o===btn) o.classList.add('wrong');
+  });
+  q.dataset.done='1'; q.querySelector('.ans').classList.add('show');
+}
+function feynmanCheck(){
+  const v=(document.getElementById('feynmanBox').value||'').trim();
+  const fb=document.getElementById('feynmanFeedback');
+  if(!v){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写一段自己的解释，再对照清单 😉</span>'; return; }
+  const keys=['基础代谢','BMR','瘦体','肌肉','脂肪','9','能量','缺口','摄入','消耗','BMI','28','24'];
+  const hit=keys.filter(k=>v.includes(k)).length;
+  fb.className='feedback show';
+  let msg;
+  if(hit>=4) msg='<span class="ok">🌟 很棒！</span> 你覆盖了关键概念，基本讲清楚了。可以录下来自己听一遍，卡壳的地方就是还没真懂的点。';
+  else if(hit>=2) msg='<span class="tip">📝 有进步～</span> 对照清单，看看是不是漏了“基础代谢看瘦体(肌肉)”或“脂肪9kcal最高、减重看总能量缺口”这两点，补上就更完整了。';
+  else msg='<span class="tip">💡 再来一次～</span> 提示：想想“肌肉多的人基础代谢高更抗胖”“脂肪9kcal最高、减重要制造能量缺口”“BMI≥28算肥胖(中国)”，把这条逻辑串起来。';
+  fb.innerHTML=msg;
+}
+
+Player.init();
+Player.setSpeed(1);
+
+</script>
+</body>
+</html>

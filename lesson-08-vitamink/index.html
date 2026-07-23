@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>维生素K精讲 · 晓晓老师的营养课堂（注册营养师考点·第8课）</title>
+<style>
+  :root{
+    --paper:#fbf7ee; --ink:#2f2a25; --board:#1f4d3a; --board2:#2c6b51; --chalk:#f3f7f2;
+    --accent:#e8743b; --accent2:#3a8dde; --warn:#d8443c; --ok:#2e9e6b; --gold:#e0a83a;
+    --card:#ffffff; --line:#e7ddc9; --soft:#f4ede0;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;
+    font-family:"Songti SC","SimSun","宋体",STSong,serif;
+    background:radial-gradient(1200px 500px at 80% -10%, #fff6e6 0%, transparent 60%),var(--paper);
+    color:var(--ink);line-height:1.95;font-size:19px;padding-bottom:150px;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 18px 40px;}
+  header.hero{background:linear-gradient(135deg,var(--board),var(--board2));color:var(--chalk);
+    border-radius:0 0 26px 26px;padding:30px 22px 26px;box-shadow:0 10px 30px rgba(31,77,58,.25);position:relative;overflow:hidden;}
+  header.hero::after{content:"🩸";position:absolute;right:-10px;top:-10px;font-size:120px;opacity:.10;transform:rotate(12deg);}
+  .hero .tag{display:inline-block;background:rgba(255,255,255,.15);padding:3px 12px;border-radius:20px;font-size:13px;letter-spacing:1px;}
+  .hero h1{margin:12px 0 6px;font-size:30px;letter-spacing:1px;}
+  .hero .meta{font-size:14px;opacity:.92;margin-top:6px;}
+  .hero .meta b{color:#ffe2b0;}
+  nav.toc{position:sticky;top:0;z-index:30;background:rgba(251,247,238,.92);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:8px 0;margin:0 0 8px;}
+  nav.toc .inner{max-width:900px;margin:0 auto;padding:0 14px;display:flex;gap:8px;flex-wrap:wrap;}
+  nav.toc a{font-size:13.5px;text-decoration:none;color:var(--board);background:var(--soft);border:1px solid var(--line);
+    padding:4px 11px;border-radius:20px;transition:.2s;}
+  nav.toc a:hover{background:var(--board);color:#fff;}
+  section{margin:26px 0;}
+  .sec-head{display:flex;align-items:center;gap:10px;margin:6px 0 14px;}
+  .sec-head .no{background:var(--accent);color:#fff;font-weight:700;width:34px;height:34px;display:grid;place-items:center;
+    border-radius:10px;flex:none;font-size:17px;box-shadow:0 4px 10px rgba(232,116,59,.35);}
+  .sec-head h2{font-size:23px;margin:0;}
+  .sec-head .sub{font-size:13px;color:#8a7f6e;margin-left:auto;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin:14px 0;box-shadow:0 6px 18px rgba(120,90,40,.06);}
+  .card h3{margin:0 0 8px;font-size:19px;color:var(--board);}
+  .card p{margin:10px 0;}
+  .narrate{color:#3a352e;margin:10px 0;}
+  .mnemonic{background:linear-gradient(135deg,#fff4dd,#ffe9c4);border:1px dashed var(--gold);border-radius:14px;padding:14px 18px;margin:14px 0;position:relative;}
+  .mnemonic .label{font-size:12px;color:#a9791f;font-weight:700;letter-spacing:2px;}
+  .mnemonic .big{font-size:22px;font-weight:800;color:#9a5b00;margin:4px 0 2px;letter-spacing:1px;}
+  .mnemonic .note{font-size:15px;color:#6b5a3a;}
+  .trap{border-left:5px solid var(--warn);background:#fdf0ee;border-radius:0 12px 12px 0;padding:12px 16px;margin:12px 0;}
+  .trap .t{font-weight:800;color:var(--warn);font-size:15px;margin-bottom:4px;}
+  .trap .t::before{content:"⚠️ ";}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15.5px;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(120,90,40,.07);}
+  th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;}
+  th{background:var(--soft);color:var(--board);font-weight:700;}
+  .steps{counter-reset:s;margin:10px 0;}
+  .step{display:flex;gap:12px;align-items:flex-start;margin:10px 0;}
+  .step::before{counter-increment:s;content:counter(s);flex:none;width:28px;height:28px;background:var(--accent2);color:#fff;border-radius:50%;display:grid;place-items:center;font-weight:700;}
+  .step .b{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;flex:1;}
+  .chat{border:1px solid var(--line);border-radius:16px;background:#fff;padding:8px 14px;margin:14px 0;}
+  .msg{display:flex;gap:10px;margin:12px 0;align-items:flex-start;}
+  .msg .av{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:20px;color:#fff;}
+  .av.tea{background:linear-gradient(135deg,var(--board),var(--board2));}
+  .av.stu{background:linear-gradient(135deg,#f0a93b,#e8743b);}
+  .bubble{background:var(--soft);border-radius:14px;padding:9px 14px;max-width:88%;}
+  .msg.stu .bubble{background:#eef5fb;}
+  .who{font-size:12px;color:#9b8f7c;margin-bottom:2px;}
+  .ask{border:2px solid var(--accent2);border-radius:16px;background:#f3f9ff;padding:14px 16px;margin:16px 0;}
+  .ask .q{font-weight:700;color:#1f5fa8;}
+  .ask .q::before{content:"🙋 晓晓老师：";}
+  textarea{width:100%;min-height:64px;margin-top:10px;border:1px solid var(--line);border-radius:10px;padding:10px;font-family:inherit;font-size:16px;resize:vertical;background:#fff;}
+  .btn{display:inline-flex;align-items:center;gap:6px;cursor:pointer;border:none;border-radius:24px;padding:9px 18px;font-size:15px;font-weight:700;color:#fff;background:var(--accent);box-shadow:0 5px 14px rgba(232,116,59,.3);transition:.15s;margin-top:10px;}
+  .btn:hover{transform:translateY(-1px);}
+  .btn.blue{background:var(--accent2);box-shadow:0 5px 14px rgba(58,141,222,.3);}
+  .btn.ghost{background:#fff;color:var(--board);border:1px solid var(--board);box-shadow:none;}
+  .feedback{margin-top:10px;font-size:15px;display:none;}
+  .feedback.show{display:block;}
+  .feedback .ok{color:var(--ok);font-weight:700;}
+  .feedback .tip{color:var(--accent);}
+  .model{background:#fff;border:1px dashed var(--board2);border-radius:12px;padding:10px 14px;margin-top:10px;font-size:15px;color:#3a5a4c;}
+  .model b{color:var(--board);}
+  .quiz{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px 18px;margin:14px 0;}
+  .quiz .stem{font-weight:600;margin-bottom:10px;}
+  .opt{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:9px 13px;margin:7px 0;cursor:pointer;font-size:15.5px;transition:.15s;font-family:inherit;color:var(--ink);}
+  .opt:hover{background:#ecf3ff;}
+  .opt.correct{background:#e7f7ee;border-color:var(--ok);color:#1c6b45;font-weight:700;}
+  .opt.wrong{background:#fdeceb;border-color:var(--warn);}
+  .quiz .ans{display:none;margin-top:8px;font-size:14.5px;color:#4a4034;background:var(--soft);border-radius:10px;padding:9px 12px;}
+  .quiz .ans.show{display:block;}
+  .feynman{background:linear-gradient(135deg,#eef7ff,#eafaf1);border:1px solid #cfe6d8;border-radius:16px;padding:16px 18px;margin:14px 0;}
+  .feynman h3{color:var(--board);margin-top:0;}
+  .rubric{font-size:14.5px;color:#4a554c;margin:8px 0;}
+  .rubric li{margin:4px 0;}
+  .svgwrap{margin:14px 0;text-align:center;}
+  .svgwrap svg{width:100%;max-width:680px;height:auto;background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px;}
+  footer{text-align:center;color:#a89c87;font-size:13px;margin-top:30px;}
+  .divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:30px 0;}
+
+  /* ===== 全局播放 dock（字幕不遮挡讲解，位于最底部） ===== */
+  #playerbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(20,28,24,.94);color:#eafff4;
+    padding:8px 14px 10px;box-shadow:0 -8px 22px rgba(0,0,0,.28);backdrop-filter:blur(6px);
+    transform:translateY(0);transition:transform .25s;}
+  #playerbar.hide{transform:translateY(110%);}
+  #playerbar .subline{font-size:15.5px;line-height:1.5;margin-bottom:6px;color:#eafff4;
+    border-left:3px solid var(--accent);padding-left:8px;max-height:46px;overflow:auto;}
+  #playerbar .subline b{color:#ffd9a8;}
+  #playerbar .pctrl{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  #playerbar button{font-family:inherit;cursor:pointer;border:none;border-radius:18px;padding:6px 12px;font-size:13.5px;
+    background:rgba(255,255,255,.16);color:#eafff4;transition:.15s;}
+  #playerbar button:hover{background:rgba(255,255,255,.3);}
+  #playerbar #playbtn{background:var(--accent);color:#fff;font-weight:700;min-width:78px;}
+  #playerbar .spd{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;opacity:.9;}
+  #playerbar .spd button{padding:3px 8px;font-size:12px;}
+  #playerbar .spd button.on{background:var(--accent2);color:#fff;}
+  #seek{flex:1;min-width:120px;height:6px;accent-color:var(--accent);cursor:pointer;}
+  #idxlbl{font-size:12.5px;opacity:.85;min-width:54px;text-align:center;}
+  #reopen{position:fixed;right:14px;bottom:14px;z-index:60;display:none;border:none;border-radius:24px;
+    background:var(--accent);color:#fff;font-family:inherit;font-weight:700;font-size:14px;padding:10px 16px;box-shadow:0 6px 16px rgba(232,116,59,.4);cursor:pointer;}
+  #reopen.show{display:block;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="tag">🎓 第8课 · 一节高中生物课的量 · 注册营养师考点</span>
+  <h1>维生素K（Vitamin K）精讲 · 凝血卫士</h1>
+  <div class="meta">
+    主讲：<b>晓晓老师</b>（XiaoxiaoNeural 神经网络语音）　|　课时：约 45 分钟（1 课时）　|　来源：<b>注册营养师考试宝典 · 维生素K 考点</b> 系列
+  </div>
+  <div class="meta">配套：温故复习 + 口诀 + 案例图 + 易错点 + 解题三步法 + 不定时提问 + 改编练习题 + 费曼复述　<span style="background:#fff;color:#1f4d3a;border-radius:20px;padding:2px 10px;font-size:12px;">点 ▶ 听晓晓老师讲</span></div>
+</header>
+
+<nav class="toc"><div class="inner">
+    <a href="#s1">① 温故</a>
+    <a href="#s2">② 两形式</a>
+    <a href="#s3">③ 机制</a>
+    <a href="#s4">④ 骨·血管</a>
+    <a href="#s5">⑤ 缺乏症</a>
+    <a href="#s6">⑥ 来源·稳</a>
+    <a href="#s7">⑦ 摄入·µg</a>
+    <a href="#s8">⑧ 易错点</a>
+    <a href="#s9">⑨ 三步法</a>
+    <a href="#s10">⑩ 提问</a>
+    <a href="#s11">⑪ 改编题</a>
+    <a href="#s12">⑫ 费曼</a>
+</div></nav>
+
+<div class="wrap">
+  <section id="s1">
+    <div class="sec-head"><div class="no">1</div><h2>温故知新：先复习前七课，再收官“凝血卫士”</h2><div class="sub">衔接 · 5分钟</div></div>
+    <div class="card">
+      <p class="narrate">同学们好，我是晓晓老师。开第8课前，先串一遍前七课总纲：蛋白质——9种必需氨基酸、谷类缺赖氨酸豆类缺蛋氨酸；碳水——蔗无乳有麦也有、GI和GL、添加糖最好不超25克、肌糖原不升血糖；脂类——必需脂肪酸只有亚油酸和α-亚麻酸、HDL好LDL坏；能量——1千卡等于4.184千焦、BMI中国24超28胖；维生素A——视杆细胞视紫红质、先暗适应下降再夜盲、过量中毒只在动物肝和补剂；维生素D——阳光维D、肝出25是营养指标、肾出1,25最能干、缺了小孩佝偻大人骨软化老人疏松；上一课维生素E——8种里α-生育酚是老大、抗氧化断链护膜护红细胞、缺乏人类罕见(脂肪吸收不良和早产儿会溶血加神经)、但过量反而损害凝血、增加出血倾向。</p>
+      <p class="narrate">我们已经把脂溶性维生素的老大A、老二D、老三E都讲完了。今天收官，讲脂溶性第四位、也是最后一位——维生素K，江湖人称‘凝血维生素’。</p>
+      <p class="narrate">维K和前三位气质完全不同：它不护眼、不主要负责骨钙(其实也管骨，等下讲)、不抗氧化，它专管一件事——让血止得住、凝得起来。高中生物讲过的‘凝血过程’‘钙离子参与’‘肝脏合成凝血因子’，今天全用得上。</p>
+      <p class="narrate">更有意思的是，上一课刚说维E大剂量会损害凝血、增加出血；今天讲维K，它恰恰是保证凝血的‘总开关’。两课一正一反，正好对照。今天主线：维K有几种、单位用啥 → 它怎么让凝血因子‘活’过来(机制) → 它还管骨头和血管 → 缺了谁会出血、和血友病有啥区别 → 从哪吃、怕什么 → 该吃多少(成人80微克)。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 前七课口诀速回（闭眼能背才算会）</div>
+    <div class="big">蛋白9种互补 · 蔗无乳有麦也有 · 必需脂肪两兄弟 · 1kcal=4.184kJ · BMI中国24超28胖 · VA暗适应后夜盲 · 维D肝出25肾出1,25 · 维E八兄弟α最强抗氧化</div>
+    <div class="note">今天收官脂溶性第4位：<b>维生素K（凝血维生素 / 抗出血维生素）</b>。本节新口诀用 <b>🔑</b> 标出，最后费曼复述串成一条线。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s1')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s2">
+    <div class="sec-head"><div class="no">2</div><h2>核心精讲一：身份 &amp; 两种天然形式（单位用微克）</h2><div class="sub">8分钟</div></div>
+    <div class="card">
+      <p class="narrate">先搞清维K的‘身份’。它是脂溶性维生素，因为能抗出血，又叫‘凝血维生素’‘抗出血维生素’。</p>
+      <p class="narrate">天然维K主要有两种形式，考试最爱考它们的来源区别。第一种叫K1，学名叶绿醌，也叫植物甲萘醌，主要来自植物，尤其是深绿色叶菜，比如菠菜、羽衣甘蓝、西兰花；人体自己不能合成K1，必须靠吃进去。</p>
+      <p class="narrate">第二种叫K2，学名甲萘醌，主要来自两方面：一是发酵食品和动物性食物，比如纳豆含量最高、还有奶酪、动物肝脏；二是由肠道里的细菌帮我们合成——健康人肠道里的大肠杆菌、双歧杆菌、乳酸菌都能产K2。</p>
+      <p class="narrate">还有一种人工合成的K3，学名2-甲基-1,4-萘醌，它是水溶性的、活性挺高，但有毒性，会引起溶血性贫血，尤其对新生儿危险，临床上不常规用来给人补。考试看到‘水溶性维生素K’基本就是指K3，要警惕。</p>
+      <p class="narrate">单位上较真一句：维K用‘微克’µg，别和前面三位搞混——维A用RAE、维D用微克或IU、维E用α-TE，维K就是µg。口诀：‘维K两兄弟，K1绿叶菜(植物给)、K2发酵加细菌；合成K3水溶有毒，单位就用微克µg’。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 两天然形式 & 单位</div>
+    <div class="big">K1 叶绿醌(植物甲萘醌)：深绿叶菜　|　K2 甲萘醌：发酵食品(纳豆/奶酪/肝)＋肠道菌群合成　|　单位：微克 µg</div>
+    <div class="note">合成 <b>K3</b>(2-甲基-1,4-萘醌)：<b>水溶性、活性高但有毒</b>(溶血性贫血，新生儿危险)，不常规用于人体。三个脂溶性伙伴单位别张冠李戴：维A→RAE、维D→µg/IU、维E→α-TE、维K→µg。</div>
+  </div>
+  <table>
+    <thead><tr><th>形式</th><th>来源</th><th>考点提示</th></tr></thead>
+    <tbody>
+      <tr><td>K1 叶绿醌</td><td>深绿色叶菜(菠菜/羽衣甘蓝/西兰花)、豆油菜油</td><td>人体<b>不能自合成</b>，须从食物摄入</td></tr>
+      <tr><td>K2 甲萘醌</td><td>纳豆(最高)、奶酪、动物肝；<b>肠道菌群合成</b></td><td>吸收效率高于K1，可达骨/血管等外周</td></tr>
+      <tr><td>K3 合成</td><td>人工合成、水溶性</td><td><b>有毒</b>(溶血)，不常规给人补</td></tr>
+    </tbody>
+  </table>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s2')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s3">
+    <div class="sec-head"><div class="no">3</div><h2>核心精讲二：招牌机制——γ-羧化 &amp; 维生素K循环（华法林）</h2><div class="sub">11分钟</div></div>
+    <div class="card">
+      <p class="narrate">这是本课最烧脑也最高频的一段：维K到底怎么让血止住？秘密在‘γ-羧化’。</p>
+      <p class="narrate">肝脏合成四种关键凝血因子：凝血酶原(因子II)、因子VII、IX、X。它们刚造出来是‘半成品’，上面有些谷氨酸残基必须被加上一个羧基，变成‘γ-羧基谷氨酸’(Gla)残基，才能像小爪子一样抓住钙离子，凝血瀑布才转得起来。维K就是这个‘加羧基’反应(γ-谷氨酰羧化酶)的必需辅因子。</p>
+      <p class="narrate">维K自己在这个过程中被氧化成‘维生素K环氧化物’；身体再用一个叫‘环氧化物还原酶’的酶，消耗NADPH把它还原回能用的维K，形成循环反复用，很省。</p>
+      <p class="narrate">重点来了：抗凝药华法林(warfarin)，就是专门抑制这个还原酶，让维K循环断掉、凝血因子停在‘半成品’状态没活性，于是血液不容易凝——它是‘维生素K拮抗剂’。临床上用凝血酶原时间PT(或INR)监控华法林用量。所以吃华法林的人，维K摄入不能忽多忽少，要吃得稳定。</p>
+      <p class="narrate">口诀：‘维K当辅因子，给凝血因子II/VII/IX/X加羧基(γ-羧化)→它们才能抓钙凝血；维K被氧化成环氧，还原酶再救回；华法林专掐还原酶，凝血就停’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 260" role="img" aria-label="维生素K循环与华法林阻断">
+    <text x="340" y="24" fill="#1f4d3a" font-size="14" text-anchor="middle" font-weight="700">维生素K循环：让凝血因子“活”过来的关键</text>
+    <!-- 还原型维K -->
+    <rect x="16" y="92" width="150" height="64" rx="12" fill="#eafaf1" stroke="#2e9e6b"/>
+    <text x="91" y="116" fill="#1c6b45" font-size="13.5" text-anchor="middle" font-weight="700">维生素K(活性·还原型)</text>
+    <text x="91" y="138" fill="#3a5a4c" font-size="11.5" text-anchor="middle">辅因子</text>
+    <!-- γ-羧化酶 -->
+    <rect x="196" y="40" width="150" height="64" rx="12" fill="#eef3ff" stroke="#3a8dde"/>
+    <text x="271" y="64" fill="#1f5fa8" font-size="13" text-anchor="middle" font-weight="700">γ-谷氨酰羧化酶</text>
+    <text x="271" y="84" fill="#3a5a4c" font-size="11" text-anchor="middle">给谷氨酸加羧基</text>
+    <!-- 活化因子 -->
+    <rect x="386" y="30" width="190" height="64" rx="12" fill="#eafaf1" stroke="#2e9e6b"/>
+    <text x="481" y="54" fill="#1c6b45" font-size="12.5" text-anchor="middle" font-weight="700">凝血因子 II/VII/IX/X</text>
+    <text x="481" y="74" fill="#1c6b45" font-size="11.5" text-anchor="middle">γ-羧化(Gla)→能抓钙→活化</text>
+    <!-- 环氧型 -->
+    <rect x="386" y="128" width="190" height="60" rx="12" fill="#fff4dd" stroke="#e0a83a"/>
+    <text x="481" y="152" fill="#9a5b00" font-size="12.5" text-anchor="middle" font-weight="700">维生素K环氧化物</text>
+    <text x="481" y="172" fill="#6b5a3a" font-size="11" text-anchor="middle">维K被氧化后的形式(失活)</text>
+    <!-- 还原酶 -->
+    <rect x="196" y="150" width="150" height="64" rx="12" fill="#f3f9ff" stroke="#3a8dde"/>
+    <text x="271" y="174" fill="#1f5fa8" font-size="13" text-anchor="middle" font-weight="700">环氧化物还原酶</text>
+    <text x="271" y="194" fill="#3a5a4c" font-size="11" text-anchor="middle">耗NADPH 救回维K</text>
+    <!-- 箭头 -->
+    <path d="M166 110 H194" stroke="#2e9e6b" stroke-width="2.5" marker-end="url(#vka)"/>
+    <path d="M346 72 H384" stroke="#2e9e6b" stroke-width="2.5" marker-end="url(#vka)"/>
+    <path d="M481 94 V126" stroke="#e0a83a" stroke-width="2.5" marker-end="url(#vkb)"/>
+    <path d="M346 182 H198" stroke="#3a8dde" stroke-width="2.5" marker-end="url(#vkc)"/>
+    <path d="M196 124 V154" stroke="#3a8dde" stroke-width="2.5" marker-end="url(#vkc)"/>
+    <!-- 华法林阻断 -->
+    <g>
+      <line x1="240" y1="150" x2="320" y2="214" stroke="#d8443c" stroke-width="3"/>
+      <circle cx="330" cy="222" r="18" fill="#d8443c"/>
+      <text x="330" y="227" fill="#fff" font-size="13" text-anchor="middle" font-weight="700">✕</text>
+      <text x="392" y="226" fill="#b5302a" font-size="12.5" text-anchor="middle" font-weight="700">华法林</text>
+      <text x="392" y="244" fill="#b5302a" font-size="11" text-anchor="middle">抑制还原酶→循环断→出血</text>
+    </g>
+    <defs>
+      <marker id="vka" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#2e9e6b"/></marker>
+      <marker id="vkb" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#e0a83a"/></marker>
+      <marker id="vkc" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#3a8dde"/></marker>
+    </defs>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 机制口诀</div>
+    <div class="big">维K当辅因子 · γ-羧化凝血因子II/VII/IX/X · 抓钙才活化 · 华法林掐还原酶令凝血停</div>
+    <div class="note"><b>核心四因子</b>：凝血酶原(II)、VII、IX、X；还有蛋白C/S/Z。监控指标：<b>PT / INR</b>。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s3')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s4">
+    <div class="sec-head"><div class="no">4</div><h2>核心精讲三：其他功能（骨 · 血管）</h2><div class="sub">8分钟</div></div>
+    <div class="card">
+      <p class="narrate">除了凝血这个主力，维K还管两件和‘钙’有关的事，考试也常顺带考。</p>
+      <p class="narrate">第一件，护骨头。骨头里有种蛋白叫骨钙素(osteocalcin)，它也得靠维Kγ-羧化才能抓住钙、把钙沉积到骨基质里。所以维K和维D、钙是好搭档，一起维护骨密度，缺了和骨质疏松有关。</p>
+      <p class="narrate">第二件，护血管。血管壁有种基质Gla蛋白(MGP)，同样要维K激活，它的作用是阻止钙在血管壁乱沉积、防止血管钙化变硬。所以维K是血管的‘清道夫’。</p>
+      <p class="narrate">把这条线记牢：维K不只止血，还‘把钙送到骨头里、挡在血管外’。口诀：‘维K两副线：骨钙素抓钙壮骨、基质Gla蛋白护血管防钙化’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 150" role="img" aria-label="维生素K的骨与血管作用">
+    <rect x="20" y="24" width="300" height="104" rx="12" fill="#eafaf1" stroke="#2e9e6b"/>
+    <text x="170" y="52" fill="#1c6b45" font-size="14" text-anchor="middle" font-weight="700">🦴 骨 · 骨钙素 osteocalcin</text>
+    <text x="170" y="78" fill="#3a5a4c" font-size="12" text-anchor="middle">维K γ-羧化 → 抓钙沉积到骨</text>
+    <text x="170" y="100" fill="#3a5a4c" font-size="12" text-anchor="middle">与维D、钙搭档护骨密度</text>
+    <rect x="360" y="24" width="300" height="104" rx="12" fill="#eef3ff" stroke="#3a8dde"/>
+    <text x="510" y="52" fill="#1f5fa8" font-size="14" text-anchor="middle" font-weight="700">🫀 血管 · 基质Gla蛋白 MGP</text>
+    <text x="510" y="78" fill="#3a5a4c" font-size="12" text-anchor="middle">维K 激活 → 阻止钙乱沉积</text>
+    <text x="510" y="100" fill="#3a5a4c" font-size="12" text-anchor="middle">防血管钙化变硬(清道夫)</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 骨与血管口诀</div>
+    <div class="big">骨钙素抓钙壮骨 · 基质Gla蛋白护血管防钙化 · 把钙送进骨头、挡在血管外</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s4')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s5">
+    <div class="sec-head"><div class="no">5</div><h2>核心精讲四：缺乏症——成人罕见，只找四类人</h2><div class="sub">10分钟</div></div>
+    <div class="card">
+      <p class="narrate">维K缺乏在人类成人极少见，为什么？因为来源广(绿叶菜到处有)、肠道菌群还能自己造K2，双保险。</p>
+      <p class="narrate">那谁会缺？四类高危：第一，新生儿——胎盘几乎不运维K、自身储存少、母乳里维K又低、肠道还是无菌的，所以出生后常规打一针维K，预防‘新生儿出血症’；第二，脂肪吸收不良的人(胆道梗阻、胆汁酸缺乏、囊性纤维化、短肠、慢性腹泻)，维K脂溶性得靠胆汁和脂肪一起吸收；第三，长期用抗生素的人，肠道菌群被杀，K2合成减少；第四，长期全肠外营养、只输液不吃东西又没额外补K的人。</p>
+      <p class="narrate">缺了什么表现？核心是出血：容易瘀青、伤口渗血不止、严重时内脏出血；抽血查会看到凝血酶原时间PT延长、凝血因子活性低。注意一个易错点：维K缺乏导致的出血，和‘血友病’不是一回事——血友病是先天某种凝血因子(八或九)基因缺陷，维K缺乏是后天辅因子不够，别张冠李戴。</p>
+      <p class="narrate">口诀：‘维K缺乏成人罕见：只找新生儿、脂肪吸收不良、长期抗生素、肠外营养；表现出血加PT延长；不是血友病’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 210" role="img" aria-label="维生素K缺乏的高危人群与表现">
+    <rect x="14" y="30" width="150" height="60" rx="10" fill="#1f4d3a"/>
+    <text x="89" y="56" fill="#fff" font-size="14" text-anchor="middle" font-weight="700">维K缺乏</text>
+    <text x="89" y="78" fill="#ffe2b0" font-size="11.5" text-anchor="middle">成人极罕见</text>
+    <rect x="186" y="12" width="150" height="42" rx="10" fill="#e8743b"/>
+    <text x="261" y="30" fill="#fff" font-size="12.5" text-anchor="middle" font-weight="700">① 新生儿</text>
+    <text x="261" y="48" fill="#fff" font-size="10.5" text-anchor="middle">胎盘不运·无菌肠·母乳低</text>
+    <rect x="186" y="62" width="150" height="42" rx="10" fill="#3a8dde"/>
+    <text x="261" y="80" fill="#fff" font-size="12.5" text-anchor="middle" font-weight="700">② 脂肪吸收不良</text>
+    <text x="261" y="98" fill="#fff" font-size="10.5" text-anchor="middle">胆道梗阻/囊性纤维化/短肠</text>
+    <rect x="186" y="112" width="150" height="42" rx="10" fill="#e0a83a"/>
+    <text x="261" y="130" fill="#fff" font-size="12.5" text-anchor="middle" font-weight="700">③ 长期抗生素</text>
+    <text x="261" y="148" fill="#fff" font-size="10.5" text-anchor="middle">杀菌群→K2合成↓</text>
+    <rect x="350" y="62" width="150" height="42" rx="10" fill="#9b6bd1"/>
+    <text x="425" y="80" fill="#fff" font-size="12.5" text-anchor="middle" font-weight="700">④ 长期肠外营养</text>
+    <text x="425" y="98" fill="#fff" font-size="10.5" text-anchor="middle">只输液不吃→无K</text>
+    <path d="M161 60 L184 50" stroke="#333" stroke-width="2" marker-end="url(#vkd)"/>
+    <path d="M161 60 L184 83" stroke="#333" stroke-width="2" marker-end="url(#vkd)"/>
+    <path d="M161 60 L184 133" stroke="#333" stroke-width="2" marker-end="url(#vkd)"/>
+    <path d="M324 80 L348 82" stroke="#333" stroke-width="2" marker-end="url(#vkd)"/>
+    <defs><marker id="vkd" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#333"/></marker></defs>
+    <rect x="520" y="40" width="150" height="120" rx="10" fill="#fdf0ee" stroke="#d8443c"/>
+    <text x="595" y="66" fill="#b5302a" font-size="13" text-anchor="middle" font-weight="700">表现</text>
+    <text x="595" y="92" fill="#b5302a" font-size="12" text-anchor="middle">出血·易瘀青·渗血</text>
+    <text x="595" y="114" fill="#b5302a" font-size="12" text-anchor="middle">PT(凝血酶原时间)延长</text>
+    <text x="595" y="138" fill="#8a7f6e" font-size="11" text-anchor="middle">≠ 血友病(先天因子缺陷)</text>
+  </svg>
+  </div>
+  <div class="trap"><div class="t">核心大坑</div>维K缺乏<b>成人极罕见</b>，只见于<b>新生儿、脂肪吸收不良、长期抗生素、长期肠外营养</b>；表现为<b>出血+PT延长</b>。<b>≠ 血友病</b>(先天凝血因子Ⅷ/Ⅸ基因缺陷)。新生儿常规肌注维K预防出血症。</div>
+  <div class="mnemonic">
+    <div class="label">🔑 缺乏症口诀</div>
+    <div class="big">成人罕见 · 只找新生儿&脂肪吸收不良&长期抗生素&肠外营养 · 出血+PT延长 · 不是血友病</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s5')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s6">
+    <div class="sec-head"><div class="no">6</div><h2>核心精讲五：食物来源 &amp; 稳定性（怕什么）</h2><div class="sub">8分钟</div></div>
+    <div class="card">
+      <p class="narrate">维K从哪吃？K1认准深绿色叶菜——菠菜、羽衣甘蓝、西兰花、油菜，含量最高；大豆油、菜籽油里也有些。K2认准发酵食品和动物肝——纳豆含量最高，还有奶酪、腐乳、动物肝脏；再加上肠道菌群自产。</p>
+      <p class="narrate">吸收上较真一句：维K是脂溶性的，最好和一点油脂一起吃，胆汁帮忙吸收更好。所以这又是‘凉拌绿叶菜加点橄榄油’的场景。</p>
+      <p class="narrate">稳定性：维K对热稳定，加热不容易破坏；但它怕酸、怕碱、怕光和紫外线，食物脂肪酸败时也容易坏，所以要避光保存。和维E一样怕光，但维K对热比维E耐造。</p>
+      <p class="narrate">口诀：‘K1绿叶菜(菠羽甘蓝西兰花)、豆油菜油；K2纳豆奶酪肝、菌群自产；随脂吸收；对热稳、怕酸怕碱怕光’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 150" role="img" aria-label="维生素K食物来源与稳定性">
+    <rect x="14" y="20" width="320" height="110" rx="12" fill="#fff7e0" stroke="#e0a83a"/>
+    <text x="174" y="46" fill="#a9791f" font-size="15" text-anchor="middle" font-weight="700">来源（含量高→低）</text>
+    <text x="174" y="72" font-size="13" text-anchor="middle">K1：深绿叶菜(菠·羽衣甘蓝·西兰花·油菜)、豆油菜油</text>
+    <text x="174" y="94" font-size="13" text-anchor="middle">K2：纳豆(最高)·奶酪·动物肝·腐乳</text>
+    <text x="174" y="116" fill="#6b5a3a" font-size="11.5" text-anchor="middle">＋ 肠道菌群自产K2 ｜ 随脂肪/胆汁吸收更好</text>
+    <rect x="350" y="20" width="316" height="110" rx="12" fill="#fdf0ee" stroke="#d8443c"/>
+    <text x="508" y="46" fill="#b5302a" font-size="15" text-anchor="middle" font-weight="700">稳定性</text>
+    <text x="508" y="74" font-size="13" text-anchor="middle">✓ 对热稳定(加热不易破坏)</text>
+    <text x="508" y="96" font-size="13" text-anchor="middle">✗ 怕酸 · ✗ 怕碱 · ✗ 怕光/紫外线</text>
+    <text x="508" y="116" fill="#8a7f6e" font-size="11.5" text-anchor="middle">脂肪酸败时易破坏 → 避光保存</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 来源 & 稳定性口诀</div>
+    <div class="big">K1绿叶菜·豆油菜油　|　K2纳豆奶酪肝·菌群自产　|　随脂吸收　|　对热稳·怕酸怕碱怕光</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s6')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s7">
+    <div class="sec-head"><div class="no">7</div><h2>核心精讲六：吃多少 &amp; 单位（AI 80 µg/d）</h2><div class="sub">8分钟</div></div>
+    <div class="card">
+      <p class="narrate">最后量化：维K该吃多少？按中国营养学会《中国居民膳食营养素参考摄入量(脂溶性维生素)》，成人(18岁以上)适宜摄入量AI是每天80微克µg，男女一致。</p>
+      <p class="narrate">上限UL呢？天然食物来源的维K基本不中毒，所以UL‘未制定’——这是维K和维A、维D、维E(都有UL)很不同的地方。唯一有毒的是合成K3，那是药不是食物，不在这里讨论。</p>
+      <p class="narrate">顺带一句：美国DRI给的AI是男120、女90微克，但咱们注册营养师考试以本国DRIs为准，记成人80微克就够了。量级是‘微克’，别记成毫克。</p>
+      <p class="narrate">口诀：‘维K单位微克µg；成人AI 80 µg/d(男女同)；天然无毒UL未定，合成K3才有毒’。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 单位 & 摄入量（中国 DRIs·脂溶性维生素）</div>
+    <div class="big">单位：微克 µg　|　成人(18+) <b>AI 80 µg/d</b>（男女一致）　|　<b>UL 未制定</b>（天然来源基本不中毒）</div>
+    <div class="note">对照：美国DRI 男120/女90 µg(仅作了解)；本国考试以 <b>80 µg/d</b> 为准；唯一有毒的是合成 <b>K3</b>。</div>
+  </div>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 130" role="img" aria-label="维生素K参考摄入量标尺">
+    <line x1="40" y1="70" x2="640" y2="70" stroke="#c9bda3" stroke-width="4"/>
+    <circle cx="240" cy="70" r="9" fill="#2e9e6b"/>
+    <text x="240" y="52" fill="#1c6b45" font-size="13" text-anchor="middle" font-weight="700">成人 AI 80 µg</text>
+    <text x="240" y="98" fill="#3a5a4c" font-size="12" text-anchor="middle">µg/d（男女同）</text>
+    <circle cx="560" cy="70" r="10" fill="#9b8f7c" stroke="#6b6253" stroke-dasharray="4"/>
+    <text x="560" y="52" fill="#6b6253" font-size="13" text-anchor="middle" font-weight="700">UL 未制定</text>
+    <text x="560" y="98" fill="#8a7f6e" font-size="12" text-anchor="middle">天然来源基本无毒</text>
+    <text x="40" y="118" fill="#8a7f6e" font-size="11.5">↑ 单位用 µg；与维A/维D/维E(均有UL)不同，维K天然形式 UL 未定；合成K3才有毒性</text>
+  </svg>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s7')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s8">
+    <div class="sec-head"><div class="no">8</div><h2>红绿灯：高频易错点</h2><div class="sub">5分钟</div></div>
+    <div class="card">
+      <p class="narrate">红绿灯时间，把维生素K这章最爱丢分的坑集中点一遍。</p>
+      <p class="narrate">易错一：两种天然形式搞反。K1来自植物绿叶菜、人体不能自合成；K2来自发酵食品(纳豆/奶酪/肝)加肠道菌群合成。看见‘K1由肠道菌群产生’直接判错。</p>
+      <p class="narrate">易错二：单位。维K用微克µg，不是维A的RAE、不是维D的IU、不是维E的α-TE。</p>
+      <p class="narrate">易错三：机制。维K是γ-羧化反应的辅因子，让凝血因子II/VII/IX/X变成有活性的Gla形式去抓钙；它‘不是’凝血因子本身，也不直接‘形成血块’。</p>
+      <p class="narrate">易错四：华法林。它是维生素K拮抗剂，抑制环氧化物还原酶、阻断维K循环，使凝血因子失活→出血；用PT/INR监控。别把它说成‘促进凝血’。</p>
+      <p class="narrate">易错五：缺乏症误判。维K缺乏成人罕见，多见于新生儿、脂肪吸收不良、长期抗生素、肠外营养；表现为出血+PT延长；‘不是’血友病。</p>
+      <p class="narrate">易错六：和维E混淆。上一课说维E过量损害凝血、增加出血；维K保证凝血——两者在‘出血’上一反一正，但机制不同(维E伤血小板/凝血、维K管因子γ-羧化)。</p>
+      <p class="narrate">易错七：合成K3。K3水溶、活性高但有毒(溶血性贫血、新生儿危险)，不常规给人补；考试把‘水溶性维K’当安全常规补剂就是坑。</p>
+      <p class="narrate">易错八：摄入量量级。成人AI 80微克(µg)每天，UL未制定；量级是‘微克’，别记成毫克。</p>
+  <div class="trap"><div class="t">易错1：两种形式来源</div>K1=植物绿叶菜(人体<b>不能自合成</b>)；K2=发酵食品(纳豆/奶酪/肝)＋<b>肠道菌群合成</b>。说“K1由肠道菌群产生”必错。</div>
+  <div class="trap"><div class="t">易错2：单位</div>维K用 <b>µg(微克)</b>；≠维A的RAE、≠维D的IU/µg、≠维E的α-TE。</div>
+  <div class="trap"><div class="t">易错3：机制</div>维K是 <b>γ-羧化辅因子</b>，使凝血因子II/VII/IX/X变成活性Gla形式抓钙；<b>不是</b>凝血因子本身，也不直接形成血块。</div>
+  <div class="trap"><div class="t">易错4：华法林</div>维K<b>拮抗剂</b>，抑还原酶、断循环→因子失活→<b>出血</b>；监控 <b>PT/INR</b>。<b>不是</b>促凝。</div>
+  <div class="trap"><div class="t">易错5：缺乏症</div>成人<b>极罕见</b>，见新生儿/脂肪吸收不良/长期抗生素/肠外营养；<b>出血+PT延长</b>；<b>≠</b>血友病。</div>
+  <div class="trap"><div class="t">易错6：与维E对照</div>维E过量<b>损害凝血→出血</b>；维K<b>保证凝血</b>。一反一正，但机制不同(维E伤血小板/凝血、维K管因子γ-羧化)。</div>
+  <div class="trap"><div class="t">易错7：合成K3</div>K3 <b>水溶·活性高但有毒</b>(溶血性贫血/新生儿危险)，<b>不常规给人补</b>；别当安全补剂。</div>
+  <div class="trap"><div class="t">易错8：摄入量</div>成人 <b>AI 80 µg/d</b>，UL <b>未制定</b>；量级是“微克”，别记成毫克。</div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s8')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s9">
+    <div class="sec-head"><div class="no">9</div><h2>解题三步法（注册营养师全是选择题）</h2><div class="sub">4分钟</div></div>
+    <div class="card">
+      <p class="narrate">注册营养师全是选择题，维生素K这章送你一套三步法。</p>
+      <p class="narrate">第一步，审题定性：先看问的是身份分类(K1/K2/K3)、机制(γ-羧化/维K循环/华法林)、其他功能(骨钙素/基质Gla蛋白)、缺乏症、食物来源与稳定性，还是摄入量和单位µg，先定性，别急着看选项。</p>
+      <p class="narrate">第二步，定位考点：身份就背K1叶菜、K2发酵加细菌、K3有毒水溶；机制就背γ-羧化凝血因子II/VII/IX/X、华法林掐还原酶、PT/INR监控；功能就背骨钙素壮骨、MGP护血管；缺乏就背成人罕见、新生儿等四类、出血加PT延长不是血友病；来源就背绿叶菜纳豆、随脂吸收、对热稳怕光；摄入就背成人AI 80微克、UL未定。</p>
+      <p class="narrate">第三步，排除反着坑：直接排除‘K1由肠道菌群产生’‘华法林促凝血’‘维K缺乏会夜盲’‘维K溶于水随尿排’‘天然维K有UL’‘K3安全可常规补’这类反向表述，剩下的就是答案。</p>
+  <div class="steps">
+    <div class="step"><div class="b"><b>第一步 · 审题定性：</b>先看问哪一类——身份(K1/K2/K3)？机制(γ-羧化/维K循环/华法林)？其他功能(骨钙素/MGP)？缺乏症？来源与稳定性？摄入量(µg)？先定性，不急看选项。</div></div>
+    <div class="step"><div class="b"><b>第二步 · 定位考点：</b>身份→K1叶菜/K2发酵+细菌/K3有毒水溶；机制→γ-羧化因子II/VII/IX/X+华法林掐还原酶+PT/INR；功能→骨钙素壮骨/MGP护血管；缺乏→成人罕见/新生儿等四类/出血+PT延长≠血友病；来源→绿叶菜纳豆/随脂吸收/对热稳怕光；摄入→AI80/UL未定。</div></div>
+    <div class="step"><div class="b"><b>第三步 · 排除反坑：</b>直接排除“K1由菌群产生”“华法林促凝血”“维K缺乏会夜盲”“维K溶于水随尿排”“天然维K有UL”“K3安全可常规补”这类反向表述，剩下即答案。</div></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s9')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s10">
+    <div class="sec-head"><div class="no">10</div><h2>晓晓老师不定时提问 · 模拟课堂（费曼）</h2><div class="sub">互动</div></div>
+    <div class="card">
+      <p class="narrate">讲完重点，我们模拟上课提问。我先和班里的同学演练，再轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。</p>
+      <p class="narrate">第一个问题：用你自己的话解释，维生素K是怎么让血液‘凝得起来’的？把γ-羧化和华法林的机制讲清楚。</p>
+      <p class="narrate">第二个问题：为什么说‘维生素K缺乏在人类成人极罕见’？什么人会缺，缺了又有什么典型表现？它和血友病有什么不同？把这条逻辑讲清楚。</p>
+  <div class="chat">
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">小明，上一课我们说维E吃多了会‘损害凝血、增加出血’，今天又说维K‘保证凝血’——那我既吃维E又吃维K，是不是在身体里打架了？</div></div></div>
+    <div class="msg stu"><div class="av stu">🧒</div><div><div class="who">学生·小明</div><div class="bubble">嗯……应该是打架了吧？一个让血凝、一个让血流？</div></div></div>
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">方向接近，但要较真：正常饮食里的维E根本到不了‘损害凝血’的量，只有<b>大剂量的维E补充剂</b>才会干扰凝血。而维K是凝血因子γ-羧化的必需辅因子，日常吃绿叶菜、纳豆补的是它。所以<b>正常吃的维E和维K不打架</b>；真正‘打架’的是<b>大剂量维E vs 维K</b>，以及<b>华法林(维K拮抗剂) vs 维K</b>。记住：维E过量伤凝血、维K保凝血、华法林掐维K——三者的‘出血’逻辑要分清。</div></div></div>
+  </div>
+
+  <div class="ask" data-keywords="γ|羧化|辅因子|凝血因子|II|VII|IX|X|抓钙|钙|环氧化物|还原酶|华法林|warfarin|循环|活化|Gla|谷氨酰" data-model="关键在<b>γ-羧化</b>：维K是<b>γ-谷氨酰羧化酶的辅因子</b>，给肝脏合成的凝血因子<b>II(凝血酶原)、VII、IX、X</b>上的谷氨酸残基加羧基，变成γ-羧基谷氨酸(Gla)，它们才能<b>抓住钙离子</b>、让凝血瀑布转起来(因子被‘活化’)。维K在这个过程中被氧化成环氧化物，再由<b>环氧化物还原酶</b>消耗NADPH还原回活性维K，循环利用。抗凝药<b>华法林</b>专门抑制这个还原酶，让维K循环断掉、因子停在半成品(无活性)→出血。一句话：<b>维K让凝血因子‘活’过来，华法林掐断它的循环</b>。">
+    <div class="q">提问一：维生素K是怎么让血液“凝得起来”的？把γ-羧化和华法林的机制讲清楚。</div>
+    <textarea placeholder="想一想：凝血因子刚造出来为啥是‘半成品’？维K干了啥？"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+  <div class="ask" data-keywords="罕见|少见|新生儿|出血症|脂肪|吸收不良|胆道|抗生素|肠外|菌群|出血|瘀|PT|凝血酶原|血友|先天|基因|缺乏" data-model="因为维K来源广(绿叶菜多)、<b>肠道菌群还能自产K2</b>，双保险，所以<b>成人缺乏极罕见</b>。只有四类人危险：①<b>新生儿</b>(胎盘不运、无菌肠、母乳低→出生打维K防出血症)；②<b>脂肪吸收不良者</b>(胆道梗阻/囊性纤维化/短肠/慢性腹泻，脂溶性维K靠胆汁脂肪吸收)；③<b>长期用抗生素者</b>(杀菌群→K2↓)；④<b>长期肠外营养者</b>。缺了表现为<b>出血、易瘀青、PT(凝血酶原时间)延长</b>。它和<b>血友病不同</b>：血友病是先天某凝血因子(Ⅷ/Ⅸ)基因缺陷，维K缺乏是后天辅因子不够。">
+    <div class="q">提问二：为什么说“维生素K缺乏在人类成人极罕见”？什么人会缺，缺了有什么典型表现？和血友病有何不同？</div>
+    <textarea placeholder="先想：为什么普通人不容易缺？谁容易缺？"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s10')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s11">
+    <div class="sec-head"><div class="no">11</div><h2>改编练习题（单选，仿注册营养师真题）</h2><div class="sub">自测</div></div>
+    <div class="card">
+      <p class="narrate">下面8道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，K1的主要食物来源。第二题，维K的计量单位。第三题，维K作为辅因子参与的反应。第四题，华法林的作用机制。第五题，维K缺乏的高危人群。第六题，关于维K功能错误的是。第七题，新生儿为何要注射维K。第八题，成人适宜摄入量。</p>
+  <div class="quiz" data-ans="B">
+    <div class="stem">1. 天然维生素K1(叶绿醌)含量最丰富的食物来源是：</div>
+    <button class="opt" onclick="choose(this)">A. 动物肝脏</button>
+    <button class="opt" onclick="choose(this)">B. 深绿色叶菜(菠菜/羽衣甘蓝/西兰花)</button>
+    <button class="opt" onclick="choose(this)">C. 精白米面</button>
+    <button class="opt" onclick="choose(this)">D. 牛奶</button>
+    <div class="ans">✅ 答案：B。K1主要来自<b>深绿色叶菜</b>；人体不能自合成K1。A错(K1不在动物肝为主，动物肝多含K2)；C/D维K很低。</div>
+  </div>
+  <div class="quiz" data-ans="C">
+    <div class="stem">2. 评价维生素K摄入量所用的单位是：</div>
+    <button class="opt" onclick="choose(this)">A. 视黄醇活性当量(RAE)</button>
+    <button class="opt" onclick="choose(this)">B. α-生育酚当量(α-TE)</button>
+    <button class="opt" onclick="choose(this)">C. 微克(µg)</button>
+    <button class="opt" onclick="choose(this)">D. 国际单位(IU)</button>
+    <div class="ans">✅ 答案：C。维K用 <b>µg(微克)</b>。RAE是维A、α-TE是维E、IU常见于维D，三者别混。</div>
+  </div>
+  <div class="quiz" data-ans="D">
+    <div class="stem">3. 维生素K作为辅因子，主要参与的反应是：</div>
+    <button class="opt" onclick="choose(this)">A. 糖原合成</button>
+    <button class="opt" onclick="choose(this)">B. 蛋白质水解</button>
+    <button class="opt" onclick="choose(this)">C. 脂肪酸β-氧化</button>
+    <button class="opt" onclick="choose(this)">D. 谷氨酸残基的γ-羧化(生成γ-羧基谷氨酸)</button>
+    <div class="ans">✅ 答案：D。维K是<b>γ-谷氨酰羧化酶辅因子</b>，使凝血因子II/VII/IX/X等上的谷氨酸→γ-羧基谷氨酸(Gla)，才能抓钙活化。A/B/C均与维K无关。</div>
+  </div>
+  <div class="quiz" data-ans="A">
+    <div class="stem">4. 抗凝药华法林(warfarin)的作用机制是：</div>
+    <button class="opt" onclick="choose(this)">A. 抑制维生素K环氧化物还原酶，阻断维K循环→凝血因子失活</button>
+    <button class="opt" onclick="choose(this)">B. 促进维生素K吸收</button>
+    <button class="opt" onclick="choose(this)">C. 直接激活凝血因子II</button>
+    <button class="opt" onclick="choose(this)">D. 增强血小板聚集</button>
+    <div class="ans">✅ 答案：A。华法林是<b>维生素K拮抗剂</b>，抑还原酶→维K循环断→因子II/VII/IX/X无法γ-羧化→出血；临床用PT/INR监控。B/C/D全反。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">5. 维生素K缺乏在人类成人极少见，最典型的高危人群不包括：</div>
+    <button class="opt" onclick="choose(this)">A. 新生儿(常规注射维K预防出血症)</button>
+    <button class="opt" onclick="choose(this)">B. 正常饮食的健康成年人</button>
+    <button class="opt" onclick="choose(this)">C. 脂肪吸收不良者(胆道梗阻/囊性纤维化)</button>
+    <button class="opt" onclick="choose(this)">D. 长期使用抗生素者</button>
+    <div class="ans">✅ 答案：B。<b>正常饮食的健康成人不易缺</b>(食物广+菌群产K2)。A/C/D均为高危；缺了表现为出血+PT延长。</div>
+  </div>
+  <div class="quiz" data-ans="C">
+    <div class="stem">6. 关于维生素K的功能，错误的是：</div>
+    <button class="opt" onclick="choose(this)">A. 作为辅因子参与凝血因子γ-羧化</button>
+    <button class="opt" onclick="choose(this)">B. 通过骨钙素参与骨钙沉积</button>
+    <button class="opt" onclick="choose(this)">C. 是体内最主要的脂溶性抗氧化剂</button>
+    <button class="opt" onclick="choose(this)">D. 通过基质Gla蛋白防止血管钙化</button>
+    <div class="ans">✅ 答案：C。“最主要脂溶性抗氧化”是<b>维生素E</b>，不是维K。A/B/D均为维K正确功能(凝血/骨/血管)。</div>
+  </div>
+  <div class="quiz" data-ans="A">
+    <div class="stem">7. 新生儿出生后常规肌注维生素K，主要是为了预防：</div>
+    <button class="opt" onclick="choose(this)">A. 新生儿出血症(维生素K缺乏性出血)</button>
+    <button class="opt" onclick="choose(this)">B. 新生儿黄疸</button>
+    <button class="opt" onclick="choose(this)">C. 佝偻病</button>
+    <button class="opt" onclick="choose(this)">D. 夜盲</button>
+    <div class="ans">✅ 答案：A。新生儿胎盘不运维K、储存少、母乳低、肠道无菌→易缺乏出血，故常规注射维K。B是胆红素问题；C是维D缺乏；D是维A缺乏。</div>
+  </div>
+  <div class="quiz" data-ans="D">
+    <div class="stem">8. 按中国营养学会《脂溶性维生素参考摄入量》，成人(18岁以上)维生素K的适宜摄入量(AI)约为：</div>
+    <button class="opt" onclick="choose(this)">A. 14 mg α-TE/d</button>
+    <button class="opt" onclick="choose(this)">B. 10 µg/d</button>
+    <button class="opt" onclick="choose(this)">C. 400 IU/d</button>
+    <button class="opt" onclick="choose(this)">D. 80 µg/d（男女一致，UL未制定）</button>
+    <div class="ans">✅ 答案：D。成人维K <b>AI 80 µg/d</b>(男女一致)，天然来源UL未制定。A是维E的量、B偏低、C是维D常用单位，均错。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s11')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s12">
+    <div class="sec-head"><div class="no">12</div><h2>费曼记忆小测：用自己的话讲一遍</h2><div class="sub">收尾</div></div>
+    <div class="card">
+      <p class="narrate">最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。</p>
+      <p class="narrate">问题：维生素K为什么叫‘凝血维生素’？它凭什么让血凝起来(γ-羧化和维K循环)？华法林是怎么‘掐’住它的？它还管骨头和血管吗？缺了谁会出血、和血友病有啥不同？一天该吃多少(成人80微克、UL未定)？从哪吃、又怕什么？把身份、机制、功能、缺乏、来源、摄入量这条逻辑串起来。</p>
+      <p class="narrate">课堂小结口诀复习：身份‘维K两兄弟，K1绿叶菜、K2发酵加细菌，合成K3水溶有毒，单位用微克µg’；机制‘维K当辅因子，γ-羧化凝血因子II/VII/IX/X，抓钙才活化，华法林掐还原酶令凝血停’；功能‘骨钙素抓钙壮骨、基质Gla蛋白护血管防钙化’；缺乏‘成人罕见，只找新生儿、脂肪吸收不良、长期抗生素、肠外营养，出血加PT延长，不是血友病’；来源‘K1绿叶菜、K2纳豆奶酪肝、菌群自产，随脂吸收，对热稳怕酸怕碱怕光’；摄入‘单位微克，成人AI 80、UL未定’。</p>
+  <div class="feynman">
+    <h3>🧠 费曼复述任务</h3>
+    <p>合上页面，试着给一个“完全不懂营养的朋友”讲清楚下面这个问题。能讲明白，说明你真懂了（费曼学习法：教是最好的学）。</p>
+    <p><b>问题：</b>“维生素K为什么叫凝血维生素？它凭什么让血凝起来？华法林是怎么掐住它的？它还管骨头和血管吗？缺了谁会出血、和血友病有啥不同？一天该吃多少（成人80微克）？从哪吃、又怕什么？”</p>
+    <textarea id="feynmanBox" placeholder="在这里用大白话写一段 4-6 句话的解释……"></textarea>
+    <button class="btn" onclick="feynmanCheck()">自我对照 · 看评分清单</button>
+    <div class="feedback" id="feynmanFeedback"></div>
+    <ul class="rubric">
+      <li>✅ 提到 脂溶性、单位µg、K1(叶菜)/K2(发酵+菌群)、K3有毒水溶</li>
+      <li>✅ 提到 机制：γ-羧化凝血因子II/VII/IX/X、抓钙活化；维K循环+还原酶；华法林拮抗</li>
+      <li>✅ 提到 其他功能：骨钙素(壮骨)、基质Gla蛋白(护血管防钙化)</li>
+      <li>✅ 提到 缺乏成人罕见：新生儿/脂肪吸收不良/长期抗生素/肠外营养 → 出血+PT延长；≠血友病</li>
+      <li>✅ 提到 来源绿叶菜·纳豆、随脂吸收、对热稳怕光；摄入 成人AI 80 µg/d、UL未定</li>
+    </ul>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s12')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    本节为「营养刷题」第8课，依据「注册营养师考试宝典」公众号·维生素K考点系列及历年真题整理改编，并对照《中国居民膳食营养素参考摄入量(脂溶性维生素 WS/T 578.4 / DRIs 2023)》《营养与食品卫生学》第9版、NIH ODS / MedlinePlus / Harvard Nutrition Source 核实　｜　晓晓老师语音由 Edge-TTS XiaoxiaoNeural 神经网络语音合成，字幕固定底部不遮挡讲解　｜　仅供学习备考使用
+  </footer>
+</div>
+
+<div id="playerbar" class="hide">
+  <div class="subline" id="subline"><b>晓晓老师：</b>点击任意「▶ 听晓晓老师讲这段」，或点「📖 从头播放」，晓晓老师逐句讲解，字幕显示在此处，不遮挡上方讲解。</div>
+  <div class="pctrl">
+    <button onclick="prevSent()">⏮ 上一句</button>
+    <button id="playbtn" onclick="togglePlay()">▶ 播放</button>
+    <button onclick="nextSent()">下一句 ⏭</button>
+    <input id="seek" type="range" min="0" max="100" value="0" oninput="onSeek(this.value)" title="拖动可调整播放位置" />
+    <span id="idxlbl">0 / 0</span>
+    <span class="spd">语速
+      <button id="s08" onclick="Player.setSpeed(0.8)">0.8x</button>
+      <button id="s10" class="on" onclick="Player.setSpeed(1)">1x</button>
+      <button id="s12" onclick="Player.setSpeed(1.2)">1.2x</button>
+      <button id="s15" onclick="Player.setSpeed(1.5)">1.5x</button>
+    </span>
+    <button onclick="playAll()">📖 从头播放</button>
+    <button onclick="hidePlayer()">收起</button>
+  </div>
+</div>
+<button id="reopen" onclick="showPlayer()">▶ 晓晓老师</button>
+
+<script>
+const SECTIONS_AUDIO = {"s1": ["audio/s1_0.mp3", "audio/s1_1.mp3", "audio/s1_2.mp3", "audio/s1_3.mp3"], "s2": ["audio/s2_0.mp3", "audio/s2_1.mp3", "audio/s2_2.mp3", "audio/s2_3.mp3", "audio/s2_4.mp3"], "s3": ["audio/s3_0.mp3", "audio/s3_1.mp3", "audio/s3_2.mp3", "audio/s3_3.mp3", "audio/s3_4.mp3"], "s4": ["audio/s4_0.mp3", "audio/s4_1.mp3", "audio/s4_2.mp3", "audio/s4_3.mp3"], "s5": ["audio/s5_0.mp3", "audio/s5_1.mp3", "audio/s5_2.mp3", "audio/s5_3.mp3"], "s6": ["audio/s6_0.mp3", "audio/s6_1.mp3", "audio/s6_2.mp3", "audio/s6_3.mp3"], "s7": ["audio/s7_0.mp3", "audio/s7_1.mp3", "audio/s7_2.mp3", "audio/s7_3.mp3"], "s8": ["audio/s8_0.mp3", "audio/s8_1.mp3", "audio/s8_2.mp3", "audio/s8_3.mp3", "audio/s8_4.mp3", "audio/s8_5.mp3", "audio/s8_6.mp3", "audio/s8_7.mp3", "audio/s8_8.mp3"], "s9": ["audio/s9_0.mp3", "audio/s9_1.mp3", "audio/s9_2.mp3", "audio/s9_3.mp3"], "s10": ["audio/s10_0.mp3", "audio/s10_1.mp3", "audio/s10_2.mp3"], "s11": ["audio/s11_0.mp3"], "s12": ["audio/s12_0.mp3", "audio/s12_1.mp3", "audio/s12_2.mp3"]};
+const SECTIONS_TEXT  = {"s1": ["同学们好，我是晓晓老师。开第8课前，先串一遍前七课总纲：蛋白质——9种必需氨基酸、谷类缺赖氨酸豆类缺蛋氨酸；碳水——蔗无乳有麦也有、GI和GL、添加糖最好不超25克、肌糖原不升血糖；脂类——必需脂肪酸只有亚油酸和α-亚麻酸、HDL好LDL坏；能量——1千卡等于4.184千焦、BMI中国24超28胖；维生素A——视杆细胞视紫红质、先暗适应下降再夜盲、过量中毒只在动物肝和补剂；维生素D——阳光维D、肝出25是营养指标、肾出1,25最能干、缺了小孩佝偻大人骨软化老人疏松；上一课维生素E——8种里α-生育酚是老大、抗氧化断链护膜护红细胞、缺乏人类罕见(脂肪吸收不良和早产儿会溶血加神经)、但过量反而损害凝血、增加出血倾向。", "我们已经把脂溶性维生素的老大A、老二D、老三E都讲完了。今天收官，讲脂溶性第四位、也是最后一位——维生素K，江湖人称‘凝血维生素’。", "维K和前三位气质完全不同：它不护眼、不主要负责骨钙(其实也管骨，等下讲)、不抗氧化，它专管一件事——让血止得住、凝得起来。高中生物讲过的‘凝血过程’‘钙离子参与’‘肝脏合成凝血因子’，今天全用得上。", "更有意思的是，上一课刚说维E大剂量会损害凝血、增加出血；今天讲维K，它恰恰是保证凝血的‘总开关’。两课一正一反，正好对照。今天主线：维K有几种、单位用啥 → 它怎么让凝血因子‘活’过来(机制) → 它还管骨头和血管 → 缺了谁会出血、和血友病有啥区别 → 从哪吃、怕什么 → 该吃多少(成人80微克)。"], "s2": ["先搞清维K的‘身份’。它是脂溶性维生素，因为能抗出血，又叫‘凝血维生素’‘抗出血维生素’。", "天然维K主要有两种形式，考试最爱考它们的来源区别。第一种叫K1，学名叶绿醌，也叫植物甲萘醌，主要来自植物，尤其是深绿色叶菜，比如菠菜、羽衣甘蓝、西兰花；人体自己不能合成K1，必须靠吃进去。", "第二种叫K2，学名甲萘醌，主要来自两方面：一是发酵食品和动物性食物，比如纳豆含量最高、还有奶酪、动物肝脏；二是由肠道里的细菌帮我们合成——健康人肠道里的大肠杆菌、双歧杆菌、乳酸菌都能产K2。", "还有一种人工合成的K3，学名2-甲基-1,4-萘醌，它是水溶性的、活性挺高，但有毒性，会引起溶血性贫血，尤其对新生儿危险，临床上不常规用来给人补。考试看到‘水溶性维生素K’基本就是指K3，要警惕。", "单位上较真一句：维K用‘微克’µg，别和前面三位搞混——维A用RAE、维D用微克或IU、维E用α-TE，维K就是µg。口诀：‘维K两兄弟，K1绿叶菜(植物给)、K2发酵加细菌；合成K3水溶有毒，单位就用微克µg’。"], "s3": ["这是本课最烧脑也最高频的一段：维K到底怎么让血止住？秘密在‘γ-羧化’。", "肝脏合成四种关键凝血因子：凝血酶原(因子II)、因子VII、IX、X。它们刚造出来是‘半成品’，上面有些谷氨酸残基必须被加上一个羧基，变成‘γ-羧基谷氨酸’(Gla)残基，才能像小爪子一样抓住钙离子，凝血瀑布才转得起来。维K就是这个‘加羧基’反应(γ-谷氨酰羧化酶)的必需辅因子。", "维K自己在这个过程中被氧化成‘维生素K环氧化物’；身体再用一个叫‘环氧化物还原酶’的酶，消耗NADPH把它还原回能用的维K，形成循环反复用，很省。", "重点来了：抗凝药华法林(warfarin)，就是专门抑制这个还原酶，让维K循环断掉、凝血因子停在‘半成品’状态没活性，于是血液不容易凝——它是‘维生素K拮抗剂’。临床上用凝血酶原时间PT(或INR)监控华法林用量。所以吃华法林的人，维K摄入不能忽多忽少，要吃得稳定。", "口诀：‘维K当辅因子，给凝血因子II/VII/IX/X加羧基(γ-羧化)→它们才能抓钙凝血；维K被氧化成环氧，还原酶再救回；华法林专掐还原酶，凝血就停’。"], "s4": ["除了凝血这个主力，维K还管两件和‘钙’有关的事，考试也常顺带考。", "第一件，护骨头。骨头里有种蛋白叫骨钙素(osteocalcin)，它也得靠维Kγ-羧化才能抓住钙、把钙沉积到骨基质里。所以维K和维D、钙是好搭档，一起维护骨密度，缺了和骨质疏松有关。", "第二件，护血管。血管壁有种基质Gla蛋白(MGP)，同样要维K激活，它的作用是阻止钙在血管壁乱沉积、防止血管钙化变硬。所以维K是血管的‘清道夫’。", "把这条线记牢：维K不只止血，还‘把钙送到骨头里、挡在血管外’。口诀：‘维K两副线：骨钙素抓钙壮骨、基质Gla蛋白护血管防钙化’。"], "s5": ["维K缺乏在人类成人极少见，为什么？因为来源广(绿叶菜到处有)、肠道菌群还能自己造K2，双保险。", "那谁会缺？四类高危：第一，新生儿——胎盘几乎不运维K、自身储存少、母乳里维K又低、肠道还是无菌的，所以出生后常规打一针维K，预防‘新生儿出血症’；第二，脂肪吸收不良的人(胆道梗阻、胆汁酸缺乏、囊性纤维化、短肠、慢性腹泻)，维K脂溶性得靠胆汁和脂肪一起吸收；第三，长期用抗生素的人，肠道菌群被杀，K2合成减少；第四，长期全肠外营养、只输液不吃东西又没额外补K的人。", "缺了什么表现？核心是出血：容易瘀青、伤口渗血不止、严重时内脏出血；抽血查会看到凝血酶原时间PT延长、凝血因子活性低。注意一个易错点：维K缺乏导致的出血，和‘血友病’不是一回事——血友病是先天某种凝血因子(八或九)基因缺陷，维K缺乏是后天辅因子不够，别张冠李戴。", "口诀：‘维K缺乏成人罕见：只找新生儿、脂肪吸收不良、长期抗生素、肠外营养；表现出血加PT延长；不是血友病’。"], "s6": ["维K从哪吃？K1认准深绿色叶菜——菠菜、羽衣甘蓝、西兰花、油菜，含量最高；大豆油、菜籽油里也有些。K2认准发酵食品和动物肝——纳豆含量最高，还有奶酪、腐乳、动物肝脏；再加上肠道菌群自产。", "吸收上较真一句：维K是脂溶性的，最好和一点油脂一起吃，胆汁帮忙吸收更好。所以这又是‘凉拌绿叶菜加点橄榄油’的场景。", "稳定性：维K对热稳定，加热不容易破坏；但它怕酸、怕碱、怕光和紫外线，食物脂肪酸败时也容易坏，所以要避光保存。和维E一样怕光，但维K对热比维E耐造。", "口诀：‘K1绿叶菜(菠羽甘蓝西兰花)、豆油菜油；K2纳豆奶酪肝、菌群自产；随脂吸收；对热稳、怕酸怕碱怕光’。"], "s7": ["最后量化：维K该吃多少？按中国营养学会《中国居民膳食营养素参考摄入量(脂溶性维生素)》，成人(18岁以上)适宜摄入量AI是每天80微克µg，男女一致。", "上限UL呢？天然食物来源的维K基本不中毒，所以UL‘未制定’——这是维K和维A、维D、维E(都有UL)很不同的地方。唯一有毒的是合成K3，那是药不是食物，不在这里讨论。", "顺带一句：美国DRI给的AI是男120、女90微克，但咱们注册营养师考试以本国DRIs为准，记成人80微克就够了。量级是‘微克’，别记成毫克。", "口诀：‘维K单位微克µg；成人AI 80 µg/d(男女同)；天然无毒UL未定，合成K3才有毒’。"], "s8": ["红绿灯时间，把维生素K这章最爱丢分的坑集中点一遍。", "易错一：两种天然形式搞反。K1来自植物绿叶菜、人体不能自合成；K2来自发酵食品(纳豆/奶酪/肝)加肠道菌群合成。看见‘K1由肠道菌群产生’直接判错。", "易错二：单位。维K用微克µg，不是维A的RAE、不是维D的IU、不是维E的α-TE。", "易错三：机制。维K是γ-羧化反应的辅因子，让凝血因子II/VII/IX/X变成有活性的Gla形式去抓钙；它‘不是’凝血因子本身，也不直接‘形成血块’。", "易错四：华法林。它是维生素K拮抗剂，抑制环氧化物还原酶、阻断维K循环，使凝血因子失活→出血；用PT/INR监控。别把它说成‘促进凝血’。", "易错五：缺乏症误判。维K缺乏成人罕见，多见于新生儿、脂肪吸收不良、长期抗生素、肠外营养；表现为出血+PT延长；‘不是’血友病。", "易错六：和维E混淆。上一课说维E过量损害凝血、增加出血；维K保证凝血——两者在‘出血’上一反一正，但机制不同(维E伤血小板/凝血、维K管因子γ-羧化)。", "易错七：合成K3。K3水溶、活性高但有毒(溶血性贫血、新生儿危险)，不常规给人补；考试把‘水溶性维K’当安全常规补剂就是坑。", "易错八：摄入量量级。成人AI 80微克(µg)每天，UL未制定；量级是‘微克’，别记成毫克。"], "s9": ["注册营养师全是选择题，维生素K这章送你一套三步法。", "第一步，审题定性：先看问的是身份分类(K1/K2/K3)、机制(γ-羧化/维K循环/华法林)、其他功能(骨钙素/基质Gla蛋白)、缺乏症、食物来源与稳定性，还是摄入量和单位µg，先定性，别急着看选项。", "第二步，定位考点：身份就背K1叶菜、K2发酵加细菌、K3有毒水溶；机制就背γ-羧化凝血因子II/VII/IX/X、华法林掐还原酶、PT/INR监控；功能就背骨钙素壮骨、MGP护血管；缺乏就背成人罕见、新生儿等四类、出血加PT延长不是血友病；来源就背绿叶菜纳豆、随脂吸收、对热稳怕光；摄入就背成人AI 80微克、UL未定。", "第三步，排除反着坑：直接排除‘K1由肠道菌群产生’‘华法林促凝血’‘维K缺乏会夜盲’‘维K溶于水随尿排’‘天然维K有UL’‘K3安全可常规补’这类反向表述，剩下的就是答案。"], "s10": ["讲完重点，我们模拟上课提问。我先和班里的同学演练，再轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。", "第一个问题：用你自己的话解释，维生素K是怎么让血液‘凝得起来’的？把γ-羧化和华法林的机制讲清楚。", "第二个问题：为什么说‘维生素K缺乏在人类成人极罕见’？什么人会缺，缺了又有什么典型表现？它和血友病有什么不同？把这条逻辑讲清楚。"], "s11": ["下面8道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，K1的主要食物来源。第二题，维K的计量单位。第三题，维K作为辅因子参与的反应。第四题，华法林的作用机制。第五题，维K缺乏的高危人群。第六题，关于维K功能错误的是。第七题，新生儿为何要注射维K。第八题，成人适宜摄入量。"], "s12": ["最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。", "问题：维生素K为什么叫‘凝血维生素’？它凭什么让血凝起来(γ-羧化和维K循环)？华法林是怎么‘掐’住它的？它还管骨头和血管吗？缺了谁会出血、和血友病有啥不同？一天该吃多少(成人80微克、UL未定)？从哪吃、又怕什么？把身份、机制、功能、缺乏、来源、摄入量这条逻辑串起来。", "课堂小结口诀复习：身份‘维K两兄弟，K1绿叶菜、K2发酵加细菌，合成K3水溶有毒，单位用微克µg’；机制‘维K当辅因子，γ-羧化凝血因子II/VII/IX/X，抓钙才活化，华法林掐还原酶令凝血停’；功能‘骨钙素抓钙壮骨、基质Gla蛋白护血管防钙化’；缺乏‘成人罕见，只找新生儿、脂肪吸收不良、长期抗生素、肠外营养，出血加PT延长，不是血友病’；来源‘K1绿叶菜、K2纳豆奶酪肝、菌群自产，随脂吸收，对热稳怕酸怕碱怕光’；摄入‘单位微克，成人AI 80、UL未定’。"]};
+const SECTIONS_ORDER = ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11", "s12"];
+
+// 展平为全局播放列表（按章节顺序）
+const PLAYLIST = [];
+SECTIONS_ORDER.forEach(id=>{
+  const paths = SECTIONS_AUDIO[id]||[];
+  const texts = SECTIONS_TEXT[id]||[];
+  paths.forEach((p,i)=> PLAYLIST.push({src:p, text:texts[i]||'', sec:id}));
+});
+
+const Player = {
+  audio: new Audio(),
+  idx: 0,
+  playing: false,
+  speed: 1.0,
+  init(){
+    this.audio.preload='auto';
+    this.audio.addEventListener('timeupdate', ()=>this.onTime());
+    this.audio.addEventListener('ended', ()=>this.next(true));
+    this.audio.addEventListener('loadedmetadata', ()=>this.onTime());
+    this.audio.addEventListener('error', ()=>this.onErr());
+    this.updateIdx();
+    this.updateBtn();
+  },
+  load(i, autoplay){
+    if(i<0 || i>=PLAYLIST.length) return;
+    this.idx=i;
+    const item=PLAYLIST[i];
+    setSub(item.text);
+    this.audio.src=item.src;
+    this.audio.playbackRate=this.speed;
+    this.updateIdx();
+    if(autoplay){
+      const sec=document.getElementById(item.sec);
+      if(sec) sec.scrollIntoView({behavior:'smooth',block:'center'});
+      this.playing=true; this.updateBtn();
+      this.audio.play().catch(()=>{ this.fallback(item.text); });
+    }
+  },
+  play(){ if(!this.audio.src){ this.load(this.idx,false);} this.playing=true; this.updateBtn(); this.audio.play().catch(()=>{}); },
+  pause(){ this.playing=false; this.updateBtn(); this.audio.pause(); },
+  toggle(){ if(this.playing) this.pause(); else this.play(); },
+  next(auto){
+    if(auto && !this.playing) return;
+    const n=this.idx+1;
+    if(n>=PLAYLIST.length){ this.playing=false; this.updateBtn(); this.updateIdx();
+      setSub('—— 本课讲解结束啦，去做做改编题、用费曼法复述一遍 💡'); return; }
+    this.load(n,true);
+  },
+  prev(){ let n=this.idx-1; if(n<0) n=0; this.load(n,true); },
+  seek(v){ try{ this.audio.currentTime=parseFloat(v); }catch(e){} },
+  onTime(){
+    const a=this.audio;
+    const s=document.getElementById('seek');
+    if(a.duration && s){ s.max=Math.floor(a.duration); s.value=Math.floor(a.currentTime); }
+    if(PLAYLIST[this.idx]) setSub(PLAYLIST[this.idx].text);
+  },
+  onErr(){
+    if(this.playing){ this.fallback(PLAYLIST[this.idx] ? PLAYLIST[this.idx].text : ''); }
+  },
+  fallback(t){
+    if(!('speechSynthesis' in window)){ this.next(true); return; }
+    const u=new SpeechSynthesisUtterance(t); u.lang='zh-CN'; u.rate=this.speed; u.pitch=1.06;
+    u.onend=()=>{ this.next(true); };
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  },
+  setSpeed(v){
+    this.speed=v; this.audio.playbackRate=v;
+    document.querySelectorAll('#playerbar .spd button').forEach(b=>b.classList.remove('on'));
+    const map={0.8:'s08',1:'s10',1.2:'s12',1.5:'s15'};
+    const el=document.getElementById(map[v]); if(el) el.classList.add('on');
+  },
+  updateIdx(){ const e=document.getElementById('idxlbl'); if(e) e.textContent=(this.idx+1)+' / '+PLAYLIST.length; },
+  updateBtn(){ const b=document.getElementById('playbtn'); if(b) b.textContent=this.playing?'⏸ 暂停':'▶ 播放'; }
+};
+
+function setSub(t){ const e=document.getElementById('subline'); if(e) e.innerHTML='<b>晓晓老师：</b>'+t; }
+function playSection(id){
+  const i=PLAYLIST.findIndex(p=>p.sec===id);
+  document.getElementById('playerbar').classList.remove('hide');
+  document.getElementById('reopen').classList.remove('show');
+  if(i<0) return;
+  Player.load(i, true);
+}
+function playAll(){ Player.load(0,true); document.getElementById('playerbar').classList.remove('hide'); document.getElementById('reopen').classList.remove('show'); }
+function prevSent(){ Player.prev(); }
+function nextSent(){ Player.next(false); }
+function togglePlay(){ Player.toggle(); }
+function onSeek(v){ Player.seek(v); }
+function hidePlayer(){ document.getElementById('playerbar').classList.add('hide'); document.getElementById('reopen').classList.add('show'); }
+function showPlayer(){ document.getElementById('playerbar').classList.remove('hide'); document.getElementById('reopen').classList.remove('show'); }
+
+function checkAsk(btn){
+  const box=btn.closest('.ask'); const ta=box.querySelector('textarea'); const val=(ta.value||'').trim();
+  const fb=box.querySelector('.feedback'); const model=box.querySelector('.model');
+  const keys=(box.dataset.keywords||'').split('|').filter(Boolean);
+  if(!val){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写点什么再提交哦～哪怕一句话也行 😊</span>'; return; }
+  const hit=keys.some(k=>val.includes(k));
+  fb.className='feedback show';
+  fb.innerHTML = hit ? '<span class="ok">👍 说到位了！</span> 你抓住了关键词，晓晓老师给你点个赞。'
+                     : '<span class="tip">🤔 方向还差点意思～</span> 别急，看看下面的标准答案，再试着用自己的话讲一遍。';
+  model.className='model'; model.innerHTML='<b>晓晓老师的标准答案：</b>'+box.dataset.model;
+}
+function choose(btn){
+  const q=btn.closest('.quiz'); if(q.dataset.done) return;
+  const correct=q.dataset.ans;
+  q.querySelectorAll('.opt').forEach(o=>{ o.disabled=true;
+    const t=o.textContent.trim();
+    if(t.startsWith(correct+'.')||t.startsWith(correct+'．')) o.classList.add('correct');
+    else if(o===btn) o.classList.add('wrong');
+  });
+  q.dataset.done='1'; q.querySelector('.ans').classList.add('show');
+}
+function feynmanCheck(){
+  const v=(document.getElementById('feynmanBox').value||'').trim();
+  const fb=document.getElementById('feynmanFeedback');
+  if(!v){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写一段自己的解释，再对照清单 😉</span>'; return; }
+  const keys=['脂溶性','µg','微克','K1','叶绿','K2','甲萘','发酵','菌群','γ','羧化','凝血因子','II','VII','IX','X','华法林','warfarin','还原酶','骨钙素','osteocalcin','基质','MGP','血管','钙化','缺乏','罕见','新生儿','吸收不良','抗生素','出血','PT','血友','绿叶','纳豆','80','对热稳','怕'];
+  const hit=keys.filter(k=>v.includes(k)).length;
+  fb.className='feedback show';
+  let msg;
+  if(hit>=5) msg='<span class="ok">🌟 很棒！</span> 你覆盖了关键概念，基本讲清楚了。可以录下来自己听一遍，卡壳的地方就是还没真懂的点。';
+  else if(hit>=3) msg='<span class="tip">📝 有进步～</span> 对照清单，看看是不是漏了“γ-羧化让凝血因子II/VII/IX/X抓钙活化”或“缺乏成人罕见：新生儿/脂肪吸收不良/长期抗生素→出血+PT延长(≠血友病)”这两点，补上就更完整了。';
+  else msg='<span class="tip">💡 再来一次～</span> 提示：想想“单位µg、K1叶菜K2发酵+菌群、K3有毒”“γ-羧化凝血因子抓钙、维K循环+华法林掐还原酶”“骨钙素壮骨、MGP护血管”“缺了成人罕见(新生儿等)→出血+PT延长≠血友病”“绿叶菜纳豆、对热稳怕光”“成人AI 80 µg”这条逻辑串起来。';
+  fb.innerHTML=msg;
+}
+
+Player.init();
+Player.setSpeed(1);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>能量精讲 · 晓晓老师的营养课堂（注册营养师考点·第4课）</title>
+<style>
+  :root{
+    --paper:#fbf7ee; --ink:#2f2a25; --board:#1f4d3a; --board2:#2c6b51; --chalk:#f3f7f2;
+    --accent:#e8743b; --accent2:#3a8dde; --warn:#d8443c; --ok:#2e9e6b; --gold:#e0a83a;
+    --card:#ffffff; --line:#e7ddc9; --soft:#f4ede0;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;
+    font-family:"Songti SC","SimSun","宋体",STSong,serif;
+    background:radial-gradient(1200px 500px at 80% -10%, #fff6e6 0%, transparent 60%),var(--paper);
+    color:var(--ink);line-height:1.95;font-size:18px;padding-bottom:150px;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 18px 40px;}
+  header.hero{background:linear-gradient(135deg,var(--board),var(--board2));color:var(--chalk);
+    border-radius:0 0 26px 26px;padding:30px 22px 26px;box-shadow:0 10px 30px rgba(31,77,58,.25);position:relative;overflow:hidden;}
+  header.hero::after{content:"⚡";position:absolute;right:-10px;top:-10px;font-size:120px;opacity:.10;transform:rotate(12deg);}
+  .hero .tag{display:inline-block;background:rgba(255,255,255,.15);padding:3px 12px;border-radius:20px;font-size:13px;letter-spacing:1px;}
+  .hero h1{margin:12px 0 6px;font-size:30px;letter-spacing:1px;}
+  .hero .meta{font-size:14px;opacity:.92;margin-top:6px;}
+  .hero .meta b{color:#ffe2b0;}
+  nav.toc{position:sticky;top:0;z-index:30;background:rgba(251,247,238,.92);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:8px 0;margin:0 0 8px;}
+  nav.toc .inner{max-width:900px;margin:0 auto;padding:0 14px;display:flex;gap:8px;flex-wrap:wrap;}
+  nav.toc a{font-size:13.5px;text-decoration:none;color:var(--board);background:var(--soft);border:1px solid var(--line);
+    padding:4px 11px;border-radius:20px;transition:.2s;}
+  nav.toc a:hover{background:var(--board);color:#fff;}
+  section{margin:26px 0;}
+  .sec-head{display:flex;align-items:center;gap:10px;margin:6px 0 14px;}
+  .sec-head .no{background:var(--accent);color:#fff;font-weight:700;width:34px;height:34px;display:grid;place-items:center;
+    border-radius:10px;flex:none;font-size:17px;box-shadow:0 4px 10px rgba(232,116,59,.35);}
+  .sec-head h2{font-size:23px;margin:0;}
+  .sec-head .sub{font-size:13px;color:#8a7f6e;margin-left:auto;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin:14px 0;box-shadow:0 6px 18px rgba(120,90,40,.06);}
+  .card h3{margin:0 0 8px;font-size:19px;color:var(--board);}
+  .card p{margin:10px 0;}
+  .narrate{color:#3a352e;margin:10px 0;}
+  .mnemonic{background:linear-gradient(135deg,#fff4dd,#ffe9c4);border:1px dashed var(--gold);border-radius:14px;padding:14px 18px;margin:14px 0;position:relative;}
+  .mnemonic .label{font-size:12px;color:#a9791f;font-weight:700;letter-spacing:2px;}
+  .mnemonic .big{font-size:22px;font-weight:800;color:#9a5b00;margin:4px 0 2px;letter-spacing:1px;}
+  .mnemonic .note{font-size:15px;color:#6b5a3a;}
+  .trap{border-left:5px solid var(--warn);background:#fdf0ee;border-radius:0 12px 12px 0;padding:12px 16px;margin:12px 0;}
+  .trap .t{font-weight:800;color:var(--warn);font-size:15px;margin-bottom:4px;}
+  .trap .t::before{content:"⚠️ ";}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15.5px;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(120,90,40,.07);}
+  th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;}
+  th{background:var(--soft);color:var(--board);font-weight:700;}
+  .steps{counter-reset:s;margin:10px 0;}
+  .step{display:flex;gap:12px;align-items:flex-start;margin:10px 0;}
+  .step::before{counter-increment:s;content:counter(s);flex:none;width:28px;height:28px;background:var(--accent2);color:#fff;border-radius:50%;display:grid;place-items:center;font-weight:700;}
+  .step .b{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;flex:1;}
+  .chat{border:1px solid var(--line);border-radius:16px;background:#fff;padding:8px 14px;margin:14px 0;}
+  .msg{display:flex;gap:10px;margin:12px 0;align-items:flex-start;}
+  .msg .av{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:20px;color:#fff;}
+  .av.tea{background:linear-gradient(135deg,var(--board),var(--board2));}
+  .av.stu{background:linear-gradient(135deg,#f0a93b,#e8743b);}
+  .bubble{background:var(--soft);border-radius:14px;padding:9px 14px;max-width:88%;}
+  .msg.stu .bubble{background:#eef5fb;}
+  .who{font-size:12px;color:#9b8f7c;margin-bottom:2px;}
+  .ask{border:2px solid var(--accent2);border-radius:16px;background:#f3f9ff;padding:14px 16px;margin:16px 0;}
+  .ask .q{font-weight:700;color:#1f5fa8;}
+  .ask .q::before{content:"🙋 晓晓老师：";}
+  textarea{width:100%;min-height:64px;margin-top:10px;border:1px solid var(--line);border-radius:10px;padding:10px;font-family:inherit;font-size:16px;resize:vertical;background:#fff;}
+  .btn{display:inline-flex;align-items:center;gap:6px;cursor:pointer;border:none;border-radius:24px;padding:9px 18px;font-size:15px;font-weight:700;color:#fff;background:var(--accent);box-shadow:0 5px 14px rgba(232,116,59,.3);transition:.15s;margin-top:10px;}
+  .btn:hover{transform:translateY(-1px);}
+  .btn.blue{background:var(--accent2);box-shadow:0 5px 14px rgba(58,141,222,.3);}
+  .btn.ghost{background:#fff;color:var(--board);border:1px solid var(--board);box-shadow:none;}
+  .feedback{margin-top:10px;font-size:15px;display:none;}
+  .feedback.show{display:block;}
+  .feedback .ok{color:var(--ok);font-weight:700;}
+  .feedback .tip{color:var(--accent);}
+  .model{background:#fff;border:1px dashed var(--board2);border-radius:12px;padding:10px 14px;margin-top:10px;font-size:15px;color:#3a5a4c;}
+  .model b{color:var(--board);}
+  .quiz{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px 18px;margin:14px 0;}
+  .quiz .stem{font-weight:600;margin-bottom:10px;}
+  .opt{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:9px 13px;margin:7px 0;cursor:pointer;font-size:15.5px;transition:.15s;font-family:inherit;color:var(--ink);}
+  .opt:hover{background:#ecf3ff;}
+  .opt.correct{background:#e7f7ee;border-color:var(--ok);color:#1c6b45;font-weight:700;}
+  .opt.wrong{background:#fdeceb;border-color:var(--warn);}
+  .quiz .ans{display:none;margin-top:8px;font-size:14.5px;color:#4a4034;background:var(--soft);border-radius:10px;padding:9px 12px;}
+  .quiz .ans.show{display:block;}
+  .feynman{background:linear-gradient(135deg,#eef7ff,#eafaf1);border:1px solid #cfe6d8;border-radius:16px;padding:16px 18px;margin:14px 0;}
+  .feynman h3{color:var(--board);margin-top:0;}
+  .rubric{font-size:14.5px;color:#4a554c;margin:8px 0;}
+  .rubric li{margin:4px 0;}
+  .svgwrap{margin:14px 0;text-align:center;}
+  .svgwrap svg{width:100%;max-width:680px;height:auto;background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px;}
+  footer{text-align:center;color:#a89c87;font-size:13px;margin-top:30px;}
+  .divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:30px 0;}
+
+  /* ===== 全局播放 dock（字幕不遮挡讲解，位于最底部） ===== */
+  #playerbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(20,28,24,.94);color:#eafff4;
+    padding:8px 14px 10px;box-shadow:0 -8px 22px rgba(0,0,0,.28);backdrop-filter:blur(6px);
+    transform:translateY(0);transition:transform .25s;}
+  #playerbar.hide{transform:translateY(110%);}
+  #playerbar .subline{font-size:15.5px;line-height:1.5;margin-bottom:6px;color:#eafff4;
+    border-left:3px solid var(--accent);padding-left:8px;max-height:46px;overflow:auto;}
+  #playerbar .subline b{color:#ffd9a8;}
+  #playerbar .pctrl{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  #playerbar button{font-family:inherit;cursor:pointer;border:none;border-radius:18px;padding:6px 12px;font-size:13.5px;
+    background:rgba(255,255,255,.16);color:#eafff4;transition:.15s;}
+  #playerbar button:hover{background:rgba(255,255,255,.3);}
+  #playerbar #playbtn{background:var(--accent);color:#fff;font-weight:700;min-width:78px;}
+  #playerbar .spd{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;opacity:.9;}
+  #playerbar .spd button{padding:3px 8px;font-size:12px;}
+  #playerbar .spd button.on{background:var(--accent2);color:#fff;}
+  #seek{flex:1;min-width:120px;height:6px;accent-color:var(--accent);cursor:pointer;}
+  #idxlbl{font-size:12.5px;opacity:.85;min-width:54px;text-align:center;}
+  #reopen{position:fixed;right:14px;bottom:14px;z-index:60;display:none;border:none;border-radius:24px;
+    background:var(--accent);color:#fff;font-family:inherit;font-weight:700;font-size:14px;padding:10px 16px;box-shadow:0 6px 16px rgba(232,116,59,.4);cursor:pointer;}
+  #reopen.show{display:block;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="tag">🎓 第4课 · 一节高中生物课的量 · 注册营养师考点</span>
+  <h1>能量（Energy）精讲</h1>
+  <div class="meta">
+    主讲：<b>晓晓老师</b>（XiaoxiaoNeural 神经网络语音）　|　课时：约 45 分钟（1 课时）　|　来源：<b>注册营养师考试宝典 · 考点|10 能量</b> 系列
+  </div>
+  <div class="meta">配套：温故复习 + 口诀 + 案例图 + 易错点 + 解题三步法 + 不定时提问 + 改编练习题 + 费曼复述　<span style="background:#fff;color:#1f4d3a;border-radius:20px;padding:2px 10px;font-size:12px;">点 ▶ 听晓晓老师讲</span></div>
+</header>
+
+<nav class="toc"><div class="inner">
+    <a href="#s1">① 温故</a>
+    <a href="#s2">② 单位·系数</a>
+    <a href="#s3">③ 消耗三块</a>
+    <a href="#s4">④ BMR因素</a>
+    <a href="#s5">⑤ 需要量</a>
+    <a href="#s6">⑥ 能量平衡·BMI</a>
+    <a href="#s7">⑦ 供能比</a>
+    <a href="#s8">⑧ 易错点</a>
+    <a href="#s9">⑨ 三步法</a>
+    <a href="#s10">⑩ 提问互动</a>
+    <a href="#s11">⑪ 改编题</a>
+    <a href="#s12">⑫ 费曼复述</a>
+</div></nav>
+
+<div class="wrap">
+  <section id="s1">
+    <div class="sec-head"><div class="no">1</div><h2>温故知新：先复习三大营养素，再开讲能量</h2><div class="sub">衔接 · 5分钟</div></div>
+    <div class="card">
+      <p class="narrate">同学们好，我是晓晓老师。先把前三次课——蛋白质、碳水化合物、脂类——的口诀快速回一遍。</p>
+      <p class="narrate">蛋白质：必需氨基酸 9 种，谷类缺赖氨酸、豆类缺蛋氨酸，搭配能互补；脂类：必需脂肪酸只有亚油酸和 α-亚麻酸两种，脂肪吸收走淋巴、HDL 好 LDL 坏。</p>
+      <p class="narrate">碳水化合物：蔗无乳有麦也有；升糖 GI 高七低五五、GL 二十封顶十算中；添加糖最好 25 克。</p>
+      <p class="narrate">前面三课都绕着‘营养素本身’打转。今天，我们顺着这条线，讲第四个、也是把前三课‘串起来’的考点——能量（Energy）。</p>
+      <p class="narrate">记住今天的主线：单位换算看清‘谁是谁’ → 三大产能营养素能量系数(4·4·9) → 人体能量消耗三大块(基础代谢·活动·食物热效应) → BMR 影响因素 → 能量需要量怎么算 → 能量平衡与 BMI → 吃多少看供能比。沿着这条线，考试题就跑不掉了。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 前三课口诀速回（闭眼能背才算会）</div>
+    <div class="big">蛋白9种互补 · 蔗无乳有麦也有 · 必需脂肪两兄弟 · 脂肪走淋巴 · 添加糖最好25</div>
+    <div class="note">本节课新口诀会在每一节用 <b>🔑</b> 标出，最后费曼复述时我们要把它们串成一条线。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s1')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s2">
+    <div class="sec-head"><div class="no">2</div><h2>核心精讲一：能量单位与能量系数</h2><div class="sub">9分钟</div></div>
+    <div class="card">
+      <p class="narrate">先解决最基础也最容易混的：能量到底用什么单位？国际单位是焦耳 J，常用千焦 kJ；营养学传统用卡 cal、千卡 kcal，也就是‘大卡’。</p>
+      <p class="narrate">换算关系请钉死：1 千卡等于 4.184 千焦，考试常取 4.18；反过来 1 千焦约等于 0.239 千卡。注意是‘千’焦对‘千’卡，别把 4.184 安到‘焦’上。</p>
+      <p class="narrate">再看能量系数，也就是每克营养素能在体内放出多少千卡：碳水化合物和蛋白质都是 4 千卡每克，脂肪是 9 千卡每克，是糖和蛋白质的两倍多。</p>
+      <p class="narrate">还有两个‘编外’的：乙醇，也就是酒精，7 千卡每克，比碳水、蛋白都高，但它几乎不含其他营养素，是‘空热量’；膳食纤维大约 2 千卡每克。</p>
+      <p class="narrate">口诀：‘卡变焦乘 4.184，碳水蛋白四、脂肪九，酒精七来纤维二’。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 单位 & 能量系数口诀</div>
+    <div class="big">1 kcal = 4.184 kJ　碳水4·蛋白4·脂肪9·酒精7·纤维2</div>
+    <div class="note">换算别错：是 <b>1 千卡=4.184 千焦</b>，不是 4.184 焦；1 kJ≈0.239 kcal。<b>脂肪 9 kcal/g 最高</b>，是减重时最‘贵’的营养素。</div>
+  </div>
+  <table>
+    <thead><tr><th>物质</th><th>能量系数 (kcal/g)</th><th>记忆点</th></tr></thead>
+    <tbody>
+      <tr><td>碳水化合物</td><td>4</td><td>三大产能营养素之一</td></tr>
+      <tr><td>蛋白质</td><td>4</td><td>与碳水相同</td></tr>
+      <tr><td>脂肪</td><td>9</td><td>最高，储能主力</td></tr>
+      <tr><td>乙醇（酒精）</td><td>7</td><td>“空热量”，无营养素</td></tr>
+      <tr><td>膳食纤维</td><td>约 2</td><td>部分可被发酵供能</td></tr>
+    </tbody>
+  </table>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s2')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s3">
+    <div class="sec-head"><div class="no">3</div><h2>核心精讲二：人体能量消耗三大块</h2><div class="sub">10分钟</div></div>
+    <div class="card">
+      <p class="narrate">一个人每天的能量都‘花’在哪了？分成三大块：基础代谢、身体活动、食物热效应。</p>
+      <p class="narrate">第一块，基础代谢，简称 BM。它是你躺着不动、清醒、空腹、安静环境下，维持呼吸、心跳、体温、血液循环这些最基本生命活动所消耗的能量。它占总消耗的 60% 到 70%，是最大头。</p>
+      <p class="narrate">第二块，身体活动，简称 PA。就是工作、走路、运动、做家务这些。它变化最大，一般占 15% 到 30%，爱动的人这块就高。</p>
+      <p class="narrate">第三块，食物热效应，也叫食物特殊动力作用，简称 TEF。就是你吃进东西、消化吸收入血这个过程本身也要额外耗一点能，大约占总消耗的 10%。</p>
+      <p class="narrate">重点来了：三大产能营养素里，蛋白质的食物热效应最高，大约要耗掉它自身能量的 20% 到 30%；碳水居中，脂肪最低。所以‘吃蛋白更‘费能’’是有道理的。</p>
+      <p class="narrate">口诀：‘消耗三块：基础代谢是大头(六到七)，身体活动变数大(一到三)，食物热效应一成(约十)，蛋白最费能’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 150" role="img" aria-label="能量消耗三大块占比">
+    <rect x="10" y="20" width="442" height="56" rx="10" fill="#1f4d3a"/>
+    <text x="231" y="44" fill="#fff" font-size="15" text-anchor="middle" font-weight="700">基础代谢 BM（60%–70%，最大头）</text>
+    <text x="231" y="64" fill="#ffe2b0" font-size="12" text-anchor="middle">躺着不动也在花</text>
+    <rect x="462" y="20" width="180" height="56" rx="10" fill="#3a8dde"/>
+    <text x="552" y="44" fill="#fff" font-size="14" text-anchor="middle" font-weight="700">身体活动 PA</text>
+    <text x="552" y="64" fill="#fff" font-size="12" text-anchor="middle">15%–30%（变数大）</text>
+    <rect x="10" y="90" width="300" height="44" rx="10" fill="#e8743b"/>
+    <text x="160" y="117" fill="#fff" font-size="14" text-anchor="middle" font-weight="700">食物热效应 TEF（≈10%）</text>
+    <rect x="320" y="90" width="322" height="44" rx="10" fill="#f4ede0" stroke="#e7ddc9"/>
+    <text x="481" y="112" font-size="12.5" text-anchor="middle">其中蛋白质 TEF 最高（约 20%–30%）</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 消耗三大块</div>
+    <div class="big">基础代谢是大头 · 身体活动变数大 · 食物热效应约一成</div>
+    <div class="note">总消耗 = BM + PA + TEF。TEF 中 <b>蛋白质最“费能”</b>（≈20%–30%），脂肪最低。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s3')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s4">
+    <div class="sec-head"><div class="no">4</div><h2>核心精讲三：基础代谢率(BMR)与影响因素</h2><div class="sub">9分钟</div></div>
+    <div class="card">
+      <p class="narrate">基础代谢率，BMR，说的是单位时间、单位体表面积的基础代谢水平。它主要受什么影响？</p>
+      <p class="narrate">第一，瘦体组织，也就是去脂体重，比如肌肉。肌肉越多，基础代谢越高——这是个体差异里最关键的因素，所以‘增肌能提高代谢’是对的。</p>
+      <p class="narrate">第二，年龄。基础代谢随年龄增长而下降，大约每长十岁降 2% 到 3%，所以年纪大了容易发胖，部分原因就在这。</p>
+      <p class="narrate">第三，性别。同等条件下男性瘦体组织多于女性，所以男性基础代谢一般高于女性。</p>
+      <p class="narrate">第四，内分泌，尤其是甲状腺激素：甲亢时 BMR 升高，甲减时下降。还有应激、发热、创伤、寒冷环境、妊娠哺乳期，BMR 都会升高；营养不良、长期饥饿则会下降。</p>
+      <p class="narrate">记一句：‘基础代谢看瘦体，肌肉多来年纪轻，男性略高甲状腺，应激寒冷往上顶’。</p>
+  <table>
+    <thead><tr><th>影响因素</th><th>对 BMR 的作用</th><th>记忆点</th></tr></thead>
+    <tbody>
+      <tr><td>瘦体组织(去脂体重/肌肉)</td><td>↑ 则 BMR ↑</td><td>最关键个体差异因素</td></tr>
+      <tr><td>年龄</td><td>随龄 ↓（每10岁约降2%–3%）</td><td>年老易胖</td></tr>
+      <tr><td>性别</td><td>男性 &gt; 女性</td><td>瘦体组织多</td></tr>
+      <tr><td>甲状腺激素</td><td>亢进 ↑ / 减退 ↓</td><td>甲亢怕热瘦、甲减怕冷胖</td></tr>
+      <tr><td>应激/发热/创伤/寒冷/孕哺</td><td>↑</td><td>身体“加班”耗能</td></tr>
+      <tr><td>饥饿/营养不良</td><td>↓</td><td>节能模式</td></tr>
+    </tbody>
+  </table>
+  <div class="trap"><div class="t">易错</div>BMR 的主要决定因素是<b>瘦体组织(去脂体重)</b>，不是‘体重总数’；同等体重下肌肉多的人更‘抗胖’。</div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s4')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s5">
+    <div class="sec-head"><div class="no">5</div><h2>核心精讲四：身体活动水平(PAL)与能量需要量</h2><div class="sub">10分钟</div></div>
+    <div class="card">
+      <p class="narrate">能量需要量怎么估？公式是：能量需要量 EER，等于基础代谢率 BMR，乘以身体活动水平 PAL。</p>
+      <p class="narrate">PAL 反映了你一天活动量有多大，一般分低、中、高三级。</p>
+      <p class="narrate">《中国居民膳食营养素参考摄入量(2023版)》给了各档的能量需要量参考：成年男性低活动 1950 到 2150 千卡、中等 2400 到 2550、高活动 2800 到 3000；成年女性低活动 1600 到 1700、中等 1950 到 2100、高活动 2300 到 2450。</p>
+      <p class="narrate">如果手头没有表格，还有一个经典估算法：轻体力按每公斤体重每天 30 千卡、中体力 35、重体力 40 来粗算。比如 60 公斤轻体力成人，大约 1800 千卡每天。</p>
+      <p class="narrate">口诀：‘需要量 = 基础代谢 × 活动水平；男低两千、女低一千七，活动越大数越高’。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 能量需要量公式 & DRIs2023 参考</div>
+    <div class="big">EER = BMR × PAL</div>
+    <div class="note">DRIs(2023) 低/中/高活动 kcal/d：<b>男 1950–2150 / 2400–2550 / 2800–3000</b>；<b>女 1600–1700 / 1950–2100 / 2300–2450</b>。经典估算：轻30·中35·重40 (kcal/kg/d)。</div>
+  </div>
+  <table>
+    <thead><tr><th>身体活动水平</th><th>男性 (kcal/d)</th><th>女性 (kcal/d)</th></tr></thead>
+    <tbody>
+      <tr><td>低（轻体力）</td><td>1950 – 2150</td><td>1600 – 1700</td></tr>
+      <tr><td>中（中体力）</td><td>2400 – 2550</td><td>1950 – 2100</td></tr>
+      <tr><td>高（重体力）</td><td>2800 – 3000</td><td>2300 – 2450</td></tr>
+    </tbody>
+  </table>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s5')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s6">
+    <div class="sec-head"><div class="no">6</div><h2>核心精讲五：能量平衡与 BMI</h2><div class="sub">9分钟</div></div>
+    <div class="card">
+      <p class="narrate">能量平衡是体重管理的核心：吃进去的能量，和消耗掉的能量，谁大谁小，决定了你是胖还是瘦。</p>
+      <p class="narrate">摄入等于消耗，体重相对稳定；摄入大于消耗，多余的能量会以脂肪形式存起来，人就长胖；反过来摄入小于消耗，就动用储备，体重下降。所以减重本质就是‘制造能量缺口’。</p>
+      <p class="narrate">评价胖瘦最常用 BMI，身体质量指数，等于体重公斤数除以身高米数的平方。</p>
+      <p class="narrate">中国成人的 BMI 标准比世界卫生组织更严格：低于 18.5 算体重过低；18.5 到 23.9 是正常；24.0 到 27.9 是超重；大于等于 28 是肥胖。注意：中国是 24 算超重、28 算肥胖，而 WHO 是 25 和 30，考试最爱在这里挖坑。</p>
+      <p class="narrate">口诀：‘BMI 体重除身高平方；中国线：十八点五正常、二十四超、二十八胖’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 140" role="img" aria-label="中国成人 BMI 分级标尺">
+    <rect x="10"  y="30" width="120" height="60" rx="10" fill="#9ec9ff"/><text x="70"  y="58" font-size="13" text-anchor="middle">低体重</text><text x="70"  y="78" font-size="12" text-anchor="middle">&#60;18.5</text>
+    <rect x="135" y="30" width="170" height="60" rx="10" fill="#7fd6a0"/><text x="220" y="58" font-size="14" text-anchor="middle" font-weight="700">正常</text><text x="220" y="78" font-size="12" text-anchor="middle">18.5–23.9</text>
+    <rect x="310" y="30" width="160" height="60" rx="10" fill="#ffd479"/><text x="390" y="58" font-size="13" text-anchor="middle">超重</text><text x="390" y="78" font-size="12" text-anchor="middle">24.0–27.9</text>
+    <rect x="475" y="30" width="175" height="60" rx="10" fill="#f08a83"/><text x="562" y="58" font-size="13" text-anchor="middle">肥胖</text><text x="562" y="78" font-size="12" text-anchor="middle">≥28.0</text>
+    <text x="340" y="115" font-size="12" fill="#8a7f6e" text-anchor="middle">中国标准：24 超重、28 肥胖（比 WHO 的 25/30 更严，考试常考）</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 能量平衡 & BMI</div>
+    <div class="big">摄入＝消耗→稳　＞消耗→胖　＜消耗→瘦</div>
+    <div class="note">BMI = 体重(kg) ÷ 身高(m)²。中国：<b>&#60;18.5 低体重；18.5–23.9 正常；24.0–27.9 超重；≥28 肥胖</b>。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s6')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s7">
+    <div class="sec-head"><div class="no">7</div><h2>核心精讲六：参考摄入量（三大供能比）</h2><div class="sub">7分钟</div></div>
+    <div class="card">
+      <p class="narrate">吃多少、吃什么比例？看三大产能营养素的‘供能比’，也就是它们分别贡献了总能量的百分之多少。</p>
+      <p class="narrate">《中国居民膳食营养素参考摄入量(2023版)》的适宜范围：碳水化合物占 50% 到 65%，脂肪占 20% 到 30%，蛋白质占 10% 到 20%——早先版本蛋白质常写 10% 到 15%，2023 版把上限放宽到 20%，考试若出现 10–15% 也常算对，记住蛋白质别低于 10% 就行。</p>
+      <p class="narrate">另外一日三餐的能量分配，推荐早:中:晚 = 3:4:3，也就是早餐三成、午餐四成、晚餐三成。</p>
+      <p class="narrate">口诀：‘碳水五到六成半，脂肪两到三成，蛋白十到二十（莫低于十），三餐三比四比三’。</p>
+  <table>
+    <thead><tr><th>产能营养素</th><th>供能比 (AMDR, 2023)</th><th>备注</th></tr></thead>
+    <tbody>
+      <tr><td>碳水化合物</td><td>50% – 65%</td><td>主力供能</td></tr>
+      <tr><td>脂肪</td><td>20% – 30%</td><td>与第3课一致</td></tr>
+      <tr><td>蛋白质</td><td>10% – 20%（旧版常 10%–15%）</td><td>别低于 10%</td></tr>
+      <tr><td>三餐分配</td><td>早:中:晚 = 3:4:3</td><td>午四成最高</td></tr>
+    </tbody>
+  </table>
+  <div class="mnemonic">
+    <div class="label">🔑 供能比口诀</div>
+    <div class="big">碳水五到六成半 · 脂肪两到三成 · 蛋白十到二十</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s7')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s8">
+    <div class="sec-head"><div class="no">8</div><h2>红绿灯：高频易错点</h2><div class="sub">5分钟</div></div>
+    <div class="card">
+      <p class="narrate">好，进入红绿灯时间，我把能量这章最高频的易错点集中点一遍。</p>
+      <p class="narrate">易错一：单位换算。1 千卡等于 4.184 千焦，不是 4.184 焦；别把小数点挪错。</p>
+      <p class="narrate">易错二：能量系数。脂肪 9 千卡每克最高，碳水、蛋白质都是 4；酒精 7 比碳水蛋白质还高，是空热量。</p>
+      <p class="narrate">易错三：基础代谢占总消耗最大头（60%–70%），不是身体活动；身体活动是‘变数最大’的那块。</p>
+      <p class="narrate">易错四：基础代谢的主要决定因素是瘦体组织（肌肉），不是体重总数；肌肉多的人更抗胖。</p>
+      <p class="narrate">易错五：食物热效应里蛋白质最高（约 20%–30%），脂肪最低。</p>
+      <p class="narrate">易错六：BMI 中国标准，24 算超重、28 算肥胖；WHO 是 25 和 30，看见‘24 超重’判错就掉坑。</p>
+      <p class="narrate">易错七：减重是‘摄入小于消耗’制造能量缺口，不是单纯不吃脂肪——脂肪 9 千卡最高所以要控量，但三大营养素都要算总账。</p>
+      <p class="narrate">易错八：能量需要量 EER 等于 BMR 乘以 PAL（身体活动水平），不是直接等于基础代谢。</p>
+  <div class="trap"><div class="t">易错1：单位换算</div>1 <b>千卡(kcal)=4.184 千焦(kJ)</b>（常取 4.18）；1 kJ≈0.239 kcal。别写成 4.184 焦。</div>
+  <div class="trap"><div class="t">易错2：能量系数</div>脂肪 <b>9</b> kcal/g 最高；碳水/蛋白各 4；乙醇 7（空热量）。</div>
+  <div class="trap"><div class="t">易错3：消耗大头</div>基础代谢占 <b>60%–70%</b>（最大头）；身体活动占 15%–30%（变数最大）。</div>
+  <div class="trap"><div class="t">易错4：BMR 决定因素</div>主要看<b>瘦体组织(去脂体重/肌肉)</b>，不是体重总数。</div>
+  <div class="trap"><div class="t">易错5：TEF 高低</div>蛋白质 TEF 最高（≈20%–30%），脂肪最低。</div>
+  <div class="trap"><div class="t">易错6：BMI 中国切点</div>中国：<b>24 超重、28 肥胖</b>；WHO 为 25、30。题干把‘24 超重’判错→掉坑。</div>
+  <div class="trap"><div class="t">易错7：减重本质</div>制造<b>能量缺口</b>（摄入&#60;消耗）；控脂肪因它 9 kcal/g 最高，但总账要算三大营养素。</div>
+  <div class="trap"><div class="t">易错8：EER 公式</div>EER = <b>BMR × PAL</b>，不是等于 BMR 本身。</div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s8')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s9">
+    <div class="sec-head"><div class="no">9</div><h2>解题三步法（注册营养师全是选择题）</h2><div class="sub">4分钟</div></div>
+    <div class="card">
+      <p class="narrate">注册营养师全是选择题，送你一套通用三步法。</p>
+      <p class="narrate">第一步，审题定性：先看问的是单位换算、能量系数、消耗三部分、BMR 影响因素、能量需要量，还是 BMI 和供能比，先给题目定性，别急着看选项。</p>
+      <p class="narrate">第二步，定位考点：单位就背 1 kcal=4.184 kJ；系数就背 4·4·9；消耗就背基础代谢最大头、蛋白 TEF 最高；BMI 就背中国 24/28；供能比就背碳水五到六成半、脂肪两到三成。</p>
+      <p class="narrate">第三步，排除反着坑：直接排除‘脂肪系数最低’‘基础代谢占比最小’‘BMI 中国 25 超重’‘减重载蛋白没用’这些反向表述，剩下的就是答案。</p>
+  <div class="steps">
+    <div class="step"><div class="b"><b>第一步 · 审题定性：</b>先看问哪一类——单位换算？能量系数？消耗三部分？BMR 影响因素？能量需要量？BMI/供能比？先定性，不急着看选项。</div></div>
+    <div class="step"><div class="b"><b>第二步 · 定位考点：</b>单位→1kcal=4.184kJ；系数→4·4·9(酒精7)；消耗→BM最大头/蛋白TEF最高；BMI→中国24/28；供能比→碳水50–65%、脂肪20–30%。</div></div>
+    <div class="step"><div class="b"><b>第三步 · 排除反坑：</b>直接排除“脂肪系数最低”“基础代谢占比最小”“BMI中国25超重”“减重载蛋白没用”这类反向表述，剩下的就是答案。</div></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s9')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s10">
+    <div class="sec-head"><div class="no">10</div><h2>晓晓老师不定时提问 · 模拟课堂（费曼）</h2><div class="sub">互动</div></div>
+    <div class="card">
+      <p class="narrate">讲完重点，我们来模拟上课提问。我先和班里的同学演练，然后轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。</p>
+      <p class="narrate">第一个问题：用你自己的话解释，为什么两个体重一样的人，一个怎么吃都不胖、一个喝水都长肉？和基础代谢的什么因素有关？</p>
+      <p class="narrate">第二个问题：一个人想减重，营养师为什么说‘不是不吃脂肪就行’，而要看总能量和制造能量缺口？把能量系数和能量平衡串起来说。</p>
+  <div class="chat">
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">小明，你同桌和你一样重，他顿顿吃还不胖，你喝凉水都长肉，为啥？</div></div></div>
+    <div class="msg stu"><div class="av stu">🧒</div><div><div class="who">学生·小明</div><div class="bubble">嗯……可能他消化不好？或者他代谢比我高？</div></div></div>
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">方向对！关键是<b>基础代谢</b>。基础代谢主要看<b>瘦体组织（肌肉）</b>——他肌肉多，躺着都比你多耗能，所以‘怎么吃都不胖’。这也说明增肌能提高代谢、更抗胖。</div></div></div>
+  </div>
+
+  <div class="ask" data-keywords="基础代谢|瘦体|肌肉|去脂|BMR|代谢|体重|脂肪" data-model="两个体重相同的人胖瘦不同，关键在<b>基础代谢(BMR)</b>。BMR 的主要决定因素是<b>瘦体组织(去脂体重/肌肉)</b>：肌肉多的人，即使躺着，维持生命活动消耗的能量也更多，所以更‘抗胖’。年龄、性别(男略高)、甲状腺激素等也会影响。所以‘怎么吃都不胖’往往是基础代谢高。">
+    <div class="q">提问一：用你自己的话解释，为什么两个体重一样的人，一个怎么吃都不胖、一个喝水都长肉？和基础代谢的什么因素有关？（打字回答，晓晓老师会点评）</div>
+    <textarea placeholder="例如：因为……"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+  <div class="ask" data-keywords="能量缺口|摄入|消耗|脂肪|9|总能量|平衡|系数" data-model="减重看的是<b>总能量平衡</b>：摄入&#60;消耗才制造‘能量缺口’从而掉秤。脂肪<b>9 kcal/g 最高</b>，所以控脂肪很重要，但碳水(4)、蛋白(4)也供能，光不吃脂肪、却猛吃主食甜点，总能量照样超标。所以营养师说‘不是不吃脂肪就行’，而要<b>算总账、制造缺口</b>。">
+    <div class="q">提问二：想减重，为什么营养师说“不是不吃脂肪就行”，而要看总能量和制造能量缺口？（把能量系数和能量平衡串起来说）</div>
+    <textarea placeholder="先想清楚：脂肪系数多少？减重看什么？"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s10')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s11">
+    <div class="sec-head"><div class="no">11</div><h2>改编练习题（单选，仿注册营养师真题）</h2><div class="sub">自测</div></div>
+    <div class="card">
+      <p class="narrate">下面 8 道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，1 千卡约等于多少千焦？第二题，每克产能最高的营养素是？第三题，占总能量消耗最大比例的是？第四题，关于食物热效应正确的是？第五题，基础代谢主要决定于？第六题，按中国标准 BMI 多少算肥胖？第七题，能量需要量 EER 等于？第八题，关于三大供能比错误的是？</p>
+  <div class="quiz" data-ans="B">
+    <div class="stem">1.【改编 2018RD真题】1 千卡(kcal)约等于多少千焦(kJ)？</div>
+    <button class="opt" onclick="choose(this)">A. 0.239 kJ</button>
+    <button class="opt" onclick="choose(this)">B. 4.184 kJ</button>
+    <button class="opt" onclick="choose(this)">C. 4184 kJ</button>
+    <button class="opt" onclick="choose(this)">D. 1.184 kJ</button>
+    <div class="ans">✅ 答案：B。1 kcal = 4.184 kJ（常取 4.18）；1 kJ≈0.239 kcal。A 是 1 kJ 对应的 kcal 数，C 把千焦错当焦。</div>
+  </div>
+  <div class="quiz" data-ans="C">
+    <div class="stem">2. 下列产能营养素中，每克能量系数最高的是：</div>
+    <button class="opt" onclick="choose(this)">A. 碳水化合物</button>
+    <button class="opt" onclick="choose(this)">B. 蛋白质</button>
+    <button class="opt" onclick="choose(this)">C. 脂肪</button>
+    <button class="opt" onclick="choose(this)">D. 膳食纤维</button>
+    <div class="ans">✅ 答案：C。脂肪 9 kcal/g 最高；碳水、蛋白各 4；膳食纤维约 2。</div>
+  </div>
+  <div class="quiz" data-ans="A">
+    <div class="stem">3. 在成年人每日总能量消耗中，所占比例最大的部分是：</div>
+    <button class="opt" onclick="choose(this)">A. 基础代谢</button>
+    <button class="opt" onclick="choose(this)">B. 身体活动</button>
+    <button class="opt" onclick="choose(this)">C. 食物热效应</button>
+    <button class="opt" onclick="choose(this)">D. 生长发育</button>
+    <div class="ans">✅ 答案：A。基础代谢占总消耗 60%–70%，是最大头；身体活动 15%–30%（变数最大）；TEF 约 10%。</div>
+  </div>
+  <div class="quiz" data-ans="D">
+    <div class="stem">4. 关于食物热效应(TEF)，正确的是：</div>
+    <button class="opt" onclick="choose(this)">A. 脂肪的 TEF 最高</button>
+    <button class="opt" onclick="choose(this)">B. 占总消耗约 50%</button>
+    <button class="opt" onclick="choose(this)">C. 与进食无关</button>
+    <button class="opt" onclick="choose(this)">D. 蛋白质的 TEF 最高（约 20%–30%）</button>
+    <div class="ans">✅ 答案：D。蛋白质食物热效应最高（≈20%–30%），脂肪最低；TEF 约占总消耗 10%。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">5. 基础代谢率(BMR)的最主要决定因素是：</div>
+    <button class="opt" onclick="choose(this)">A. 体重总数</button>
+    <button class="opt" onclick="choose(this)">B. 瘦体组织（去脂体重/肌肉）</button>
+    <button class="opt" onclick="choose(this)">C. 皮下脂肪量</button>
+    <button class="opt" onclick="choose(this)">D. 进食量</button>
+    <div class="ans">✅ 答案：B。BMR 主要看瘦体组织；肌肉多者基础代谢高，更抗胖。体重总数含脂肪，不是关键。</div>
+  </div>
+  <div class="quiz" data-ans="D">
+    <div class="stem">6.【改编 2023RD真题】按中国成人 BMI 分级标准，肥胖的切点(下限)是：</div>
+    <button class="opt" onclick="choose(this)">A. BMI ≥ 25</button>
+    <button class="opt" onclick="choose(this)">B. BMI ≥ 28</button>
+    <button class="opt" onclick="choose(this)">C. BMI ≥ 30</button>
+    <button class="opt" onclick="choose(this)">D. BMI ≥ 28（中国标准；WHO 为 30）</button>
+    <div class="ans">✅ 答案：D。中国成人：24.0–27.9 超重，≥28.0 肥胖（比 WHO 的 25/30 更严）。A/C 是 WHO 切点，易混。</div>
+  </div>
+  <div class="quiz" data-ans="C">
+    <div class="stem">7. 成年人能量需要量(EER)的计算式为：</div>
+    <button class="opt" onclick="choose(this)">A. EER = 基础代谢</button>
+    <button class="opt" onclick="choose(this)">B. EER = 身体活动消耗</button>
+    <button class="opt" onclick="choose(this)">C. EER = 基础代谢率 × 身体活动水平(BMR×PAL)</button>
+    <button class="opt" onclick="choose(this)">D. EER = 食物热效应 × 体重</button>
+    <div class="ans">✅ 答案：C。能量需要量 = BMR × PAL（身体活动水平）；A 漏掉活动系数。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">8. 关于三大产能营养素供能比(AMDR, 2023版)，错误的是：</div>
+    <button class="opt" onclick="choose(this)">A. 碳水化合物占 50%–65%</button>
+    <button class="opt" onclick="choose(this)">B. 蛋白质占 5%–10%</button>
+    <button class="opt" onclick="choose(this)">C. 脂肪占 20%–30%</button>
+    <button class="opt" onclick="choose(this)">D. 蛋白质不低于 10%</button>
+    <div class="ans">✅ 答案：B。蛋白质供能比应为 10%–20%（旧版常 10%–15%），5%–10% 过低；A/C/D 均正确。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s11')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s12">
+    <div class="sec-head"><div class="no">12</div><h2>费曼记忆小测：用自己的话讲一遍</h2><div class="sub">收尾</div></div>
+    <div class="card">
+      <p class="narrate">最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。</p>
+      <p class="narrate">问题：为什么‘两个一样重的人胖瘦不同’、‘减重要看总能量而不是只戒脂肪’、‘BMI 超过 28 就是肥胖’？把基础代谢、能量系数、能量平衡、BMI 这条逻辑串起来。</p>
+      <p class="narrate">课堂小结口诀复习：单位‘卡变焦乘 4.184，碳水蛋白四、脂肪九’；消耗‘基础代谢是大头、蛋白最费能’；BMR‘看瘦体、年纪轻、男性高’；需要量‘EER = BMR × PAL’；BMI‘中国二十四超、二十八胖’；供能比‘碳水五到六成半、脂肪两到三成、蛋白十到二十’。</p>
+      <p class="narrate">这堂课就到这里，蛋白质、碳水、脂类、能量这‘四大块’我们就都讲完啦！记得今天复习前三课、预习下一课，咱们下节见！</p>
+  <div class="feynman">
+    <h3>🧠 费曼复述任务</h3>
+    <p>合上页面，试着给一个“完全不懂营养的朋友”讲清楚下面这个问题。能讲明白，说明你真懂了（费曼学习法：教是最好的学）。</p>
+    <p><b>问题：</b>“为什么两个一样重的人胖瘦不同？为什么减重要看总能量而不是只戒脂肪？为什么 BMI 超过 28 就是肥胖？”</p>
+    <textarea id="feynmanBox" placeholder="在这里用大白话写一段 3-5 句话的解释……"></textarea>
+    <button class="btn" onclick="feynmanCheck()">自我对照 · 看评分清单</button>
+    <div class="feedback" id="feynmanFeedback"></div>
+    <ul class="rubric">
+      <li>✅ 提到 基础代谢(BMR)主要看瘦体组织/肌肉，肌肉多者更抗胖</li>
+      <li>✅ 提到 能量系数：脂肪 9 kcal/g 最高，减重要看总能量/制造能量缺口</li>
+      <li>✅ 提到 能量平衡：摄入&#60;消耗→减重（能量缺口）</li>
+      <li>✅ 提到 BMI 中国标准：≥28 为肥胖（24 超重）</li>
+    </ul>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s12')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    本节为「营养刷题」第4课，依据「注册营养师考试宝典」公众号·考点|10 能量系列及历年真题整理改编，并对照《中国居民膳食营养素参考摄入量(2023版)》《营养与食品卫生学》第9版　｜　晓晓老师语音由 Edge-TTS XiaoxiaoNeural 神经网络语音合成，字幕固定底部不遮挡讲解　｜　仅供学习备考使用
+  </footer>
+</div>
+
+<div id="playerbar" class="hide">
+  <div class="subline" id="subline"><b>晓晓老师：</b>点击任意「▶ 听晓晓老师讲这段」，或点「📖 从头播放」，晓晓老师逐句讲解，字幕显示在此处，不遮挡上方讲解。</div>
+  <div class="pctrl">
+    <button onclick="prevSent()">⏮ 上一句</button>
+    <button id="playbtn" onclick="togglePlay()">▶ 播放</button>
+    <button onclick="nextSent()">下一句 ⏭</button>
+    <input id="seek" type="range" min="0" max="100" value="0" oninput="onSeek(this.value)" title="拖动可调整播放位置" />
+    <span id="idxlbl">0 / 0</span>
+    <span class="spd">语速
+      <button id="s08" onclick="Player.setSpeed(0.8)">0.8x</button>
+      <button id="s10" class="on" onclick="Player.setSpeed(1)">1x</button>
+      <button id="s12" onclick="Player.setSpeed(1.2)">1.2x</button>
+      <button id="s15" onclick="Player.setSpeed(1.5)">1.5x</button>
+    </span>
+    <button onclick="playAll()">📖 从头播放</button>
+    <button onclick="hidePlayer()">收起</button>
+  </div>
+</div>
+<button id="reopen" onclick="showPlayer()">▶ 晓晓老师</button>
+
+<script>
+const SECTIONS_AUDIO = {"s1": ["audio/s1_0.mp3", "audio/s1_1.mp3", "audio/s1_2.mp3", "audio/s1_3.mp3", "audio/s1_4.mp3"], "s2": ["audio/s2_0.mp3", "audio/s2_1.mp3", "audio/s2_2.mp3", "audio/s2_3.mp3", "audio/s2_4.mp3"], "s3": ["audio/s3_0.mp3", "audio/s3_1.mp3", "audio/s3_2.mp3", "audio/s3_3.mp3", "audio/s3_4.mp3", "audio/s3_5.mp3"], "s4": ["audio/s4_0.mp3", "audio/s4_1.mp3", "audio/s4_2.mp3", "audio/s4_3.mp3", "audio/s4_4.mp3", "audio/s4_5.mp3"], "s5": ["audio/s5_0.mp3", "audio/s5_1.mp3", "audio/s5_2.mp3", "audio/s5_3.mp3", "audio/s5_4.mp3"], "s6": ["audio/s6_0.mp3", "audio/s6_1.mp3", "audio/s6_2.mp3", "audio/s6_3.mp3", "audio/s6_4.mp3"], "s7": ["audio/s7_0.mp3", "audio/s7_1.mp3", "audio/s7_2.mp3", "audio/s7_3.mp3"], "s8": ["audio/s8_0.mp3", "audio/s8_1.mp3", "audio/s8_2.mp3", "audio/s8_3.mp3", "audio/s8_4.mp3", "audio/s8_5.mp3", "audio/s8_6.mp3", "audio/s8_7.mp3", "audio/s8_8.mp3"], "s9": ["audio/s9_0.mp3", "audio/s9_1.mp3", "audio/s9_2.mp3", "audio/s9_3.mp3"], "s10": ["audio/s10_0.mp3", "audio/s10_1.mp3", "audio/s10_2.mp3"], "s11": ["audio/s11_0.mp3"], "s12": ["audio/s12_0.mp3", "audio/s12_1.mp3", "audio/s12_2.mp3", "audio/s12_3.mp3"]};
+const SECTIONS_TEXT  = {"s1": ["同学们好，我是晓晓老师。先把前三次课——蛋白质、碳水化合物、脂类——的口诀快速回一遍。", "蛋白质：必需氨基酸 9 种，谷类缺赖氨酸、豆类缺蛋氨酸，搭配能互补；脂类：必需脂肪酸只有亚油酸和 α-亚麻酸两种，脂肪吸收走淋巴、HDL 好 LDL 坏。", "碳水化合物：蔗无乳有麦也有；升糖 GI 高七低五五、GL 二十封顶十算中；添加糖最好 25 克。", "前面三课都绕着‘营养素本身’打转。今天，我们顺着这条线，讲第四个、也是把前三课‘串起来’的考点——能量（Energy）。", "记住今天的主线：单位换算看清‘谁是谁’ → 三大产能营养素能量系数(4·4·9) → 人体能量消耗三大块(基础代谢·活动·食物热效应) → BMR 影响因素 → 能量需要量怎么算 → 能量平衡与 BMI → 吃多少看供能比。沿着这条线，考试题就跑不掉了。"], "s2": ["先解决最基础也最容易混的：能量到底用什么单位？国际单位是焦耳 J，常用千焦 kJ；营养学传统用卡 cal、千卡 kcal，也就是‘大卡’。", "换算关系请钉死：1 千卡等于 4.184 千焦，考试常取 4.18；反过来 1 千焦约等于 0.239 千卡。注意是‘千’焦对‘千’卡，别把 4.184 安到‘焦’上。", "再看能量系数，也就是每克营养素能在体内放出多少千卡：碳水化合物和蛋白质都是 4 千卡每克，脂肪是 9 千卡每克，是糖和蛋白质的两倍多。", "还有两个‘编外’的：乙醇，也就是酒精，7 千卡每克，比碳水、蛋白都高，但它几乎不含其他营养素，是‘空热量’；膳食纤维大约 2 千卡每克。", "口诀：‘卡变焦乘 4.184，碳水蛋白四、脂肪九，酒精七来纤维二’。"], "s3": ["一个人每天的能量都‘花’在哪了？分成三大块：基础代谢、身体活动、食物热效应。", "第一块，基础代谢，简称 BM。它是你躺着不动、清醒、空腹、安静环境下，维持呼吸、心跳、体温、血液循环这些最基本生命活动所消耗的能量。它占总消耗的 60% 到 70%，是最大头。", "第二块，身体活动，简称 PA。就是工作、走路、运动、做家务这些。它变化最大，一般占 15% 到 30%，爱动的人这块就高。", "第三块，食物热效应，也叫食物特殊动力作用，简称 TEF。就是你吃进东西、消化吸收入血这个过程本身也要额外耗一点能，大约占总消耗的 10%。", "重点来了：三大产能营养素里，蛋白质的食物热效应最高，大约要耗掉它自身能量的 20% 到 30%；碳水居中，脂肪最低。所以‘吃蛋白更‘费能’’是有道理的。", "口诀：‘消耗三块：基础代谢是大头(六到七)，身体活动变数大(一到三)，食物热效应一成(约十)，蛋白最费能’。"], "s4": ["基础代谢率，BMR，说的是单位时间、单位体表面积的基础代谢水平。它主要受什么影响？", "第一，瘦体组织，也就是去脂体重，比如肌肉。肌肉越多，基础代谢越高——这是个体差异里最关键的因素，所以‘增肌能提高代谢’是对的。", "第二，年龄。基础代谢随年龄增长而下降，大约每长十岁降 2% 到 3%，所以年纪大了容易发胖，部分原因就在这。", "第三，性别。同等条件下男性瘦体组织多于女性，所以男性基础代谢一般高于女性。", "第四，内分泌，尤其是甲状腺激素：甲亢时 BMR 升高，甲减时下降。还有应激、发热、创伤、寒冷环境、妊娠哺乳期，BMR 都会升高；营养不良、长期饥饿则会下降。", "记一句：‘基础代谢看瘦体，肌肉多来年纪轻，男性略高甲状腺，应激寒冷往上顶’。"], "s5": ["能量需要量怎么估？公式是：能量需要量 EER，等于基础代谢率 BMR，乘以身体活动水平 PAL。", "PAL 反映了你一天活动量有多大，一般分低、中、高三级。", "《中国居民膳食营养素参考摄入量(2023版)》给了各档的能量需要量参考：成年男性低活动 1950 到 2150 千卡、中等 2400 到 2550、高活动 2800 到 3000；成年女性低活动 1600 到 1700、中等 1950 到 2100、高活动 2300 到 2450。", "如果手头没有表格，还有一个经典估算法：轻体力按每公斤体重每天 30 千卡、中体力 35、重体力 40 来粗算。比如 60 公斤轻体力成人，大约 1800 千卡每天。", "口诀：‘需要量 = 基础代谢 × 活动水平；男低两千、女低一千七，活动越大数越高’。"], "s6": ["能量平衡是体重管理的核心：吃进去的能量，和消耗掉的能量，谁大谁小，决定了你是胖还是瘦。", "摄入等于消耗，体重相对稳定；摄入大于消耗，多余的能量会以脂肪形式存起来，人就长胖；反过来摄入小于消耗，就动用储备，体重下降。所以减重本质就是‘制造能量缺口’。", "评价胖瘦最常用 BMI，身体质量指数，等于体重公斤数除以身高米数的平方。", "中国成人的 BMI 标准比世界卫生组织更严格：低于 18.5 算体重过低；18.5 到 23.9 是正常；24.0 到 27.9 是超重；大于等于 28 是肥胖。注意：中国是 24 算超重、28 算肥胖，而 WHO 是 25 和 30，考试最爱在这里挖坑。", "口诀：‘BMI 体重除身高平方；中国线：十八点五正常、二十四超、二十八胖’。"], "s7": ["吃多少、吃什么比例？看三大产能营养素的‘供能比’，也就是它们分别贡献了总能量的百分之多少。", "《中国居民膳食营养素参考摄入量(2023版)》的适宜范围：碳水化合物占 50% 到 65%，脂肪占 20% 到 30%，蛋白质占 10% 到 20%——早先版本蛋白质常写 10% 到 15%，2023 版把上限放宽到 20%，考试若出现 10–15% 也常算对，记住蛋白质别低于 10% 就行。", "另外一日三餐的能量分配，推荐早:中:晚 = 3:4:3，也就是早餐三成、午餐四成、晚餐三成。", "口诀：‘碳水五到六成半，脂肪两到三成，蛋白十到二十（莫低于十），三餐三比四比三’。"], "s8": ["好，进入红绿灯时间，我把能量这章最高频的易错点集中点一遍。", "易错一：单位换算。1 千卡等于 4.184 千焦，不是 4.184 焦；别把小数点挪错。", "易错二：能量系数。脂肪 9 千卡每克最高，碳水、蛋白质都是 4；酒精 7 比碳水蛋白质还高，是空热量。", "易错三：基础代谢占总消耗最大头（60%–70%），不是身体活动；身体活动是‘变数最大’的那块。", "易错四：基础代谢的主要决定因素是瘦体组织（肌肉），不是体重总数；肌肉多的人更抗胖。", "易错五：食物热效应里蛋白质最高（约 20%–30%），脂肪最低。", "易错六：BMI 中国标准，24 算超重、28 算肥胖；WHO 是 25 和 30，看见‘24 超重’判错就掉坑。", "易错七：减重是‘摄入小于消耗’制造能量缺口，不是单纯不吃脂肪——脂肪 9 千卡最高所以要控量，但三大营养素都要算总账。", "易错八：能量需要量 EER 等于 BMR 乘以 PAL（身体活动水平），不是直接等于基础代谢。"], "s9": ["注册营养师全是选择题，送你一套通用三步法。", "第一步，审题定性：先看问的是单位换算、能量系数、消耗三部分、BMR 影响因素、能量需要量，还是 BMI 和供能比，先给题目定性，别急着看选项。", "第二步，定位考点：单位就背 1 kcal=4.184 kJ；系数就背 4·4·9；消耗就背基础代谢最大头、蛋白 TEF 最高；BMI 就背中国 24/28；供能比就背碳水五到六成半、脂肪两到三成。", "第三步，排除反着坑：直接排除‘脂肪系数最低’‘基础代谢占比最小’‘BMI 中国 25 超重’‘减重载蛋白没用’这些反向表述，剩下的就是答案。"], "s10": ["讲完重点，我们来模拟上课提问。我先和班里的同学演练，然后轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。", "第一个问题：用你自己的话解释，为什么两个体重一样的人，一个怎么吃都不胖、一个喝水都长肉？和基础代谢的什么因素有关？", "第二个问题：一个人想减重，营养师为什么说‘不是不吃脂肪就行’，而要看总能量和制造能量缺口？把能量系数和能量平衡串起来说。"], "s11": ["下面 8 道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，1 千卡约等于多少千焦？第二题，每克产能最高的营养素是？第三题，占总能量消耗最大比例的是？第四题，关于食物热效应正确的是？第五题，基础代谢主要决定于？第六题，按中国标准 BMI 多少算肥胖？第七题，能量需要量 EER 等于？第八题，关于三大供能比错误的是？"], "s12": ["最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。", "问题：为什么‘两个一样重的人胖瘦不同’、‘减重要看总能量而不是只戒脂肪’、‘BMI 超过 28 就是肥胖’？把基础代谢、能量系数、能量平衡、BMI 这条逻辑串起来。", "课堂小结口诀复习：单位‘卡变焦乘 4.184，碳水蛋白四、脂肪九’；消耗‘基础代谢是大头、蛋白最费能’；BMR‘看瘦体、年纪轻、男性高’；需要量‘EER = BMR × PAL’；BMI‘中国二十四超、二十八胖’；供能比‘碳水五到六成半、脂肪两到三成、蛋白十到二十’。", "这堂课就到这里，蛋白质、碳水、脂类、能量这‘四大块’我们就都讲完啦！记得今天复习前三课、预习下一课，咱们下节见！"]};
+const SECTIONS_ORDER = ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11", "s12"];
+
+// 展平为全局播放列表（按章节顺序）
+const PLAYLIST = [];
+SECTIONS_ORDER.forEach(id=>{
+  const paths = SECTIONS_AUDIO[id]||[];
+  const texts = SECTIONS_TEXT[id]||[];
+  paths.forEach((p,i)=> PLAYLIST.push({src:p, text:texts[i]||'', sec:id}));
+});
+
+const Player = {
+  audio: new Audio(),
+  idx: 0,
+  playing: false,
+  speed: 1.0,
+  init(){
+    this.audio.preload='auto';
+    this.audio.addEventListener('timeupdate', ()=>this.onTime());
+    this.audio.addEventListener('ended', ()=>this.next(true));
+    this.audio.addEventListener('loadedmetadata', ()=>this.onTime());
+    this.audio.addEventListener('error', ()=>this.onErr());
+    this.updateIdx();
+    this.updateBtn();
+  },
+  load(i, autoplay){
+    if(i<0 || i>=PLAYLIST.length) return;
+    this.idx=i;
+    const item=PLAYLIST[i];
+    setSub(item.text);
+    this.audio.src=item.src;
+    this.audio.playbackRate=this.speed;
+    this.updateIdx();
+    if(autoplay){
+      const sec=document.getElementById(item.sec);
+      if(sec) sec.scrollIntoView({behavior:'smooth',block:'center'});
+      this.playing=true; this.updateBtn();
+      this.audio.play().catch(()=>{ this.fallback(item.text); });
+    }
+  },
+  play(){ if(!this.audio.src){ this.load(this.idx,false);} this.playing=true; this.updateBtn(); this.audio.play().catch(()=>{}); },
+  pause(){ this.playing=false; this.updateBtn(); this.audio.pause(); },
+  toggle(){ if(this.playing) this.pause(); else this.play(); },
+  next(auto){
+    if(auto && !this.playing) return;
+    const n=this.idx+1;
+    if(n>=PLAYLIST.length){ this.playing=false; this.updateBtn(); this.updateIdx();
+      setSub('—— 本课讲解结束啦，去做做改编题、用费曼法复述一遍 💡'); return; }
+    this.load(n,true);
+  },
+  prev(){ let n=this.idx-1; if(n<0) n=0; this.load(n,true); },
+  seek(v){ try{ this.audio.currentTime=parseFloat(v); }catch(e){} },
+  onTime(){
+    const a=this.audio;
+    const s=document.getElementById('seek');
+    if(a.duration && s){ s.max=Math.floor(a.duration); s.value=Math.floor(a.currentTime); }
+    if(PLAYLIST[this.idx]) setSub(PLAYLIST[this.idx].text);
+  },
+  onErr(){
+    if(this.playing){ this.fallback(PLAYLIST[this.idx] ? PLAYLIST[this.idx].text : ''); }
+  },
+  fallback(t){
+    if(!('speechSynthesis' in window)){ this.next(true); return; }
+    const u=new SpeechSynthesisUtterance(t); u.lang='zh-CN'; u.rate=this.speed; u.pitch=1.06;
+    u.onend=()=>{ this.next(true); };
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  },
+  setSpeed(v){
+    this.speed=v; this.audio.playbackRate=v;
+    document.querySelectorAll('#playerbar .spd button').forEach(b=>b.classList.remove('on'));
+    const map={0.8:'s08',1:'s10',1.2:'s12',1.5:'s15'};
+    const el=document.getElementById(map[v]); if(el) el.classList.add('on');
+  },
+  updateIdx(){ const e=document.getElementById('idxlbl'); if(e) e.textContent=(this.idx+1)+' / '+PLAYLIST.length; },
+  updateBtn(){ const b=document.getElementById('playbtn'); if(b) b.textContent=this.playing?'⏸ 暂停':'▶ 播放'; }
+};
+
+function setSub(t){ const e=document.getElementById('subline'); if(e) e.innerHTML='<b>晓晓老师：</b>'+t; }
+function playSection(id){
+  const i=PLAYLIST.findIndex(p=>p.sec===id);
+  document.getElementById('playerbar').classList.remove('hide');
+  document.getElementById('reopen').classList.remove('show');
+  if(i<0) return;
+  Player.load(i, true);
+}
+function playAll(){ Player.load(0,true); document.getElementById('playerbar').classList.remove('hide'); document.getElementById('reopen').classList.remove('show'); }
+function prevSent(){ Player.prev(); }
+function nextSent(){ Player.next(false); }
+function togglePlay(){ Player.toggle(); }
+function onSeek(v){ Player.seek(v); }
+function hidePlayer(){ document.getElementById('playerbar').classList.add('hide'); document.getElementById('reopen').classList.add('show'); }
+function showPlayer(){ document.getElementById('playerbar').classList.remove('hide'); document.getElementById('reopen').classList.remove('show'); }
+
+function checkAsk(btn){
+  const box=btn.closest('.ask'); const ta=box.querySelector('textarea'); const val=(ta.value||'').trim();
+  const fb=box.querySelector('.feedback'); const model=box.querySelector('.model');
+  const keys=(box.dataset.keywords||'').split('|').filter(Boolean);
+  if(!val){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写点什么再提交哦～哪怕一句话也行 😊</span>'; return; }
+  const hit=keys.some(k=>val.includes(k));
+  fb.className='feedback show';
+  fb.innerHTML = hit ? '<span class="ok">👍 说到位了！</span> 你抓住了关键词，晓晓老师给你点个赞。'
+                     : '<span class="tip">🤔 方向还差点意思～</span> 别急，看看下面的标准答案，再试着用自己的话讲一遍。';
+  model.className='model'; model.innerHTML='<b>晓晓老师的标准答案：</b>'+box.dataset.model;
+}
+function choose(btn){
+  const q=btn.closest('.quiz'); if(q.dataset.done) return;
+  const correct=q.dataset.ans;
+  q.querySelectorAll('.opt').forEach(o=>{ o.disabled=true;
+    const t=o.textContent.trim();
+    if(t.startsWith(correct+'.')||t.startsWith(correct+'．')) o.classList.add('correct');
+    else if(o===btn) o.classList.add('wrong');
+  });
+  q.dataset.done='1'; q.querySelector('.ans').classList.add('show');
+}
+function feynmanCheck(){
+  const v=(document.getElementById('feynmanBox').value||'').trim();
+  const fb=document.getElementById('feynmanFeedback');
+  if(!v){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写一段自己的解释，再对照清单 😉</span>'; return; }
+  const keys=['基础代谢','BMR','瘦体','肌肉','脂肪','9','能量','缺口','摄入','消耗','BMI','28','24'];
+  const hit=keys.filter(k=>v.includes(k)).length;
+  fb.className='feedback show';
+  let msg;
+  if(hit>=4) msg='<span class="ok">🌟 很棒！</span> 你覆盖了关键概念，基本讲清楚了。可以录下来自己听一遍，卡壳的地方就是还没真懂的点。';
+  else if(hit>=2) msg='<span class="tip">📝 有进步～</span> 对照清单，看看是不是漏了“基础代谢看瘦体(肌肉)”或“脂肪9kcal最高、减重看总能量缺口”这两点，补上就更完整了。';
+  else msg='<span class="tip">💡 再来一次～</span> 提示：想想“肌肉多的人基础代谢高更抗胖”“脂肪9kcal最高、减重要制造能量缺口”“BMI≥28算肥胖(中国)”，把这条逻辑串起来。';
+  fb.innerHTML=msg;
+}
+
+Player.init();
+Player.setSpeed(1);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>维生素C精讲 · 晓晓老师的营养课堂（注册营养师考点·第9课）</title>
+<style>
+  :root{
+    --paper:#fbf7ee; --ink:#2f2a25; --board:#1f4d3a; --board2:#2c6b51; --chalk:#f3f7f2;
+    --accent:#e8743b; --accent2:#3a8dde; --warn:#d8443c; --ok:#2e9e6b; --gold:#e0a83a;
+    --card:#ffffff; --line:#e7ddc9; --soft:#f4ede0;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;
+    font-family:"Songti SC","SimSun","宋体",STSong,serif;
+    background:radial-gradient(1200px 500px at 80% -10%, #fff6e6 0%, transparent 60%),var(--paper);
+    color:var(--ink);line-height:1.95;font-size:19px;padding-bottom:150px;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 18px 40px;}
+  header.hero{background:linear-gradient(135deg,var(--board),var(--board2));color:var(--chalk);
+    border-radius:0 0 26px 26px;padding:30px 22px 26px;box-shadow:0 10px 30px rgba(31,77,58,.25);position:relative;overflow:hidden;}
+  header.hero::after{content:"🍊";position:absolute;right:-10px;top:-10px;font-size:120px;opacity:.10;transform:rotate(12deg);}
+  .hero .tag{display:inline-block;background:rgba(255,255,255,.15);padding:3px 12px;border-radius:20px;font-size:13px;letter-spacing:1px;}
+  .hero h1{margin:12px 0 6px;font-size:30px;letter-spacing:1px;}
+  .hero .meta{font-size:14px;opacity:.92;margin-top:6px;}
+  .hero .meta b{color:#ffe2b0;}
+  nav.toc{position:sticky;top:0;z-index:30;background:rgba(251,247,238,.92);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:8px 0;margin:0 0 8px;}
+  nav.toc .inner{max-width:900px;margin:0 auto;padding:0 14px;display:flex;gap:8px;flex-wrap:wrap;}
+  nav.toc a{font-size:13.5px;text-decoration:none;color:var(--board);background:var(--soft);border:1px solid var(--line);
+    padding:4px 11px;border-radius:20px;transition:.2s;}
+  nav.toc a:hover{background:var(--board);color:#fff;}
+  section{margin:26px 0;}
+  .sec-head{display:flex;align-items:center;gap:10px;margin:6px 0 14px;}
+  .sec-head .no{background:var(--accent);color:#fff;font-weight:700;width:34px;height:34px;display:grid;place-items:center;
+    border-radius:10px;flex:none;font-size:17px;box-shadow:0 4px 10px rgba(232,116,59,.35);}
+  .sec-head h2{font-size:23px;margin:0;}
+  .sec-head .sub{font-size:13px;color:#8a7f6e;margin-left:auto;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin:14px 0;box-shadow:0 6px 18px rgba(120,90,40,.06);}
+  .card h3{margin:0 0 8px;font-size:19px;color:var(--board);}
+  .card p{margin:10px 0;}
+  .narrate{color:#3a352e;margin:10px 0;}
+  .mnemonic{background:linear-gradient(135deg,#fff4dd,#ffe9c4);border:1px dashed var(--gold);border-radius:14px;padding:14px 18px;margin:14px 0;position:relative;}
+  .mnemonic .label{font-size:12px;color:#a9791f;font-weight:700;letter-spacing:2px;}
+  .mnemonic .big{font-size:22px;font-weight:800;color:#9a5b00;margin:4px 0 2px;letter-spacing:1px;}
+  .mnemonic .note{font-size:15px;color:#6b5a3a;}
+  .trap{border-left:5px solid var(--warn);background:#fdf0ee;border-radius:0 12px 12px 0;padding:12px 16px;margin:12px 0;}
+  .trap .t{font-weight:800;color:var(--warn);font-size:15px;margin-bottom:4px;}
+  .trap .t::before{content:"⚠️ ";}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15.5px;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(120,90,40,.07);}
+  th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;}
+  th{background:var(--soft);color:var(--board);font-weight:700;}
+  .steps{counter-reset:s;margin:10px 0;}
+  .step{display:flex;gap:12px;align-items:flex-start;margin:10px 0;}
+  .step::before{counter-increment:s;content:counter(s);flex:none;width:28px;height:28px;background:var(--accent2);color:#fff;border-radius:50%;display:grid;place-items:center;font-weight:700;}
+  .step .b{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;flex:1;}
+  .chat{border:1px solid var(--line);border-radius:16px;background:#fff;padding:8px 14px;margin:14px 0;}
+  .msg{display:flex;gap:10px;margin:12px 0;align-items:flex-start;}
+  .msg .av{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:20px;color:#fff;}
+  .av.tea{background:linear-gradient(135deg,var(--board),var(--board2));}
+  .av.stu{background:linear-gradient(135deg,#f0a93b,#e8743b);}
+  .bubble{background:var(--soft);border-radius:14px;padding:9px 14px;max-width:88%;}
+  .msg.stu .bubble{background:#eef5fb;}
+  .who{font-size:12px;color:#9b8f7c;margin-bottom:2px;}
+  .ask{border:2px solid var(--accent2);border-radius:16px;background:#f3f9ff;padding:14px 16px;margin:16px 0;}
+  .ask .q{font-weight:700;color:#1f5fa8;}
+  .ask .q::before{content:"🙋 晓晓老师：";}
+  textarea{width:100%;min-height:64px;margin-top:10px;border:1px solid var(--line);border-radius:10px;padding:10px;font-family:inherit;font-size:16px;resize:vertical;background:#fff;}
+  .btn{display:inline-flex;align-items:center;gap:6px;cursor:pointer;border:none;border-radius:24px;padding:9px 18px;font-size:15px;font-weight:700;color:#fff;background:var(--accent);box-shadow:0 5px 14px rgba(232,116,59,.3);transition:.15s;margin-top:10px;}
+  .btn:hover{transform:translateY(-1px);}
+  .btn.blue{background:var(--accent2);box-shadow:0 5px 14px rgba(58,141,222,.3);}
+  .btn.ghost{background:#fff;color:var(--board);border:1px solid var(--board);box-shadow:none;}
+  .feedback{margin-top:10px;font-size:15px;display:none;}
+  .feedback.show{display:block;}
+  .feedback .ok{color:var(--ok);font-weight:700;}
+  .feedback .tip{color:var(--accent);}
+  .model{background:#fff;border:1px dashed var(--board2);border-radius:12px;padding:10px 14px;margin-top:10px;font-size:15px;color:#3a5a4c;}
+  .model b{color:var(--board);}
+  .quiz{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px 18px;margin:14px 0;}
+  .quiz .stem{font-weight:600;margin-bottom:10px;}
+  .opt{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:9px 13px;margin:7px 0;cursor:pointer;font-size:15.5px;transition:.15s;font-family:inherit;color:var(--ink);}
+  .opt:hover{background:#ecf3ff;}
+  .opt.correct{background:#e7f7ee;border-color:var(--ok);color:#1c6b45;font-weight:700;}
+  .opt.wrong{background:#fdeceb;border-color:var(--warn);}
+  .quiz .ans{display:none;margin-top:8px;font-size:14.5px;color:#4a4034;background:var(--soft);border-radius:10px;padding:9px 12px;}
+  .quiz .ans.show{display:block;}
+  .feynman{background:linear-gradient(135deg,#eef7ff,#eafaf1);border:1px solid #cfe6d8;border-radius:16px;padding:16px 18px;margin:14px 0;}
+  .feynman h3{color:var(--board);margin-top:0;}
+  .rubric{font-size:14.5px;color:#4a554c;margin:8px 0;}
+  .rubric li{margin:4px 0;}
+  .svgwrap{margin:14px 0;text-align:center;}
+  .svgwrap svg{width:100%;max-width:680px;height:auto;background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px;}
+  footer{text-align:center;color:#a89c87;font-size:13px;margin-top:30px;}
+  .divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:30px 0;}
+
+  /* ===== 全局播放 dock（字幕不遮挡讲解，位于最底部） ===== */
+  #playerbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(20,28,24,.94);color:#eafff4;
+    padding:8px 14px 10px;box-shadow:0 -8px 22px rgba(0,0,0,.28);backdrop-filter:blur(6px);
+    transform:translateY(0);transition:transform .25s;}
+  #playerbar.hide{transform:translateY(110%);}
+  #playerbar .subline{font-size:15.5px;line-height:1.5;margin-bottom:6px;color:#eafff4;
+    border-left:3px solid var(--accent);padding-left:8px;max-height:46px;overflow:auto;}
+  #playerbar .subline b{color:#ffd9a8;}
+  #playerbar .pctrl{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  #playerbar button{font-family:inherit;cursor:pointer;border:none;border-radius:18px;padding:6px 12px;font-size:13.5px;
+    background:rgba(255,255,255,.16);color:#eafff4;transition:.15s;}
+  #playerbar button:hover{background:rgba(255,255,255,.3);}
+  #playerbar #playbtn{background:var(--accent);color:#fff;font-weight:700;min-width:78px;}
+  #playerbar .spd{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;opacity:.9;}
+  #playerbar .spd button{padding:3px 8px;font-size:12px;}
+  #playerbar .spd button.on{background:var(--accent2);color:#fff;}
+  #seek{flex:1;min-width:120px;height:6px;accent-color:var(--accent);cursor:pointer;}
+  #idxlbl{font-size:12.5px;opacity:.85;min-width:54px;text-align:center;}
+  #reopen{position:fixed;right:14px;bottom:14px;z-index:60;display:none;border:none;border-radius:24px;
+    background:var(--accent);color:#fff;font-family:inherit;font-weight:700;font-size:14px;padding:10px 16px;box-shadow:0 6px 16px rgba(232,116,59,.4);cursor:pointer;}
+  #reopen.show{display:block;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="tag">🎓 第9课 · 一节高中生物课的量 · 注册营养师考点</span>
+  <h1>维生素C（Vitamin C）精讲 · 抗氧化与胶原卫士</h1>
+  <div class="meta">
+    主讲：<b>晓晓老师</b>（XiaoxiaoNeural 神经网络语音）　|　课时：约 45 分钟（1 课时）　|　来源：<b>注册营养师考试宝典 · 维生素C 考点</b> 系列
+  </div>
+  <div class="meta">配套：温故复习 + 口诀 + 案例图 + 易错点 + 解题三步法 + 不定时提问 + 改编练习题 + 费曼复述　<span style="background:#fff;color:#1f4d3a;border-radius:20px;padding:2px 10px;font-size:12px;">点 ▶ 听晓晓老师讲</span></div>
+</header>
+
+<nav class="toc"><div class="inner">
+    <a href="#s1">① 温故</a>
+    <a href="#s2">② 身份</a>
+    <a href="#s3">③ 机制·羟化</a>
+    <a href="#s4">④ 其他功能</a>
+    <a href="#s5">⑤ 坏血病</a>
+    <a href="#s6">⑥ 来源·稳</a>
+    <a href="#s7">⑦ 摄入·mg</a>
+    <a href="#s8">⑧ 易错点</a>
+    <a href="#s9">⑨ 三步法</a>
+    <a href="#s10">⑩ 提问</a>
+    <a href="#s11">⑪ 改编题</a>
+    <a href="#s12">⑫ 费曼</a>
+</div></nav>
+
+<div class="wrap">
+  <section id="s1">
+    <div class="sec-head"><div class="no">1</div><h2>温故知新：先复习前八课，再开讲“水溶性第一课”</h2><div class="sub">衔接 · 5分钟</div></div>
+    <div class="card">
+      <p class="narrate">同学们好，我是晓晓老师。开第9课前，先把前八课总纲快速串一遍：蛋白质——9种必需氨基酸、谷类缺赖氨酸豆类缺蛋氨酸；碳水——蔗无乳有麦也有、GI和GL、添加糖最好不超25克；脂类——必需脂肪酸只有亚油酸和α-亚麻酸、HDL好LDL坏；能量——1千卡等于4.184千焦、BMI中国24超28胖；维生素A——视杆细胞视紫红质、先暗适应下降再夜盲、过量中毒只在动物肝；维生素D——阳光维D、肝出25是营养指标、肾出1,25最能干；维生素E——8种里α-生育酚是老大、抗氧化断链护膜护红细胞、但过量损害凝血；上一课维生素K——凝血卫士，γ-羧化让凝血因子II/VII/IX/X抓钙活化、华法林掐还原酶令凝血停、成人AI 80微克。</p>
+      <p class="narrate">前八课里，维生素说了A、D、E、K四位——它们都是‘脂溶性’的，能藏在脂肪和肝脏里、吃多了会中毒。今天我们要换个赛道，进入‘水溶性维生素’，第一课就讲最出名、也最容易被考的一位——维生素C。</p>
+      <p class="narrate">维C和前四位气质完全不同：它溶于水、身体不囤货、吃多了随尿排、基本不中毒，但架不住它‘最娇气’——怕热怕光怕碱还怕铜铁锅。高中生物讲过的‘胶原蛋白’‘结缔组织’‘红细胞运铁’，今天全用得上。</p>
+      <p class="narrate">今天主线：维C是谁、单位用啥 → 它怎么帮身体‘造胶原、补血铁’(机制) → 它还抗氧化、解毒、护免疫 → 缺了谁会得坏血病、和维K出血有啥不同 → 从哪吃、又怕什么 → 该吃多少(成人100毫克)。一条线串起来。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 前八课口诀速回（闭眼能背才算会）</div>
+    <div class="big">蛋白9种互补 · 蔗无乳有麦也有 · 必需脂肪两兄弟 · 1kcal=4.184kJ · BMI中国24超28胖 · VA暗适应后夜盲 · 维D肝出25肾出1,25 · 维E八兄弟α最强抗氧化 · 维Kγ-羧化凝血因子</div>
+    <div class="note">今天开讲<b>水溶性维生素第一课：维生素C（抗坏血酸 / 胶原卫士 / 补铁帮手）</b>。本节新口诀用 <b>🔑</b> 标出，最后费曼复述串成一条线。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s1')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s2">
+    <div class="sec-head"><div class="no">2</div><h2>核心精讲一：身份 &amp; 性质（抗坏血酸·水溶性·人体不能合成）</h2><div class="sub">9分钟</div></div>
+    <div class="card">
+      <p class="narrate">先搞清维C的‘身份’。它学名L-抗坏血酸，也叫抗坏血酸，是水溶性维生素，带点酸味(含烯二醇结构)。</p>
+      <p class="narrate">最关键的一条：人体自己不能合成维C！因为我们缺少最后一步的酶——L-古洛糖酸内酯氧化酶，没法把前体变成抗坏血酸。所以灵长类、豚鼠、部分蝙蝠鸟类也不能合成，必须从食物里吃；而绝大多数哺乳动物(牛马狗)自己能造，不用愁。</p>
+      <p class="narrate">维C还是‘最不稳定的维生素’之一：还原性极强，特别容易被氧化，所以怕热、怕光、怕氧气、怕碱、还怕铜和铁离子催化它氧化。考试常拿‘稳定性’挖坑。</p>
+      <p class="narrate">单位上较真一句：维C用‘毫克’mg，别和前几位搞混——维A用RAE、维D用微克或IU、维E用α-TE、维K用微克，维C就是mg。口诀：‘维C抗坏血酸，水溶性最娇气；人体不能自合成(缺古洛糖酸内酯氧化酶)，单位用毫克mg’。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 身份 & 性质 & 单位</div>
+    <div class="big">L-抗坏血酸 · 水溶性 · 最不稳定(怕热/光/氧/碱/铜铁) · <b>人体不能自合成</b>(缺 L-古洛糖酸内酯氧化酶) · 单位：毫克 mg</div>
+    <div class="note">四个脂溶性伙伴单位别张冠李戴：维A→RAE、维D→µg/IU、维E→α-TE、维K→µg；<b>维C→mg</b>。灵长类/豚鼠/人不能合成，多数哺乳动物能。</div>
+  </div>
+  <table>
+    <thead><tr><th>性质</th><th>说明</th><th>考点提示</th></tr></thead>
+    <tbody>
+      <tr><td>化学名</td><td>L-抗坏血酸(含烯二醇，弱酸性)</td><td>‘抗坏血’即能防治坏血病</td></tr>
+      <tr><td>溶解性</td><td>水溶性，不储存、多余随尿排出</td><td>食物易损失、需每日摄入</td></tr>
+      <tr><td>合成能力</td><td><b>人体不能合成</b>(缺古洛糖酸内酯氧化酶)</td><td>灵长类/豚鼠/人不能；多数动物能</td></tr>
+      <tr><td>稳定性</td><td>最不稳定：易氧化</td><td><b>怕热·怕光·怕氧·怕碱·怕铜铁离子</b></td></tr>
+      <tr><td>单位</td><td>毫克 mg</td><td>≠ RAE/α-TE/µg/IU</td></tr>
+    </tbody>
+  </table>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s2')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s3">
+    <div class="sec-head"><div class="no">3</div><h2>核心精讲二：招牌机制——羟化(造胶原) + 还原(促铁吸收)</h2><div class="sub">12分钟</div></div>
+    <div class="card">
+      <p class="narrate">这是本课最烧脑也最高频的两段机制，记牢它们，维C的半壁江山就到手了。</p>
+      <p class="narrate">机制一：帮身体‘造胶原’。胶原蛋白在变成熟前，上面的脯氨酸、赖氨酸必须先被‘羟化’加上羟基，才能形成稳定的三股螺旋、把细胞粘在一起。这个羟化反应，维C就是必需辅酶(辅因子)。缺了维C，胶原造不牢，于是牙龈、血管、伤口全出问题——这就是坏血病的根。</p>
+      <p class="narrate">机制二：帮身体‘补血铁’。我们吃的植物性铁(非血红素铁)大多是三价铁Fe3+，难吸收；维C能把它还原成二价铁Fe2+，在十二指肠里好吸收得多。所以补铁、吃菠菜时配点维C(比如青椒、橙子)，铁吸收翻倍。这就是‘维C促铁吸收’的真相，和维D促钙吸收不是一回事。</p>
+      <p class="narrate">口诀：‘维C当辅酶，羟化脯氨酸赖氨酸→胶原稳；又把Fe3+还原成Fe2+→十二指肠铁吸收好。造胶原、补血铁，维C两绝活’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 270" role="img" aria-label="维生素C两大机制：胶原羟化与促铁吸收">
+    <text x="340" y="22" fill="#1f4d3a" font-size="14" text-anchor="middle" font-weight="700">维生素C的两大绝活：造胶原 + 补血铁</text>
+    <!-- 左：胶原羟化 -->
+    <rect x="14" y="40" width="320" height="210" rx="12" fill="#eafaf1" stroke="#2e9e6b"/>
+    <text x="174" y="64" fill="#1c6b45" font-size="14" text-anchor="middle" font-weight="700">① 羟化 → 稳定胶原蛋白</text>
+    <rect x="34" y="80" width="120" height="44" rx="10" fill="#fff" stroke="#2e9e6b"/>
+    <text x="94" y="100" fill="#1c6b45" font-size="12" text-anchor="middle">前胶原</text>
+    <text x="94" y="116" fill="#3a5a4c" font-size="10.5" text-anchor="middle">脯/赖氨酸</text>
+    <path d="M154 102 H196" stroke="#2e9e6b" stroke-width="2.5" marker-end="url(#vca)"/>
+    <rect x="200" y="80" width="118" height="44" rx="10" fill="#fff4dd" stroke="#e0a83a"/>
+    <text x="259" y="100" fill="#9a5b00" font-size="12" text-anchor="middle">＋维生素C</text>
+    <text x="259" y="116" fill="#6b5a3a" font-size="10.5" text-anchor="middle">辅酶·羟化</text>
+    <path d="M318 102 H346" stroke="#2e9e6b" stroke-width="2.5" marker-end="url(#vca)"/>
+    <rect x="350" y="80" width="120" height="44" rx="10" fill="#eafaf1" stroke="#2e9e6b"/>
+    <text x="410" y="100" fill="#1c6b45" font-size="12" text-anchor="middle">成熟胶原</text>
+    <text x="410" y="116" fill="#3a5a4c" font-size="10.5" text-anchor="middle">三股螺旋稳</text>
+    <text x="174" y="150" fill="#3a5a4c" font-size="11.5" text-anchor="middle">缺维C → 胶原不牢</text>
+    <text x="174" y="170" fill="#b5302a" font-size="11.5" text-anchor="middle">→ 牙龈出血·伤口不愈·血管脆</text>
+    <text x="174" y="196" fill="#6b5a3a" font-size="10.5" text-anchor="middle">（坏血病的根）</text>
+    <text x="174" y="222" fill="#1c6b45" font-size="11" text-anchor="middle">高中生物：‘结缔组织/胶原蛋白’就靠它</text>
+    <!-- 右：促铁吸收 -->
+    <rect x="346" y="40" width="320" height="210" rx="12" fill="#eef3ff" stroke="#3a8dde"/>
+    <text x="506" y="64" fill="#1f5fa8" font-size="14" text-anchor="middle" font-weight="700">② 还原 → 促进铁吸收</text>
+    <rect x="366" y="86" width="120" height="44" rx="10" fill="#fdf0ee" stroke="#d8443c"/>
+    <text x="426" y="106" fill="#b5302a" font-size="13" text-anchor="middle" font-weight="700">Fe³⁺ 三价铁</text>
+    <text x="426" y="124" fill="#8a7f6e" font-size="10" text-anchor="middle">植物性铁·难吸收</text>
+    <path d="M486 108 H524" stroke="#3a8dde" stroke-width="2.5" marker-end="url(#vcb)"/>
+    <rect x="528" y="86" width="120" height="44" rx="10" fill="#fff4dd" stroke="#e0a83a"/>
+    <text x="588" y="106" fill="#9a5b00" font-size="12.5" text-anchor="middle">＋维生素C</text>
+    <text x="588" y="124" fill="#6b5a3a" font-size="10" text-anchor="middle">还原</text>
+    <path d="M548 140 H426" stroke="#3a8dde" stroke-width="2.5" marker-end="url(#vcb)"/>
+    <rect x="366" y="158" width="120" height="44" rx="10" fill="#eafaf1" stroke="#2e9e6b"/>
+    <text x="426" y="178" fill="#1c6b45" font-size="13" text-anchor="middle" font-weight="700">Fe²⁺ 二价铁</text>
+    <text x="426" y="196" fill="#3a5a4c" font-size="10" text-anchor="middle">十二指肠好吸收</text>
+    <text x="506" y="222" fill="#1f5fa8" font-size="11" text-anchor="middle">补铁/吃菠菜配维C → 铁吸收↑（≠维D促钙）</text>
+    <defs>
+      <marker id="vca" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#2e9e6b"/></marker>
+      <marker id="vcb" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#3a8dde"/></marker>
+    </defs>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 机制口诀</div>
+    <div class="big">维C当辅酶 · 羟化脯氨酸/赖氨酸→胶原稳 · 又把Fe³⁺还原成Fe²⁺→十二指肠铁吸收好 · 造胶原+补血铁</div>
+    <div class="note">高中生物‘胶原蛋白/结缔组织’对应<b>羟化</b>；‘缺铁性贫血’对应<b>促铁吸收</b>。维C促<b>非血红素铁</b>，≠维D促钙。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s3')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s4">
+    <div class="sec-head"><div class="no">4</div><h2>核心精讲三：其他功能（抗氧化·免疫·解毒·阻断亚硝胺）</h2><div class="sub">9分钟</div></div>
+    <div class="card">
+      <p class="narrate">除了造胶原和促铁，维C还有几条‘辅助线’，考试也常顺带考。</p>
+      <p class="narrate">第一，抗氧化。维C是水溶性抗氧化的主力，能清除血液和组织液里的自由基、活性氧，保护细胞膜和DNA；它自己被氧化成脱氢抗坏血酸，还能靠谷胱甘肽再变回来，循环利用。</p>
+      <p class="narrate">第二，提高免疫力。白细胞、吞噬细胞里的维C浓度特别高，它帮这些免疫细胞更好地工作，所以感冒高发季大家爱补维C。</p>
+      <p class="narrate">第三，参与解毒和护肝。维C能保护体内的巯基(-SH)、帮助清除铅汞等重金属，还参与肝脏对药物毒物的羟化代谢。</p>
+      <p class="narrate">第四，阻断致癌物。在胃里，维C能阻断亚硝胺的形成，降低食管癌胃癌风险。第五，参与神经递质合成(5-羟色胺、去甲肾上腺素)，和情绪、神经也有关。把这条线记牢：维C是‘清道夫+保镖+护肝师’。口诀：‘抗氧化清自由基、强免疫、解毒护肝、阻断亚硝胺、帮造神经递质’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 130" role="img" aria-label="维生素C的其他功能">
+    <rect x="14" y="20" width="156" height="92" rx="10" fill="#fff4dd" stroke="#e0a83a"/>
+    <text x="92" y="50" fill="#9a5b00" font-size="13" text-anchor="middle" font-weight="700">🛡 抗氧化</text>
+    <text x="92" y="74" fill="#3a5a4c" font-size="11" text-anchor="middle">清自由基/活性氧</text>
+    <text x="92" y="94" fill="#6b5a3a" font-size="10" text-anchor="middle">谷胱甘肽再生</text>
+    <rect x="176" y="20" width="156" height="92" rx="10" fill="#eafaf1" stroke="#2e9e6b"/>
+    <text x="254" y="50" fill="#1c6b45" font-size="13" text-anchor="middle" font-weight="700">💪 强免疫</text>
+    <text x="254" y="74" fill="#3a5a4c" font-size="11" text-anchor="middle">白细胞/吞噬细胞</text>
+    <text x="254" y="94" fill="#6b5a3a" font-size="10" text-anchor="middle">浓度高·干活猛</text>
+    <rect x="338" y="20" width="156" height="92" rx="10" fill="#eef3ff" stroke="#3a8dde"/>
+    <text x="416" y="50" fill="#1f5fa8" font-size="13" text-anchor="middle" font-weight="700">🫁 解毒护肝</text>
+    <text x="416" y="74" fill="#3a5a4c" font-size="11" text-anchor="middle">护巯基·排重金属</text>
+    <text x="416" y="94" fill="#6b5a3a" font-size="10" text-anchor="middle">参与肝羟化代谢</text>
+    <rect x="500" y="20" width="166" height="92" rx="10" fill="#f3eefb" stroke="#9b6bd1"/>
+    <text x="583" y="50" fill="#6b3fa0" font-size="13" text-anchor="middle" font-weight="700">🚫 阻断亚硝胺</text>
+    <text x="583" y="74" fill="#3a5a4c" font-size="11" text-anchor="middle">胃内阻断致癌物</text>
+    <text x="583" y="94" fill="#6b5a3a" font-size="10" text-anchor="middle">降食管癌胃癌风险</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 其他功能口诀</div>
+    <div class="big">抗氧化清自由基 · 强免疫(白细胞高) · 解毒护肝(护巯基排重金属) · 阻断亚硝胺(防癌) · 帮造神经递质</div>
+    <div class="note">维C是<b>水溶性</b>抗氧化主力(对比脂溶性的维E在膜上)；还促<b>叶酸</b>还原成四氢叶酸。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s4')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s5">
+    <div class="sec-head"><div class="no">5</div><h2>核心精讲四：缺乏症——坏血病（和维K出血不是一回事）</h2><div class="sub">10分钟</div></div>
+    <div class="card">
+      <p class="narrate">维C缺乏会得什么病？坏血病(scurvy)。因为胶原造不牢、细胞间质生成障碍，毛细血管壁变脆，于是各种‘出血和长不好’。</p>
+      <p class="narrate">典型表现：牙龈肿胀出血、皮下瘀斑和出血点、伤口久久不愈合、牙齿松动、儿童骨骼发育不良(骨基质不良、关节痛)。航海时代水手长期吃不到蔬果，满口牙血、浑身青紫，就是它。</p>
+      <p class="narrate">注意两个易错点：第一，因为维C在体内能存一阵(半衰期约16天)，得断供三四个月才出现症状，不是几天就病。第二，也是最重要的——坏血病的‘出血’和上一课维K缺乏的‘出血’不是一回事：维K缺是凝血因子γ-羧化障碍(凝血机制)，维C缺是胶原/血管壁/结缔组织(结构支撑)，别张冠李戴。</p>
+      <p class="narrate">口诀：‘维C缺乏→坏血病：牙龈出血、皮下瘀斑、伤口不愈、骨发育不良；断供三四月才发；≠维K出血(那是凝血因子)’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 190" role="img" aria-label="坏血病的表现与机制">
+    <rect x="14" y="20" width="200" height="150" rx="12" fill="#eafaf1" stroke="#2e9e6b"/>
+    <text x="114" y="48" fill="#1c6b45" font-size="15" text-anchor="middle" font-weight="700">坏血病 scurvy</text>
+    <text x="114" y="76" fill="#3a5a4c" font-size="12" text-anchor="middle">根因：胶原/细胞间质</text>
+    <text x="114" y="96" fill="#3a5a4c" font-size="12" text-anchor="middle">生成障碍(维C当辅酶)</text>
+    <text x="114" y="124" fill="#b5302a" font-size="12" text-anchor="middle">血管/牙龈/伤口/骨</text>
+    <text x="114" y="146" fill="#b5302a" font-size="12" text-anchor="middle">全出问题</text>
+    <rect x="234" y="20" width="216" height="150" rx="12" fill="#fdf0ee" stroke="#d8443c"/>
+    <text x="342" y="46" fill="#b5302a" font-size="13.5" text-anchor="middle" font-weight="700">典型表现</text>
+    <text x="342" y="72" fill="#3a352e" font-size="12.5" text-anchor="middle">🦷 牙龈肿胀出血</text>
+    <text x="342" y="96" fill="#3a352e" font-size="12.5" text-anchor="middle">🟣 皮下瘀斑/出血点</text>
+    <text x="342" y="120" fill="#3a352e" font-size="12.5" text-anchor="middle">🩹 伤口久不愈合</text>
+    <text x="342" y="144" fill="#3a352e" font-size="12.5" text-anchor="middle">🦴 儿童骨发育不良/关节痛</text>
+    <rect x="470" y="20" width="196" height="150" rx="12" fill="#f3eefb" stroke="#9b6bd1"/>
+    <text x="568" y="46" fill="#6b3fa0" font-size="13" text-anchor="middle" font-weight="700">两大注意</text>
+    <text x="568" y="74" fill="#3a352e" font-size="11.5" text-anchor="middle">① 断供约3-4月才发</text>
+    <text x="568" y="98" fill="#3a352e" font-size="11.5" text-anchor="middle">(半衰期≈16天，能存一阵)</text>
+    <text x="568" y="124" fill="#b5302a" font-size="11.5" text-anchor="middle">② ≠ 维K出血</text>
+    <text x="568" y="146" fill="#3a352e" font-size="11" text-anchor="middle">(维K是凝血因子·维C是结构)</text>
+  </svg>
+  </div>
+  <div class="trap"><div class="t">核心大坑</div>坏血病的‘出血’源于<b>胶原/血管壁/结缔组织障碍</b>(结构支撑)，<b>≠</b>上一课维K缺乏的‘出血’(凝血因子γ-羧化障碍·凝血机制)。二者机制不同，考试常放一起挖坑。维C断供约 <b>3-4 个月</b>才出现症状(能短期储存)。</div>
+  <div class="mnemonic">
+    <div class="label">🔑 缺乏症口诀</div>
+    <div class="big">维C缺乏→坏血病：牙龈出血·皮下瘀斑·伤口不愈·骨发育不良 · 断供三四月才发 · ≠ 维K出血(凝血因子)</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s5')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s6">
+    <div class="sec-head"><div class="no">6</div><h2>核心精讲五：食物来源 &amp; 稳定性（最娇气，怕什么）</h2><div class="sub">9分钟</div></div>
+    <div class="card">
+      <p class="narrate">维C从哪吃？认准新鲜蔬菜和水果。蔬菜里彩椒(辣椒)、西兰花、番茄、菜花、深色叶菜含量高；水果里猕猴桃、柑橘、鲜枣(含量极高)、草莓、山楂、酸枣、刺梨、番石榴都多。记住排序：鲜枣/刺梨/猕猴桃往往比柑橘还高。动物性食物几乎不含维C，只有肝、肾有一点点。</p>
+      <p class="narrate">吸收上较真一句：维C是水溶性的，吸收还会‘自适应’——吃太多，吸收比例就降(超过1克吸收率可能不到一半)，所以猛灌补剂并不划算。</p>
+      <p class="narrate">稳定性是维C最容易丢分的地方：它‘最不稳定’，怕热、怕光、怕氧气、怕碱、怕铜铁离子催化氧化。所以‘先洗后切、切好就炒、急火快炒、凉拌、加点醋(酸性稳)、别用铜铁锅久煮’才是保住维C的诀窍。和维E一样怕光，但维C还格外怕热怕碱。</p>
+      <p class="narrate">口诀：‘维C认新鲜蔬果：彩椒/鲜枣/猕猴桃/西兰花/柑橘；动物性几乎不含；最不稳定·怕热怕光怕氧怕碱怕铜铁；先洗后切急火快炒凉拌加醋’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 160" role="img" aria-label="维生素C食物来源与稳定性">
+    <rect x="14" y="16" width="320" height="128" rx="12" fill="#fff7e0" stroke="#e0a83a"/>
+    <text x="174" y="42" fill="#a9791f" font-size="15" text-anchor="middle" font-weight="700">来源（含量高→低）</text>
+    <text x="174" y="68" font-size="12.5" text-anchor="middle">🥬 新鲜蔬菜：彩椒/辣椒·西兰花·番茄·菜花·深叶菜</text>
+    <text x="174" y="90" font-size="12.5" text-anchor="middle">🍊 水果：鲜枣(极高)·猕猴桃·柑橘·草莓·山楂·酸枣·刺梨</text>
+    <text x="174" y="114" fill="#6b5a3a" font-size="11.5" text-anchor="middle">动物性食物几乎不含(仅肝/肾少量) ｜ 吸收自适应·过量吸收↓</text>
+    <rect x="350" y="16" width="316" height="128" rx="12" fill="#fdf0ee" stroke="#d8443c"/>
+    <text x="508" y="42" fill="#b5302a" font-size="15" text-anchor="middle" font-weight="700">稳定性（最不稳定）</text>
+    <text x="508" y="72" font-size="13" text-anchor="middle">✗ 怕热 · ✗ 怕光 · ✗ 怕氧</text>
+    <text x="508" y="94" font-size="13" text-anchor="middle">✗ 怕碱 · ✗ 怕铜/铁离子催化氧化</text>
+    <text x="508" y="118" fill="#8a7f6e" font-size="11.5" text-anchor="middle">保VC：先洗后切·急火快炒·凉拌·加醋·避铜铁锅</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 来源 & 稳定性口诀</div>
+    <div class="big">认新鲜蔬果：彩椒/鲜枣/猕猴桃/西兰花/柑橘　|　动物性几乎不含　|　最不稳定·怕热怕光怕氧怕碱怕铜铁　|　先洗后切急火快炒凉拌加醋</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s6')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s7">
+    <div class="sec-head"><div class="no">7</div><h2>核心精讲六：吃多少 &amp; 单位（RNI 100 mg/d，UL 2000 mg/d）</h2><div class="sub">8分钟</div></div>
+    <div class="card">
+      <p class="narrate">最后量化：维C该吃多少？按中国营养学会《中国居民膳食营养素参考摄入量(2023版)》，成人(18岁以上)推荐摄入量RNI是每天100毫克mg，男女一致；预防非传染性慢性病的建议摄入量(PI)约200毫克。</p>
+      <p class="narrate">上限UL呢？成人是每天2000毫克。因为维C水溶性、多余随尿排，天然食物吃再多基本也不中毒；只有‘大剂量补剂’才会出问题，所以UL针对的是补充剂总量。</p>
+      <p class="narrate">顺带一句：美国DRI给的RNI是男90、女75毫克，但咱们注册营养师考试以本国DRIs为准，记成人100毫克就够了。量级是‘毫克’，别记成微克。</p>
+      <p class="narrate">口诀：‘维C单位毫克mg；成人RNI 100 mg/d(男女同)、PI约200；UL 2000 mg/d；天然食物基本无毒，大剂量补剂才有风险’。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 单位 & 摄入量（中国 DRIs 2023）</div>
+    <div class="big">单位：毫克 mg　|　成人(18+) <b>RNI 100 mg/d</b>（男女一致）　|　PI(防慢病)≈200 mg/d　|　<b>UL 2000 mg/d</b></div>
+    <div class="note">对照：美国DRI 男90/女75 mg(仅作了解)；本国考试以 <b>100 mg/d</b> 为准；因水溶性、多余随尿排，<b>天然食物基本无毒</b>，UL针对补剂总量。</div>
+  </div>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 130" role="img" aria-label="维生素C参考摄入量标尺">
+    <line x1="40" y1="70" x2="640" y2="70" stroke="#c9bda3" stroke-width="4"/>
+    <circle cx="200" cy="70" r="9" fill="#2e9e6b"/>
+    <text x="200" y="52" fill="#1c6b45" font-size="13" text-anchor="middle" font-weight="700">成人 RNI 100 mg</text>
+    <text x="200" y="98" fill="#3a5a4c" font-size="12" text-anchor="middle">mg/d（男女同）</text>
+    <circle cx="420" cy="70" r="9" fill="#e0a83a"/>
+    <text x="420" y="52" fill="#9a5b00" font-size="13" text-anchor="middle" font-weight="700">PI ≈ 200 mg</text>
+    <text x="420" y="98" fill="#6b5a3a" font-size="12" text-anchor="middle">防慢病建议量</text>
+    <circle cx="600" cy="70" r="10" fill="#d8443c"/>
+    <text x="600" y="52" fill="#b5302a" font-size="13" text-anchor="middle" font-weight="700">UL 2000 mg</text>
+    <text x="600" y="98" fill="#8a7f6e" font-size="12" text-anchor="middle">上限(补剂总量)</text>
+    <text x="40" y="118" fill="#8a7f6e" font-size="11.5">↑ 单位用 mg；水溶性·多余随尿排·天然食物基本无毒；UL 针对大剂量补剂(腹泻/草酸结石/铁过载)</text>
+  </svg>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s7')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s8">
+    <div class="sec-head"><div class="no">8</div><h2>红绿灯：高频易错点</h2><div class="sub">5分钟</div></div>
+    <div class="card">
+      <p class="narrate">红绿灯时间，把维生素C这章最爱丢分的坑集中点一遍。</p>
+      <p class="narrate">易错一：合成能力。说‘人体能自身合成维C’直接判错——人缺L-古洛糖酸内酯氧化酶，不能合成，必须吃；多数哺乳动物能。</p>
+      <p class="narrate">易错二：单位。维C用毫克mg，不是维A的RAE、不是维D的IU/µg、不是维E的α-TE、不是维K的µg。</p>
+      <p class="narrate">易错三：机制。维C是羟化反应的辅酶，让脯氨酸赖氨酸变成羟化胶原；它‘不是’胶原本身，也‘不直接’形成血块、不是激素。</p>
+      <p class="narrate">易错四：促铁吸收。维C把Fe3+还原成Fe2+，促进‘非血红素铁(植物性铁)’在十二指肠吸收；它‘不’促钙吸收(那是维D)、对血红素铁(肉类)影响不大。</p>
+      <p class="narrate">易错五：缺乏症误判。维C缺乏是坏血病(牙龈出血/伤口不愈/血管脆)，根在胶原；‘不是’维K那样的凝血因子出血、‘不是’夜盲(维A)、‘不是’佝偻(维D)。</p>
+      <p class="narrate">易错六：来源。维C主要来自新鲜蔬果，含量最高的是彩椒/鲜枣/猕猴桃之类，‘不是’只有柑橘、‘不是’来自肉类。</p>
+      <p class="narrate">易错七：稳定性。维C最不稳定，怕热怕光怕碱怕铜铁氧；说‘维C很耐热、久煮不流失’必错。</p>
+      <p class="narrate">易错八：过量。天然食物无毒，但大剂量补剂(&gt;1克)会腹泻、增加草酸钙结石、铁过载风险；UL 2000毫克，量级是‘毫克’不是微克。</p>
+  <div class="trap"><div class="t">易错1：能否合成</div>人体<b>不能</b>合成维C(缺 <b>L-古洛糖酸内酯氧化酶</b>)；灵长类/豚鼠/人不能，多数哺乳动物能。说“人体能自合成VC”必错。</div>
+  <div class="trap"><div class="t">易错2：单位</div>维C用 <b>mg(毫克)</b>；≠维A的RAE、≠维D的IU/µg、≠维E的α-TE、≠维K的µg。</div>
+  <div class="trap"><div class="t">易错3：机制</div>维C是 <b>羟化辅酶</b>，使脯氨酸/赖氨酸→羟化胶原；<b>不是</b>胶原本身、不直接形成血块、非激素。</div>
+  <div class="trap"><div class="t">易错4：促铁吸收</div>把 <b>Fe³⁺还原成Fe²⁺</b>，促<b>非血红素铁(植物性)</b>十二指肠吸收；<b>不</b>促钙(那是维D)、对血红素铁影响小。</div>
+  <div class="trap"><div class="t">易错5：缺乏症</div>维C缺→<b>坏血病</b>(牙龈出血/伤口不愈/血管脆，根在胶原)；<b>≠</b>维K凝血出血、≠夜盲(VA)、≠佝偻(VD)。</div>
+  <div class="trap"><div class="t">易错6：来源</div>主来自<b>新鲜蔬果</b>(彩椒/鲜枣/猕猴桃/西兰花/柑橘)；动物性几乎不含；“只来自柑橘/肉类”均错。</div>
+  <div class="trap"><div class="t">易错7：稳定性</div>维C<b>最不稳定</b>：怕热·怕光·怕氧·怕碱·怕铜铁；“维C很耐热久煮不流失”必错。</div>
+  <div class="trap"><div class="t">易错8：过量</div>天然食物基本无毒；<b>大剂量补剂(>1g)</b>→腹泻/草酸钙结石/铁过载；<b>UL 2000 mg/d</b>；量级“毫克”非微克。</div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s8')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s9">
+    <div class="sec-head"><div class="no">9</div><h2>解题三步法（注册营养师全是选择题）</h2><div class="sub">4分钟</div></div>
+    <div class="card">
+      <p class="narrate">注册营养师全是选择题，维生素C这章送你一套三步法。</p>
+      <p class="narrate">第一步，审题定性：先看问的是身份(抗坏血酸/水溶性/不能合成)、机制(羟化胶原/还原Fe促铁吸收)、其他功能(抗氧化/免疫/解毒)、缺乏症(坏血病)、食物来源与稳定性，还是摄入量和单位mg，先定性，别急着看选项。</p>
+      <p class="narrate">第二步，定位考点：身份就背抗坏血酸、水溶性、不能合成(缺古洛糖酸内酯氧化酶)、单位mg；机制就背羟化脯氨酸赖氨酸→胶原、还原Fe3+→Fe2+促非血红素铁吸收；功能就背抗氧化、强免疫、解毒护肝、阻断亚硝胺；缺乏就背坏血病(牙龈出血/伤口不愈/血管脆≠维K)、断供三四月才发；来源就背新鲜蔬果(彩椒/鲜枣/猕猴桃)、动物性几乎不含、最不稳定怕热光碱铜铁；摄入就背RNI100/UL2000。</p>
+      <p class="narrate">第三步，排除反着坑：直接排除‘人体能合成VC’‘VC单位µg或IU’‘VC促钙吸收’‘坏血病是凝血因子缺乏’‘VC主要来自肉类’‘VC很耐热’‘VC多吃不中毒’‘VC直接构成胶原’这类反向表述，剩下的就是答案。</p>
+  <div class="steps">
+    <div class="step"><div class="b"><b>第一步 · 审题定性：</b>先看问哪一类——身份(抗坏血酸/水溶性/不能合成)？机制(羟化胶原/还原Fe促铁)？其他功能(抗氧化/免疫/解毒)？缺乏症(坏血病)？来源与稳定性？摄入量(mg)？先定性，不急看选项。</div></div>
+    <div class="step"><div class="b"><b>第二步 · 定位考点：</b>身份→抗坏血酸/水溶性/不能合成(缺古洛糖酸内酯氧化酶)/mg；机制→羟化脯赖→胶原+还原Fe3+→Fe2+促非血红素铁；功能→抗氧化/强免疫/解毒护肝/阻断亚硝胺；缺乏→坏血病(牙龈出血/伤口不愈/血管脆≠维K)/断供三四月；来源→新鲜蔬果(彩椒/鲜枣/猕猴桃)/动物性几乎不含/最不稳定怕热光碱铜铁；摄入→RNI100/UL2000。</div></div>
+    <div class="step"><div class="b"><b>第三步 · 排除反坑：</b>直接排除“人体能合成VC”“VC单位µg/IU”“VC促钙吸收”“坏血病是凝血因子缺乏”“VC主要来自肉类”“VC很耐热”“VC多吃不中毒”“VC直接构成胶原”这类反向表述，剩下即答案。</div></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s9')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s10">
+    <div class="sec-head"><div class="no">10</div><h2>晓晓老师不定时提问 · 模拟课堂（费曼）</h2><div class="sub">互动</div></div>
+    <div class="card">
+      <p class="narrate">讲完重点，我们模拟上课提问。我先和班里的同学演练，再轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。</p>
+      <p class="narrate">第一个问题：用你自己的话解释，维生素C是怎么帮身体‘造胶原’和‘补血铁’的？把羟化机制和铁吸收机制讲清楚。</p>
+      <p class="narrate">第二个问题：为什么维C缺乏会牙龈出血、伤口不愈合，却不是维K那样的凝血障碍？坏血病的根在哪、和维K出血有什么本质不同？把这条逻辑讲清楚。</p>
+  <div class="chat">
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">小明，听说最近降温感冒多，你妈让你每天泡一大杯维C泡腾片，一次就冲三四克，说‘多多益善，吃了不生病’。你怎么看？</div></div></div>
+    <div class="msg stu"><div class="av stu">🧒</div><div><div class="who">学生·小明</div><div class="bubble">我觉得挺好啊，维C不是能防感冒、又不中毒吗？多补点更保险！</div></div></div>
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">方向错了，得较真。维C是水溶性的，日常<b>RNI只要100毫克</b>，多吃新鲜蔬果(彩椒/鲜枣/猕猴桃)完全够；预防感冒额外补个100-200毫克足矣。<b>一次灌三四克(>1g)反而坏事</b>：渗透压大会腹泻、维C代谢成草酸增加<b>肾结石(草酸钙)</b>风险、还有铁过载风险(血色病的人尤其忌)。而且吃太多身体吸收比例还下降，纯属浪费。记住：<b>食补为主、小剂量补充、别当水猛喝</b>。</div></div></div>
+  </div>
+
+  <div class="ask" data-keywords="羟化|脯|赖|胶原|辅酶|辅因子|三股|螺旋|Fe|铁|还原|二价|三价|非血红素|十二指肠|吸收|抗坏血酸" data-model="维C有两大绝活：①<b>造胶原</b>——它是<b>羟化反应的辅酶</b>，给前胶原上的<b>脯氨酸、赖氨酸</b>加羟基，让胶原蛋白形成稳定的三股螺旋、把组织和血管‘粘牢’；缺了胶原不牢，就牙龈出血、伤口不愈(坏血病)。②<b>补血铁</b>——把难吸收的三价铁<b>Fe³⁺还原成二价铁Fe²⁺</b>，主要在<b>十二指肠</b>促进<b>非血红素铁(植物性铁)</b>吸收，所以吃菠菜/补铁配维C更好。一句话：<b>维C既当胶原的‘胶水’，又当铁的‘还原剂’</b>。">
+    <div class="q">提问一：维生素C是怎么帮身体“造胶原”和“补血铁”的？把羟化机制和铁吸收机制讲清楚。</div>
+    <textarea placeholder="想一想：胶原为什么需要‘羟化’？铁为什么要先被‘还原’才好吸收？"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+  <div class="ask" data-keywords="坏血|牙龈|出血|瘀|伤口|胶原|细胞间质|血管|结构|维K|凝血因子|≠|不同|四五|三月|储存|半衰期" data-model="维C缺乏得<b>坏血病</b>：牙龈出血、皮下瘀斑、伤口不愈、儿童骨发育不良。根子在<b>胶原/细胞间质/血管壁的结构支撑障碍</b>——维C是羟化辅酶，缺了胶原造不牢、毛细血管壁变脆才出血(‘结构’问题)。而<b>维K缺乏的出血是‘凝血机制’问题</b>：维K让凝血因子II/VII/IX/X被γ-羧化、才能抓钙活化；缺的是‘凝血因子活性’。二者<b>机制本质不同</b>：一个是血管壁/结缔组织松了，一个是血凝不起来。另外维C断供约<b>3-4个月</b>才发病(能短期储存)，和维K不一样。">
+    <div class="q">提问二：为什么维C缺乏会牙龈出血、伤口不愈合，却不是维K那样的凝血障碍？坏血病的根在哪、和维K出血有什么本质不同？</div>
+    <textarea placeholder="先想：出血的‘原因’是结构松了，还是血凝不起来？"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s10')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s11">
+    <div class="sec-head"><div class="no">11</div><h2>改编练习题（单选，仿注册营养师真题）</h2><div class="sub">自测</div></div>
+    <div class="card">
+      <p class="narrate">下面8道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，人体不能合成维C缺的酶。第二题，维C的计量单位。第三题，维C作为辅酶参与的羟化反应产物。第四题，维C促进铁吸收的机制。第五题，维C缺乏的疾病。第六题，维C含量最丰富的食物来源。第七题，关于维C稳定性错误的说法。第八题，成人RNI和UL。</p>
+  <div class="quiz" data-ans="B">
+    <div class="stem">1. 人体不能自身合成维生素C，主要原因是缺乏：</div>
+    <button class="opt" onclick="choose(this)">A. 葡萄糖-6-磷酸酶</button>
+    <button class="opt" onclick="choose(this)">B. L-古洛糖酸内酯氧化酶</button>
+    <button class="opt" onclick="choose(this)">C. γ-谷氨酰羧化酶</button>
+    <button class="opt" onclick="choose(this)">D. 脂蛋白脂肪酶</button>
+    <div class="ans">✅ 答案：B。人缺<b>L-古洛糖酸内酯氧化酶</b>，无法把前体变成抗坏血酸，故不能合成维C(灵长类/豚鼠同)。A是糖异生/肝相关；C是维K循环；D与脂代谢。</div>
+  </div>
+  <div class="quiz" data-ans="C">
+    <div class="stem">2. 评价维生素C摄入量所用的单位是：</div>
+    <button class="opt" onclick="choose(this)">A. 视黄醇活性当量(RAE)</button>
+    <button class="opt" onclick="choose(this)">B. 微克(µg)</button>
+    <button class="opt" onclick="choose(this)">C. 毫克(mg)</button>
+    <button class="opt" onclick="choose(this)">D. α-生育酚当量(α-TE)</button>
+    <div class="ans">✅ 答案：C。维C用 <b>mg(毫克)</b>。RAE是维A、µg是维K/维D、α-TE是维E，三者别混。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">3. 维生素C作为辅酶主要参与羟化反应，其产物对下列哪类蛋白质的稳定最为关键：</div>
+    <button class="opt" onclick="choose(this)">A. 血红蛋白</button>
+    <button class="opt" onclick="choose(this)">B. 胶原蛋白</button>
+    <button class="opt" onclick="choose(this)">C. 肌动蛋白</button>
+    <button class="opt" onclick="choose(this)">D. 胰岛素</button>
+    <div class="ans">✅ 答案：B。维C催化<b>脯氨酸/赖氨酸羟化</b>，使<b>胶原蛋白</b>形成稳定三股螺旋；缺→坏血病。A/C/D非维C羟化靶标。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">4. 维生素C促进铁吸收的机制是：</div>
+    <button class="opt" onclick="choose(this)">A. 使Fe²⁺氧化为Fe³⁺</button>
+    <button class="opt" onclick="choose(this)">B. 将Fe³⁺还原为Fe²⁺，促进非血红素铁吸收</button>
+    <button class="opt" onclick="choose(this)">C. 与铁结合形成不溶性沉淀</button>
+    <button class="opt" onclick="choose(this)">D. 抑制肠道铁吸收</button>
+    <div class="ans">✅ 答案：B。维C把难吸收的三价铁<b>Fe³⁺还原为Fe²⁺</b>，主要在十二指肠促进<b>非血红素铁(植物性铁)</b>吸收。A反了；C/D错。</div>
+  </div>
+  <div class="quiz" data-ans="C">
+    <div class="stem">5. 长期缺乏维生素C导致的疾病是：</div>
+    <button class="opt" onclick="choose(this)">A. 夜盲症</button>
+    <button class="opt" onclick="choose(this)">B. 佝偻病</button>
+    <button class="opt" onclick="choose(this)">C. 坏血病</button>
+    <button class="opt" onclick="choose(this)">D. 脚气病</button>
+    <div class="ans">✅ 答案：C。维C缺→<b>坏血病</b>(牙龈出血/伤口不愈/血管脆)。A是维A、B是维D、D是维B1。</div>
+  </div>
+  <div class="quiz" data-ans="C">
+    <div class="stem">6. 下列食物中维生素C含量最丰富的是：</div>
+    <button class="opt" onclick="choose(this)">A. 精白米面</button>
+    <button class="opt" onclick="choose(this)">B. 瘦猪肉</button>
+    <button class="opt" onclick="choose(this)">C. 鲜枣、彩椒等新鲜蔬果</button>
+    <button class="opt" onclick="choose(this)">D. 牛奶</button>
+    <div class="ans">✅ 答案：C。<b>新鲜蔬果</b>(鲜枣/彩椒/猕猴桃/西兰花)维C极高；动物性食物几乎不含。A/B/D维C很低。</div>
+  </div>
+  <div class="quiz" data-ans="C">
+    <div class="stem">7. 关于维生素C的稳定性，错误的是：</div>
+    <button class="opt" onclick="choose(this)">A. 对热不稳定</button>
+    <button class="opt" onclick="choose(this)">B. 对光和氧敏感</button>
+    <button class="opt" onclick="choose(this)">C. 在碱性环境中很稳定</button>
+    <button class="opt" onclick="choose(this)">D. 铜、铁离子可催化其氧化破坏</button>
+    <div class="ans">✅ 答案：C。维C<b>怕碱</b>(在碱性环境中也不稳定)，说“碱性环境很稳定”错误。A/B/D均为维C真实弱点；故保VC要‘加醋、避铜铁锅、急火快炒’。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">8. 按中国营养学会《膳食营养素参考摄入量(2023版)》，成人维生素C的适宜摄入量(RNI)与可耐受最高摄入量(UL)约为：</div>
+    <button class="opt" onclick="choose(this)">A. 14 mg/80 mg</button>
+    <button class="opt" onclick="choose(this)">B. 100 mg/2000 mg</button>
+    <button class="opt" onclick="choose(this)">C. 10 µg/50 µg</button>
+    <button class="opt" onclick="choose(this)">D. 80 µg/未制定</button>
+    <div class="ans">✅ 答案：B。成人维C <b>RNI 100 mg/d</b>、<b>UL 2000 mg/d</b>(mg，非µg)。A是维E的量、C是维D/µg、D是维K。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s11')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s12">
+    <div class="sec-head"><div class="no">12</div><h2>费曼记忆小测：用自己的话讲一遍</h2><div class="sub">收尾</div></div>
+    <div class="card">
+      <p class="narrate">最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。</p>
+      <p class="narrate">问题：维生素C为什么叫抗坏血酸？它凭什么帮身体造胶原、补血铁(羟化与还原机制)？它还有哪些本事(抗氧化/免疫/解毒/阻断亚硝胺)？缺了为什么会牙龈出血、伤口不愈合，和维K出血有啥不同？一天该吃多少(成人100毫克、上限2000)？从哪吃、又最怕什么？把身份、机制、功能、缺乏、来源、摄入量这条逻辑串起来。</p>
+      <p class="narrate">课堂小结口诀复习：身份‘维C抗坏血酸、水溶性最娇气、人体不能自合成(缺古洛糖酸内酯氧化酶)、单位毫克mg’；机制‘维C当辅酶、羟化脯赖造胶原、还原Fe3+成Fe2+促铁吸收’；功能‘抗氧化清自由基、强免疫、解毒护肝、阻断亚硝胺’；缺乏‘坏血病：牙龈出血皮下瘀斑伤口不愈骨发育不良，断供三四月才发，≠维K出血’；来源‘认新鲜蔬果彩椒鲜枣猕猴桃西兰花柑橘、动物性几乎不含、最不稳定怕热怕光怕氧怕碱怕铜铁’；摄入‘单位毫克、成人RNI100、UL2000’。</p>
+  <div class="feynman">
+    <h3>🧠 费曼复述任务</h3>
+    <p>合上页面，试着给一个“完全不懂营养的朋友”讲清楚下面这个问题。能讲明白，说明你真懂了（费曼学习法：教是最好的学）。</p>
+    <p><b>问题：</b>“维生素C为什么叫抗坏血酸？它凭什么帮身体造胶原、补血铁？它还有哪些本事？缺了为什么会牙龈出血、伤口不愈合，和维K出血有啥不同？一天该吃多少（成人100毫克）？从哪吃、又最怕什么？”</p>
+    <textarea id="feynmanBox" placeholder="在这里用大白话写一段 4-6 句话的解释……"></textarea>
+    <button class="btn" onclick="feynmanCheck()">自我对照 · 看评分清单</button>
+    <div class="feedback" id="feynmanFeedback"></div>
+    <ul class="rubric">
+      <li>✅ 提到 水溶性、单位mg、抗坏血酸、人体不能合成(缺古洛糖酸内酯氧化酶)</li>
+      <li>✅ 提到 机制：羟化脯氨酸/赖氨酸→稳定胶原；还原Fe³⁺→Fe²⁺促非血红素铁吸收</li>
+      <li>✅ 提到 功能：抗氧化、强免疫、解毒护肝、阻断亚硝胺</li>
+      <li>✅ 提到 缺乏→坏血病(牙龈出血/伤口不愈/血管脆)；断供3-4月才发；≠维K出血(凝血因子)</li>
+      <li>✅ 提到 来源新鲜蔬果(彩椒/鲜枣/猕猴桃)、动物性几乎不含；最不稳定怕热/光/碱/铜铁；摄入 RNI100 mg、UL2000 mg</li>
+    </ul>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s12')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    本节为「营养刷题」第9课，依据「注册营养师考试宝典」公众号·维生素C考点系列及历年真题整理改编，并对照《中国居民膳食营养素参考摄入量(脂溶性维生素 WS/T 578.4 / DRIs 2023)》《营养与食品卫生学》第9版、NIH ODS / MedlinePlus / Harvard Nutrition Source 核实　｜　晓晓老师语音由 Edge-TTS XiaoxiaoNeural 神经网络语音合成，字幕固定底部不遮挡讲解　｜　仅供学习备考使用
+  </footer>
+</div>
+
+<div id="playerbar" class="hide">
+  <div class="subline" id="subline"><b>晓晓老师：</b>点击任意「▶ 听晓晓老师讲这段」，或点「📖 从头播放」，晓晓老师逐句讲解，字幕显示在此处，不遮挡上方讲解。</div>
+  <div class="pctrl">
+    <button onclick="prevSent()">⏮ 上一句</button>
+    <button id="playbtn" onclick="togglePlay()">▶ 播放</button>
+    <button onclick="nextSent()">下一句 ⏭</button>
+    <input id="seek" type="range" min="0" max="100" value="0" oninput="onSeek(this.value)" title="拖动可调整播放位置" />
+    <span id="idxlbl">0 / 0</span>
+    <span class="spd">语速
+      <button id="s08" onclick="Player.setSpeed(0.8)">0.8x</button>
+      <button id="s10" class="on" onclick="Player.setSpeed(1)">1x</button>
+      <button id="s12" onclick="Player.setSpeed(1.2)">1.2x</button>
+      <button id="s15" onclick="Player.setSpeed(1.5)">1.5x</button>
+    </span>
+    <button onclick="playAll()">📖 从头播放</button>
+    <button onclick="hidePlayer()">收起</button>
+  </div>
+</div>
+<button id="reopen" onclick="showPlayer()">▶ 晓晓老师</button>
+
+<script>
+const SECTIONS_AUDIO = {"s1": ["audio/s1_0.mp3", "audio/s1_1.mp3", "audio/s1_2.mp3", "audio/s1_3.mp3"], "s2": ["audio/s2_0.mp3", "audio/s2_1.mp3", "audio/s2_2.mp3", "audio/s2_3.mp3"], "s3": ["audio/s3_0.mp3", "audio/s3_1.mp3", "audio/s3_2.mp3", "audio/s3_3.mp3"], "s4": ["audio/s4_0.mp3", "audio/s4_1.mp3", "audio/s4_2.mp3", "audio/s4_3.mp3", "audio/s4_4.mp3"], "s5": ["audio/s5_0.mp3", "audio/s5_1.mp3", "audio/s5_2.mp3", "audio/s5_3.mp3"], "s6": ["audio/s6_0.mp3", "audio/s6_1.mp3", "audio/s6_2.mp3", "audio/s6_3.mp3"], "s7": ["audio/s7_0.mp3", "audio/s7_1.mp3", "audio/s7_2.mp3", "audio/s7_3.mp3"], "s8": ["audio/s8_0.mp3", "audio/s8_1.mp3", "audio/s8_2.mp3", "audio/s8_3.mp3", "audio/s8_4.mp3", "audio/s8_5.mp3", "audio/s8_6.mp3", "audio/s8_7.mp3", "audio/s8_8.mp3"], "s9": ["audio/s9_0.mp3", "audio/s9_1.mp3", "audio/s9_2.mp3", "audio/s9_3.mp3"], "s10": ["audio/s10_0.mp3", "audio/s10_1.mp3", "audio/s10_2.mp3"], "s11": ["audio/s11_0.mp3"], "s12": ["audio/s12_0.mp3", "audio/s12_1.mp3", "audio/s12_2.mp3"]};
+const SECTIONS_TEXT  = {"s1": ["同学们好，我是晓晓老师。开第9课前，先把前八课总纲快速串一遍：蛋白质——9种必需氨基酸、谷类缺赖氨酸豆类缺蛋氨酸；碳水——蔗无乳有麦也有、GI和GL、添加糖最好不超25克；脂类——必需脂肪酸只有亚油酸和α-亚麻酸、HDL好LDL坏；能量——1千卡等于4.184千焦、BMI中国24超28胖；维生素A——视杆细胞视紫红质、先暗适应下降再夜盲、过量中毒只在动物肝；维生素D——阳光维D、肝出25是营养指标、肾出1,25最能干；维生素E——8种里α-生育酚是老大、抗氧化断链护膜护红细胞、但过量损害凝血；上一课维生素K——凝血卫士，γ-羧化让凝血因子II/VII/IX/X抓钙活化、华法林掐还原酶令凝血停、成人AI 80微克。", "前八课里，维生素说了A、D、E、K四位——它们都是‘脂溶性’的，能藏在脂肪和肝脏里、吃多了会中毒。今天我们要换个赛道，进入‘水溶性维生素’，第一课就讲最出名、也最容易被考的一位——维生素C。", "维C和前四位气质完全不同：它溶于水、身体不囤货、吃多了随尿排、基本不中毒，但架不住它‘最娇气’——怕热怕光怕碱还怕铜铁锅。高中生物讲过的‘胶原蛋白’‘结缔组织’‘红细胞运铁’，今天全用得上。", "今天主线：维C是谁、单位用啥 → 它怎么帮身体‘造胶原、补血铁’(机制) → 它还抗氧化、解毒、护免疫 → 缺了谁会得坏血病、和维K出血有啥不同 → 从哪吃、又怕什么 → 该吃多少(成人100毫克)。一条线串起来。"], "s2": ["先搞清维C的‘身份’。它学名L-抗坏血酸，也叫抗坏血酸，是水溶性维生素，带点酸味(含烯二醇结构)。", "最关键的一条：人体自己不能合成维C！因为我们缺少最后一步的酶——L-古洛糖酸内酯氧化酶，没法把前体变成抗坏血酸。所以灵长类、豚鼠、部分蝙蝠鸟类也不能合成，必须从食物里吃；而绝大多数哺乳动物(牛马狗)自己能造，不用愁。", "维C还是‘最不稳定的维生素’之一：还原性极强，特别容易被氧化，所以怕热、怕光、怕氧气、怕碱、还怕铜和铁离子催化它氧化。考试常拿‘稳定性’挖坑。", "单位上较真一句：维C用‘毫克’mg，别和前几位搞混——维A用RAE、维D用微克或IU、维E用α-TE、维K用微克，维C就是mg。口诀：‘维C抗坏血酸，水溶性最娇气；人体不能自合成(缺古洛糖酸内酯氧化酶)，单位用毫克mg’。"], "s3": ["这是本课最烧脑也最高频的两段机制，记牢它们，维C的半壁江山就到手了。", "机制一：帮身体‘造胶原’。胶原蛋白在变成熟前，上面的脯氨酸、赖氨酸必须先被‘羟化’加上羟基，才能形成稳定的三股螺旋、把细胞粘在一起。这个羟化反应，维C就是必需辅酶(辅因子)。缺了维C，胶原造不牢，于是牙龈、血管、伤口全出问题——这就是坏血病的根。", "机制二：帮身体‘补血铁’。我们吃的植物性铁(非血红素铁)大多是三价铁Fe3+，难吸收；维C能把它还原成二价铁Fe2+，在十二指肠里好吸收得多。所以补铁、吃菠菜时配点维C(比如青椒、橙子)，铁吸收翻倍。这就是‘维C促铁吸收’的真相，和维D促钙吸收不是一回事。", "口诀：‘维C当辅酶，羟化脯氨酸赖氨酸→胶原稳；又把Fe3+还原成Fe2+→十二指肠铁吸收好。造胶原、补血铁，维C两绝活’。"], "s4": ["除了造胶原和促铁，维C还有几条‘辅助线’，考试也常顺带考。", "第一，抗氧化。维C是水溶性抗氧化的主力，能清除血液和组织液里的自由基、活性氧，保护细胞膜和DNA；它自己被氧化成脱氢抗坏血酸，还能靠谷胱甘肽再变回来，循环利用。", "第二，提高免疫力。白细胞、吞噬细胞里的维C浓度特别高，它帮这些免疫细胞更好地工作，所以感冒高发季大家爱补维C。", "第三，参与解毒和护肝。维C能保护体内的巯基(-SH)、帮助清除铅汞等重金属，还参与肝脏对药物毒物的羟化代谢。", "第四，阻断致癌物。在胃里，维C能阻断亚硝胺的形成，降低食管癌胃癌风险。第五，参与神经递质合成(5-羟色胺、去甲肾上腺素)，和情绪、神经也有关。把这条线记牢：维C是‘清道夫+保镖+护肝师’。口诀：‘抗氧化清自由基、强免疫、解毒护肝、阻断亚硝胺、帮造神经递质’。"], "s5": ["维C缺乏会得什么病？坏血病(scurvy)。因为胶原造不牢、细胞间质生成障碍，毛细血管壁变脆，于是各种‘出血和长不好’。", "典型表现：牙龈肿胀出血、皮下瘀斑和出血点、伤口久久不愈合、牙齿松动、儿童骨骼发育不良(骨基质不良、关节痛)。航海时代水手长期吃不到蔬果，满口牙血、浑身青紫，就是它。", "注意两个易错点：第一，因为维C在体内能存一阵(半衰期约16天)，得断供三四个月才出现症状，不是几天就病。第二，也是最重要的——坏血病的‘出血’和上一课维K缺乏的‘出血’不是一回事：维K缺是凝血因子γ-羧化障碍(凝血机制)，维C缺是胶原/血管壁/结缔组织(结构支撑)，别张冠李戴。", "口诀：‘维C缺乏→坏血病：牙龈出血、皮下瘀斑、伤口不愈、骨发育不良；断供三四月才发；≠维K出血(那是凝血因子)’。"], "s6": ["维C从哪吃？认准新鲜蔬菜和水果。蔬菜里彩椒(辣椒)、西兰花、番茄、菜花、深色叶菜含量高；水果里猕猴桃、柑橘、鲜枣(含量极高)、草莓、山楂、酸枣、刺梨、番石榴都多。记住排序：鲜枣/刺梨/猕猴桃往往比柑橘还高。动物性食物几乎不含维C，只有肝、肾有一点点。", "吸收上较真一句：维C是水溶性的，吸收还会‘自适应’——吃太多，吸收比例就降(超过1克吸收率可能不到一半)，所以猛灌补剂并不划算。", "稳定性是维C最容易丢分的地方：它‘最不稳定’，怕热、怕光、怕氧气、怕碱、怕铜铁离子催化氧化。所以‘先洗后切、切好就炒、急火快炒、凉拌、加点醋(酸性稳)、别用铜铁锅久煮’才是保住维C的诀窍。和维E一样怕光，但维C还格外怕热怕碱。", "口诀：‘维C认新鲜蔬果：彩椒/鲜枣/猕猴桃/西兰花/柑橘；动物性几乎不含；最不稳定·怕热怕光怕氧怕碱怕铜铁；先洗后切急火快炒凉拌加醋’。"], "s7": ["最后量化：维C该吃多少？按中国营养学会《中国居民膳食营养素参考摄入量(2023版)》，成人(18岁以上)推荐摄入量RNI是每天100毫克mg，男女一致；预防非传染性慢性病的建议摄入量(PI)约200毫克。", "上限UL呢？成人是每天2000毫克。因为维C水溶性、多余随尿排，天然食物吃再多基本也不中毒；只有‘大剂量补剂’才会出问题，所以UL针对的是补充剂总量。", "顺带一句：美国DRI给的RNI是男90、女75毫克，但咱们注册营养师考试以本国DRIs为准，记成人100毫克就够了。量级是‘毫克’，别记成微克。", "口诀：‘维C单位毫克mg；成人RNI 100 mg/d(男女同)、PI约200；UL 2000 mg/d；天然食物基本无毒，大剂量补剂才有风险’。"], "s8": ["红绿灯时间，把维生素C这章最爱丢分的坑集中点一遍。", "易错一：合成能力。说‘人体能自身合成维C’直接判错——人缺L-古洛糖酸内酯氧化酶，不能合成，必须吃；多数哺乳动物能。", "易错二：单位。维C用毫克mg，不是维A的RAE、不是维D的IU/µg、不是维E的α-TE、不是维K的µg。", "易错三：机制。维C是羟化反应的辅酶，让脯氨酸赖氨酸变成羟化胶原；它‘不是’胶原本身，也‘不直接’形成血块、不是激素。", "易错四：促铁吸收。维C把Fe3+还原成Fe2+，促进‘非血红素铁(植物性铁)’在十二指肠吸收；它‘不’促钙吸收(那是维D)、对血红素铁(肉类)影响不大。", "易错五：缺乏症误判。维C缺乏是坏血病(牙龈出血/伤口不愈/血管脆)，根在胶原；‘不是’维K那样的凝血因子出血、‘不是’夜盲(维A)、‘不是’佝偻(维D)。", "易错六：来源。维C主要来自新鲜蔬果，含量最高的是彩椒/鲜枣/猕猴桃之类，‘不是’只有柑橘、‘不是’来自肉类。", "易错七：稳定性。维C最不稳定，怕热怕光怕碱怕铜铁氧；说‘维C很耐热、久煮不流失’必错。", "易错八：过量。天然食物无毒，但大剂量补剂(>1克)会腹泻、增加草酸钙结石、铁过载风险；UL 2000毫克，量级是‘毫克’不是微克。"], "s9": ["注册营养师全是选择题，维生素C这章送你一套三步法。", "第一步，审题定性：先看问的是身份(抗坏血酸/水溶性/不能合成)、机制(羟化胶原/还原Fe促铁吸收)、其他功能(抗氧化/免疫/解毒)、缺乏症(坏血病)、食物来源与稳定性，还是摄入量和单位mg，先定性，别急着看选项。", "第二步，定位考点：身份就背抗坏血酸、水溶性、不能合成(缺古洛糖酸内酯氧化酶)、单位mg；机制就背羟化脯氨酸赖氨酸→胶原、还原Fe3+→Fe2+促非血红素铁吸收；功能就背抗氧化、强免疫、解毒护肝、阻断亚硝胺；缺乏就背坏血病(牙龈出血/伤口不愈/血管脆≠维K)、断供三四月才发；来源就背新鲜蔬果(彩椒/鲜枣/猕猴桃)、动物性几乎不含、最不稳定怕热光碱铜铁；摄入就背RNI100/UL2000。", "第三步，排除反着坑：直接排除‘人体能合成VC’‘VC单位µg或IU’‘VC促钙吸收’‘坏血病是凝血因子缺乏’‘VC主要来自肉类’‘VC很耐热’‘VC多吃不中毒’‘VC直接构成胶原’这类反向表述，剩下的就是答案。"], "s10": ["讲完重点，我们模拟上课提问。我先和班里的同学演练，再轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。", "第一个问题：用你自己的话解释，维生素C是怎么帮身体‘造胶原’和‘补血铁’的？把羟化机制和铁吸收机制讲清楚。", "第二个问题：为什么维C缺乏会牙龈出血、伤口不愈合，却不是维K那样的凝血障碍？坏血病的根在哪、和维K出血有什么本质不同？把这条逻辑讲清楚。"], "s11": ["下面8道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，人体不能合成维C缺的酶。第二题，维C的计量单位。第三题，维C作为辅酶参与的羟化反应产物。第四题，维C促进铁吸收的机制。第五题，维C缺乏的疾病。第六题，维C含量最丰富的食物来源。第七题，关于维C稳定性错误的说法。第八题，成人RNI和UL。"], "s12": ["最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。", "问题：维生素C为什么叫抗坏血酸？它凭什么帮身体造胶原、补血铁(羟化与还原机制)？它还有哪些本事(抗氧化/免疫/解毒/阻断亚硝胺)？缺了为什么会牙龈出血、伤口不愈合，和维K出血有啥不同？一天该吃多少(成人100毫克、上限2000)？从哪吃、又最怕什么？把身份、机制、功能、缺乏、来源、摄入量这条逻辑串起来。", "课堂小结口诀复习：身份‘维C抗坏血酸、水溶性最娇气、人体不能自合成(缺古洛糖酸内酯氧化酶)、单位毫克mg’；机制‘维C当辅酶、羟化脯赖造胶原、还原Fe3+成Fe2+促铁吸收’；功能‘抗氧化清自由基、强免疫、解毒护肝、阻断亚硝胺’；缺乏‘坏血病：牙龈出血皮下瘀斑伤口不愈骨发育不良，断供三四月才发，≠维K出血’；来源‘认新鲜蔬果彩椒鲜枣猕猴桃西兰花柑橘、动物性几乎不含、最不稳定怕热怕光怕氧怕碱怕铜铁’；摄入‘单位毫克、成人RNI100、UL2000’。"]};
+const SECTIONS_ORDER = ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11", "s12"];
+
+// 展平为全局播放列表（按章节顺序）
+const PLAYLIST = [];
+SECTIONS_ORDER.forEach(id=>{
+  const paths = SECTIONS_AUDIO[id]||[];
+  const texts = SECTIONS_TEXT[id]||[];
+  paths.forEach((p,i)=> PLAYLIST.push({src:p, text:texts[i]||'', sec:id}));
+});
+
+const Player = {
+  audio: new Audio(),
+  idx: 0,
+  playing: false,
+  speed: 1.0,
+  init(){
+    this.audio.preload='auto';
+    this.audio.addEventListener('timeupdate', ()=>this.onTime());
+    this.audio.addEventListener('ended', ()=>this.next(true));
+    this.audio.addEventListener('loadedmetadata', ()=>this.onTime());
+    this.audio.addEventListener('error', ()=>this.onErr());
+    this.updateIdx();
+    this.updateBtn();
+  },
+  load(i, autoplay){
+    if(i<0 || i>=PLAYLIST.length) return;
+    this.idx=i;
+    const item=PLAYLIST[i];
+    setSub(item.text);
+    this.audio.src=item.src;
+    this.audio.playbackRate=this.speed;
+    this.updateIdx();
+    if(autoplay){
+      const sec=document.getElementById(item.sec);
+      if(sec) sec.scrollIntoView({behavior:'smooth',block:'center'});
+      this.playing=true; this.updateBtn();
+      this.audio.play().catch(()=>{ this.fallback(item.text); });
+    }
+  },
+  play(){ if(!this.audio.src){ this.load(this.idx,false);} this.playing=true; this.updateBtn(); this.audio.play().catch(()=>{}); },
+  pause(){ this.playing=false; this.updateBtn(); this.audio.pause(); },
+  toggle(){ if(this.playing) this.pause(); else this.play(); },
+  next(auto){
+    if(auto && !this.playing) return;
+    const n=this.idx+1;
+    if(n>=PLAYLIST.length){ this.playing=false; this.updateBtn(); this.updateIdx();
+      setSub('—— 本课讲解结束啦，去做做改编题、用费曼法复述一遍 💡'); return; }
+    this.load(n,true);
+  },
+  prev(){ let n=this.idx-1; if(n<0) n=0; this.load(n,true); },
+  seek(v){ try{ this.audio.currentTime=parseFloat(v); }catch(e){} },
+  onTime(){
+    const a=this.audio;
+    const s=document.getElementById('seek');
+    if(a.duration && s){ s.max=Math.floor(a.duration); s.value=Math.floor(a.currentTime); }
+    if(PLAYLIST[this.idx]) setSub(PLAYLIST[this.idx].text);
+  },
+  onErr(){
+    if(this.playing){ this.fallback(PLAYLIST[this.idx] ? PLAYLIST[this.idx].text : ''); }
+  },
+  fallback(t){
+    if(!('speechSynthesis' in window)){ this.next(true); return; }
+    const u=new SpeechSynthesisUtterance(t); u.lang='zh-CN'; u.rate=this.speed; u.pitch=1.06;
+    u.onend=()=>{ this.next(true); };
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  },
+  setSpeed(v){
+    this.speed=v; this.audio.playbackRate=v;
+    document.querySelectorAll('#playerbar .spd button').forEach(b=>b.classList.remove('on'));
+    const map={0.8:'s08',1:'s10',1.2:'s12',1.5:'s15'};
+    const el=document.getElementById(map[v]); if(el) el.classList.add('on');
+  },
+  updateIdx(){ const e=document.getElementById('idxlbl'); if(e) e.textContent=(this.idx+1)+' / '+PLAYLIST.length; },
+  updateBtn(){ const b=document.getElementById('playbtn'); if(b) b.textContent=this.playing?'⏸ 暂停':'▶ 播放'; }
+};
+
+function setSub(t){ const e=document.getElementById('subline'); if(e) e.innerHTML='<b>晓晓老师：</b>'+t; }
+function playSection(id){
+  const i=PLAYLIST.findIndex(p=>p.sec===id);
+  document.getElementById('playerbar').classList.remove('hide');
+  document.getElementById('reopen').classList.remove('show');
+  if(i<0) return;
+  Player.load(i, true);
+}
+function playAll(){ Player.load(0,true); document.getElementById('playerbar').classList.remove('hide'); document.getElementById('reopen').classList.remove('show'); }
+function prevSent(){ Player.prev(); }
+function nextSent(){ Player.next(false); }
+function togglePlay(){ Player.toggle(); }
+function onSeek(v){ Player.seek(v); }
+function hidePlayer(){ document.getElementById('playerbar').classList.add('hide'); document.getElementById('reopen').classList.add('show'); }
+function showPlayer(){ document.getElementById('playerbar').classList.remove('hide'); document.getElementById('reopen').classList.remove('show'); }
+
+function checkAsk(btn){
+  const box=btn.closest('.ask'); const ta=box.querySelector('textarea'); const val=(ta.value||'').trim();
+  const fb=box.querySelector('.feedback'); const model=box.querySelector('.model');
+  const keys=(box.dataset.keywords||'').split('|').filter(Boolean);
+  if(!val){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写点什么再提交哦～哪怕一句话也行 😊</span>'; return; }
+  const hit=keys.some(k=>val.includes(k));
+  fb.className='feedback show';
+  fb.innerHTML = hit ? '<span class="ok">👍 说到位了！</span> 你抓住了关键词，晓晓老师给你点个赞。'
+                     : '<span class="tip">🤔 方向还差点意思～</span> 别急，看看下面的标准答案，再试着用自己的话讲一遍。';
+  model.className='model'; model.innerHTML='<b>晓晓老师的标准答案：</b>'+box.dataset.model;
+}
+function choose(btn){
+  const q=btn.closest('.quiz'); if(q.dataset.done) return;
+  const correct=q.dataset.ans;
+  q.querySelectorAll('.opt').forEach(o=>{ o.disabled=true;
+    const t=o.textContent.trim();
+    if(t.startsWith(correct+'.')||t.startsWith(correct+'．')) o.classList.add('correct');
+    else if(o===btn) o.classList.add('wrong');
+  });
+  q.dataset.done='1'; q.querySelector('.ans').classList.add('show');
+}
+function feynmanCheck(){
+  const v=(document.getElementById('feynmanBox').value||'').trim();
+  const fb=document.getElementById('feynmanFeedback');
+  if(!v){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写一段自己的解释，再对照清单 😉</span>'; return; }
+  const keys=['脂溶性','µg','微克','K1','叶绿','K2','甲萘','发酵','菌群','γ','羧化','凝血因子','II','VII','IX','X','华法林','warfarin','还原酶','骨钙素','osteocalcin','基质','MGP','血管','钙化','缺乏','罕见','新生儿','吸收不良','抗生素','出血','PT','血友','绿叶','纳豆','80','对热稳','怕'];
+  const hit=keys.filter(k=>v.includes(k)).length;
+  fb.className='feedback show';
+  let msg;
+  if(hit>=5) msg='<span class="ok">🌟 很棒！</span> 你覆盖了关键概念，基本讲清楚了。可以录下来自己听一遍，卡壳的地方就是还没真懂的点。';
+  else if(hit>=3) msg='<span class="tip">📝 有进步～</span> 对照清单，看看是不是漏了“γ-羧化让凝血因子II/VII/IX/X抓钙活化”或“缺乏成人罕见：新生儿/脂肪吸收不良/长期抗生素→出血+PT延长(≠血友病)”这两点，补上就更完整了。';
+  else msg='<span class="tip">💡 再来一次～</span> 提示：想想“单位µg、K1叶菜K2发酵+菌群、K3有毒”“γ-羧化凝血因子抓钙、维K循环+华法林掐还原酶”“骨钙素壮骨、MGP护血管”“缺了成人罕见(新生儿等)→出血+PT延长≠血友病”“绿叶菜纳豆、对热稳怕光”“成人AI 80 µg”这条逻辑串起来。';
+  fb.innerHTML=msg;
+}
+
+Player.init();
+Player.setSpeed(1);
+
+</script>
+</body>
+</html>

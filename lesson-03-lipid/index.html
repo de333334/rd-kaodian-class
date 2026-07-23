@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>脂类精讲 · 晓晓老师的营养课堂（注册营养师考点·第3课）</title>
+<style>
+  :root{
+    --paper:#fbf7ee; --ink:#2f2a25; --board:#1f4d3a; --board2:#2c6b51; --chalk:#f3f7f2;
+    --accent:#e8743b; --accent2:#3a8dde; --warn:#d8443c; --ok:#2e9e6b; --gold:#e0a83a;
+    --card:#ffffff; --line:#e7ddc9; --soft:#f4ede0;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;
+    font-family:"Songti SC","SimSun","宋体",STSong,serif;
+    background:radial-gradient(1200px 500px at 80% -10%, #fff6e6 0%, transparent 60%),var(--paper);
+    color:var(--ink);line-height:1.95;font-size:18px;padding-bottom:150px;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 18px 40px;}
+  header.hero{background:linear-gradient(135deg,var(--board),var(--board2));color:var(--chalk);
+    border-radius:0 0 26px 26px;padding:30px 22px 26px;box-shadow:0 10px 30px rgba(31,77,58,.25);position:relative;overflow:hidden;}
+  header.hero::after{content:"🥑";position:absolute;right:-10px;top:-10px;font-size:120px;opacity:.10;transform:rotate(12deg);}
+  .hero .tag{display:inline-block;background:rgba(255,255,255,.15);padding:3px 12px;border-radius:20px;font-size:13px;letter-spacing:1px;}
+  .hero h1{margin:12px 0 6px;font-size:30px;letter-spacing:1px;}
+  .hero .meta{font-size:14px;opacity:.92;margin-top:6px;}
+  .hero .meta b{color:#ffe2b0;}
+  nav.toc{position:sticky;top:0;z-index:30;background:rgba(251,247,238,.92);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:8px 0;margin:0 0 8px;}
+  nav.toc .inner{max-width:900px;margin:0 auto;padding:0 14px;display:flex;gap:8px;flex-wrap:wrap;}
+  nav.toc a{font-size:13.5px;text-decoration:none;color:var(--board);background:var(--soft);border:1px solid var(--line);
+    padding:4px 11px;border-radius:20px;transition:.2s;}
+  nav.toc a:hover{background:var(--board);color:#fff;}
+  section{margin:26px 0;}
+  .sec-head{display:flex;align-items:center;gap:10px;margin:6px 0 14px;}
+  .sec-head .no{background:var(--accent);color:#fff;font-weight:700;width:34px;height:34px;display:grid;place-items:center;
+    border-radius:10px;flex:none;font-size:17px;box-shadow:0 4px 10px rgba(232,116,59,.35);}
+  .sec-head h2{font-size:23px;margin:0;}
+  .sec-head .sub{font-size:13px;color:#8a7f6e;margin-left:auto;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin:14px 0;box-shadow:0 6px 18px rgba(120,90,40,.06);}
+  .card h3{margin:0 0 8px;font-size:19px;color:var(--board);}
+  .card p{margin:10px 0;}
+  .narrate{color:#3a352e;margin:10px 0;}
+  .mnemonic{background:linear-gradient(135deg,#fff4dd,#ffe9c4);border:1px dashed var(--gold);border-radius:14px;padding:14px 18px;margin:14px 0;position:relative;}
+  .mnemonic .label{font-size:12px;color:#a9791f;font-weight:700;letter-spacing:2px;}
+  .mnemonic .big{font-size:22px;font-weight:800;color:#9a5b00;margin:4px 0 2px;letter-spacing:1px;}
+  .mnemonic .note{font-size:15px;color:#6b5a3a;}
+  .trap{border-left:5px solid var(--warn);background:#fdf0ee;border-radius:0 12px 12px 0;padding:12px 16px;margin:12px 0;}
+  .trap .t{font-weight:800;color:var(--warn);font-size:15px;margin-bottom:4px;}
+  .trap .t::before{content:"⚠️ ";}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15.5px;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(120,90,40,.07);}
+  th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;}
+  th{background:var(--soft);color:var(--board);font-weight:700;}
+  .steps{counter-reset:s;margin:10px 0;}
+  .step{display:flex;gap:12px;align-items:flex-start;margin:10px 0;}
+  .step::before{counter-increment:s;content:counter(s);flex:none;width:28px;height:28px;background:var(--accent2);color:#fff;border-radius:50%;display:grid;place-items:center;font-weight:700;}
+  .step .b{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;flex:1;}
+  .chat{border:1px solid var(--line);border-radius:16px;background:#fff;padding:8px 14px;margin:14px 0;}
+  .msg{display:flex;gap:10px;margin:12px 0;align-items:flex-start;}
+  .msg .av{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:20px;color:#fff;}
+  .av.tea{background:linear-gradient(135deg,var(--board),var(--board2));}
+  .av.stu{background:linear-gradient(135deg,#f0a93b,#e8743b);}
+  .bubble{background:var(--soft);border-radius:14px;padding:9px 14px;max-width:88%;}
+  .msg.stu .bubble{background:#eef5fb;}
+  .who{font-size:12px;color:#9b8f7c;margin-bottom:2px;}
+  .ask{border:2px solid var(--accent2);border-radius:16px;background:#f3f9ff;padding:14px 16px;margin:16px 0;}
+  .ask .q{font-weight:700;color:#1f5fa8;}
+  .ask .q::before{content:"🙋 晓晓老师：";}
+  textarea{width:100%;min-height:64px;margin-top:10px;border:1px solid var(--line);border-radius:10px;padding:10px;font-family:inherit;font-size:16px;resize:vertical;background:#fff;}
+  .btn{display:inline-flex;align-items:center;gap:6px;cursor:pointer;border:none;border-radius:24px;padding:9px 18px;font-size:15px;font-weight:700;color:#fff;background:var(--accent);box-shadow:0 5px 14px rgba(232,116,59,.3);transition:.15s;margin-top:10px;}
+  .btn:hover{transform:translateY(-1px);}
+  .btn.blue{background:var(--accent2);box-shadow:0 5px 14px rgba(58,141,222,.3);}
+  .btn.ghost{background:#fff;color:var(--board);border:1px solid var(--board);box-shadow:none;}
+  .feedback{margin-top:10px;font-size:15px;display:none;}
+  .feedback.show{display:block;}
+  .feedback .ok{color:var(--ok);font-weight:700;}
+  .feedback .tip{color:var(--accent);}
+  .model{background:#fff;border:1px dashed var(--board2);border-radius:12px;padding:10px 14px;margin-top:10px;font-size:15px;color:#3a5a4c;}
+  .model b{color:var(--board);}
+  .quiz{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px 18px;margin:14px 0;}
+  .quiz .stem{font-weight:600;margin-bottom:10px;}
+  .opt{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:9px 13px;margin:7px 0;cursor:pointer;font-size:15.5px;transition:.15s;font-family:inherit;color:var(--ink);}
+  .opt:hover{background:#ecf3ff;}
+  .opt.correct{background:#e7f7ee;border-color:var(--ok);color:#1c6b45;font-weight:700;}
+  .opt.wrong{background:#fdeceb;border-color:var(--warn);}
+  .quiz .ans{display:none;margin-top:8px;font-size:14.5px;color:#4a4034;background:var(--soft);border-radius:10px;padding:9px 12px;}
+  .quiz .ans.show{display:block;}
+  .feynman{background:linear-gradient(135deg,#eef7ff,#eafaf1);border:1px solid #cfe6d8;border-radius:16px;padding:16px 18px;margin:14px 0;}
+  .feynman h3{color:var(--board);margin-top:0;}
+  .rubric{font-size:14.5px;color:#4a554c;margin:8px 0;}
+  .rubric li{margin:4px 0;}
+  .svgwrap{margin:14px 0;text-align:center;}
+  .svgwrap svg{width:100%;max-width:680px;height:auto;background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px;}
+  footer{text-align:center;color:#a89c87;font-size:13px;margin-top:30px;}
+  .divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:30px 0;}
+
+  /* ===== 全局播放 dock（字幕不遮挡讲解，位于最底部） ===== */
+  #playerbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(20,28,24,.94);color:#eafff4;
+    padding:8px 14px 10px;box-shadow:0 -8px 22px rgba(0,0,0,.28);backdrop-filter:blur(6px);
+    transform:translateY(0);transition:transform .25s;}
+  #playerbar.hide{transform:translateY(110%);}
+  #playerbar .subline{font-size:15.5px;line-height:1.5;margin-bottom:6px;color:#eafff4;
+    border-left:3px solid var(--accent);padding-left:8px;max-height:46px;overflow:auto;}
+  #playerbar .subline b{color:#ffd9a8;}
+  #playerbar .pctrl{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  #playerbar button{font-family:inherit;cursor:pointer;border:none;border-radius:18px;padding:6px 12px;font-size:13.5px;
+    background:rgba(255,255,255,.16);color:#eafff4;transition:.15s;}
+  #playerbar button:hover{background:rgba(255,255,255,.3);}
+  #playerbar #playbtn{background:var(--accent);color:#fff;font-weight:700;min-width:78px;}
+  #playerbar .spd{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;opacity:.9;}
+  #playerbar .spd button{padding:3px 8px;font-size:12px;}
+  #playerbar .spd button.on{background:var(--accent2);color:#fff;}
+  #seek{flex:1;min-width:120px;height:6px;accent-color:var(--accent);cursor:pointer;}
+  #idxlbl{font-size:12.5px;opacity:.85;min-width:54px;text-align:center;}
+  #reopen{position:fixed;right:14px;bottom:14px;z-index:60;display:none;border:none;border-radius:24px;
+    background:var(--accent);color:#fff;font-family:inherit;font-weight:700;font-size:14px;padding:10px 16px;box-shadow:0 6px 16px rgba(232,116,59,.4);cursor:pointer;}
+  #reopen.show{display:block;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="tag">🎓 第3课 · 一节高中生物课的量 · 注册营养师考点</span>
+  <h1>脂类（Lipids）精讲</h1>
+  <div class="meta">
+    主讲：<b>晓晓老师</b>（XiaoxiaoNeural 神经网络语音）　|　课时：约 45 分钟（1 课时）　|　来源：<b>注册营养师考试宝典 · 脂类(上/下)系列</b>
+  </div>
+  <div class="meta">配套：温故复习 + 口诀 + 案例图 + 易错点 + 解题三步法 + 不定时提问 + 改编练习题 + 费曼复述　<span style="background:#fff;color:#1f4d3a;border-radius:20px;padding:2px 10px;font-size:12px;">点 ▶ 听晓晓老师讲</span></div>
+</header>
+
+<nav class="toc"><div class="inner">
+    <a href="#s1">① 温故</a>
+    <a href="#s2">② 分类</a>
+    <a href="#s3">③ 必需脂肪酸</a>
+    <a href="#s4">④ 消化吸收</a>
+    <a href="#s5">⑤ 功能·血脂</a>
+    <a href="#s6">⑥ 参考摄入量</a>
+    <a href="#s7">⑦ 易错点</a>
+    <a href="#s8">⑧ 三步法</a>
+    <a href="#s9">⑨ 提问互动</a>
+    <a href="#s10">⑩ 改编题</a>
+    <a href="#s11">⑪ 费曼复述</a>
+</div></nav>
+
+<div class="wrap">
+  <section id="s1">
+    <div class="sec-head"><div class="no">1</div><h2>温故知新：先复习，再开讲脂类</h2><div class="sub">衔接 · 5分钟</div></div>
+    <div class="card">
+      <p class="narrate">同学们好，我是晓晓老师。先来温故一下前两节课——我们讲了蛋白质，还有碳水化合物。</p>
+      <p class="narrate">蛋白质的口诀你还记得吗：必需氨基酸一共 9 种，甲硫、缬、赖、异亮、苯丙、亮、色、苏——记‘一家、二亮、三苯、四赖、五色、六苏、七缬’；组氨酸是婴儿必需；谷类缺赖氨酸、豆类缺蛋氨酸，搭配着吃能互补。</p>
+      <p class="narrate">碳水化合物的口诀：‘蔗无乳有麦也有’——蔗糖没有还原性，乳糖和麦芽糖有；升糖‘GI 高七低五五、GL 二十封顶十算中’；功能‘供能构形省蛋白、抗生酮来还能解毒’；限量‘添加糖最好二十五、供能五成到六成五’。</p>
+      <p class="narrate">今天，我们顺着‘三大产能营养素’的线索，讲第三个，也是最后一个——脂类，也就是大家常说的‘脂肪’。</p>
+      <p class="narrate">记住今天的主线：分三类看清‘谁是谁’（脂肪·磷脂·固醇）→ 必需脂肪酸只记两种 → 消化吸收走‘淋巴小道’ → 功能与血脂看‘好胆固醇坏胆固醇’ → 吃多少看供能比和限量。沿着这条线，考题就跑不掉了。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 上一课口诀速回（闭眼能背才算会）</div>
+    <div class="big">蛋白9种 · 蔗无乳有麦也有 · GI高七低五五 · 添加糖最好25</div>
+    <div class="note">本节课新口诀会在每一节用 <b>🔑</b> 标出，最后费曼复述时我们要把它们串成一条线。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s1')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s2">
+    <div class="sec-head"><div class="no">2</div><h2>核心精讲一：脂类分哪几类</h2><div class="sub">10分钟</div></div>
+    <div class="card">
+      <p class="narrate">脂类这个大家庭，分两支。一支叫‘脂肪’，正式名字是甘油三酯；另一支叫‘类脂’，主要包括磷脂和固醇。</p>
+      <p class="narrate">脂肪，也就是甘油三酯，是 1 分子甘油，加上 3 分子脂肪酸缩合而成，它是最主要的储能形式，也是我们从膳食里吃到的最多的脂类——真题常说‘膳食中获得的脂肪主要是甘油三酯’。</p>
+      <p class="narrate">类脂里的磷脂，最常见的是卵磷脂，也就是磷脂酰胆碱，它是细胞膜的‘砖块’，还能帮脂肪乳化。</p>
+      <p class="narrate">类脂里的固醇，动物来源的是胆固醇，植物来源的是植物固醇，比如 β-谷固醇，它不但不是坏东西，还能帮着减少胆固醇的吸收。</p>
+      <p class="narrate">再看脂肪酸怎么分：按饱和度分饱和、单不饱和、多不饱和；按碳链长度分长链、中链、短链。考试最爱考的，是下面的‘必需脂肪酸’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 280" role="img" aria-label="脂类分类树">
+    <defs>
+      <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#2c6b51"/></marker>
+    </defs>
+    <rect x="290" y="8" width="100" height="42" rx="10" fill="#1f4d3a"/><text x="340" y="34" fill="#fff" font-size="18" text-anchor="middle" font-weight="700">脂类</text>
+    <line x1="318" y1="50" x2="180" y2="92" stroke="#2c6b51" stroke-width="2" marker-end="url(#ar)"/>
+    <line x1="362" y1="50" x2="500" y2="92" stroke="#2c6b51" stroke-width="2" marker-end="url(#ar)"/>
+    <rect x="90" y="92" width="180" height="46" rx="10" fill="#e8743b"/><text x="180" y="120" fill="#fff" font-size="15" text-anchor="middle" font-weight="700">脂肪（甘油三酯）</text>
+    <rect x="410" y="92" width="180" height="46" rx="10" fill="#3a8dde"/><text x="500" y="120" fill="#fff" font-size="15" text-anchor="middle" font-weight="700">类脂</text>
+    <line x1="180" y1="138" x2="180" y2="172" stroke="#e8743b" stroke-width="2" marker-end="url(#ar)"/>
+    <line x1="470" y1="138" x2="380" y2="174" stroke="#3a8dde" stroke-width="2" marker-end="url(#ar)"/>
+    <line x1="530" y1="138" x2="600" y2="174" stroke="#3a8dde" stroke-width="2" marker-end="url(#ar)"/>
+    <rect x="70" y="174" width="220" height="58" rx="10" fill="#fff" stroke="#e8743b" stroke-width="1.5"/><text x="180" y="198" font-size="13" text-anchor="middle">1甘油 + 3脂肪酸</text><text x="180" y="218" font-size="12" text-anchor="middle" fill="#a05">必需脂肪酸：亚油酸(n-6)·α-亚麻酸(n-3)</text>
+    <rect x="300" y="174" width="150" height="58" rx="10" fill="#fff" stroke="#3a8dde" stroke-width="1.5"/><text x="375" y="200" font-size="13" text-anchor="middle">磷脂</text><text x="375" y="220" font-size="12" text-anchor="middle" fill="#356">卵磷脂=细胞膜砖块</text>
+    <rect x="560" y="174" width="120" height="58" rx="10" fill="#fff" stroke="#3a8dde" stroke-width="1.5"/><text x="620" y="200" font-size="13" text-anchor="middle">固醇</text><text x="620" y="220" font-size="12" text-anchor="middle" fill="#356">胆固醇·植物固醇</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 分类一句话</div>
+    <div class="big">脂肪＝甘油三酯 · 类脂＝磷脂 + 固醇</div>
+    <div class="note">膳食中吃到的脂类主要是<b>甘油三酯</b>；胆固醇是动物固醇，植物固醇反而<b>抑制</b>胆固醇吸收。</div>
+  </div>
+  <table>
+    <thead><tr><th>类别</th><th>代表</th><th>记忆点</th></tr></thead>
+    <tbody>
+      <tr><td>脂肪（甘油三酯）</td><td>膳食脂类主角；1甘油+3脂肪酸</td><td>储能主力、9 kcal/g</td></tr>
+      <tr><td>磷脂</td><td>卵磷脂（磷脂酰胆碱）</td><td>细胞膜“砖块”、能乳化</td></tr>
+      <tr><td>固醇</td><td>胆固醇（动物）、植物固醇（β-谷固醇）</td><td>植物固醇↓胆固醇吸收</td></tr>
+      <tr><td>脂肪酸（按饱和度）</td><td>饱和 / 单不饱和 / 多不饱和</td><td>必需脂肪酸只两种</td></tr>
+    </tbody>
+  </table>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s2')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s3">
+    <div class="sec-head"><div class="no">3</div><h2>核心精讲二：必需脂肪酸（只有两种！）</h2><div class="sub">9分钟</div></div>
+    <div class="card">
+      <p class="narrate">什么是必需脂肪酸？就是人体自己造不出来、必须从食物里获取的脂肪酸。只有两种：亚油酸，属于 n-6 系列；还有 α-亚麻酸，属于 n-3 系列。</p>
+      <p class="narrate">注意一个大坑：EPA、DHA、花生四烯酸，它们不是‘必需脂肪酸’本身，而是由必需脂肪酸衍生出来的‘长链多不饱和脂肪酸’，属于条件必需。真题常把‘DHA 是必需脂肪酸’当正确选项来坑你。</p>
+      <p class="narrate">亚油酸能在体内变成花生四烯酸，再在酶的作用下生成前列腺素、血栓素、白三烯，这些统称‘类二十烷酸’，管血管扩张收缩、炎症、血小板聚集。</p>
+      <p class="narrate">α-亚麻酸能变成 EPA 和 DHA，DHA 是脑子、眼睛发育的‘脑黄金’，所以孕妇、婴幼儿要特别注意补。</p>
+      <p class="narrate">再送你一个分子式规律：饱和脂肪酸是 CnH2nO2；单不饱和是 CnH2n-2O2；多不饱和多 x 个双键，就再减 2x 个氢。比如 18 碳单不饱和的油酸，就是 C18H34O2。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 210" role="img" aria-label="必需脂肪酸衍生关系">
+    <defs><marker id="ar2" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#e8743b"/></marker></defs>
+    <rect x="20" y="20" width="150" height="48" rx="10" fill="#e8743b"/><text x="95" y="49" fill="#fff" font-size="14" text-anchor="middle" font-weight="700">亚油酸(n-6)·必需</text>
+    <line x1="170" y1="44" x2="250" y2="44" stroke="#e8743b" stroke-width="2" marker-end="url(#ar2)"/>
+    <rect x="250" y="20" width="150" height="48" rx="10" fill="#fff" stroke="#e8743b"/><text x="325" y="49" font-size="13" text-anchor="middle">花生四烯酸(ARA)</text>
+    <line x1="400" y1="44" x2="500" y2="44" stroke="#e8743b" stroke-width="2" marker-end="url(#ar2)"/>
+    <rect x="500" y="20" width="170" height="48" rx="10" fill="#fdeceb" stroke="#d8443c"/><text x="585" y="44" font-size="12" text-anchor="middle">前列腺素·血栓素</text><text x="585" y="60" font-size="12" text-anchor="middle">·白三烯(类二十烷酸)</text>
+
+    <rect x="20" y="120" width="150" height="48" rx="10" fill="#3a8dde"/><text x="95" y="149" fill="#fff" font-size="14" text-anchor="middle" font-weight="700">α-亚麻酸(n-3)·必需</text>
+    <line x1="170" y1="144" x2="250" y2="144" stroke="#3a8dde" stroke-width="2" marker-end="url(#ar2)"/>
+    <rect x="250" y="120" width="120" height="48" rx="10" fill="#fff" stroke="#3a8dde"/><text x="310" y="149" font-size="13" text-anchor="middle">EPA</text>
+    <line x1="370" y1="144" x2="450" y2="144" stroke="#3a8dde" stroke-width="2" marker-end="url(#ar2)"/>
+    <rect x="450" y="120" width="150" height="48" rx="10" fill="#eef5ff" stroke="#3a8dde"/><text x="525" y="149" font-size="13" text-anchor="middle">DHA（脑黄金）</text>
+    <text x="340" y="200" font-size="12" fill="#8a7f6e" text-anchor="middle">虚线箭头=体内可转化；实线派生物属于“条件必需”，不是“必需脂肪酸”本身</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 必需脂肪酸口诀</div>
+    <div class="big">必需两兄弟：亚油 n-6，亚麻 n-3</div>
+    <div class="note">花生四烯酸、EPA、DHA 都是它们的“后代”（条件必需），<b>不算必需脂肪酸本身</b>。分子式：饱和 CnH2nO2，单不饱和 CnH2n-2O2。</div>
+  </div>
+  <div class="trap"><div class="t">高频坑</div>题目把“DHA 是必需脂肪酸”判对 → 直接排除。必需脂肪酸只有<b>亚油酸、α-亚麻酸</b>两种。</div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s3')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s4">
+    <div class="sec-head"><div class="no">4</div><h2>核心精讲三：脂肪怎么消化、怎么吸收</h2><div class="sub">10分钟</div></div>
+    <div class="card">
+      <p class="narrate">脂肪怎么消化？口腔里有少量舌脂肪酶，胃里有少量胃脂肪酶，但真正的‘主战场’在小肠。</p>
+      <p class="narrate">小肠里靠两员大将：胆汁把大油滴‘乳化’成小油滴，增加表面积；胰脂肪酶再把甘油三酯切成 2-单酰甘油，加上 2 个脂肪酸。</p>
+      <p class="narrate">关键提醒：胆汁里没有消化酶，它只做‘物理乳化’，就像洗洁精洗碗，让油变成小泡泡。</p>
+      <p class="narrate">吸收也很特别：脂肪酸和单酰甘油在肠细胞里重新拼成甘油三酯，外包上载脂蛋白，变成‘乳糜微粒’，先进入淋巴系统，再经胸导管流进血液——所以它走的是‘淋巴小道’，不是门静脉。</p>
+      <p class="narrate">只有中链、短链脂肪酸能直接入门静脉。口诀：‘脂肪入血走淋巴，中短链才走门静脉’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 200" role="img" aria-label="脂肪消化吸收路径">
+    <defs><marker id="ar3" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#2c6b51"/></marker></defs>
+    <rect x="6" y="80" width="96" height="44" rx="10" fill="#fff" stroke="#2c6b51"/><text x="54" y="100" font-size="12" text-anchor="middle">口腔</text><text x="54" y="116" font-size="10" text-anchor="middle" fill="#888">舌脂肪酶少量</text>
+    <line x1="102" y1="102" x2="140" y2="102" stroke="#2c6b51" stroke-width="2" marker-end="url(#ar3)"/>
+    <rect x="140" y="80" width="96" height="44" rx="10" fill="#fff" stroke="#2c6b51"/><text x="188" y="100" font-size="12" text-anchor="middle">胃</text><text x="188" y="116" font-size="10" text-anchor="middle" fill="#888">胃脂肪酶少量</text>
+    <line x1="236" y1="102" x2="274" y2="102" stroke="#2c6b51" stroke-width="2" marker-end="url(#ar3)"/>
+    <rect x="274" y="74" width="120" height="56" rx="10" fill="#1f4d3a"/><text x="334" y="98" fill="#fff" font-size="12" text-anchor="middle">小肠(主战场)</text><text x="334" y="116" fill="#ffe2b0" font-size="10" text-anchor="middle">胆汁乳化+胰脂肪酶</text>
+    <line x1="394" y1="102" x2="432" y2="102" stroke="#2c6b51" stroke-width="2" marker-end="url(#ar3)"/>
+    <rect x="432" y="80" width="120" height="44" rx="10" fill="#fff" stroke="#2c6b51"/><text x="492" y="100" font-size="11" text-anchor="middle">肠细胞→乳糜微粒</text><text x="492" y="116" font-size="10" text-anchor="middle" fill="#888">重新合成TG</text>
+    <line x1="552" y1="102" x2="590" y2="102" stroke="#2c6b51" stroke-width="2" marker-end="url(#ar3)"/>
+    <rect x="590" y="80" width="88" height="44" rx="10" fill="#e8743b"/><text x="634" y="100" font-size="12" fill="#fff" text-anchor="middle">淋巴→血</text><text x="634" y="116" font-size="10" fill="#fff" text-anchor="middle">胸导管</text>
+    <text x="334" y="170" font-size="12" fill="#d8443c" text-anchor="middle">⚠ 胆汁只有“乳化”没有酶；脂肪走淋巴(胸导管)，中短链才走门静脉</text>
+  </svg>
+  </div>
+  <div class="trap"><div class="t">消化吸收双坑</div>① 脂肪消化主战场在<b>小肠</b>（胆汁乳化+胰脂肪酶），胃只少量；<b>胆汁无酶</b>只有乳化。② 脂肪吸收走<b>淋巴（乳糜微粒→胸导管）</b>，不是门静脉；只有中短链走门静脉。</div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s4')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s5">
+    <div class="sec-head"><div class="no">5</div><h2>核心精讲四：功能与血脂（好/坏胆固醇）</h2><div class="sub">9分钟</div></div>
+    <div class="card">
+      <p class="narrate">脂类有五大功能，先记能量：1 克脂肪等于 9 千卡，是糖和蛋白质（各 4 千卡）的两倍多，是最高效的储能形式。</p>
+      <p class="narrate">第二，保温隔热、缓冲保护内脏；第三，是脂溶性维生素 A、D、E、K 的‘专车’，没有脂肪，这些维生素就吸收不了。</p>
+      <p class="narrate">第四，提供必需脂肪酸；第五，增加饱腹感、改善食物风味。</p>
+      <p class="narrate">再说血脂：血液里的脂肪主要靠‘脂蛋白’运输。乳糜微粒运外源脂肪；VLDL 运内源甘油三酯；LDL 把胆固醇运到外周血管，是‘坏胆固醇’；HDL 把胆固醇运回肝脏，是‘好胆固醇’。</p>
+      <p class="narrate">口诀：‘HDL 是好胆固醇，清道夫把胆固醇送回肝；LDL 是坏胆固醇，把胆固醇堆到血管壁上’。脂肪不足时身体会用脂肪造酮体，过多就成酮症。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 170" role="img" aria-label="HDL与LDL对比">
+    <rect x="30" y="30" width="290" height="110" rx="14" fill="#fdeceb" stroke="#d8443c"/>
+    <text x="175" y="60" font-size="17" fill="#d8443c" text-anchor="middle" font-weight="800">LDL · 坏胆固醇</text>
+    <text x="175" y="88" font-size="13" text-anchor="middle">把胆固醇运往血管外周</text>
+    <text x="175" y="110" font-size="13" text-anchor="middle">过多→血管壁沉积→硬化</text>
+    <rect x="360" y="30" width="290" height="110" rx="14" fill="#e7f7ee" stroke="#2e9e6b"/>
+    <text x="505" y="60" font-size="17" fill="#2e9e6b" text-anchor="middle" font-weight="800">HDL · 好胆固醇</text>
+    <text x="505" y="88" font-size="13" text-anchor="middle">把胆固醇运回肝脏</text>
+    <text x="505" y="110" font-size="13" text-anchor="middle">“清道夫”→保护血管</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 五大功能 & 血脂一句话</div>
+    <div class="big">储能(9kcal) · 保温护脏 · 载ADEK · 供必需脂肪酸 · 增饱腹</div>
+    <div class="note"><b>HDL 好</b>（逆向转运回肝）｜<b>LDL 坏</b>（运往外周）。1g 脂肪=9kcal，是糖/蛋白的 2 倍多。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s5')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s6">
+    <div class="sec-head"><div class="no">6</div><h2>核心精讲五：参考摄入量（吃多少）</h2><div class="sub">7分钟</div></div>
+    <div class="card">
+      <p class="narrate">吃多少？脂肪的适宜供能比是总能量的 20% 到 30%，比碳水（50–65%）低，比蛋白（10–15%）高。</p>
+      <p class="narrate">饱和脂肪酸要少于总能量的 10%；反式脂肪酸最好为 0，上限不超过 1%，大约相当于 2 克。</p>
+      <p class="narrate">胆固醇：老版建议每天少于 300 毫克，新版（2023 DRIs）不再对一般人群设上限，但仍建议适量、别过量。</p>
+      <p class="narrate">n-6 和 n-3 的比例，建议 4 到 6 比 1；亚油酸适宜摄入量约占总能量 4%，α-亚麻酸约 0.6%。</p>
+      <p class="narrate">口诀：‘脂肪二到三成，饱和不到一成，反式最好为零、封顶百分之一’。</p>
+  <table>
+    <thead><tr><th>指标</th><th>关键数字 / 结论</th></tr></thead>
+    <tbody>
+      <tr><td>脂肪适宜供能比</td><td>总能量 <b>20%–30%</b>（低于碳水、高于蛋白）</td></tr>
+      <tr><td>饱和脂肪酸(SFA)</td><td>&lt; <b>10%</b> 总能量</td></tr>
+      <tr><td>反式脂肪酸</td><td>最好 <b>0</b>；上限 &lt; <b>1%</b> 总能量（≈2 g）</td></tr>
+      <tr><td>胆固醇</td><td>老版 &lt;300 mg/d；新版(2023)一般人群不再设上限，仍宜适量</td></tr>
+      <tr><td>n-6 : n-3</td><td>建议 <b>4–6 : 1</b></td></tr>
+      <tr><td>亚油酸 / α-亚麻酸 AI</td><td>约占总能量 <b>4%</b> / <b>0.6%</b></td></tr>
+    </tbody>
+  </table>
+  <div class="mnemonic">
+    <div class="label">🔑 限量口诀</div>
+    <div class="big">脂肪二到三成 · 饱和不到一成 · 反式最好为零、封顶1%</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s6')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s7">
+    <div class="sec-head"><div class="no">7</div><h2>红绿灯：高频易错点</h2><div class="sub">5分钟</div></div>
+    <div class="card">
+      <p class="narrate">好，进入红绿灯时间，我把最高频的易错点集中点一遍。</p>
+      <p class="narrate">易错一：必需脂肪酸只有亚油酸和 α-亚麻酸两种。EPA、DHA、花生四烯酸是条件必需、是衍生物，不是必需脂肪酸本身。</p>
+      <p class="narrate">易错二：脂肪消化主战场在小肠（胆汁乳化+胰脂肪酶），胃只少量；而且胆汁里没有酶，只做物理乳化。</p>
+      <p class="narrate">易错三：脂肪吸收走淋巴（乳糜微粒→胸导管）入血，不是门静脉；只有中短链脂肪酸直接走门静脉。</p>
+      <p class="narrate">易错四：脂肪 9 千卡每克，糖和蛋白质都是 4 千卡每克。</p>
+      <p class="narrate">易错五：HDL 是好胆固醇（逆向转运回肝），LDL 是坏胆固醇（运往外周）。</p>
+      <p class="narrate">易错六：反式脂肪最好为 0、上限 1%（约 2 克）；饱和脂肪供能比应小于 10%。</p>
+      <p class="narrate">易错七：亚油酸是 n-6、α-亚麻酸是 n-3；油酸是 n-9 单不饱和脂肪酸，不是必需脂肪酸。</p>
+      <p class="narrate">易错八：植物固醇（如 β-谷固醇）是降低胆固醇吸收的，不是升高。</p>
+  <div class="trap"><div class="t">易错1：必需脂肪酸只有2种</div>亚油酸 + α-亚麻酸。<b>EPA/DHA/花生四烯酸</b>是条件必需/衍生物，题目说“DHA是必需脂肪酸”→排除。</div>
+  <div class="trap"><div class="t">易错2：消化主战场+胆汁无酶</div>主战场在<b>小肠</b>（胆汁乳化+胰脂肪酶）；<b>胆汁没有酶</b>，只做物理乳化。“胃液含脂肪酶为主”必错。</div>
+  <div class="trap"><div class="t">易错3：吸收走淋巴不走门静脉</div>脂肪→乳糜微粒→<b>淋巴(胸导管)</b>入血；只有<b>中短链</b>脂肪酸走门静脉。糖、氨基酸才走门静脉。</div>
+  <div class="trap"><div class="t">易错4：能量密度</div>脂肪 <b>9 kcal/g</b>；糖、蛋白质各 4 kcal/g。</div>
+  <div class="trap"><div class="t">易错5：HDL好 / LDL坏</div>HDL 逆向转运胆固醇回肝（好）；LDL 把胆固醇运往外周（坏）。</div>
+  <div class="trap"><div class="t">易错6：反式与饱和限量</div>反式最好 0、上限 <b>&lt;1%</b>（≈2g）；SFA &lt;10%。</div>
+  <div class="trap"><div class="t">易错7：脂肪酸家族</div>亚油酸 n-6、α-亚麻酸 n-3（必需）；油酸 n-9 单不饱和（非必需）。</div>
+  <div class="trap"><div class="t">易错8：植物固醇</div>植物固醇<b>降低</b>胆固醇吸收，不是升高。</div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s7')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s8">
+    <div class="sec-head"><div class="no">8</div><h2>解题三步法（注册营养师全是选择题）</h2><div class="sub">4分钟</div></div>
+    <div class="card">
+      <p class="narrate">注册营养师全是选择题，送你一套通用三步法。</p>
+      <p class="narrate">第一步，审题定性：先看问的是分类、必需脂肪酸、消化吸收、功能血脂，还是参考摄入量，先给题目定性，别急着看选项。</p>
+      <p class="narrate">第二步，定位考点：必需脂肪酸就锁定亚油酸和 α-亚麻酸；吸收就背淋巴、乳糜微粒、胸导管；血脂就分 HDL 好、LDL 坏；参考摄入量就记 20–30%、反式小于 1%。</p>
+      <p class="narrate">第三步，排除反着坑：直接排除‘DHA 是必需脂肪酸’‘脂肪走门静脉’‘胆汁有酶’‘饱和脂肪供能比最高’这些反向表述，剩下的就是答案。</p>
+  <div class="steps">
+    <div class="step"><div class="b"><b>第一步 · 审题定性：</b>先看问哪一类——分类？必需脂肪酸？消化吸收？功能血脂？参考摄入量？先定性，不急着看选项。</div></div>
+    <div class="step"><div class="b"><b>第二步 · 定位考点：</b>必需脂肪酸→亚油+亚麻(只有2种)；吸收→淋巴/乳糜微粒/胸导管；血脂→HDL好、LDL坏；参考摄入量→20–30%、反式&lt;1%。</div></div>
+    <div class="step"><div class="b"><b>第三步 · 排除反坑：</b>直接排除“DHA是必需脂肪酸”“脂肪走门静脉”“胆汁有酶”“饱和脂肪供能比最高”这类反向表述，剩下的就是答案。</div></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s8')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s9">
+    <div class="sec-head"><div class="no">9</div><h2>晓晓老师不定时提问 · 模拟课堂（费曼）</h2><div class="sub">互动</div></div>
+    <div class="card">
+      <p class="narrate">讲完重点，我们来模拟上课提问。我先和班里的同学演练，然后轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。</p>
+      <p class="narrate">第一个问题：用你自己的话解释，为什么必需脂肪酸只有两种，而 DHA 却常被营养师强调要补？</p>
+      <p class="narrate">第二个问题：为什么吃进去的脂肪不直接进血液（门静脉），而是绕道淋巴？这对身体有什么好处？</p>
+  <div class="chat">
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">小明，你说 DHA 这么重要，那它是不是就是“必需脂肪酸”啊？</div></div></div>
+    <div class="msg stu"><div class="av stu">🧒</div><div><div class="who">学生·小明</div><div class="bubble">嗯……DHA 很重要，应该就是必需的吧？</div></div></div>
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">小心陷阱！DHA 是“条件必需”，由 α-亚麻酸变来，人体自己能造一点。真正的<b>必需脂肪酸只有亚油酸和 α-亚麻酸</b>两种，必须从食物拿。DHA 虽能自造，但孕妇宝宝造得不够、又特别需要，所以才要额外补——二者不矛盾。</div></div></div>
+  </div>
+
+  <div class="ask" data-keywords="必需|亚油|亚麻|两种|衍生|条件必需|DHA|EPA|α" data-model="必需脂肪酸是人体不能合成、必须从食物获取的，只有<b>亚油酸(n-6)</b>和<b>α-亚麻酸(n-3)</b>两种。DHA 是 α-亚麻酸在体内的衍生物，属于“条件必需”——人体能造一点，但孕妇、婴幼儿造得不够、需求又大，所以仍需从食物（深海鱼）补充。二者不矛盾：必需的是“原料”两种，DHA 是“成品”之一。">
+    <div class="q">提问一：用你自己的话解释，为什么必需脂肪酸只有两种，而 DHA 却常被营养师强调要补？（打字回答，晓晓老师会点评）</div>
+    <textarea placeholder="例如：因为……"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+  <div class="ask" data-keywords="淋巴|乳糜微粒|胸导管|门静脉|中短链|吸收|脂肪" data-model="脂肪在肠细胞重新合成甘油三酯、包上载脂蛋白成<b>乳糜微粒</b>，先进入<b>淋巴系统</b>、经<b>胸导管</b>才入血（绕开肝脏）。好处：①大脂肪颗粒不直接冲击肝脏；②先被淋巴“分拣”再进体循环，避免血糖/血脂剧烈波动；③只有中短链脂肪酸才直接走门静脉。所以“脂肪走淋巴”是身体精心设计的运输路线。">
+    <div class="q">提问二：为什么吃进去的脂肪不直接进血液（门静脉），而是绕道淋巴？这对身体有什么好处？</div>
+    <textarea placeholder="先想清楚：乳糜微粒走哪条路？"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s9')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s10">
+    <div class="sec-head"><div class="no">10</div><h2>改编练习题（单选，仿注册营养师真题）</h2><div class="sub">自测</div></div>
+    <div class="card">
+      <p class="narrate">下面 8 道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，哪种脂肪酸是合成前列腺素的前体？第二题，化学式 C17H33COOH 是哪种脂肪酸？第三题，下列属必需脂肪酸的是？第四题，反式脂肪酸上限是多少？第五题，膳食中获得的脂肪主要是？第六题，乳糜微粒经什么入血？第七题，关于脂蛋白正确的是？第八题，关于脂肪供能错误的是？</p>
+  <div class="quiz" data-ans="D">
+    <div class="stem">1.【改编 2018DTR真题】下列脂肪酸中，作为前体物质合成前列腺素的是：</div>
+    <button class="opt" onclick="choose(this)">A. 棕榈酸</button>
+    <button class="opt" onclick="choose(this)">B. 油酸</button>
+    <button class="opt" onclick="choose(this)">C. α-亚麻酸</button>
+    <button class="opt" onclick="choose(this)">D. 花生四烯酸（ARA）</button>
+    <div class="ans">✅ 答案：D。花生四烯酸在环氧合酶/脂氧合酶作用下生成前列腺素、血栓素、白三烯等类二十烷酸。棕榈酸是饱和脂肪酸，油酸是 n-9 单不饱和，α-亚麻酸是 n-3 必需脂肪酸（原料而非直接前体）。</div>
+  </div>
+  <div class="quiz" data-ans="D">
+    <div class="stem">2.【改编 2017RD真题】下列脂肪酸的化学式是 C17H33COOH（即 C18H34O2）的是：</div>
+    <button class="opt" onclick="choose(this)">A. 硬脂酸</button>
+    <button class="opt" onclick="choose(this)">B. 亚油酸</button>
+    <button class="opt" onclick="choose(this)">C. α-亚麻酸</button>
+    <button class="opt" onclick="choose(this)">D. 油酸</button>
+    <div class="ans">✅ 答案：D。C18H34O2 为 18 碳单不饱和脂肪酸=油酸（n-9）。硬脂酸饱和 C18H36O2；亚油酸 2 个双键 n-6；α-亚麻酸 3 个双键 n-3。</div>
+  </div>
+  <div class="quiz" data-ans="A">
+    <div class="stem">3.【改编 2018DTR真题】下列脂肪酸中，属于必需脂肪酸的是：</div>
+    <button class="opt" onclick="choose(this)">A. 亚油酸</button>
+    <button class="opt" onclick="choose(this)">B. 油酸</button>
+    <button class="opt" onclick="choose(this)">C. 花生四烯酸</button>
+    <button class="opt" onclick="choose(this)">D. DHA</button>
+    <div class="ans">✅ 答案：A。必需脂肪酸只有亚油酸、α-亚麻酸。油酸（n-9）、花生四烯酸、DHA 均为条件必需/衍生物，非必需脂肪酸本身。</div>
+  </div>
+  <div class="quiz" data-ans="A">
+    <div class="stem">4.【改编 2017RD真题】WHO 建议膳食反式脂肪酸最大摄入量不超过总能量的：</div>
+    <button class="opt" onclick="choose(this)">A. 1%</button>
+    <button class="opt" onclick="choose(this)">B. 2%</button>
+    <button class="opt" onclick="choose(this)">C. 4%</button>
+    <button class="opt" onclick="choose(this)">D. 8%</button>
+    <div class="ans">✅ 答案：A。FAO/WHO 将反式脂肪酸 UL 定为 &lt;1%E（约 2 g），最好为 0。</div>
+  </div>
+  <div class="quiz" data-ans="A">
+    <div class="stem">5.【改编 2018DTR真题】我们从膳食中获得的脂肪，主要是：</div>
+    <button class="opt" onclick="choose(this)">A. 甘油三酯</button>
+    <button class="opt" onclick="choose(this)">B. 卵磷脂</button>
+    <button class="opt" onclick="choose(this)">C. 胆固醇</button>
+    <button class="opt" onclick="choose(this)">D. 神经鞘磷脂</button>
+    <div class="ans">✅ 答案：A。脂类包括脂肪（甘油三酯）和类脂（磷脂、固醇）；膳食中脂类主要由甘油三酯构成。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">6. 脂肪消化产物吸收后，乳糜微粒主要经什么途径入血？</div>
+    <button class="opt" onclick="choose(this)">A. 门静脉</button>
+    <button class="opt" onclick="choose(this)">B. 淋巴系统（胸导管）</button>
+    <button class="opt" onclick="choose(this)">C. 直接入肠细胞不经循环</button>
+    <button class="opt" onclick="choose(this)">D. 经肾脏排泄</button>
+    <div class="ans">✅ 答案：B。甘油三酯在肠细胞重合成、形成乳糜微粒，经淋巴→胸导管入血；只有中短链脂肪酸直接走门静脉。糖、氨基酸才走门静脉。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">7. 关于血浆脂蛋白，正确的是：</div>
+    <button class="opt" onclick="choose(this)">A. LDL 是“好胆固醇”</button>
+    <button class="opt" onclick="choose(this)">B. HDL 将胆固醇逆向转运回肝脏</button>
+    <button class="opt" onclick="choose(this)">C. 乳糜微粒运输内源性甘油三酯</button>
+    <button class="opt" onclick="choose(this)">D. 脂肪完全不进入血液</button>
+    <div class="ans">✅ 答案：B。HDL 逆向转运胆固醇回肝（好胆固醇）；LDL 把胆固醇运往外周（坏胆固醇）；乳糜微粒运外源性脂肪；脂肪经淋巴最终也入血。</div>
+  </div>
+  <div class="quiz" data-ans="D">
+    <div class="stem">8. 关于脂肪的供能与限量，错误的是：</div>
+    <button class="opt" onclick="choose(this)">A. 1 g 脂肪约供能 9 kcal</button>
+    <button class="opt" onclick="choose(this)">B. 脂肪适宜供能比为 20%–30%</button>
+    <button class="opt" onclick="choose(this)">C. 饱和脂肪酸供能比应 &lt; 10%</button>
+    <button class="opt" onclick="choose(this)">D. 反式脂肪酸最好 &gt; 5% 总能量</button>
+    <div class="ans">✅ 答案：D。反式脂肪酸最好为 0、上限 &lt;1%（约 2 g）；A/B/C 均为正确结论。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s10')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s11">
+    <div class="sec-head"><div class="no">11</div><h2>费曼记忆小测：用自己的话讲一遍</h2><div class="sub">收尾</div></div>
+    <div class="card">
+      <p class="narrate">最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。</p>
+      <p class="narrate">问题：为什么营养师让你少吃反式脂肪、用植物油炒菜、但又要吃够必需脂肪酸、还得防血管堵？把必需脂肪酸、脂肪吸收、HDL 和 LDL、参考摄入量这条逻辑串起来。</p>
+      <p class="narrate">课堂小结口诀复习：分类‘脂肪是甘油加三脂、类脂磷脂加固醇’；必需‘亚油 n6、亚麻 n3’；吸收‘脂肪入血走淋巴，中短链才走门静脉’；功能‘储能九千卡、载 ADEK’；血脂‘HDL 好、LDL 坏’；限量‘脂肪二到三成、反式最好为零’。</p>
+      <p class="narrate">这堂课就到这里，三大产能营养素——蛋白质、碳水化合物、脂类——我们就都讲完啦！记得今天复习前两课、预习下一课，咱们下节见！</p>
+  <div class="feynman">
+    <h3>🧠 费曼复述任务</h3>
+    <p>合上页面，试着给一个“完全不懂营养的朋友”讲清楚下面这个问题。能讲明白，说明你真懂了（费曼学习法：教是最好的学）。</p>
+    <p><b>问题：</b>“为什么营养师让你少吃反式脂肪、用植物油炒菜、但又要吃够必需脂肪酸、还得防血管堵（LDL）？”</p>
+    <textarea id="feynmanBox" placeholder="在这里用大白话写一段 3-5 句话的解释……"></textarea>
+    <button class="btn" onclick="feynmanCheck()">自我对照 · 看评分清单</button>
+    <div class="feedback" id="feynmanFeedback"></div>
+    <ul class="rubric">
+      <li>✅ 提到 必需脂肪酸只有两种（亚油酸 n-6、α-亚麻酸 n-3），植物油提供</li>
+      <li>✅ 提到 脂肪吸收走淋巴（乳糜微粒→胸导管），不是门静脉</li>
+      <li>✅ 提到 HDL（好，回肝）vs LDL（坏，堆血管壁）</li>
+      <li>✅ 提到 反式脂肪最好 0、上限 &lt;1%；脂肪供能比 20%–30%</li>
+    </ul>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s11')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    本节为「营养刷题」第3课，依据「注册营养师考试宝典」公众号·脂类(上/下)系列及历年真题整理改编，并对照《营养与食品卫生学》第8/9版　｜　晓晓老师语音由 Edge-TTS XiaoxiaoNeural 神经网络语音合成，字幕固定底部不遮挡讲解　｜　仅供学习备考使用
+  </footer>
+</div>
+
+<div id="playerbar" class="hide">
+  <div class="subline" id="subline"><b>晓晓老师：</b>点击任意「▶ 听晓晓老师讲这段」，或点「📖 从头播放」，晓晓老师逐句讲解，字幕显示在此处，不遮挡上方讲解。</div>
+  <div class="pctrl">
+    <button onclick="prevSent()">⏮ 上一句</button>
+    <button id="playbtn" onclick="togglePlay()">▶ 播放</button>
+    <button onclick="nextSent()">下一句 ⏭</button>
+    <input id="seek" type="range" min="0" max="100" value="0" oninput="onSeek(this.value)" title="拖动可调整播放位置" />
+    <span id="idxlbl">0 / 0</span>
+    <span class="spd">语速
+      <button id="s08" onclick="Player.setSpeed(0.8)">0.8x</button>
+      <button id="s10" class="on" onclick="Player.setSpeed(1)">1x</button>
+      <button id="s12" onclick="Player.setSpeed(1.2)">1.2x</button>
+      <button id="s15" onclick="Player.setSpeed(1.5)">1.5x</button>
+    </span>
+    <button onclick="playAll()">📖 从头播放</button>
+    <button onclick="hidePlayer()">收起</button>
+  </div>
+</div>
+<button id="reopen" onclick="showPlayer()">▶ 晓晓老师</button>
+
+<script>
+const SECTIONS_AUDIO = {"s1": ["audio/s1_0.mp3", "audio/s1_1.mp3", "audio/s1_2.mp3", "audio/s1_3.mp3", "audio/s1_4.mp3"], "s2": ["audio/s2_0.mp3", "audio/s2_1.mp3", "audio/s2_2.mp3", "audio/s2_3.mp3", "audio/s2_4.mp3"], "s3": ["audio/s3_0.mp3", "audio/s3_1.mp3", "audio/s3_2.mp3", "audio/s3_3.mp3", "audio/s3_4.mp3"], "s4": ["audio/s4_0.mp3", "audio/s4_1.mp3", "audio/s4_2.mp3", "audio/s4_3.mp3", "audio/s4_4.mp3"], "s5": ["audio/s5_0.mp3", "audio/s5_1.mp3", "audio/s5_2.mp3", "audio/s5_3.mp3", "audio/s5_4.mp3"], "s6": ["audio/s6_0.mp3", "audio/s6_1.mp3", "audio/s6_2.mp3", "audio/s6_3.mp3", "audio/s6_4.mp3"], "s7": ["audio/s7_0.mp3", "audio/s7_1.mp3", "audio/s7_2.mp3", "audio/s7_3.mp3", "audio/s7_4.mp3", "audio/s7_5.mp3", "audio/s7_6.mp3", "audio/s7_7.mp3", "audio/s7_8.mp3"], "s8": ["audio/s8_0.mp3", "audio/s8_1.mp3", "audio/s8_2.mp3", "audio/s8_3.mp3"], "s9": ["audio/s9_0.mp3", "audio/s9_1.mp3", "audio/s9_2.mp3"], "s10": ["audio/s10_0.mp3"], "s11": ["audio/s11_0.mp3", "audio/s11_1.mp3", "audio/s11_2.mp3", "audio/s11_3.mp3"]};
+const SECTIONS_TEXT  = {"s1": ["同学们好，我是晓晓老师。先来温故一下前两节课——我们讲了蛋白质，还有碳水化合物。", "蛋白质的口诀你还记得吗：必需氨基酸一共 9 种，甲硫、缬、赖、异亮、苯丙、亮、色、苏——记‘一家、二亮、三苯、四赖、五色、六苏、七缬’；组氨酸是婴儿必需；谷类缺赖氨酸、豆类缺蛋氨酸，搭配着吃能互补。", "碳水化合物的口诀：‘蔗无乳有麦也有’——蔗糖没有还原性，乳糖和麦芽糖有；升糖‘GI 高七低五五、GL 二十封顶十算中’；功能‘供能构形省蛋白、抗生酮来还能解毒’；限量‘添加糖最好二十五、供能五成到六成五’。", "今天，我们顺着‘三大产能营养素’的线索，讲第三个，也是最后一个——脂类，也就是大家常说的‘脂肪’。", "记住今天的主线：分三类看清‘谁是谁’（脂肪·磷脂·固醇）→ 必需脂肪酸只记两种 → 消化吸收走‘淋巴小道’ → 功能与血脂看‘好胆固醇坏胆固醇’ → 吃多少看供能比和限量。沿着这条线，考题就跑不掉了。"], "s2": ["脂类这个大家庭，分两支。一支叫‘脂肪’，正式名字是甘油三酯；另一支叫‘类脂’，主要包括磷脂和固醇。", "脂肪，也就是甘油三酯，是 1 分子甘油，加上 3 分子脂肪酸缩合而成，它是最主要的储能形式，也是我们从膳食里吃到的最多的脂类——真题常说‘膳食中获得的脂肪主要是甘油三酯’。", "类脂里的磷脂，最常见的是卵磷脂，也就是磷脂酰胆碱，它是细胞膜的‘砖块’，还能帮脂肪乳化。", "类脂里的固醇，动物来源的是胆固醇，植物来源的是植物固醇，比如 β-谷固醇，它不但不是坏东西，还能帮着减少胆固醇的吸收。", "再看脂肪酸怎么分：按饱和度分饱和、单不饱和、多不饱和；按碳链长度分长链、中链、短链。考试最爱考的，是下面的‘必需脂肪酸’。"], "s3": ["什么是必需脂肪酸？就是人体自己造不出来、必须从食物里获取的脂肪酸。只有两种：亚油酸，属于 n-6 系列；还有 α-亚麻酸，属于 n-3 系列。", "注意一个大坑：EPA、DHA、花生四烯酸，它们不是‘必需脂肪酸’本身，而是由必需脂肪酸衍生出来的‘长链多不饱和脂肪酸’，属于条件必需。真题常把‘DHA 是必需脂肪酸’当正确选项来坑你。", "亚油酸能在体内变成花生四烯酸，再在酶的作用下生成前列腺素、血栓素、白三烯，这些统称‘类二十烷酸’，管血管扩张收缩、炎症、血小板聚集。", "α-亚麻酸能变成 EPA 和 DHA，DHA 是脑子、眼睛发育的‘脑黄金’，所以孕妇、婴幼儿要特别注意补。", "再送你一个分子式规律：饱和脂肪酸是 CnH2nO2；单不饱和是 CnH2n-2O2；多不饱和多 x 个双键，就再减 2x 个氢。比如 18 碳单不饱和的油酸，就是 C18H34O2。"], "s4": ["脂肪怎么消化？口腔里有少量舌脂肪酶，胃里有少量胃脂肪酶，但真正的‘主战场’在小肠。", "小肠里靠两员大将：胆汁把大油滴‘乳化’成小油滴，增加表面积；胰脂肪酶再把甘油三酯切成 2-单酰甘油，加上 2 个脂肪酸。", "关键提醒：胆汁里没有消化酶，它只做‘物理乳化’，就像洗洁精洗碗，让油变成小泡泡。", "吸收也很特别：脂肪酸和单酰甘油在肠细胞里重新拼成甘油三酯，外包上载脂蛋白，变成‘乳糜微粒’，先进入淋巴系统，再经胸导管流进血液——所以它走的是‘淋巴小道’，不是门静脉。", "只有中链、短链脂肪酸能直接入门静脉。口诀：‘脂肪入血走淋巴，中短链才走门静脉’。"], "s5": ["脂类有五大功能，先记能量：1 克脂肪等于 9 千卡，是糖和蛋白质（各 4 千卡）的两倍多，是最高效的储能形式。", "第二，保温隔热、缓冲保护内脏；第三，是脂溶性维生素 A、D、E、K 的‘专车’，没有脂肪，这些维生素就吸收不了。", "第四，提供必需脂肪酸；第五，增加饱腹感、改善食物风味。", "再说血脂：血液里的脂肪主要靠‘脂蛋白’运输。乳糜微粒运外源脂肪；VLDL 运内源甘油三酯；LDL 把胆固醇运到外周血管，是‘坏胆固醇’；HDL 把胆固醇运回肝脏，是‘好胆固醇’。", "口诀：‘HDL 是好胆固醇，清道夫把胆固醇送回肝；LDL 是坏胆固醇，把胆固醇堆到血管壁上’。脂肪不足时身体会用脂肪造酮体，过多就成酮症。"], "s6": ["吃多少？脂肪的适宜供能比是总能量的 20% 到 30%，比碳水（50–65%）低，比蛋白（10–15%）高。", "饱和脂肪酸要少于总能量的 10%；反式脂肪酸最好为 0，上限不超过 1%，大约相当于 2 克。", "胆固醇：老版建议每天少于 300 毫克，新版（2023 DRIs）不再对一般人群设上限，但仍建议适量、别过量。", "n-6 和 n-3 的比例，建议 4 到 6 比 1；亚油酸适宜摄入量约占总能量 4%，α-亚麻酸约 0.6%。", "口诀：‘脂肪二到三成，饱和不到一成，反式最好为零、封顶百分之一’。"], "s7": ["好，进入红绿灯时间，我把最高频的易错点集中点一遍。", "易错一：必需脂肪酸只有亚油酸和 α-亚麻酸两种。EPA、DHA、花生四烯酸是条件必需、是衍生物，不是必需脂肪酸本身。", "易错二：脂肪消化主战场在小肠（胆汁乳化+胰脂肪酶），胃只少量；而且胆汁里没有酶，只做物理乳化。", "易错三：脂肪吸收走淋巴（乳糜微粒→胸导管）入血，不是门静脉；只有中短链脂肪酸直接走门静脉。", "易错四：脂肪 9 千卡每克，糖和蛋白质都是 4 千卡每克。", "易错五：HDL 是好胆固醇（逆向转运回肝），LDL 是坏胆固醇（运往外周）。", "易错六：反式脂肪最好为 0、上限 1%（约 2 克）；饱和脂肪供能比应小于 10%。", "易错七：亚油酸是 n-6、α-亚麻酸是 n-3；油酸是 n-9 单不饱和脂肪酸，不是必需脂肪酸。", "易错八：植物固醇（如 β-谷固醇）是降低胆固醇吸收的，不是升高。"], "s8": ["注册营养师全是选择题，送你一套通用三步法。", "第一步，审题定性：先看问的是分类、必需脂肪酸、消化吸收、功能血脂，还是参考摄入量，先给题目定性，别急着看选项。", "第二步，定位考点：必需脂肪酸就锁定亚油酸和 α-亚麻酸；吸收就背淋巴、乳糜微粒、胸导管；血脂就分 HDL 好、LDL 坏；参考摄入量就记 20–30%、反式小于 1%。", "第三步，排除反着坑：直接排除‘DHA 是必需脂肪酸’‘脂肪走门静脉’‘胆汁有酶’‘饱和脂肪供能比最高’这些反向表述，剩下的就是答案。"], "s9": ["讲完重点，我们来模拟上课提问。我先和班里的同学演练，然后轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。", "第一个问题：用你自己的话解释，为什么必需脂肪酸只有两种，而 DHA 却常被营养师强调要补？", "第二个问题：为什么吃进去的脂肪不直接进血液（门静脉），而是绕道淋巴？这对身体有什么好处？"], "s10": ["下面 8 道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，哪种脂肪酸是合成前列腺素的前体？第二题，化学式 C17H33COOH 是哪种脂肪酸？第三题，下列属必需脂肪酸的是？第四题，反式脂肪酸上限是多少？第五题，膳食中获得的脂肪主要是？第六题，乳糜微粒经什么入血？第七题，关于脂蛋白正确的是？第八题，关于脂肪供能错误的是？"], "s11": ["最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。", "问题：为什么营养师让你少吃反式脂肪、用植物油炒菜、但又要吃够必需脂肪酸、还得防血管堵？把必需脂肪酸、脂肪吸收、HDL 和 LDL、参考摄入量这条逻辑串起来。", "课堂小结口诀复习：分类‘脂肪是甘油加三脂、类脂磷脂加固醇’；必需‘亚油 n6、亚麻 n3’；吸收‘脂肪入血走淋巴，中短链才走门静脉’；功能‘储能九千卡、载 ADEK’；血脂‘HDL 好、LDL 坏’；限量‘脂肪二到三成、反式最好为零’。", "这堂课就到这里，三大产能营养素——蛋白质、碳水化合物、脂类——我们就都讲完啦！记得今天复习前两课、预习下一课，咱们下节见！"]};
+const SECTIONS_ORDER = ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11"];
+
+// 展平为全局播放列表（按章节顺序）
+const PLAYLIST = [];
+SECTIONS_ORDER.forEach(id=>{
+  const paths = SECTIONS_AUDIO[id]||[];
+  const texts = SECTIONS_TEXT[id]||[];
+  paths.forEach((p,i)=> PLAYLIST.push({src:p, text:texts[i]||'', sec:id}));
+});
+
+const Player = {
+  audio: new Audio(),
+  idx: 0,
+  playing: false,
+  speed: 1.0,
+  init(){
+    this.audio.preload='auto';
+    this.audio.addEventListener('timeupdate', ()=>this.onTime());
+    this.audio.addEventListener('ended', ()=>this.next(true));
+    this.audio.addEventListener('loadedmetadata', ()=>this.onTime());
+    this.audio.addEventListener('error', ()=>this.onErr());
+    this.updateIdx();
+    this.updateBtn();
+  },
+  load(i, autoplay){
+    if(i<0 || i>=PLAYLIST.length) return;
+    this.idx=i;
+    const item=PLAYLIST[i];
+    setSub(item.text);
+    this.audio.src=item.src;
+    this.audio.playbackRate=this.speed;
+    this.updateIdx();
+    if(autoplay){
+      const sec=document.getElementById(item.sec);
+      if(sec) sec.scrollIntoView({behavior:'smooth',block:'center'});
+      this.playing=true; this.updateBtn();
+      this.audio.play().catch(()=>{ this.fallback(item.text); });
+    }
+  },
+  play(){ if(!this.audio.src){ this.load(this.idx,false);} this.playing=true; this.updateBtn(); this.audio.play().catch(()=>{}); },
+  pause(){ this.playing=false; this.updateBtn(); this.audio.pause(); },
+  toggle(){ if(this.playing) this.pause(); else this.play(); },
+  next(auto){
+    if(auto && !this.playing) return;
+    const n=this.idx+1;
+    if(n>=PLAYLIST.length){ this.playing=false; this.updateBtn(); this.updateIdx();
+      setSub('—— 本课讲解结束啦，去做做改编题、用费曼法复述一遍 💡'); return; }
+    this.load(n,true);
+  },
+  prev(){ let n=this.idx-1; if(n<0) n=0; this.load(n,true); },
+  seek(v){ try{ this.audio.currentTime=parseFloat(v); }catch(e){} },
+  onTime(){
+    const a=this.audio;
+    const s=document.getElementById('seek');
+    if(a.duration && s){ s.max=Math.floor(a.duration); s.value=Math.floor(a.currentTime); }
+    if(PLAYLIST[this.idx]) setSub(PLAYLIST[this.idx].text);
+  },
+  onErr(){
+    if(this.playing){ // 音频失效→用浏览器语音兜底该句，再继续
+      this.fallback(PLAYLIST[this.idx] ? PLAYLIST[this.idx].text : '');
+    }
+  },
+  fallback(t){
+    if(!('speechSynthesis' in window)){ this.next(true); return; }
+    const u=new SpeechSynthesisUtterance(t); u.lang='zh-CN'; u.rate=this.speed; u.pitch=1.06;
+    u.onend=()=>{ this.next(true); };
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  },
+  setSpeed(v){
+    this.speed=v; this.audio.playbackRate=v;
+    document.querySelectorAll('#playerbar .spd button').forEach(b=>b.classList.remove('on'));
+    const map={0.8:'s08',1:'s10',1.2:'s12',1.5:'s15'};
+    const el=document.getElementById(map[v]); if(el) el.classList.add('on');
+  },
+  updateIdx(){ const e=document.getElementById('idxlbl'); if(e) e.textContent=(this.idx+1)+' / '+PLAYLIST.length; },
+  updateBtn(){ const b=document.getElementById('playbtn'); if(b) b.textContent=this.playing?'⏸ 暂停':'▶ 播放'; }
+};
+
+function setSub(t){ const e=document.getElementById('subline'); if(e) e.innerHTML='<b>晓晓老师：</b>'+t; }
+function playSection(id){
+  const i=PLAYLIST.findIndex(p=>p.sec===id);
+  document.getElementById('playerbar').classList.remove('hide');
+  document.getElementById('reopen').classList.remove('show');
+  if(i<0) return;
+  Player.load(i, true);
+}
+function playAll(){ Player.load(0,true); document.getElementById('playerbar').classList.remove('hide'); document.getElementById('reopen').classList.remove('show'); }
+function prevSent(){ Player.prev(); }
+function nextSent(){ Player.next(false); }
+function togglePlay(){ Player.toggle(); }
+function onSeek(v){ Player.seek(v); }
+function hidePlayer(){ document.getElementById('playerbar').classList.add('hide'); document.getElementById('reopen').classList.add('show'); }
+function showPlayer(){ document.getElementById('playerbar').classList.remove('hide'); document.getElementById('reopen').classList.remove('show'); }
+
+function checkAsk(btn){
+  const box=btn.closest('.ask'); const ta=box.querySelector('textarea'); const val=(ta.value||'').trim();
+  const fb=box.querySelector('.feedback'); const model=box.querySelector('.model');
+  const keys=(box.dataset.keywords||'').split('|').filter(Boolean);
+  if(!val){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写点什么再提交哦～哪怕一句话也行 😊</span>'; return; }
+  const hit=keys.some(k=>val.includes(k));
+  fb.className='feedback show';
+  fb.innerHTML = hit ? '<span class="ok">👍 说到位了！</span> 你抓住了关键词，晓晓老师给你点个赞。'
+                     : '<span class="tip">🤔 方向还差点意思～</span> 别急，看看下面的标准答案，再试着用自己的话讲一遍。';
+  model.className='model'; model.innerHTML='<b>晓晓老师的标准答案：</b>'+box.dataset.model;
+}
+function choose(btn){
+  const q=btn.closest('.quiz'); if(q.dataset.done) return;
+  const correct=q.dataset.ans;
+  q.querySelectorAll('.opt').forEach(o=>{ o.disabled=true;
+    const t=o.textContent.trim();
+    if(t.startsWith(correct+'.')||t.startsWith(correct+'．')) o.classList.add('correct');
+    else if(o===btn) o.classList.add('wrong');
+  });
+  q.dataset.done='1'; q.querySelector('.ans').classList.add('show');
+}
+function feynmanCheck(){
+  const v=(document.getElementById('feynmanBox').value||'').trim();
+  const fb=document.getElementById('feynmanFeedback');
+  if(!v){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写一段自己的解释，再对照清单 😉</span>'; return; }
+  const keys=['亚油','亚麻','必需','淋巴','乳糜','胸导管','HDL','LDL','坏','好','1%','20','30','反式'];
+  const hit=keys.filter(k=>v.includes(k)).length;
+  fb.className='feedback show';
+  let msg;
+  if(hit>=4) msg='<span class="ok">🌟 很棒！</span> 你覆盖了关键概念，基本讲清楚了。可以录下来自己听一遍，卡壳的地方就是还没真懂的点。';
+  else if(hit>=2) msg='<span class="tip">📝 有进步～</span> 对照清单，看看是不是漏了“脂肪走淋巴(乳糜微粒)”或“HDL好/LDL坏”这两点，补上就更完整了。';
+  else msg='<span class="tip">💡 再来一次～</span> 提示：想想“植物油提供必需脂肪酸(亚油/亚麻)”“脂肪走淋巴不入门静脉”“HDL好LDL坏”“反式脂肪最好0、上限1%”，把这条逻辑串起来。';
+  fb.innerHTML=msg;
+}
+
+Player.init();
+Player.setSpeed(1);
+
+</script>
+</body>
+</html>

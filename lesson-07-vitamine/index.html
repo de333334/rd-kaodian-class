@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>维生素E精讲 · 晓晓老师的营养课堂（注册营养师考点·第7课）</title>
+<style>
+  :root{
+    --paper:#fbf7ee; --ink:#2f2a25; --board:#1f4d3a; --board2:#2c6b51; --chalk:#f3f7f2;
+    --accent:#e8743b; --accent2:#3a8dde; --warn:#d8443c; --ok:#2e9e6b; --gold:#e0a83a;
+    --card:#ffffff; --line:#e7ddc9; --soft:#f4ede0;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;
+    font-family:"Songti SC","SimSun","宋体",STSong,serif;
+    background:radial-gradient(1200px 500px at 80% -10%, #fff6e6 0%, transparent 60%),var(--paper);
+    color:var(--ink);line-height:1.95;font-size:19px;padding-bottom:150px;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 18px 40px;}
+  header.hero{background:linear-gradient(135deg,var(--board),var(--board2));color:var(--chalk);
+    border-radius:0 0 26px 26px;padding:30px 22px 26px;box-shadow:0 10px 30px rgba(31,77,58,.25);position:relative;overflow:hidden;}
+  header.hero::after{content:"🛡";position:absolute;right:-10px;top:-10px;font-size:120px;opacity:.10;transform:rotate(12deg);}
+  .hero .tag{display:inline-block;background:rgba(255,255,255,.15);padding:3px 12px;border-radius:20px;font-size:13px;letter-spacing:1px;}
+  .hero h1{margin:12px 0 6px;font-size:30px;letter-spacing:1px;}
+  .hero .meta{font-size:14px;opacity:.92;margin-top:6px;}
+  .hero .meta b{color:#ffe2b0;}
+  nav.toc{position:sticky;top:0;z-index:30;background:rgba(251,247,238,.92);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:8px 0;margin:0 0 8px;}
+  nav.toc .inner{max-width:900px;margin:0 auto;padding:0 14px;display:flex;gap:8px;flex-wrap:wrap;}
+  nav.toc a{font-size:13.5px;text-decoration:none;color:var(--board);background:var(--soft);border:1px solid var(--line);
+    padding:4px 11px;border-radius:20px;transition:.2s;}
+  nav.toc a:hover{background:var(--board);color:#fff;}
+  section{margin:26px 0;}
+  .sec-head{display:flex;align-items:center;gap:10px;margin:6px 0 14px;}
+  .sec-head .no{background:var(--accent);color:#fff;font-weight:700;width:34px;height:34px;display:grid;place-items:center;
+    border-radius:10px;flex:none;font-size:17px;box-shadow:0 4px 10px rgba(232,116,59,.35);}
+  .sec-head h2{font-size:23px;margin:0;}
+  .sec-head .sub{font-size:13px;color:#8a7f6e;margin-left:auto;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin:14px 0;box-shadow:0 6px 18px rgba(120,90,40,.06);}
+  .card h3{margin:0 0 8px;font-size:19px;color:var(--board);}
+  .card p{margin:10px 0;}
+  .narrate{color:#3a352e;margin:10px 0;}
+  .mnemonic{background:linear-gradient(135deg,#fff4dd,#ffe9c4);border:1px dashed var(--gold);border-radius:14px;padding:14px 18px;margin:14px 0;position:relative;}
+  .mnemonic .label{font-size:12px;color:#a9791f;font-weight:700;letter-spacing:2px;}
+  .mnemonic .big{font-size:22px;font-weight:800;color:#9a5b00;margin:4px 0 2px;letter-spacing:1px;}
+  .mnemonic .note{font-size:15px;color:#6b5a3a;}
+  .trap{border-left:5px solid var(--warn);background:#fdf0ee;border-radius:0 12px 12px 0;padding:12px 16px;margin:12px 0;}
+  .trap .t{font-weight:800;color:var(--warn);font-size:15px;margin-bottom:4px;}
+  .trap .t::before{content:"⚠️ ";}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15.5px;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(120,90,40,.07);}
+  th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;}
+  th{background:var(--soft);color:var(--board);font-weight:700;}
+  .steps{counter-reset:s;margin:10px 0;}
+  .step{display:flex;gap:12px;align-items:flex-start;margin:10px 0;}
+  .step::before{counter-increment:s;content:counter(s);flex:none;width:28px;height:28px;background:var(--accent2);color:#fff;border-radius:50%;display:grid;place-items:center;font-weight:700;}
+  .step .b{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;flex:1;}
+  .chat{border:1px solid var(--line);border-radius:16px;background:#fff;padding:8px 14px;margin:14px 0;}
+  .msg{display:flex;gap:10px;margin:12px 0;align-items:flex-start;}
+  .msg .av{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:20px;color:#fff;}
+  .av.tea{background:linear-gradient(135deg,var(--board),var(--board2));}
+  .av.stu{background:linear-gradient(135deg,#f0a93b,#e8743b);}
+  .bubble{background:var(--soft);border-radius:14px;padding:9px 14px;max-width:88%;}
+  .msg.stu .bubble{background:#eef5fb;}
+  .who{font-size:12px;color:#9b8f7c;margin-bottom:2px;}
+  .ask{border:2px solid var(--accent2);border-radius:16px;background:#f3f9ff;padding:14px 16px;margin:16px 0;}
+  .ask .q{font-weight:700;color:#1f5fa8;}
+  .ask .q::before{content:"🙋 晓晓老师：";}
+  textarea{width:100%;min-height:64px;margin-top:10px;border:1px solid var(--line);border-radius:10px;padding:10px;font-family:inherit;font-size:16px;resize:vertical;background:#fff;}
+  .btn{display:inline-flex;align-items:center;gap:6px;cursor:pointer;border:none;border-radius:24px;padding:9px 18px;font-size:15px;font-weight:700;color:#fff;background:var(--accent);box-shadow:0 5px 14px rgba(232,116,59,.3);transition:.15s;margin-top:10px;}
+  .btn:hover{transform:translateY(-1px);}
+  .btn.blue{background:var(--accent2);box-shadow:0 5px 14px rgba(58,141,222,.3);}
+  .btn.ghost{background:#fff;color:var(--board);border:1px solid var(--board);box-shadow:none;}
+  .feedback{margin-top:10px;font-size:15px;display:none;}
+  .feedback.show{display:block;}
+  .feedback .ok{color:var(--ok);font-weight:700;}
+  .feedback .tip{color:var(--accent);}
+  .model{background:#fff;border:1px dashed var(--board2);border-radius:12px;padding:10px 14px;margin-top:10px;font-size:15px;color:#3a5a4c;}
+  .model b{color:var(--board);}
+  .quiz{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px 18px;margin:14px 0;}
+  .quiz .stem{font-weight:600;margin-bottom:10px;}
+  .opt{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:9px 13px;margin:7px 0;cursor:pointer;font-size:15.5px;transition:.15s;font-family:inherit;color:var(--ink);}
+  .opt:hover{background:#ecf3ff;}
+  .opt.correct{background:#e7f7ee;border-color:var(--ok);color:#1c6b45;font-weight:700;}
+  .opt.wrong{background:#fdeceb;border-color:var(--warn);}
+  .quiz .ans{display:none;margin-top:8px;font-size:14.5px;color:#4a4034;background:var(--soft);border-radius:10px;padding:9px 12px;}
+  .quiz .ans.show{display:block;}
+  .feynman{background:linear-gradient(135deg,#eef7ff,#eafaf1);border:1px solid #cfe6d8;border-radius:16px;padding:16px 18px;margin:14px 0;}
+  .feynman h3{color:var(--board);margin-top:0;}
+  .rubric{font-size:14.5px;color:#4a554c;margin:8px 0;}
+  .rubric li{margin:4px 0;}
+  .svgwrap{margin:14px 0;text-align:center;}
+  .svgwrap svg{width:100%;max-width:680px;height:auto;background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px;}
+  footer{text-align:center;color:#a89c87;font-size:13px;margin-top:30px;}
+  .divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:30px 0;}
+
+  /* ===== 全局播放 dock（字幕不遮挡讲解，位于最底部） ===== */
+  #playerbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(20,28,24,.94);color:#eafff4;
+    padding:8px 14px 10px;box-shadow:0 -8px 22px rgba(0,0,0,.28);backdrop-filter:blur(6px);
+    transform:translateY(0);transition:transform .25s;}
+  #playerbar.hide{transform:translateY(110%);}
+  #playerbar .subline{font-size:15.5px;line-height:1.5;margin-bottom:6px;color:#eafff4;
+    border-left:3px solid var(--accent);padding-left:8px;max-height:46px;overflow:auto;}
+  #playerbar .subline b{color:#ffd9a8;}
+  #playerbar .pctrl{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  #playerbar button{font-family:inherit;cursor:pointer;border:none;border-radius:18px;padding:6px 12px;font-size:13.5px;
+    background:rgba(255,255,255,.16);color:#eafff4;transition:.15s;}
+  #playerbar button:hover{background:rgba(255,255,255,.3);}
+  #playerbar #playbtn{background:var(--accent);color:#fff;font-weight:700;min-width:78px;}
+  #playerbar .spd{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;opacity:.9;}
+  #playerbar .spd button{padding:3px 8px;font-size:12px;}
+  #playerbar .spd button.on{background:var(--accent2);color:#fff;}
+  #seek{flex:1;min-width:120px;height:6px;accent-color:var(--accent);cursor:pointer;}
+  #idxlbl{font-size:12.5px;opacity:.85;min-width:54px;text-align:center;}
+  #reopen{position:fixed;right:14px;bottom:14px;z-index:60;display:none;border:none;border-radius:24px;
+    background:var(--accent);color:#fff;font-family:inherit;font-weight:700;font-size:14px;padding:10px 16px;box-shadow:0 6px 16px rgba(232,116,59,.4);cursor:pointer;}
+  #reopen.show{display:block;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="tag">🎓 第7课 · 一节高中生物课的量 · 注册营养师考点</span>
+  <h1>维生素E（Vitamin E）精讲 · 抗氧化卫士</h1>
+  <div class="meta">
+    主讲：<b>晓晓老师</b>（XiaoxiaoNeural 神经网络语音）　|　课时：约 45 分钟（1 课时）　|　来源：<b>注册营养师考试宝典 · 考点|22 维生素E</b> 系列
+  </div>
+  <div class="meta">配套：温故复习 + 口诀 + 案例图 + 易错点 + 解题三步法 + 不定时提问 + 改编练习题 + 费曼复述　<span style="background:#fff;color:#1f4d3a;border-radius:20px;padding:2px 10px;font-size:12px;">点 ▶ 听晓晓老师讲</span></div>
+</header>
+
+<nav class="toc"><div class="inner">
+    <a href="#s1">① 温故</a>
+    <a href="#s2">② 8成员</a>
+    <a href="#s3">③ 结构</a>
+    <a href="#s4">④ 抗氧化</a>
+    <a href="#s5">⑤ 其他功能</a>
+    <a href="#s6">⑥ 缺乏症</a>
+    <a href="#s7">⑦ 来源·怕</a>
+    <a href="#s8">⑧ 摄入·α-TE</a>
+    <a href="#s9">⑨ 易错点</a>
+    <a href="#s10">⑩ 三步法</a>
+    <a href="#s11">⑪ 提问互动</a>
+    <a href="#s12">⑫ 改编题</a>
+    <a href="#s13">⑬ 费曼复述</a>
+</div></nav>
+
+<div class="wrap">
+  <section id="s1">
+    <div class="sec-head"><div class="no">1</div><h2>温故知新：先复习前六课，再开讲“抗氧化卫士”</h2><div class="sub">衔接 · 5分钟</div></div>
+    <div class="card">
+      <p class="narrate">同学们好，我是晓晓老师。开始新课前先花五分钟串一遍前六课：蛋白质——必需氨基酸9种、谷类缺赖氨酸豆类缺蛋氨酸；碳水化合物——蔗无乳有麦也有、GI和GL、添加糖最好不超25克；脂类——必需脂肪酸只有亚油酸和α-亚麻酸、HDL好LDL坏；能量——1千卡等于4.184千焦、基础代谢是大头、BMI中国24超28胖；上一课维生素A——视杆细胞里的视紫红质、缺了先暗适应下降再夜盲，中毒只怪动物肝和补剂；上上课维生素D——阳光维生素、肝出25是指标、肾出1,25最能干、缺了小孩佝偻大人软化老人疏松。</p>
+      <p class="narrate">我们进了微量营养素的门，先讲了脂溶性维生素的老大维生素A、老二维生素D。今天讲脂溶性维生素里的第三位、也是抗氧化界的明星——维生素E。</p>
+      <p class="narrate">维生素E有个学名叫‘生育酚’，所以也常叫它‘抗不育维生素’。但它的现代名气，主要来自一个更响的能力：它是人体内最重要的‘脂溶性抗氧化剂’，专门保卫我们的细胞膜不被自由基氧化。高中生物讲过的‘细胞膜的磷脂双分子层’‘自由基’‘氧化损伤’，今天全用得上。</p>
+      <p class="narrate">今天的主线：维生素E是什么、有8个成员谁是老大 → 它凭什么能‘住’进细胞膜(结构) → 招牌功能抗氧化到底怎么抗氧化(机制) → 它还管生殖、免疫、血管 → 缺了会怎样(人类其实很难缺) → 从哪吃、怕什么 → 该吃多少(α-TE单位)。跟着这条线，题就跑不掉了。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 前六课口诀速回（闭眼能背才算会）</div>
+    <div class="big">蛋白9种互补 · 蔗无乳有麦也有 · 必需脂肪两兄弟 · 1kcal=4.184kJ · BMI中国24超28胖 · VA缺了先暗适应后夜盲 · 维D肝出25肾出1,25</div>
+    <div class="note">今天进入脂溶性维生素第3位：<b>维生素E（生育酚 / 抗不育维生素）</b>。本节新口诀用 <b>🔑</b> 标出，最后费曼复述串成一条线。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s1')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s2">
+    <div class="sec-head"><div class="no">2</div><h2>核心精讲一：维生素E是什么？8个成员，α-生育酚是老大</h2><div class="sub">8分钟</div></div>
+    <div class="card">
+      <p class="narrate">先搞清维生素E的‘身份’。它是脂溶性维生素，化学上属于一类叫‘生育酚’和‘三烯生育酚’的化合物。</p>
+      <p class="narrate">自然界里维生素E一共有8个成员，分成两大家族：生育酚家族有α、β、γ、δ四种，三烯生育酚家族也有α、β、γ、δ四种，合起来正好8种。</p>
+      <p class="narrate">这8个兄弟活性不一样高，其中活性最强、也是人体主要利用形式的，是α-生育酚。记住一句话：‘α-生育酚是老大，生物活性最高’。考试经常把8种、α-生育酚、活性最强这三个点绑在一起考你。</p>
+      <p class="narrate">为了方便比较活性，营养学专门发明了一个单位叫‘α-生育酚当量’，英文缩写α-TE，来统一表示食物中各种维生素E形式的总活性。这点要和三上维生素D的‘微克、IU’、和维生素A的‘视黄醇活性当量RAE’区分开——维生素E用的是α-TE。</p>
+      <p class="narrate">口诀：‘维E八兄弟：αβγδ四生育酚、再加四三烯；α-生育酚是老大、活性最高；单位叫α-TE’。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 8 成员 & 活性 & 单位</div>
+    <div class="big">生育酚 α/β/γ/δ ＋ 三烯生育酚 α/β/γ/δ ＝ 8 种　|　<b>α-生育酚活性最强（人体主用形式）</b>　|　单位：α-生育酚当量 α-TE</div>
+    <div class="note">别名：<b>生育酚、抗不育维生素</b>。都是<b>脂溶性</b>；活性比较统一用 <b>α-TE</b>（不是 RAE，也不是 IU）。</div>
+  </div>
+  <table>
+    <thead><tr><th>家族</th><th>成员</th><th>相对活性（核心考点）</th></tr></thead>
+    <tbody>
+      <tr><td>生育酚 tocopherol</td><td>α、β、γ、δ</td><td rowspan="2"><b>α-生育酚 活性最高</b>，为人体主要利用形式</td></tr>
+      <tr><td>三烯生育酚 tocotrienol</td><td>α、β、γ、δ</td></tr>
+    </tbody>
+  </table>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s2')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s3">
+    <div class="sec-head"><div class="no">3</div><h2>核心精讲二：凭什么“住”进细胞膜？——化学结构</h2><div class="sub">8分钟</div></div>
+    <div class="card">
+      <p class="narrate">为什么维生素E能保护细胞膜？秘密在结构。每个维生素E分子有两部分：一个是带‘酚羟基’的色满环，也叫苯并二氢吡喃环，这是它抗氧化、能‘出手’抓自由基的部位；另一部分是一条长长的、不爱水的‘植基’疏水侧链。</p>
+      <p class="narrate">这条疏水侧链非常关键：它能像锚一样，把自己‘插’进细胞膜的磷脂双分子层里，让维生素E就‘住’在细胞膜上，正好守在最容易受自由基攻击的细胞膜脂肪里。这就像在细胞膜这条街上住下了保安，谁想搞破坏第一时间就能拦。</p>
+      <p class="narrate">所以记住：维生素E是‘膜结合的抗氧化剂’，它是脂溶性的，优先待在细胞膜、脂蛋白和脂肪组织里。这也解释了为什么它最擅长保护‘细胞膜里的多不饱和脂肪酸’不被氧化。</p>
+      <p class="narrate">口诀：‘维E两头：色满环抓自由基，长侧链插进细胞膜；住在膜上才守得住’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 210" role="img" aria-label="维生素E结构与嵌入细胞膜">
+    <rect x="14" y="20" width="200" height="120" rx="12" fill="#eaf3e9" stroke="#2e9e6b"/>
+    <text x="114" y="48" fill="#1c6b45" font-size="14" text-anchor="middle" font-weight="700">维生素E 分子</text>
+    <circle cx="70" cy="92" r="26" fill="#2e9e6b"/>
+    <text x="70" y="97" fill="#fff" font-size="12" text-anchor="middle" font-weight="700">色满环</text>
+    <text x="70" y="120" fill="#3a5a4c" font-size="10.5" text-anchor="middle">带酚羟基·抓自由基</text>
+    <path d="M96 92 q40 0 80 0" stroke="#9a5b00" stroke-width="6" fill="none"/>
+    <text x="136" y="80" fill="#9a5b00" font-size="10.5" text-anchor="middle">长疏水侧链</text>
+    <text x="136" y="116" fill="#9a5b00" font-size="10.5" text-anchor="middle">植基·锚进膜</text>
+    <!-- 细胞膜 -->
+    <rect x="250" y="20" width="416" height="170" rx="10" fill="#fdf6e6" stroke="#d9c79a"/>
+    <text x="458" y="38" fill="#8a7f6e" font-size="12" text-anchor="middle" font-weight="700">细胞膜 磷脂双分子层</text>
+    <line x1="290" y1="58" x2="630" y2="58" stroke="#e0a83a" stroke-width="3"/>
+    <circle cx="290" cy="58" r="5" fill="#e0a83a"/><circle cx="630" cy="58" r="5" fill="#e0a83a"/>
+    <line x1="290" y1="120" x2="630" y2="120" stroke="#e0a83a" stroke-width="3"/>
+    <circle cx="290" cy="120" r="5" fill="#e0a83a"/><circle cx="630" cy="120" r="5" fill="#e0a83a"/>
+    <!-- 脂肪酸尾巴 -->
+    <g stroke="#c9a24a" stroke-width="3">
+      <line x1="330" y1="58" x2="330" y2="120"/><line x1="380" y1="58" x2="380" y2="120"/>
+      <line x1="430" y1="58" x2="430" y2="120"/><line x1="480" y1="58" x2="480" y2="120"/>
+      <line x1="540" y1="58" x2="540" y2="120"/><line x1="590" y1="58" x2="590" y2="120"/>
+    </g>
+    <!-- 嵌入的维E -->
+    <circle cx="410" cy="89" r="18" fill="#2e9e6b"/>
+    <text x="410" y="93" fill="#fff" font-size="11" text-anchor="middle" font-weight="700">VE</text>
+    <path d="M428 89 q26 0 52 0" stroke="#9a5b00" stroke-width="5" fill="none"/>
+    <text x="458" y="150" fill="#1c6b45" font-size="11.5" text-anchor="middle">维生素E 住进细胞膜，守在脂肪酸旁</text>
+    <text x="458" y="172" fill="#8a7f6e" font-size="11" text-anchor="middle">脂溶性 → 优先待在细胞膜 / 脂蛋白 / 脂肪组织</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 结构口诀</div>
+    <div class="big">色满环抓自由基 · 长侧链插进细胞膜 · 住在膜上才守得住</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s3')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s4">
+    <div class="sec-head"><div class="no">4</div><h2>核心精讲三：招牌功能——抗氧化（机制）</h2><div class="sub">10分钟</div></div>
+    <div class="card">
+      <p class="narrate">这是本课最精彩、也最高频的一段：维生素E的招牌功能就是抗氧化，它是人体内最重要的脂溶性抗氧化剂。具体怎么抗？听我讲清楚这条‘链式反应’。</p>
+      <p class="narrate">细胞膜里富含多不饱和脂肪酸，很容易被自由基攻击。一旦一个脂肪酸被自由基夺走氢，就变成‘脂质过氧化自由基’，它又会去抢旁边脂肪酸的氢，像多米诺骨牌一样连锁反应，把整片膜搞坏——这叫脂质过氧化链式反应。</p>
+      <p class="narrate">维生素E就守在膜上，它把羟基上的氢‘送’给那个脂质过氧化自由基，让它安静下来、链条就此断掉，等于在源头按了暂停键，所以叫‘断链型抗氧化剂’。</p>
+      <p class="narrate">但维生素E自己送完氢也变成了一个‘维生素E自由基’，它本来也会搞破坏。别怕，身体里有帮手：维生素C、谷胱甘肽、辅酶Q10会把它‘还原’回正常的维生素E，让它重新上岗。这就是抗氧化网络——维E冲锋、维C善后。</p>
+      <p class="narrate">它主要保护谁？第一，保护细胞膜里的多不饱和脂肪酸不被氧化；第二，特别保护红细胞膜，防止红细胞被氧化破裂；第三，保护神经细胞膜等易受氧化攻击的结构。一句话，维生素E是‘细胞膜的防锈漆’。</p>
+      <p class="narrate">口诀：‘维E抗氧化：自由基抢膜脂，维E送氢断链条；自己变自由基，维C谷胱甘肽来还原；保细胞膜、保红细胞’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 230" role="img" aria-label="维生素E中断脂质过氧化链式反应">
+    <text x="340" y="26" fill="#b5302a" font-size="13.5" text-anchor="middle" font-weight="700">脂质过氧化链式反应（维E 在源头断链）</text>
+    <!-- 链式 -->
+    <rect x="20" y="48" width="120" height="54" rx="10" fill="#fdf0ee" stroke="#d8443c"/>
+    <text x="80" y="70" fill="#b5302a" font-size="12.5" text-anchor="middle" font-weight="700">自由基 LOO·</text>
+    <text x="80" y="90" fill="#b5302a" font-size="11" text-anchor="middle">攻击膜上脂肪酸</text>
+    <path d="M140 75 H168" stroke="#b5302a" stroke-width="2.5" marker-end="url(#e4)"/>
+    <rect x="170" y="48" width="150" height="54" rx="10" fill="#ffe9c4" stroke="#e0a83a"/>
+    <text x="245" y="70" fill="#9a5b00" font-size="12.5" text-anchor="middle" font-weight="700">脂质过氧化自由基</text>
+    <text x="245" y="90" fill="#9a5b00" font-size="11" text-anchor="middle">去抢旁边脂肪酸 → 连锁</text>
+    <text x="300" y="30" fill="#b5302a" font-size="12" text-anchor="middle">↓ 不走这条（被断）</text>
+    <path d="M402 75 q70 -28 150 -20" stroke="#7aa86a" stroke-width="3" fill="none" marker-end="url(#e4g)"/>
+    <rect x="556" y="44" width="116" height="58" rx="10" fill="#eafaf1" stroke="#2e9e6b"/>
+    <text x="614" y="66" fill="#1c6b45" font-size="12" text-anchor="middle" font-weight="700">维E 送氢·断链</text>
+    <text x="614" y="86" fill="#1c6b45" font-size="10.5" text-anchor="middle">反应停止✓</text>
+    <!-- 维E 还原 -->
+    <rect x="170" y="138" width="150" height="62" rx="10" fill="#eafaf1" stroke="#2e9e6b"/>
+    <text x="245" y="160" fill="#1c6b45" font-size="12" text-anchor="middle" font-weight="700">维E 自由基(被氧化)</text>
+    <text x="245" y="180" fill="#1c6b45" font-size="11" text-anchor="middle">维C / 谷胱甘肽 / CoQ10</text>
+    <text x="245" y="196" fill="#1c6b45" font-size="11" text-anchor="middle">把它还原回 维E</text>
+    <path d="M320 169 q60 -6 120 0" stroke="#2e9e6b" stroke-width="2.5" fill="none" marker-end="url(#e4g)"/>
+    <rect x="446" y="138" width="120" height="62" rx="10" fill="#eaf3e9" stroke="#2e9e6b"/>
+    <text x="506" y="166" fill="#1c6b45" font-size="12.5" text-anchor="middle" font-weight="700">维E 复活</text>
+    <text x="506" y="186" fill="#3a5a4c" font-size="11" text-anchor="middle">重新上岗</text>
+    <defs>
+      <marker id="e4" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#b5302a"/></marker>
+      <marker id="e4g" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#2e9e6b"/></marker>
+    </defs>
+    <rect x="20" y="214" width="640" height="0" />
+  </svg>
+  </div>
+  <table>
+    <thead><tr><th>要点</th><th>通俗理解</th><th>考点提示</th></tr></thead>
+    <tbody>
+      <tr><td>断链型抗氧化剂</td><td>送氢给脂质过氧化自由基，终止连锁</td><td><b>招牌功能</b>；人体内最重要脂溶性抗氧化物</td></tr>
+      <tr><td>抗氧化网络</td><td>维C、谷胱甘肽、CoQ10 把氧化的维E还原</td><td>维E冲锋、维C善后</td></tr>
+      <tr><td>保护对象</td><td>细胞膜多不饱和脂肪酸、红细胞膜、神经膜</td><td>缺维E→红细胞易破裂(溶血)</td></tr>
+    </tbody>
+  </table>
+  <div class="mnemonic">
+    <div class="label">🔑 抗氧化口诀</div>
+    <div class="big">自由基抢膜脂 · 维E送氢断链条 · 维C谷胱甘肽来还原 · 保细胞膜保红细胞</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s4')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s5">
+    <div class="sec-head"><div class="no">5</div><h2>核心精讲四：其他功能（生殖·免疫·血管）</h2><div class="sub">8分钟</div></div>
+    <div class="card">
+      <p class="narrate">除了抗氧化这个主力，维生素E还有几条副线功能，考试也常顺带考。</p>
+      <p class="narrate">第一条，和生育、生殖有关——这也是它叫‘生育酚’‘抗不育维生素’的由来。当年科学家发现，大鼠缺维生素E会不育，补充后恢复，于是得名。但要特别较真一句：人类单纯缺维生素E导致不育非常少见，它的‘抗不育’名气主要来自动物实验，别把它当成人缺维E的主要表现。</p>
+      <p class="narrate">第二条，维持正常的免疫功能。维生素E能保护免疫细胞细胞膜、调节免疫，缺乏时免疫功能下降。</p>
+      <p class="narrate">第三条，保护血管和血液。它能抑制血小板过度聚集、维持毛细血管的完整，对心血管有保护作用。</p>
+      <p class="narrate">把这几条记住：抗氧化是招牌，生殖是‘名字由来但人少发’，免疫和血管是加分项。</p>
+      <p class="narrate">口诀：‘维E三副线：名字叫生育酚(大鼠不育而得名)、护免疫、护血管抑聚集；抗氧化才是真招牌’。</p>
+  <table>
+    <thead><tr><th>功能</th><th>通俗理解</th><th>考点提示</th></tr></thead>
+    <tbody>
+      <tr><td>与生殖/生育相关</td><td>“生育酚”之名由来(大鼠缺之不育)</td><td><b>人类缺乏罕见</b>，不是人缺维E主表现；别与维D佝偻病混淆</td></tr>
+      <tr><td>维持正常免疫</td><td>保护免疫细胞、调节免疫</td><td>缺乏→免疫功能下降</td></tr>
+      <tr><td>保护血管血液</td><td>抑制血小板聚集、维持毛细血管完整</td><td>对心血管有保护作用</td></tr>
+    </tbody>
+  </table>
+  <div class="mnemonic">
+    <div class="label">🔑 功能口诀</div>
+    <div class="big">抗氧化是真招牌 · 名字叫生育酚(大鼠而来) · 护免疫 · 护血管抑聚集</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s5')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s6">
+    <div class="sec-head"><div class="no">6</div><h2>核心精讲五：缺乏症——人类其实很难缺！</h2><div class="sub">10分钟</div></div>
+    <div class="card">
+      <p class="narrate">和维生素A夜盲、维生素D佝偻病那种‘一缺就发病’不同，维生素E缺乏在人类极少见，这是它最特别的一点。为什么？因为维E在食物里分布广、植物油里特别多，一般人正常吃饭很难缺。</p>
+      <p class="narrate">那谁会缺？主要两类高危人群：一是脂肪吸收不良的人，比如胆汁酸缺乏、囊性纤维化、短肠综合征、慢性腹泻，因为维E是脂溶性、要靠脂肪一起吸收，脂肪吸收不了维E也吸收不了；二是早产低体重儿，他们体内储存少、吸收又差，是最典型的缺乏人群。</p>
+      <p class="narrate">缺了会怎样？两大表现。第一，溶血性贫血：红细胞膜被氧化破坏、红细胞破裂溶血，所以早产儿缺乏常表现为贫血。第二，神经肌肉病变：因为神经细胞膜也靠维E保护，缺乏会出现共济失调，就是走路不稳、动作不协调，还有视网膜病变、骨骼肌无力。</p>
+      <p class="narrate">把这条线记牢：维E缺乏人类罕见，只找‘脂肪吸收不良’和‘早产低体重儿’；表现＝溶血性贫血＋神经肌肉病变(共济失调/视网膜病变/肌无力)。千万别把维E缺乏说成夜盲或佝偻病。</p>
+      <p class="narrate">口诀：‘维E缺乏人类罕见：只找脂肪吸收不良、早产低体重儿；表现溶血性贫血＋神经肌肉病变’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 200" role="img" aria-label="维生素E缺乏的高危人群与表现">
+    <rect x="14" y="30" width="160" height="60" rx="10" fill="#1f4d3a"/>
+    <text x="94" y="56" fill="#fff" font-size="14" text-anchor="middle" font-weight="700">维E缺乏</text>
+    <text x="94" y="78" fill="#ffe2b0" font-size="11.5" text-anchor="middle">人类极罕见</text>
+    <rect x="200" y="14" width="220" height="42" rx="10" fill="#3a8dde"/>
+    <text x="310" y="32" fill="#fff" font-size="13" text-anchor="middle" font-weight="700">高危① 脂肪吸收不良</text>
+    <text x="310" y="50" fill="#fff" font-size="11" text-anchor="middle">胆汁酸缺乏/囊性纤维化/短肠/慢性腹泻</text>
+    <rect x="200" y="64" width="220" height="42" rx="10" fill="#e8743b"/>
+    <text x="310" y="82" fill="#fff" font-size="13" text-anchor="middle" font-weight="700">高危② 早产低体重儿</text>
+    <text x="310" y="100" fill="#fff" font-size="11" text-anchor="middle">体内储存少、吸收差</text>
+    <rect x="200" y="114" width="220" height="44" rx="10" fill="#e0a83a"/>
+    <text x="310" y="132" fill="#fff" font-size="13" text-anchor="middle" font-weight="700">表现：溶血性贫血</text>
+    <text x="310" y="150" fill="#fff" font-size="11" text-anchor="middle">红细胞膜被氧化破裂</text>
+    <path d="M174 56 L198 55" stroke="#333" stroke-width="2" marker-end="url(#a6e)"/>
+    <path d="M174 56 L198 85" stroke="#333" stroke-width="2" marker-end="url(#a6e)"/>
+    <path d="M174 56 L198 134" stroke="#333" stroke-width="2" marker-end="url(#a6e)"/>
+    <defs><marker id="a6e" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#333"/></marker></defs>
+    <rect x="440" y="40" width="226" height="116" rx="10" fill="#fdf0ee" stroke="#d8443c"/>
+    <text x="553" y="66" fill="#b5302a" font-size="13" text-anchor="middle" font-weight="700">表现（两大块）</text>
+    <text x="553" y="92" fill="#b5302a" font-size="12" text-anchor="middle">① 溶血性贫血（红细胞破裂）</text>
+    <text x="553" y="116" fill="#b5302a" font-size="12" text-anchor="middle">② 神经肌肉病变</text>
+    <text x="553" y="136" fill="#8a7f6e" font-size="11.5" text-anchor="middle">共济失调·视网膜病变·肌无力</text>
+  </svg>
+  </div>
+  <div class="trap"><div class="t">核心大坑</div>维E缺乏<b>人类极罕见</b>，只见于<b>脂肪吸收不良者、早产低体重儿</b>；表现为<b>溶血性贫血、神经肌肉病变</b>。<b>不是</b>夜盲(维A)、<b>不是</b>佝偻病(维D)。</div>
+  <div class="mnemonic">
+    <div class="label">🔑 缺乏症口诀</div>
+    <div class="big">人类罕见 · 只找脂肪吸收不良 & 早产低体重儿 · 溶血性贫血 + 神经肌肉病变</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s6')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s7">
+    <div class="sec-head"><div class="no">7</div><h2>核心精讲六：食物来源 &amp; 它怕什么（稳定性）</h2><div class="sub">8分钟</div></div>
+    <div class="card">
+      <p class="narrate">维生素E从哪吃？一句话：植物油是第一来源，尤其是小麦胚芽油含量最高，其次是玉米油、葵花籽油这些。所以越‘油’的食物维E越多。</p>
+      <p class="narrate">接着是坚果和种子，比如杏仁、榛子、葵花籽；还有谷物的胚芽。深绿色蔬菜也能提供一些。动物性食物里维E含量普遍偏低，只有蛋黄、鱼肝油之类有少量——这点正好和维A、维D相反，维A维D多藏在动物肝里，维E却主要靠植物油的油。</p>
+      <p class="narrate">再记一个极容易考的：维生素E‘怕’什么。它对热还算稳定、对酸也稳，但它特别怕氧、怕紫外线、怕碱、怕金属离子，还怕油炸。食物一油炸、一长时间存放接触空气，维E损失很大。所以油炸食品不仅油不好，维E也基本被破坏光了。</p>
+      <p class="narrate">口诀：‘维E来源：植物油第一(麦胚油冠军)、坚果种子、谷物胚芽、深绿菜；动物性低(蛋黄鱼肝少量)；怕氧怕光怕碱怕油炸’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 150" role="img" aria-label="维生素E食物来源排序与怕的东西">
+    <rect x="14" y="20" width="320" height="110" rx="12" fill="#fff7e0" stroke="#e0a83a"/>
+    <text x="174" y="46" fill="#a9791f" font-size="15" text-anchor="middle" font-weight="700">来源（含量从高到低）</text>
+    <text x="174" y="72" font-size="13" text-anchor="middle">① 植物油(麦胚油冠军·玉米油·葵花籽油)</text>
+    <text x="174" y="94" font-size="13" text-anchor="middle">② 坚果种子(杏仁·葵花籽) ③ 谷物胚芽</text>
+    <text x="174" y="116" font-size="13" text-anchor="middle">④ 深绿蔬菜 ｜ 动物性低(蛋黄·鱼肝少量)</text>
+    <rect x="350" y="20" width="316" height="110" rx="12" fill="#fdf0ee" stroke="#d8443c"/>
+    <text x="508" y="46" fill="#b5302a" font-size="15" text-anchor="middle" font-weight="700">怕什么（易破坏）</text>
+    <text x="508" y="72" font-size="13" text-anchor="middle">✗ 氧 · ✗ 紫外线 · ✗ 碱 · ✗ 金属离子</text>
+    <text x="508" y="94" font-size="13" text-anchor="middle">✗ 油炸（损失大）｜ 对热、酸较稳定</text>
+    <text x="508" y="116" fill="#8a7f6e" font-size="11.5" text-anchor="middle">所以：别靠油炸食品补维E</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 来源 & 稳定性口诀</div>
+    <div class="big">植物油第一(麦胚油冠军) · 坚果种子 · 谷物胚芽 · 深绿菜 · 动物性低　|　怕氧怕光怕碱怕油炸</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s7')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s8">
+    <div class="sec-head"><div class="no">8</div><h2>核心精讲七：吃多少 &amp; α-TE 单位换算</h2><div class="sub">8分钟</div></div>
+    <div class="card">
+      <p class="narrate">最后量化一下：维生素E该吃多少？先记单位——它用‘α-生育酚当量’α-TE。各种形式的维E按活性折算成α-TE，公式是：1个α-TE等于1毫克α-生育酚，等于0.5毫克β-生育酚，等于0.1毫克γ-生育酚，等于0.02毫克δ-生育酚，等于0.3毫克α-三烯生育酚。α的最强，所以系数最大。</p>
+      <p class="narrate">中国居民膳食营养素参考摄入量对维生素E用的是‘适宜摄入量’AI。成人，也就是18岁以上，AI是每天14毫克α-TE；可耐受最高摄入量UL是每天80毫克α-TE，超过这个量有风险。孕妇乳母略高一点点，但考试记住成人14、上限80就够。</p>
+      <p class="narrate">再较真一句：天然来源的d-α-生育酚生物活性是100%，人工合成的dl-α-生育酚效价低一些，所以营养评价统一用α-TE，不被‘天然/合成’标签带偏。补充剂标签有时还标IU，考试一般以α-TE为准。特殊人群里，乳母会略高到每天17毫克α-TE，孕妇基本还是14毫克；考试记住成人AI 14、上限UL 80就够。</p>
+      <p class="narrate">口诀：‘维E单位α-TE；成人AI 14毫克、UL 80毫克；α最强(系数1)、δ最弱’。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 单位 & 摄入量（DRIs·脂溶性维生素）</div>
+    <div class="big">单位：α-生育酚当量 α-TE　|　成人(18+) <b>AI 14 mg α-TE/d</b>　|　<b>UL 80 mg α-TE/d</b></div>
+    <div class="note">α-TE 换算：1 mg α-TE = 1 mg α-生育酚 = 0.5 β = 0.1 γ = 0.02 δ = 0.3 α-三烯生育酚。<b>α 活性最强</b>；天然 d-α 活性100%。</div>
+  </div>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 130" role="img" aria-label="维生素E参考摄入量标尺">
+    <line x1="40" y1="70" x2="640" y2="70" stroke="#c9bda3" stroke-width="4"/>
+    <circle cx="220" cy="70" r="9" fill="#2e9e6b"/>
+    <text x="220" y="52" fill="#1c6b45" font-size="13" text-anchor="middle" font-weight="700">成人 AI 14 mg</text>
+    <text x="220" y="98" fill="#3a5a4c" font-size="12" text-anchor="middle">α-TE/d</text>
+    <circle cx="520" cy="70" r="10" fill="#d8443c"/>
+    <text x="520" y="52" fill="#b5302a" font-size="13" text-anchor="middle" font-weight="700">UL 80 mg</text>
+    <text x="520" y="98" fill="#b5302a" font-size="12" text-anchor="middle">α-TE/d（上限）</text>
+    <text x="40" y="118" fill="#8a7f6e" font-size="11.5">↑ 单位用 α-TE；孕妇/乳母略高；天然 d-α 活性100%</text>
+  </svg>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s8')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s9">
+    <div class="sec-head"><div class="no">9</div><h2>红绿灯：高频易错点</h2><div class="sub">5分钟</div></div>
+    <div class="card">
+      <p class="narrate">红绿灯时间，把维生素E这章最爱丢分的坑集中点一遍。</p>
+      <p class="narrate">易错一：8个成员里谁是老大。α-生育酚生物活性最高、是人体主用形式；别把δ或γ说成最强。</p>
+      <p class="narrate">易错二：单位搞混。维生素E用α-TE，不是维生素A的RAE，也不是维生素D的IU/微克；这是三个脂溶性维生素最容易张冠李戴的地方。</p>
+      <p class="narrate">易错三：招牌功能是抗氧化(保护细胞膜)，不是促进钙吸收——那是维D；不是维持暗视觉——那是维A；不是抗出血——那是维K。</p>
+      <p class="narrate">易错四：缺乏症人类极罕见，只见于脂肪吸收不良者和早产低体重儿，表现为溶血性贫血和神经肌肉病变；千万别写成夜盲或佝偻病。</p>
+      <p class="narrate">易错五：主要来源是植物油(麦胚油最高)，不是动物肝；动物性食物维E普遍偏低。</p>
+      <p class="narrate">易错六：维E怕氧、怕紫外线、怕碱、怕油炸，易被加工破坏；油炸食品维E损失大。</p>
+      <p class="narrate">易错七：过量也危险。维E脂溶性会蓄积，大剂量补充剂可损害凝血机制、增加出血倾向；UL是每天80毫克α-TE。</p>
+      <p class="narrate">易错八：摄入量量级。成人AI 14毫克α-TE每天，UL 80毫克；别记成微克的量级。</p>
+  <div class="trap"><div class="t">易错1：谁是老大</div>8种里<b>α-生育酚活性最高</b>、是人体主用形式；别说δ/γ最强。</div>
+  <div class="trap"><div class="t">易错2：单位</div>维E用 <b>α-TE</b>；≠维A的RAE、≠维D的IU/µg。三个脂溶性维生素单位最易张冠李戴。</div>
+  <div class="trap"><div class="t">易错3：招牌功能</div>维E<b>抗氧化·保护细胞膜</b>；<b>不是</b>促钙吸收(维D)、<b>不是</b>暗视觉(维A)、<b>不是</b>抗出血(维K)。</div>
+  <div class="trap"><div class="t">易错4：缺乏症</div>人类<b>极罕见</b>，仅脂肪吸收不良/早产低体重儿；<b>溶血性贫血+神经肌肉病变</b>；<b>不是</b>夜盲/佝偻病。</div>
+  <div class="trap"><div class="t">易错5：来源</div>主源<b>植物油(麦胚油最高)</b>；<b>不是</b>动物肝；动物性食物维E普遍低。</div>
+  <div class="trap"><div class="t">易错6：稳定性</div>怕<b>氧/紫外线/碱/油炸</b>，易被破坏；油炸食品维E损失大；对热、酸较稳。</div>
+  <div class="trap"><div class="t">易错7：过量</div>脂溶性会蓄积，大剂量补充剂<b>损害凝血、增加出血倾向</b>；UL <b>80 mg α-TE/d</b>。</div>
+  <div class="trap"><div class="t">易错8：摄入量</div>成人 <b>AI 14 mg α-TE/d</b>，UL <b>80 mg α-TE/d</b>；量级是“毫克”，别记成微克。</div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s9')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s10">
+    <div class="sec-head"><div class="no">10</div><h2>解题三步法（注册营养师全是选择题）</h2><div class="sub">4分钟</div></div>
+    <div class="card">
+      <p class="narrate">注册营养师全是选择题，维生素E这章送你一套三步法。</p>
+      <p class="narrate">第一步，审题定性：先看问的是身份分类(8种/α-生育酚)、结构(色满环住进膜)、抗氧化机制、其他功能(生殖/免疫/血管)、缺乏症、食物来源与稳定性，还是摄入量和α-TE单位，先定性，别急着看选项。</p>
+      <p class="narrate">第二步，定位考点：身份就背8种里α最强、单位α-TE；结构就背色满环抓自由基、长侧链插进膜；功能就背抗氧化断链、维C还原、保细胞膜保红细胞；缺乏就背人类罕见、脂肪吸收不良和早产儿、溶血加神经；来源就背植物油麦胚油第一、怕氧怕油炸；摄入量就背AI 14、UL 80。</p>
+      <p class="narrate">第三步，排除反着坑：直接排除‘维E缺乏会夜盲’‘维E促进钙吸收’‘维E主源是动物肝’‘维E溶于水随尿排’‘维E不怕油炸’这类反向表述，剩下的就是答案。</p>
+  <div class="steps">
+    <div class="step"><div class="b"><b>第一步 · 审题定性：</b>先看问哪一类——身份(8种/α)？结构(色满环/住膜)？抗氧化机制？其他功能(生殖/免疫/血管)？缺乏症？来源与稳定性？摄入量(α-TE)？先定性，不急看选项。</div></div>
+    <div class="step"><div class="b"><b>第二步 · 定位考点：</b>身份→8种α最强/单位α-TE；结构→色满环抓自由基+长侧链插膜；功能→抗氧化断链+维C还原+保细胞膜红细胞；缺乏→人类罕见/脂肪吸收不良&早产儿/溶血+神经；来源→植物油麦胚油第一/怕氧怕油炸；摄入→AI14/UL80。</div></div>
+    <div class="step"><div class="b"><b>第三步 · 排除反坑：</b>直接排除“维E缺乏会夜盲”“维E促钙吸收”“维E主源动物肝”“维E溶于水随尿排”“维E不怕油炸”这类反向表述，剩下即答案。</div></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s10')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s11">
+    <div class="sec-head"><div class="no">11</div><h2>晓晓老师不定时提问 · 模拟课堂（费曼）</h2><div class="sub">互动</div></div>
+    <div class="card">
+      <p class="narrate">讲完重点，我们模拟上课提问。我先和班里的同学演练，再轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。</p>
+      <p class="narrate">第一个问题：用你自己的话解释，维生素E凭什么能‘住’在细胞膜上发挥抗氧化作用？把结构和位置讲清楚。</p>
+      <p class="narrate">第二个问题：为什么说‘维生素E缺乏在人类极罕见’？什么人会缺，缺了又有什么典型表现？把这条逻辑讲清楚。</p>
+  <div class="chat">
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">小明，既然维生素E是‘抗氧化卫士’，那我每天吃油炸薯条，能不能也补到维E？</div></div></div>
+    <div class="msg stu"><div class="av stu">🧒</div><div><div class="who">学生·小明</div><div class="bubble">能吧？薯条也是油，油里不是有维E嘛……</div></div></div>
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">又踩坑啦！植物油里确实维E多，但<b>油炸</b>时高温+氧会把维E大量破坏掉，薯条用的油反复加热更惨。而且油炸本身产生坏脂肪。想补维E，得吃<b>没经过度加热的植物油、坚果、种子</b>，比如拌沙拉的葵花籽油、生杏仁。记住：维E<b>怕氧怕光怕碱怕油炸</b>。</div></div></div>
+  </div>
+
+  <div class="ask" data-keywords="色满环|苯并|吡喃|疏水|侧链|插进|嵌入|细胞膜|膜上|脂溶性|住|结构|双分子层" data-model="关键在<b>结构</b>：维E分子一端是带酚羟基的<b>色满环（苯并二氢吡喃环）</b>，负责抓自由基、送氢；另一端是一条长长的不爱水的<b>疏水侧链（植基）</b>。这条疏水侧链像锚，把维E<b>插进细胞膜的磷脂双分子层</b>里，让它‘住’在膜上、紧贴容易被氧化的膜脂肪酸，所以能在源头断掉脂质过氧化链式反应。简单说：<b>疏水侧链让它住进膜，色满环让它在膜上抓自由基</b>。">
+    <div class="q">提问一：维生素E凭什么能“住”在细胞膜上发挥抗氧化作用？把结构和位置讲清楚。</div>
+    <textarea placeholder="想一想：它分子的两个部分分别干什么？"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+  <div class="ask" data-keywords="罕见|脂肪吸收|吸收不良|早产|低体重|溶血|红细胞|贫血|神经|肌肉|共济失调|视网膜|人类|少见|少发" data-model="因为维E在植物油等食物里分布广，<b>一般人正常吃饭很难缺</b>，所以<b>人类缺乏极罕见</b>。只有两类人危险：一是<b>脂肪吸收不良者</b>（胆汁酸缺乏、囊性纤维化、短肠、慢性腹泻），维E脂溶性、要靠脂肪一起吸收；二是<b>早产低体重儿</b>，体内储存少、吸收差。缺了的典型表现是<b>溶血性贫血</b>（红细胞膜被氧化破裂）和<b>神经肌肉病变</b>（共济失调、视网膜病变、肌无力）。它不是夜盲也不是佝偻病。">
+    <div class="q">提问二：为什么说“维生素E缺乏在人类极罕见”？什么人会缺，缺了有什么典型表现？</div>
+    <textarea placeholder="先想：为什么普通人不容易缺？谁容易缺？"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s11')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s12">
+    <div class="sec-head"><div class="no">12</div><h2>改编练习题（单选，仿注册营养师真题）</h2><div class="sub">自测</div></div>
+    <div class="card">
+      <p class="narrate">下面8道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，8种里活性最强的是哪个。第二题，维E的单位。第三题，它抗氧化主要靠什么结构‘住’在膜上。第四题，维E缺乏的高危人群。第五题，招牌生理功能。第六题，主要食物来源。第七题，关于稳定性和油炸。第八题，关于摄入量与过量。</p>
+  <div class="quiz" data-ans="C">
+    <div class="stem">1. 天然维生素E共有8种化合物，其中生物活性最高、为人体主要利用形式的是：</div>
+    <button class="opt" onclick="choose(this)">A. δ-生育酚</button>
+    <button class="opt" onclick="choose(this)">B. γ-生育酚</button>
+    <button class="opt" onclick="choose(this)">C. α-生育酚</button>
+    <button class="opt" onclick="choose(this)">D. α-三烯生育酚</button>
+    <div class="ans">✅ 答案：C。<b>α-生育酚</b>生物活性最高、是人体主用形式；δ/γ活性远低于α。维E 8种＝生育酚(α/β/γ/δ)＋三烯生育酚(α/β/γ/δ)。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">2. 评价膳食维生素E活性所用的统一单位是：</div>
+    <button class="opt" onclick="choose(this)">A. 视黄醇活性当量(RAE)</button>
+    <button class="opt" onclick="choose(this)">B. α-生育酚当量(α-TE)</button>
+    <button class="opt" onclick="choose(this)">C. 国际单位(IU)</button>
+    <button class="opt" onclick="choose(this)">D. 视黄醇当量(RE)</button>
+    <div class="ans">✅ 答案：B。维E用<b>α-TE</b>。RAE/RE是维生素A的单位；维D常用µg/IU；三者别混。</div>
+  </div>
+  <div class="quiz" data-ans="D">
+    <div class="stem">3. 维生素E能“住”在细胞膜上发挥抗氧化作用，主要依赖其分子的：</div>
+    <button class="opt" onclick="choose(this)">A. 水溶性羟基</button>
+    <button class="opt" onclick="choose(this)">B. 芳香环与金属离子结合</button>
+    <button class="opt" onclick="choose(this)">C. 多肽链折叠</button>
+    <button class="opt" onclick="choose(this)">D. 疏水侧链(植基)嵌入磷脂双分子层</button>
+    <div class="ans">✅ 答案：D。长<b>疏水侧链</b>把维E锚进细胞膜脂双层，使其‘住’在膜上守脂肪酸；色满环(酚羟基)负责抓自由基。A错(维E脂溶性，非靠水溶性)；C错(非蛋白)。</div>
+  </div>
+  <div class="quiz" data-ans="A">
+    <div class="stem">4. 维生素E缺乏在人类极少见，最典型的高危人群是：</div>
+    <button class="opt" onclick="choose(this)">A. 脂肪吸收不良者及早产低体重儿</button>
+    <button class="opt" onclick="choose(this)">B. 长期日晒不足者</button>
+    <button class="opt" onclick="choose(this)">C. 纯素食者</button>
+    <button class="opt" onclick="choose(this)">D. 老年人</button>
+    <div class="ans">✅ 答案：A。维E脂溶性、需随脂肪吸收，<b>脂肪吸收不良者</b>与<b>早产低体重儿</b>最易缺；表现为溶血性贫血、神经肌肉病变。B是维D高危；C/D一般不致维E缺乏。</div>
+  </div>
+  <div class="quiz" data-ans="C">
+    <div class="stem">5. 维生素E最主要（招牌）的生理功能是：</div>
+    <button class="opt" onclick="choose(this)">A. 维持暗视觉</button>
+    <button class="opt" onclick="choose(this)">B. 促进钙、磷吸收</button>
+    <button class="opt" onclick="choose(this)">C. 抗氧化，保护细胞膜免受脂质过氧化损伤</button>
+    <button class="opt" onclick="choose(this)">D. 参与血液凝固</div>
+    <div class="ans">✅ 答案：C。维E招牌功能=<b>脂溶性抗氧化、断链保护细胞膜</b>。A是维A，B是维D，D是维K。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">6. 下列食物中，维生素E含量最丰富的是：</div>
+    <button class="opt" onclick="choose(this)">A. 动物肝脏</button>
+    <button class="opt" onclick="choose(this)">B. 小麦胚芽油等植物油、坚果种子</button>
+    <button class="opt" onclick="choose(this)">C. 精白米面</button>
+    <button class="opt" onclick="choose(this)">D. 牛奶</button>
+    <div class="ans">✅ 答案：B。<b>植物油(麦胚油最高)、坚果种子、谷物胚芽</b>是维E主源；动物肝维E不高(A错)，精白米面加工损失大(C错)。</div>
+  </div>
+  <div class="quiz" data-ans="D">
+    <div class="stem">7. 关于维生素E的稳定性，正确的是：</div>
+    <button class="opt" onclick="choose(this)">A. 对热、氧、紫外线都很稳定</button>
+    <button class="opt" onclick="choose(this)">B. 油炸对其活性没有影响</button>
+    <button class="opt" onclick="choose(this)">C. 主要怕酸、耐碱</button>
+    <button class="opt" onclick="choose(this)">D. 对氧、紫外线、碱、金属离子和油炸敏感，易被破坏</button>
+    <div class="ans">✅ 答案：D。维E<b>怕氧/紫外线/碱/金属离子/油炸</b>，易破坏；对热、酸较稳定。A、B、C均反了。</div>
+  </div>
+  <div class="quiz" data-ans="C">
+    <div class="stem">8. 关于维生素E的参考摄入量与安全性，错误的是：</div>
+    <button class="opt" onclick="choose(this)">A. 成人适宜摄入量(AI)约为14 mg α-TE/d</button>
+    <button class="opt" onclick="choose(this)">B. 可耐受最高摄入量(UL)约为80 mg α-TE/d</button>
+    <button class="opt" onclick="choose(this)">C. 水溶性、过量可随尿排出、不会蓄积中毒</button>
+    <button class="opt" onclick="choose(this)">D. 大剂量补充剂可能损害凝血机制、增加出血倾向</button>
+    <div class="ans">✅ 答案：C。维E是<b>脂溶性、会蓄积</b>，大剂量可<b>损害凝血、增加出血倾向</b>；A/B/D均正确。C把脂溶性说成水溶性，是反向坑。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s12')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s13">
+    <div class="sec-head"><div class="no">13</div><h2>费曼记忆小测：用自己的话讲一遍</h2><div class="sub">收尾</div></div>
+    <div class="card">
+      <p class="narrate">最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。</p>
+      <p class="narrate">问题：维生素E为什么叫‘生育酚’、又为什么是‘抗氧化卫士’？它凭什么能住进细胞膜抗氧化？缺了谁会受影响、有什么表现？一天该吃多少（成人14毫克α-TE、上限80）？从哪吃、又怕什么？把身份、结构、功能、缺乏、来源、摄入量这条逻辑串起来。</p>
+      <p class="narrate">课堂小结口诀复习：身份‘维E八兄弟，α-生育酚是老大，单位叫α-TE’；结构‘色满环抓自由基，长侧链插进细胞膜，住在膜上才守得住’；功能‘抗氧化是真招牌，送氢断链，维C谷胱甘肽来还原，保细胞膜保红细胞；名字叫生育酚，护免疫护血管’；缺乏‘人类罕见，只找脂肪吸收不良和早产低体重儿，溶血性贫血加神经肌肉病变’；来源‘植物油第一麦胚油冠军，坚果种子谷物胚芽，动物性低，怕氧怕光怕碱怕油炸’；摄入‘单位α-TE，成人AI14上限UL80’。</p>
+  <div class="feynman">
+    <h3>🧠 费曼复述任务</h3>
+    <p>合上页面，试着给一个“完全不懂营养的朋友”讲清楚下面这个问题。能讲明白，说明你真懂了（费曼学习法：教是最好的学）。</p>
+    <p><b>问题：</b>“维生素E为什么叫生育酚、又为什么是抗氧化卫士？它凭什么住进细胞膜抗氧化？缺了谁会受影响？一天该吃多少（成人14毫克α-TE、上限80）？从哪吃、又怕什么？”</p>
+    <textarea id="feynmanBox" placeholder="在这里用大白话写一段 4-6 句话的解释……"></textarea>
+    <button class="btn" onclick="feynmanCheck()">自我对照 · 看评分清单</button>
+    <div class="feedback" id="feynmanFeedback"></div>
+    <ul class="rubric">
+      <li>✅ 提到 脂溶性、8种、α-生育酚活性最强、单位α-TE</li>
+      <li>✅ 提到 结构：色满环抓自由基、疏水侧链插进细胞膜(住膜上抗氧化)</li>
+      <li>✅ 提到 招牌功能：抗氧化(断链)、保护细胞膜/红细胞；维C谷胱甘肽还原</li>
+      <li>✅ 提到 缺乏人类罕见：脂肪吸收不良/早产低体重儿 → 溶血性贫血+神经肌肉病变</li>
+      <li>✅ 提到 来源植物油(麦胚油最高)、怕氧/光/碱/油炸；摄入 AI 14 mg、UL 80 mg α-TE/d</li>
+    </ul>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s13')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    本节为「营养刷题」第7课，依据「注册营养师考试宝典」公众号·考点|22 维生素E系列及历年真题整理改编，并对照《中国居民膳食营养素参考摄入量(2023版)·脂溶性维生素》《营养与食品卫生学》第9版　｜　晓晓老师语音由 Edge-TTS XiaoxiaoNeural 神经网络语音合成，字幕固定底部不遮挡讲解　｜　仅供学习备考使用
+  </footer>
+</div>
+
+<div id="playerbar" class="hide">
+  <div class="subline" id="subline"><b>晓晓老师：</b>点击任意「▶ 听晓晓老师讲这段」，或点「📖 从头播放」，晓晓老师逐句讲解，字幕显示在此处，不遮挡上方讲解。</div>
+  <div class="pctrl">
+    <button onclick="prevSent()">⏮ 上一句</button>
+    <button id="playbtn" onclick="togglePlay()">▶ 播放</button>
+    <button onclick="nextSent()">下一句 ⏭</button>
+    <input id="seek" type="range" min="0" max="100" value="0" oninput="onSeek(this.value)" title="拖动可调整播放位置" />
+    <span id="idxlbl">0 / 0</span>
+    <span class="spd">语速
+      <button id="s08" onclick="Player.setSpeed(0.8)">0.8x</button>
+      <button id="s10" class="on" onclick="Player.setSpeed(1)">1x</button>
+      <button id="s12" onclick="Player.setSpeed(1.2)">1.2x</button>
+      <button id="s15" onclick="Player.setSpeed(1.5)">1.5x</button>
+    </span>
+    <button onclick="playAll()">📖 从头播放</button>
+    <button onclick="hidePlayer()">收起</button>
+  </div>
+</div>
+<button id="reopen" onclick="showPlayer()">▶ 晓晓老师</button>
+
+<script>
+const SECTIONS_AUDIO = {"s1": ["audio/s1_0.mp3", "audio/s1_1.mp3", "audio/s1_2.mp3", "audio/s1_3.mp3"], "s2": ["audio/s2_0.mp3", "audio/s2_1.mp3", "audio/s2_2.mp3", "audio/s2_3.mp3", "audio/s2_4.mp3"], "s3": ["audio/s3_0.mp3", "audio/s3_1.mp3", "audio/s3_2.mp3", "audio/s3_3.mp3"], "s4": ["audio/s4_0.mp3", "audio/s4_1.mp3", "audio/s4_2.mp3", "audio/s4_3.mp3", "audio/s4_4.mp3", "audio/s4_5.mp3"], "s5": ["audio/s5_0.mp3", "audio/s5_1.mp3", "audio/s5_2.mp3", "audio/s5_3.mp3", "audio/s5_4.mp3", "audio/s5_5.mp3"], "s6": ["audio/s6_0.mp3", "audio/s6_1.mp3", "audio/s6_2.mp3", "audio/s6_3.mp3", "audio/s6_4.mp3"], "s7": ["audio/s7_0.mp3", "audio/s7_1.mp3", "audio/s7_2.mp3", "audio/s7_3.mp3"], "s8": ["audio/s8_0.mp3", "audio/s8_1.mp3", "audio/s8_2.mp3", "audio/s8_3.mp3"], "s9": ["audio/s9_0.mp3", "audio/s9_1.mp3", "audio/s9_2.mp3", "audio/s9_3.mp3", "audio/s9_4.mp3", "audio/s9_5.mp3", "audio/s9_6.mp3", "audio/s9_7.mp3", "audio/s9_8.mp3"], "s10": ["audio/s10_0.mp3", "audio/s10_1.mp3", "audio/s10_2.mp3", "audio/s10_3.mp3"], "s11": ["audio/s11_0.mp3", "audio/s11_1.mp3", "audio/s11_2.mp3"], "s12": ["audio/s12_0.mp3"], "s13": ["audio/s13_0.mp3", "audio/s13_1.mp3", "audio/s13_2.mp3"]};
+const SECTIONS_TEXT  = {"s1": ["同学们好，我是晓晓老师。开始新课前先花五分钟串一遍前六课：蛋白质——必需氨基酸9种、谷类缺赖氨酸豆类缺蛋氨酸；碳水化合物——蔗无乳有麦也有、GI和GL、添加糖最好不超25克；脂类——必需脂肪酸只有亚油酸和α-亚麻酸、HDL好LDL坏；能量——1千卡等于4.184千焦、基础代谢是大头、BMI中国24超28胖；上一课维生素A——视杆细胞里的视紫红质、缺了先暗适应下降再夜盲，中毒只怪动物肝和补剂；上上课维生素D——阳光维生素、肝出25是指标、肾出1,25最能干、缺了小孩佝偻大人软化老人疏松。", "我们进了微量营养素的门，先讲了脂溶性维生素的老大维生素A、老二维生素D。今天讲脂溶性维生素里的第三位、也是抗氧化界的明星——维生素E。", "维生素E有个学名叫‘生育酚’，所以也常叫它‘抗不育维生素’。但它的现代名气，主要来自一个更响的能力：它是人体内最重要的‘脂溶性抗氧化剂’，专门保卫我们的细胞膜不被自由基氧化。高中生物讲过的‘细胞膜的磷脂双分子层’‘自由基’‘氧化损伤’，今天全用得上。", "今天的主线：维生素E是什么、有8个成员谁是老大 → 它凭什么能‘住’进细胞膜(结构) → 招牌功能抗氧化到底怎么抗氧化(机制) → 它还管生殖、免疫、血管 → 缺了会怎样(人类其实很难缺) → 从哪吃、怕什么 → 该吃多少(α-TE单位)。跟着这条线，题就跑不掉了。"], "s2": ["先搞清维生素E的‘身份’。它是脂溶性维生素，化学上属于一类叫‘生育酚’和‘三烯生育酚’的化合物。", "自然界里维生素E一共有8个成员，分成两大家族：生育酚家族有α、β、γ、δ四种，三烯生育酚家族也有α、β、γ、δ四种，合起来正好8种。", "这8个兄弟活性不一样高，其中活性最强、也是人体主要利用形式的，是α-生育酚。记住一句话：‘α-生育酚是老大，生物活性最高’。考试经常把8种、α-生育酚、活性最强这三个点绑在一起考你。", "为了方便比较活性，营养学专门发明了一个单位叫‘α-生育酚当量’，英文缩写α-TE，来统一表示食物中各种维生素E形式的总活性。这点要和三上维生素D的‘微克、IU’、和维生素A的‘视黄醇活性当量RAE’区分开——维生素E用的是α-TE。", "口诀：‘维E八兄弟：αβγδ四生育酚、再加四三烯；α-生育酚是老大、活性最高；单位叫α-TE’。"], "s3": ["为什么维生素E能保护细胞膜？秘密在结构。每个维生素E分子有两部分：一个是带‘酚羟基’的色满环，也叫苯并二氢吡喃环，这是它抗氧化、能‘出手’抓自由基的部位；另一部分是一条长长的、不爱水的‘植基’疏水侧链。", "这条疏水侧链非常关键：它能像锚一样，把自己‘插’进细胞膜的磷脂双分子层里，让维生素E就‘住’在细胞膜上，正好守在最容易受自由基攻击的细胞膜脂肪里。这就像在细胞膜这条街上住下了保安，谁想搞破坏第一时间就能拦。", "所以记住：维生素E是‘膜结合的抗氧化剂’，它是脂溶性的，优先待在细胞膜、脂蛋白和脂肪组织里。这也解释了为什么它最擅长保护‘细胞膜里的多不饱和脂肪酸’不被氧化。", "口诀：‘维E两头：色满环抓自由基，长侧链插进细胞膜；住在膜上才守得住’。"], "s4": ["这是本课最精彩、也最高频的一段：维生素E的招牌功能就是抗氧化，它是人体内最重要的脂溶性抗氧化剂。具体怎么抗？听我讲清楚这条‘链式反应’。", "细胞膜里富含多不饱和脂肪酸，很容易被自由基攻击。一旦一个脂肪酸被自由基夺走氢，就变成‘脂质过氧化自由基’，它又会去抢旁边脂肪酸的氢，像多米诺骨牌一样连锁反应，把整片膜搞坏——这叫脂质过氧化链式反应。", "维生素E就守在膜上，它把羟基上的氢‘送’给那个脂质过氧化自由基，让它安静下来、链条就此断掉，等于在源头按了暂停键，所以叫‘断链型抗氧化剂’。", "但维生素E自己送完氢也变成了一个‘维生素E自由基’，它本来也会搞破坏。别怕，身体里有帮手：维生素C、谷胱甘肽、辅酶Q10会把它‘还原’回正常的维生素E，让它重新上岗。这就是抗氧化网络——维E冲锋、维C善后。", "它主要保护谁？第一，保护细胞膜里的多不饱和脂肪酸不被氧化；第二，特别保护红细胞膜，防止红细胞被氧化破裂；第三，保护神经细胞膜等易受氧化攻击的结构。一句话，维生素E是‘细胞膜的防锈漆’。", "口诀：‘维E抗氧化：自由基抢膜脂，维E送氢断链条；自己变自由基，维C谷胱甘肽来还原；保细胞膜、保红细胞’。"], "s5": ["除了抗氧化这个主力，维生素E还有几条副线功能，考试也常顺带考。", "第一条，和生育、生殖有关——这也是它叫‘生育酚’‘抗不育维生素’的由来。当年科学家发现，大鼠缺维生素E会不育，补充后恢复，于是得名。但要特别较真一句：人类单纯缺维生素E导致不育非常少见，它的‘抗不育’名气主要来自动物实验，别把它当成人缺维E的主要表现。", "第二条，维持正常的免疫功能。维生素E能保护免疫细胞细胞膜、调节免疫，缺乏时免疫功能下降。", "第三条，保护血管和血液。它能抑制血小板过度聚集、维持毛细血管的完整，对心血管有保护作用。", "把这几条记住：抗氧化是招牌，生殖是‘名字由来但人少发’，免疫和血管是加分项。", "口诀：‘维E三副线：名字叫生育酚(大鼠不育而得名)、护免疫、护血管抑聚集；抗氧化才是真招牌’。"], "s6": ["和维生素A夜盲、维生素D佝偻病那种‘一缺就发病’不同，维生素E缺乏在人类极少见，这是它最特别的一点。为什么？因为维E在食物里分布广、植物油里特别多，一般人正常吃饭很难缺。", "那谁会缺？主要两类高危人群：一是脂肪吸收不良的人，比如胆汁酸缺乏、囊性纤维化、短肠综合征、慢性腹泻，因为维E是脂溶性、要靠脂肪一起吸收，脂肪吸收不了维E也吸收不了；二是早产低体重儿，他们体内储存少、吸收又差，是最典型的缺乏人群。", "缺了会怎样？两大表现。第一，溶血性贫血：红细胞膜被氧化破坏、红细胞破裂溶血，所以早产儿缺乏常表现为贫血。第二，神经肌肉病变：因为神经细胞膜也靠维E保护，缺乏会出现共济失调，就是走路不稳、动作不协调，还有视网膜病变、骨骼肌无力。", "把这条线记牢：维E缺乏人类罕见，只找‘脂肪吸收不良’和‘早产低体重儿’；表现＝溶血性贫血＋神经肌肉病变(共济失调/视网膜病变/肌无力)。千万别把维E缺乏说成夜盲或佝偻病。", "口诀：‘维E缺乏人类罕见：只找脂肪吸收不良、早产低体重儿；表现溶血性贫血＋神经肌肉病变’。"], "s7": ["维生素E从哪吃？一句话：植物油是第一来源，尤其是小麦胚芽油含量最高，其次是玉米油、葵花籽油这些。所以越‘油’的食物维E越多。", "接着是坚果和种子，比如杏仁、榛子、葵花籽；还有谷物的胚芽。深绿色蔬菜也能提供一些。动物性食物里维E含量普遍偏低，只有蛋黄、鱼肝油之类有少量——这点正好和维A、维D相反，维A维D多藏在动物肝里，维E却主要靠植物油的油。", "再记一个极容易考的：维生素E‘怕’什么。它对热还算稳定、对酸也稳，但它特别怕氧、怕紫外线、怕碱、怕金属离子，还怕油炸。食物一油炸、一长时间存放接触空气，维E损失很大。所以油炸食品不仅油不好，维E也基本被破坏光了。", "口诀：‘维E来源：植物油第一(麦胚油冠军)、坚果种子、谷物胚芽、深绿菜；动物性低(蛋黄鱼肝少量)；怕氧怕光怕碱怕油炸’。"], "s8": ["最后量化一下：维生素E该吃多少？先记单位——它用‘α-生育酚当量’α-TE。各种形式的维E按活性折算成α-TE，公式是：1个α-TE等于1毫克α-生育酚，等于0.5毫克β-生育酚，等于0.1毫克γ-生育酚，等于0.02毫克δ-生育酚，等于0.3毫克α-三烯生育酚。α的最强，所以系数最大。", "中国居民膳食营养素参考摄入量对维生素E用的是‘适宜摄入量’AI。成人，也就是18岁以上，AI是每天14毫克α-TE；可耐受最高摄入量UL是每天80毫克α-TE，超过这个量有风险。孕妇乳母略高一点点，但考试记住成人14、上限80就够。", "再较真一句：天然来源的d-α-生育酚生物活性是100%，人工合成的dl-α-生育酚效价低一些，所以营养评价统一用α-TE，不被‘天然/合成’标签带偏。补充剂标签有时还标IU，考试一般以α-TE为准。特殊人群里，乳母会略高到每天17毫克α-TE，孕妇基本还是14毫克；考试记住成人AI 14、上限UL 80就够。", "口诀：‘维E单位α-TE；成人AI 14毫克、UL 80毫克；α最强(系数1)、δ最弱’。"], "s9": ["红绿灯时间，把维生素E这章最爱丢分的坑集中点一遍。", "易错一：8个成员里谁是老大。α-生育酚生物活性最高、是人体主用形式；别把δ或γ说成最强。", "易错二：单位搞混。维生素E用α-TE，不是维生素A的RAE，也不是维生素D的IU/微克；这是三个脂溶性维生素最容易张冠李戴的地方。", "易错三：招牌功能是抗氧化(保护细胞膜)，不是促进钙吸收——那是维D；不是维持暗视觉——那是维A；不是抗出血——那是维K。", "易错四：缺乏症人类极罕见，只见于脂肪吸收不良者和早产低体重儿，表现为溶血性贫血和神经肌肉病变；千万别写成夜盲或佝偻病。", "易错五：主要来源是植物油(麦胚油最高)，不是动物肝；动物性食物维E普遍偏低。", "易错六：维E怕氧、怕紫外线、怕碱、怕油炸，易被加工破坏；油炸食品维E损失大。", "易错七：过量也危险。维E脂溶性会蓄积，大剂量补充剂可损害凝血机制、增加出血倾向；UL是每天80毫克α-TE。", "易错八：摄入量量级。成人AI 14毫克α-TE每天，UL 80毫克；别记成微克的量级。"], "s10": ["注册营养师全是选择题，维生素E这章送你一套三步法。", "第一步，审题定性：先看问的是身份分类(8种/α-生育酚)、结构(色满环住进膜)、抗氧化机制、其他功能(生殖/免疫/血管)、缺乏症、食物来源与稳定性，还是摄入量和α-TE单位，先定性，别急着看选项。", "第二步，定位考点：身份就背8种里α最强、单位α-TE；结构就背色满环抓自由基、长侧链插进膜；功能就背抗氧化断链、维C还原、保细胞膜保红细胞；缺乏就背人类罕见、脂肪吸收不良和早产儿、溶血加神经；来源就背植物油麦胚油第一、怕氧怕油炸；摄入量就背AI 14、UL 80。", "第三步，排除反着坑：直接排除‘维E缺乏会夜盲’‘维E促进钙吸收’‘维E主源是动物肝’‘维E溶于水随尿排’‘维E不怕油炸’这类反向表述，剩下的就是答案。"], "s11": ["讲完重点，我们模拟上课提问。我先和班里的同学演练，再轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。", "第一个问题：用你自己的话解释，维生素E凭什么能‘住’在细胞膜上发挥抗氧化作用？把结构和位置讲清楚。", "第二个问题：为什么说‘维生素E缺乏在人类极罕见’？什么人会缺，缺了又有什么典型表现？把这条逻辑讲清楚。"], "s12": ["下面8道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，8种里活性最强的是哪个。第二题，维E的单位。第三题，它抗氧化主要靠什么结构‘住’在膜上。第四题，维E缺乏的高危人群。第五题，招牌生理功能。第六题，主要食物来源。第七题，关于稳定性和油炸。第八题，关于摄入量与过量。"], "s13": ["最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。", "问题：维生素E为什么叫‘生育酚’、又为什么是‘抗氧化卫士’？它凭什么能住进细胞膜抗氧化？缺了谁会受影响、有什么表现？一天该吃多少（成人14毫克α-TE、上限80）？从哪吃、又怕什么？把身份、结构、功能、缺乏、来源、摄入量这条逻辑串起来。", "课堂小结口诀复习：身份‘维E八兄弟，α-生育酚是老大，单位叫α-TE’；结构‘色满环抓自由基，长侧链插进细胞膜，住在膜上才守得住’；功能‘抗氧化是真招牌，送氢断链，维C谷胱甘肽来还原，保细胞膜保红细胞；名字叫生育酚，护免疫护血管’；缺乏‘人类罕见，只找脂肪吸收不良和早产低体重儿，溶血性贫血加神经肌肉病变’；来源‘植物油第一麦胚油冠军，坚果种子谷物胚芽，动物性低，怕氧怕光怕碱怕油炸’；摄入‘单位α-TE，成人AI14上限UL80’。"]};
+const SECTIONS_ORDER = ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11", "s12", "s13"];
+
+// 展平为全局播放列表（按章节顺序）
+const PLAYLIST = [];
+SECTIONS_ORDER.forEach(id=>{
+  const paths = SECTIONS_AUDIO[id]||[];
+  const texts = SECTIONS_TEXT[id]||[];
+  paths.forEach((p,i)=> PLAYLIST.push({src:p, text:texts[i]||'', sec:id}));
+});
+
+const Player = {
+  audio: new Audio(),
+  idx: 0,
+  playing: false,
+  speed: 1.0,
+  init(){
+    this.audio.preload='auto';
+    this.audio.addEventListener('timeupdate', ()=>this.onTime());
+    this.audio.addEventListener('ended', ()=>this.next(true));
+    this.audio.addEventListener('loadedmetadata', ()=>this.onTime());
+    this.audio.addEventListener('error', ()=>this.onErr());
+    this.updateIdx();
+    this.updateBtn();
+  },
+  load(i, autoplay){
+    if(i<0 || i>=PLAYLIST.length) return;
+    this.idx=i;
+    const item=PLAYLIST[i];
+    setSub(item.text);
+    this.audio.src=item.src;
+    this.audio.playbackRate=this.speed;
+    this.updateIdx();
+    if(autoplay){
+      const sec=document.getElementById(item.sec);
+      if(sec) sec.scrollIntoView({behavior:'smooth',block:'center'});
+      this.playing=true; this.updateBtn();
+      this.audio.play().catch(()=>{ this.fallback(item.text); });
+    }
+  },
+  play(){ if(!this.audio.src){ this.load(this.idx,false);} this.playing=true; this.updateBtn(); this.audio.play().catch(()=>{}); },
+  pause(){ this.playing=false; this.updateBtn(); this.audio.pause(); },
+  toggle(){ if(this.playing) this.pause(); else this.play(); },
+  next(auto){
+    if(auto && !this.playing) return;
+    const n=this.idx+1;
+    if(n>=PLAYLIST.length){ this.playing=false; this.updateBtn(); this.updateIdx();
+      setSub('—— 本课讲解结束啦，去做做改编题、用费曼法复述一遍 💡'); return; }
+    this.load(n,true);
+  },
+  prev(){ let n=this.idx-1; if(n<0) n=0; this.load(n,true); },
+  seek(v){ try{ this.audio.currentTime=parseFloat(v); }catch(e){} },
+  onTime(){
+    const a=this.audio;
+    const s=document.getElementById('seek');
+    if(a.duration && s){ s.max=Math.floor(a.duration); s.value=Math.floor(a.currentTime); }
+    if(PLAYLIST[this.idx]) setSub(PLAYLIST[this.idx].text);
+  },
+  onErr(){
+    if(this.playing){ this.fallback(PLAYLIST[this.idx] ? PLAYLIST[this.idx].text : ''); }
+  },
+  fallback(t){
+    if(!('speechSynthesis' in window)){ this.next(true); return; }
+    const u=new SpeechSynthesisUtterance(t); u.lang='zh-CN'; u.rate=this.speed; u.pitch=1.06;
+    u.onend=()=>{ this.next(true); };
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  },
+  setSpeed(v){
+    this.speed=v; this.audio.playbackRate=v;
+    document.querySelectorAll('#playerbar .spd button').forEach(b=>b.classList.remove('on'));
+    const map={0.8:'s08',1:'s10',1.2:'s12',1.5:'s15'};
+    const el=document.getElementById(map[v]); if(el) el.classList.add('on');
+  },
+  updateIdx(){ const e=document.getElementById('idxlbl'); if(e) e.textContent=(this.idx+1)+' / '+PLAYLIST.length; },
+  updateBtn(){ const b=document.getElementById('playbtn'); if(b) b.textContent=this.playing?'⏸ 暂停':'▶ 播放'; }
+};
+
+function setSub(t){ const e=document.getElementById('subline'); if(e) e.innerHTML='<b>晓晓老师：</b>'+t; }
+function playSection(id){
+  const i=PLAYLIST.findIndex(p=>p.sec===id);
+  document.getElementById('playerbar').classList.remove('hide');
+  document.getElementById('reopen').classList.remove('show');
+  if(i<0) return;
+  Player.load(i, true);
+}
+function playAll(){ Player.load(0,true); document.getElementById('playerbar').classList.remove('hide'); document.getElementById('reopen').classList.remove('show'); }
+function prevSent(){ Player.prev(); }
+function nextSent(){ Player.next(false); }
+function togglePlay(){ Player.toggle(); }
+function onSeek(v){ Player.seek(v); }
+function hidePlayer(){ document.getElementById('playerbar').classList.add('hide'); document.getElementById('reopen').classList.add('show'); }
+function showPlayer(){ document.getElementById('playerbar').classList.remove('hide'); document.getElementById('reopen').classList.remove('show'); }
+
+function checkAsk(btn){
+  const box=btn.closest('.ask'); const ta=box.querySelector('textarea'); const val=(ta.value||'').trim();
+  const fb=box.querySelector('.feedback'); const model=box.querySelector('.model');
+  const keys=(box.dataset.keywords||'').split('|').filter(Boolean);
+  if(!val){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写点什么再提交哦～哪怕一句话也行 😊</span>'; return; }
+  const hit=keys.some(k=>val.includes(k));
+  fb.className='feedback show';
+  fb.innerHTML = hit ? '<span class="ok">👍 说到位了！</span> 你抓住了关键词，晓晓老师给你点个赞。'
+                     : '<span class="tip">🤔 方向还差点意思～</span> 别急，看看下面的标准答案，再试着用自己的话讲一遍。';
+  model.className='model'; model.innerHTML='<b>晓晓老师的标准答案：</b>'+box.dataset.model;
+}
+function choose(btn){
+  const q=btn.closest('.quiz'); if(q.dataset.done) return;
+  const correct=q.dataset.ans;
+  q.querySelectorAll('.opt').forEach(o=>{ o.disabled=true;
+    const t=o.textContent.trim();
+    if(t.startsWith(correct+'.')||t.startsWith(correct+'．')) o.classList.add('correct');
+    else if(o===btn) o.classList.add('wrong');
+  });
+  q.dataset.done='1'; q.querySelector('.ans').classList.add('show');
+}
+function feynmanCheck(){
+  const v=(document.getElementById('feynmanBox').value||'').trim();
+  const fb=document.getElementById('feynmanFeedback');
+  if(!v){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写一段自己的解释，再对照清单 😉</span>'; return; }
+  const keys=['生育酚','tocopherol','α','脂溶性','8','抗氧化','自由基','细胞膜','色满','疏水','侧链','红细胞','溶血','神经','缺乏','罕见','吸收不良','早产','植物油','麦胚','14','UL','80','α-TE','出血'];
+  const hit=keys.filter(k=>v.includes(k)).length;
+  fb.className='feedback show';
+  let msg;
+  if(hit>=5) msg='<span class="ok">🌟 很棒！</span> 你覆盖了关键概念，基本讲清楚了。可以录下来自己听一遍，卡壳的地方就是还没真懂的点。';
+  else if(hit>=3) msg='<span class="tip">📝 有进步～</span> 对照清单，看看是不是漏了“色满环抓自由基、疏水侧链插进膜”或“缺乏人类罕见：脂肪吸收不良/早产低体重儿→溶血/神经”这两点，补上就更完整了。';
+  else msg='<span class="tip">💡 再来一次～</span> 提示：想想“8种α最强、单位α-TE”“色满环+疏水侧链住进膜”“抗氧化断链保红细胞”“缺了人类罕见(脂肪吸收不良/早产儿)→溶血+神经”“植物油麦胚油最高、怕油炸”“AI14 UL80”，把这条逻辑串起来。';
+  fb.innerHTML=msg;
+}
+
+Player.init();
+Player.setSpeed(1);
+
+</script>
+</body>
+</html>

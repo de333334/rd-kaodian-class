@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>维生素D精讲 · 晓晓老师的营养课堂（注册营养师考点·第6课）</title>
+<style>
+  :root{
+    --paper:#fbf7ee; --ink:#2f2a25; --board:#1f4d3a; --board2:#2c6b51; --chalk:#f3f7f2;
+    --accent:#e8743b; --accent2:#3a8dde; --warn:#d8443c; --ok:#2e9e6b; --gold:#e0a83a;
+    --card:#ffffff; --line:#e7ddc9; --soft:#f4ede0;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;
+    font-family:"Songti SC","SimSun","宋体",STSong,serif;
+    background:radial-gradient(1200px 500px at 80% -10%, #fff6e6 0%, transparent 60%),var(--paper);
+    color:var(--ink);line-height:1.95;font-size:19px;padding-bottom:150px;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 18px 40px;}
+  header.hero{background:linear-gradient(135deg,var(--board),var(--board2));color:var(--chalk);
+    border-radius:0 0 26px 26px;padding:30px 22px 26px;box-shadow:0 10px 30px rgba(31,77,58,.25);position:relative;overflow:hidden;}
+  header.hero::after{content:"☀";position:absolute;right:-10px;top:-10px;font-size:120px;opacity:.10;transform:rotate(12deg);}
+  .hero .tag{display:inline-block;background:rgba(255,255,255,.15);padding:3px 12px;border-radius:20px;font-size:13px;letter-spacing:1px;}
+  .hero h1{margin:12px 0 6px;font-size:30px;letter-spacing:1px;}
+  .hero .meta{font-size:14px;opacity:.92;margin-top:6px;}
+  .hero .meta b{color:#ffe2b0;}
+  nav.toc{position:sticky;top:0;z-index:30;background:rgba(251,247,238,.92);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:8px 0;margin:0 0 8px;}
+  nav.toc .inner{max-width:900px;margin:0 auto;padding:0 14px;display:flex;gap:8px;flex-wrap:wrap;}
+  nav.toc a{font-size:13.5px;text-decoration:none;color:var(--board);background:var(--soft);border:1px solid var(--line);
+    padding:4px 11px;border-radius:20px;transition:.2s;}
+  nav.toc a:hover{background:var(--board);color:#fff;}
+  section{margin:26px 0;}
+  .sec-head{display:flex;align-items:center;gap:10px;margin:6px 0 14px;}
+  .sec-head .no{background:var(--accent);color:#fff;font-weight:700;width:34px;height:34px;display:grid;place-items:center;
+    border-radius:10px;flex:none;font-size:17px;box-shadow:0 4px 10px rgba(232,116,59,.35);}
+  .sec-head h2{font-size:23px;margin:0;}
+  .sec-head .sub{font-size:13px;color:#8a7f6e;margin-left:auto;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin:14px 0;box-shadow:0 6px 18px rgba(120,90,40,.06);}
+  .card h3{margin:0 0 8px;font-size:19px;color:var(--board);}
+  .card p{margin:10px 0;}
+  .narrate{color:#3a352e;margin:10px 0;}
+  .mnemonic{background:linear-gradient(135deg,#fff4dd,#ffe9c4);border:1px dashed var(--gold);border-radius:14px;padding:14px 18px;margin:14px 0;position:relative;}
+  .mnemonic .label{font-size:12px;color:#a9791f;font-weight:700;letter-spacing:2px;}
+  .mnemonic .big{font-size:22px;font-weight:800;color:#9a5b00;margin:4px 0 2px;letter-spacing:1px;}
+  .mnemonic .note{font-size:15px;color:#6b5a3a;}
+  .trap{border-left:5px solid var(--warn);background:#fdf0ee;border-radius:0 12px 12px 0;padding:12px 16px;margin:12px 0;}
+  .trap .t{font-weight:800;color:var(--warn);font-size:15px;margin-bottom:4px;}
+  .trap .t::before{content:"⚠️ ";}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15.5px;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(120,90,40,.07);}
+  th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;}
+  th{background:var(--soft);color:var(--board);font-weight:700;}
+  .steps{counter-reset:s;margin:10px 0;}
+  .step{display:flex;gap:12px;align-items:flex-start;margin:10px 0;}
+  .step::before{counter-increment:s;content:counter(s);flex:none;width:28px;height:28px;background:var(--accent2);color:#fff;border-radius:50%;display:grid;place-items:center;font-weight:700;}
+  .step .b{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;flex:1;}
+  .chat{border:1px solid var(--line);border-radius:16px;background:#fff;padding:8px 14px;margin:14px 0;}
+  .msg{display:flex;gap:10px;margin:12px 0;align-items:flex-start;}
+  .msg .av{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:20px;color:#fff;}
+  .av.tea{background:linear-gradient(135deg,var(--board),var(--board2));}
+  .av.stu{background:linear-gradient(135deg,#f0a93b,#e8743b);}
+  .bubble{background:var(--soft);border-radius:14px;padding:9px 14px;max-width:88%;}
+  .msg.stu .bubble{background:#eef5fb;}
+  .who{font-size:12px;color:#9b8f7c;margin-bottom:2px;}
+  .ask{border:2px solid var(--accent2);border-radius:16px;background:#f3f9ff;padding:14px 16px;margin:16px 0;}
+  .ask .q{font-weight:700;color:#1f5fa8;}
+  .ask .q::before{content:"🙋 晓晓老师：";}
+  textarea{width:100%;min-height:64px;margin-top:10px;border:1px solid var(--line);border-radius:10px;padding:10px;font-family:inherit;font-size:16px;resize:vertical;background:#fff;}
+  .btn{display:inline-flex;align-items:center;gap:6px;cursor:pointer;border:none;border-radius:24px;padding:9px 18px;font-size:15px;font-weight:700;color:#fff;background:var(--accent);box-shadow:0 5px 14px rgba(232,116,59,.3);transition:.15s;margin-top:10px;}
+  .btn:hover{transform:translateY(-1px);}
+  .btn.blue{background:var(--accent2);box-shadow:0 5px 14px rgba(58,141,222,.3);}
+  .btn.ghost{background:#fff;color:var(--board);border:1px solid var(--board);box-shadow:none;}
+  .feedback{margin-top:10px;font-size:15px;display:none;}
+  .feedback.show{display:block;}
+  .feedback .ok{color:var(--ok);font-weight:700;}
+  .feedback .tip{color:var(--accent);}
+  .model{background:#fff;border:1px dashed var(--board2);border-radius:12px;padding:10px 14px;margin-top:10px;font-size:15px;color:#3a5a4c;}
+  .model b{color:var(--board);}
+  .quiz{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px 18px;margin:14px 0;}
+  .quiz .stem{font-weight:600;margin-bottom:10px;}
+  .opt{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:9px 13px;margin:7px 0;cursor:pointer;font-size:15.5px;transition:.15s;font-family:inherit;color:var(--ink);}
+  .opt:hover{background:#ecf3ff;}
+  .opt.correct{background:#e7f7ee;border-color:var(--ok);color:#1c6b45;font-weight:700;}
+  .opt.wrong{background:#fdeceb;border-color:var(--warn);}
+  .quiz .ans{display:none;margin-top:8px;font-size:14.5px;color:#4a4034;background:var(--soft);border-radius:10px;padding:9px 12px;}
+  .quiz .ans.show{display:block;}
+  .feynman{background:linear-gradient(135deg,#eef7ff,#eafaf1);border:1px solid #cfe6d8;border-radius:16px;padding:16px 18px;margin:14px 0;}
+  .feynman h3{color:var(--board);margin-top:0;}
+  .rubric{font-size:14.5px;color:#4a554c;margin:8px 0;}
+  .rubric li{margin:4px 0;}
+  .svgwrap{margin:14px 0;text-align:center;}
+  .svgwrap svg{width:100%;max-width:680px;height:auto;background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px;}
+  footer{text-align:center;color:#a89c87;font-size:13px;margin-top:30px;}
+  .divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:30px 0;}
+
+  /* ===== 全局播放 dock（字幕不遮挡讲解，位于最底部） ===== */
+  #playerbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(20,28,24,.94);color:#eafff4;
+    padding:8px 14px 10px;box-shadow:0 -8px 22px rgba(0,0,0,.28);backdrop-filter:blur(6px);
+    transform:translateY(0);transition:transform .25s;}
+  #playerbar.hide{transform:translateY(110%);}
+  #playerbar .subline{font-size:15.5px;line-height:1.5;margin-bottom:6px;color:#eafff4;
+    border-left:3px solid var(--accent);padding-left:8px;max-height:46px;overflow:auto;}
+  #playerbar .subline b{color:#ffd9a8;}
+  #playerbar .pctrl{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  #playerbar button{font-family:inherit;cursor:pointer;border:none;border-radius:18px;padding:6px 12px;font-size:13.5px;
+    background:rgba(255,255,255,.16);color:#eafff4;transition:.15s;}
+  #playerbar button:hover{background:rgba(255,255,255,.3);}
+  #playerbar #playbtn{background:var(--accent);color:#fff;font-weight:700;min-width:78px;}
+  #playerbar .spd{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;opacity:.9;}
+  #playerbar .spd button{padding:3px 8px;font-size:12px;}
+  #playerbar .spd button.on{background:var(--accent2);color:#fff;}
+  #seek{flex:1;min-width:120px;height:6px;accent-color:var(--accent);cursor:pointer;}
+  #idxlbl{font-size:12.5px;opacity:.85;min-width:54px;text-align:center;}
+  #reopen{position:fixed;right:14px;bottom:14px;z-index:60;display:none;border:none;border-radius:24px;
+    background:var(--accent);color:#fff;font-family:inherit;font-weight:700;font-size:14px;padding:10px 16px;box-shadow:0 6px 16px rgba(232,116,59,.4);cursor:pointer;}
+  #reopen.show{display:block;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="tag">🎓 第6课 · 一节高中生物课的量 · 注册营养师考点</span>
+  <h1>维生素D（Vitamin D）精讲</h1>
+  <div class="meta">
+    主讲：<b>晓晓老师</b>（XiaoxiaoNeural 神经网络语音）　|　课时：约 45 分钟（1 课时）　|　来源：<b>注册营养师考试宝典 · 考点|21 维生素D</b> 系列
+  </div>
+  <div class="meta">配套：温故复习 + 口诀 + 案例图 + 易错点 + 解题三步法 + 不定时提问 + 改编练习题 + 费曼复述　<span style="background:#fff;color:#1f4d3a;border-radius:20px;padding:2px 10px;font-size:12px;">点 ▶ 听晓晓老师讲</span></div>
+</header>
+
+<nav class="toc"><div class="inner">
+    <a href="#s1">① 温故</a>
+    <a href="#s2">② D2/D3</a>
+    <a href="#s3">③ 两大来源</a>
+    <a href="#s4">④ 两次活化</a>
+    <a href="#s5">⑤ 生理功能</a>
+    <a href="#s6">⑥ 缺乏症</a>
+    <a href="#s7">⑦ 过量中毒</a>
+    <a href="#s8">⑧ 摄入·换算</a>
+    <a href="#s9">⑨ 易错点</a>
+    <a href="#s10">⑩ 三步法</a>
+    <a href="#s11">⑪ 提问互动</a>
+    <a href="#s12">⑫ 改编题</a>
+    <a href="#s13">⑬ 费曼复述</a>
+</div></nav>
+
+<div class="wrap">
+  <section id="s1">
+    <div class="sec-head"><div class="no">1</div><h2>温故知新：先复习前五课，再开讲“阳光维生素”</h2><div class="sub">衔接 · 5分钟</div></div>
+    <div class="card">
+      <p class="narrate">同学们好，我是晓晓老师。开始新课前先花五分钟串一遍前五课：蛋白质——必需氨基酸9种、谷类缺赖氨酸豆类缺蛋氨酸；碳水化合物——蔗无乳有麦也有、GI和GL、添加糖最好不超25克；脂类——必需脂肪酸只有亚油酸和α-亚麻酸、HDL好LDL坏；能量——1千卡等于4.184千焦、基础代谢是大头、BMI中国24超28胖；上一课维生素A——视杆细胞里的视紫红质、缺了先暗适应下降再夜盲，中毒只怪动物肝和补剂。</p>
+      <p class="narrate">上一课我们进了微量营养素的大门，讲了脂溶性维生素的老大——维生素A。今天讲脂溶性维生素里的第二位、也是这几年最火的一个：维生素D。</p>
+      <p class="narrate">为什么说它火？因为它有个响当当的外号叫‘阳光维生素’，还有个更贴切的别名——‘抗佝偻病维生素’。它是唯一一个我们身体能靠晒太阳自己造出来的维生素，又和高中生物学过的‘钙的吸收’‘骨骼发育’紧紧绑在一起，特别能出题。</p>
+      <p class="narrate">今天的主线：维生素D是什么、有D2和D3两兄弟 → 它从哪来（晒太阳自己合成 + 食物）→ 造出来还要经过肝、肾两次‘活化’才顶用 → 它主要帮我们干嘛（促进钙磷吸收、管骨头）→ 缺了会怎样（小孩佝偻病、大人骨软化、老人骨质疏松）→ 多了会中毒吗 → 该吃多少、从哪吃。跟着这条线，题就跑不掉了。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 前五课口诀速回（闭眼能背才算会）</div>
+    <div class="big">蛋白9种互补 · 蔗无乳有麦也有 · 必需脂肪两兄弟 · 1kcal=4.184kJ · BMI中国24超28胖 · VA缺了先暗适应后夜盲</div>
+    <div class="note">今天进入脂溶性维生素第2位：<b>维生素D</b>。别名要记牢——<b>“阳光维生素”“抗佝偻病维生素”</b>。本节新口诀用 <b>🔑</b> 标出，最后费曼复述串成一条线。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s1')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s2">
+    <div class="sec-head"><div class="no">2</div><h2>核心精讲一：维生素D是什么？D2、D3两兄弟</h2><div class="sub">8分钟</div></div>
+    <div class="card">
+      <p class="narrate">先搞清维生素D的‘身份’。它是脂溶性维生素，化学上属于一类固醇类物质，最重要的成员有两个：维生素D2和维生素D3。</p>
+      <p class="narrate">维生素D2叫麦角钙化醇，来自植物、酵母和真菌。它的‘前身’是植物里的麦角固醇，麦角固醇被紫外线一照，就变成了D2。所以D2是‘植物路线’。</p>
+      <p class="narrate">维生素D3叫胆钙化醇，来自动物，也来自我们自己的皮肤。它的‘前身’是皮肤里的7-脱氢胆固醇，被阳光里的紫外线UVB一照，就变成了D3。所以D3是‘动物路线’，也是我们晒太阳自造的那种。</p>
+      <p class="narrate">记住这个对应关系特别重要，考试爱把D2和D3的名字、来源打乱了考你：D2麦角钙化醇、来自麦角固醇、走植物路线；D3胆钙化醇、来自7-脱氢胆固醇、走动物和晒太阳路线。两者进了身体作用一样，D3是人体主要利用的形式。</p>
+      <p class="narrate">口诀：‘D二麦角(D2麦角钙化醇)、来自麦角固醇；D三胆钙(D3胆钙化醇)、来自脱氢胆固醇；紫外线一照都变身’。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 D2 / D3 身份对照</div>
+    <div class="big">D2麦角钙化醇（植物/酵母·麦角固醇）　D3胆钙化醇（动物/皮肤·7-脱氢胆固醇）</div>
+    <div class="note">别名：<b>抗佝偻病维生素、阳光维生素</b>。都是<b>脂溶性</b>固醇类，被<b>紫外线</b>照射前体后生成；D3 是人体主要利用形式。</div>
+  </div>
+  <table>
+    <thead><tr><th>形式</th><th>化学名</th><th>前体（原料）</th><th>来源路线</th></tr></thead>
+    <tbody>
+      <tr><td>维生素D2</td><td>麦角钙化醇</td><td>麦角固醇（麦角甾醇）</td><td>植物、酵母、真菌 → 紫外线照射</td></tr>
+      <tr><td>维生素D3</td><td>胆钙化醇</td><td>7-脱氢胆固醇</td><td>动物 & 人皮肤 → 紫外线(UVB)照射</td></tr>
+    </tbody>
+  </table>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s2')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s3">
+    <div class="sec-head"><div class="no">3</div><h2>核心精讲二：两大来源——晒太阳自造 &amp; 食物</h2><div class="sub">8分钟</div></div>
+    <div class="card">
+      <p class="narrate">维生素D最特别的地方，是它有两条来路，而且第一条别的维生素都没有。</p>
+      <p class="narrate">第一条，也是我们最主要的来源：晒太阳自己合成。皮肤里的7-脱氢胆固醇，被阳光中的紫外线UVB照射，就地变成维生素D3。所以只要经常晒太阳、皮肤够到阳光，正常人一般不容易缺。‘阳光维生素’这个外号就是这么来的。</p>
+      <p class="narrate">这里有几个爱考的点：隔着玻璃晒没用，因为普通玻璃会挡掉UVB；涂高倍防晒霜、空气污染重、纬度高冬天日照少、肤色深、老年人皮肤合成能力下降、婴儿捂太严不出门，这些都会让皮肤合成减少，是缺乏的高危因素。</p>
+      <p class="narrate">第二条来源是食物。维生素D在天然食物里分布不广，主要集中在动物性食物：含量最高的是鱼肝油，其次是富含脂肪的海鱼比如三文鱼、沙丁鱼，还有动物肝脏、蛋黄、奶油、以及强化维生素D的牛奶和配方奶。植物性食物几乎不含维生素D，这点和维生素A原、和B族都不一样。</p>
+      <p class="narrate">口诀：‘维D两条路：晒太阳最主要(隔玻璃没用)、吃靠鱼肝油海鱼蛋黄；植物基本没有’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 180" role="img" aria-label="维生素D两大来源">
+    <rect x="20" y="20" width="310" height="140" rx="12" fill="#fff7e0" stroke="#e0a83a"/>
+    <text x="175" y="46" fill="#a9791f" font-size="15" text-anchor="middle" font-weight="700">来源① 晒太阳（最主要）</text>
+    <text x="175" y="72" font-size="13" text-anchor="middle">皮肤 7-脱氢胆固醇</text>
+    <text x="175" y="94" font-size="13" text-anchor="middle">— 紫外线 UVB 照射 →</text>
+    <text x="175" y="116" font-size="13" text-anchor="middle" font-weight="700">维生素 D3（胆钙化醇）</text>
+    <text x="175" y="140" fill="#b5302a" font-size="11.5" text-anchor="middle">⚠ 隔玻璃/防晒霜/深肤色/高纬冬季→合成↓</text>
+    <rect x="350" y="20" width="310" height="140" rx="12" fill="#fdf0ee" stroke="#d8443c"/>
+    <text x="505" y="46" fill="#b5302a" font-size="15" text-anchor="middle" font-weight="700">来源② 食物（动物性为主）</text>
+    <text x="505" y="72" font-size="13" text-anchor="middle">鱼肝油（含量最高）</text>
+    <text x="505" y="94" font-size="13" text-anchor="middle">富脂海鱼·动物肝·蛋黄·奶油</text>
+    <text x="505" y="116" font-size="13" text-anchor="middle">强化奶 / 强化配方奶</text>
+    <text x="505" y="140" fill="#8a7f6e" font-size="11.5" text-anchor="middle">植物性食物几乎不含维生素D</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 两大来源口诀</div>
+    <div class="big">晒太阳最主要(隔玻璃没用) · 吃靠鱼肝油海鱼蛋黄 · 植物基本没有</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s3')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s4">
+    <div class="sec-head"><div class="no">4</div><h2>核心精讲三：造出来还要“两次活化”（肝→肾）</h2><div class="sub">10分钟</div></div>
+    <div class="card">
+      <p class="narrate">这是本课最精彩、也最高频的一段：维生素D刚合成或吃进来时，其实是‘半成品’，没有活性，必须经过两次‘羟化’才变成能干活的‘成品’。这两次活化，一次在肝，一次在肾。</p>
+      <p class="narrate">第一步在肝脏：维生素D3先被加上一个羟基，变成25-羟维生素D3，又叫骨化二醇。请重点记住：25-羟维生素D是血液里含量最多、最稳定的形式，是判断一个人维生素D营养状况的‘金标准’指标。医院查你‘缺不缺维D’，抽血查的就是它——25-羟维生素D。</p>
+      <p class="narrate">第二步在肾脏：25-羟维生素D再被加上一个羟基，变成1,25-二羟维生素D3，又叫骨化三醇。它是维生素D活性最强的形式，作用起来像一种激素，真正去促进钙磷吸收、调节血钙的就是它。</p>
+      <p class="narrate">把它串成一条线：维生素D3（半成品）→ 肝脏羟化 → 25-羟维D（营养状况指标）→ 肾脏羟化 → 1,25-二羟维D（活性最强、像激素）。所以肝脏或肾脏有病，都会影响维生素D活化，导致缺乏。</p>
+      <p class="narrate">口诀：‘维D活化两道关：肝出25(骨化二醇)是指标，肾出1,25(骨化三醇)最能干；肝肾有病活化难’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 200" role="img" aria-label="维生素D两次活化：肝到肾">
+    <rect x="14" y="30" width="150" height="60" rx="10" fill="#1f4d3a"/>
+    <text x="89" y="55" fill="#fff" font-size="13.5" text-anchor="middle" font-weight="700">维生素D3</text>
+    <text x="89" y="76" fill="#ffe2b0" font-size="11.5" text-anchor="middle">半成品·无活性</text>
+    <rect x="210" y="30" width="200" height="60" rx="10" fill="#3a8dde"/>
+    <text x="310" y="52" fill="#fff" font-size="13" text-anchor="middle" font-weight="700">25-羟维生素D（骨化二醇）</text>
+    <text x="310" y="74" fill="#fff" font-size="11.5" text-anchor="middle">营养状况“金标准”指标</text>
+    <rect x="456" y="30" width="210" height="60" rx="10" fill="#e8743b"/>
+    <text x="561" y="52" fill="#fff" font-size="12.5" text-anchor="middle" font-weight="700">1,25-二羟维D（骨化三醇）</text>
+    <text x="561" y="74" fill="#fff" font-size="11.5" text-anchor="middle">活性最强·像激素</text>
+    <path d="M164 60 L208 60" stroke="#333" stroke-width="2.5" marker-end="url(#ad)"/>
+    <path d="M410 60 L454 60" stroke="#333" stroke-width="2.5" marker-end="url(#ad)"/>
+    <text x="186" y="24" fill="#1f5fa8" font-size="12" text-anchor="middle" font-weight="700">① 肝脏</text>
+    <text x="432" y="24" fill="#b5302a" font-size="12" text-anchor="middle" font-weight="700">② 肾脏</text>
+    <defs><marker id="ad" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#333"/></marker></defs>
+    <rect x="20" y="120" width="640" height="66" rx="10" fill="#eafaf1" stroke="#2e9e6b"/>
+    <text x="340" y="145" fill="#1c6b45" font-size="13" text-anchor="middle" font-weight="700">抽血查“缺不缺维D” = 查 25-羟维生素D（最稳定、含量最多）</text>
+    <text x="340" y="168" fill="#3a5a4c" font-size="12" text-anchor="middle">真正去促钙磷吸收、调血钙的是 1,25-二羟维D；肝/肾疾病 → 活化受阻 → 缺乏</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 两次活化口诀</div>
+    <div class="big">肝出25是指标(骨化二醇) · 肾出1,25最能干(骨化三醇) · 肝肾有病活化难</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s4')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s5">
+    <div class="sec-head"><div class="no">5</div><h2>核心精讲四：生理功能——它到底管什么？</h2><div class="sub">8分钟</div></div>
+    <div class="card">
+      <p class="narrate">维生素D的核心使命就俩字：管钙。更准确说，是维持血液里钙和磷的稳定，让骨头长得结实。具体记四条。</p>
+      <p class="narrate">第一条，也是最重要的：促进小肠对钙和磷的吸收。这是它的招牌功能——没有维生素D，你吃再多钙也吸收不进去，所以补钙常常要配着维生素D一起补。</p>
+      <p class="narrate">第二条：促进肾小管对钙和磷的重吸收，减少它们随尿排走，帮身体‘留住’钙磷。</p>
+      <p class="narrate">第三条：调节骨骼里的钙。血钙够时帮钙沉积到骨头里，让骨骼钙化、变硬；血钙不够时，又能动员骨里的钙释放到血里，维持血钙稳定。所以它是‘存取两不误’。</p>
+      <p class="narrate">第四条：和甲状旁腺激素、降钙素一起，共同精细地调节血钙血磷平衡。此外维生素D还参与免疫调节、细胞分化。一句话，维生素D是‘钙磷代谢的总调度’。</p>
+      <p class="narrate">口诀：‘维D管钙一条龙：肠吸收、肾重吸收、骨存取、稳血钙；补钙别忘配维D’。</p>
+  <table>
+    <thead><tr><th>功能</th><th>通俗理解</th><th>考点提示</th></tr></thead>
+    <tbody>
+      <tr><td>促进小肠钙、磷吸收</td><td>让吃进的钙磷真正进血</td><td><b>招牌功能</b>；补钙需配维D</td></tr>
+      <tr><td>促进肾小管重吸收钙、磷</td><td>少排走、留住钙磷</td><td>作用于肾</td></tr>
+      <tr><td>调节骨钙沉积与动员</td><td>够了存进骨、缺了取出来</td><td>骨骼钙化 & 维持血钙</td></tr>
+      <tr><td>与PTH、降钙素协同调血钙</td><td>三者合作精调血钙血磷</td><td>激素样活性(1,25-二羟维D)</td></tr>
+    </tbody>
+  </table>
+  <div class="mnemonic">
+    <div class="label">🔑 功能口诀</div>
+    <div class="big">肠吸收 · 肾重吸收 · 骨存取 · 稳血钙　|　补钙别忘配维D</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s5')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s6">
+    <div class="sec-head"><div class="no">6</div><h2>核心精讲五：缺乏症——小孩、大人、老人各不同</h2><div class="sub">10分钟</div></div>
+    <div class="card">
+      <p class="narrate">维生素D缺了，本质是钙磷吸收不足、骨头钙化不良。但不同年龄段，表现的名字不一样，这是超高频考点，一定要分清。</p>
+      <p class="narrate">第一，儿童——佝偻病。这是维生素D缺乏最经典的病。因为孩子在长身体、骨头在生长，钙化不良就会骨骼变形。典型表现：方颅、囟门闭合延迟、出牙延迟、肋骨和肋软骨交界处像串珠子一样鼓起叫‘肋骨串珠’、胸骨前突像鸡的胸脯叫‘鸡胸’、手腕脚踝钝圆隆起像戴了镯子叫‘手镯脚镯征’，会走路后两腿因承重变成O形腿或X形腿。</p>
+      <p class="narrate">第二，成人——骨软化症。成人骨头已经长成了，缺维D不会变形成佝偻病，而是已经钙化好的骨头脱钙、变软，表现为骨痛、肌无力、容易骨折，多见于孕妇、乳母这些需钙量大的人。</p>
+      <p class="narrate">第三，老年人尤其绝经后妇女——骨质疏松症。骨量丢失、骨头变‘脆’，轻轻一摔就骨折。</p>
+      <p class="narrate">还有一个共性：缺维D导致血钙偏低，可能引起手足搐搦，就是手脚肌肉不自主地抽搐痉挛。</p>
+      <p class="narrate">把这条线记牢：同样是缺维D，小孩佝偻病(变形)、大人骨软化(变软)、老人骨质疏松(变脆)、血钙低还会手足搐搦。</p>
+      <p class="narrate">口诀：‘缺维D三张脸：小孩佝偻病变形，大人骨软化变软，老人骨松变脆；血钙低会抽筋’。</p>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 180" role="img" aria-label="维生素D缺乏在不同年龄的表现">
+    <rect x="14" y="26" width="150" height="60" rx="10" fill="#1f4d3a"/>
+    <text x="89" y="52" fill="#fff" font-size="14" text-anchor="middle" font-weight="700">维D缺乏</text>
+    <text x="89" y="72" fill="#ffe2b0" font-size="11.5" text-anchor="middle">钙磷吸收↓·骨钙化不良</text>
+    <rect x="200" y="14" width="200" height="46" rx="10" fill="#3a8dde"/>
+    <text x="300" y="33" fill="#fff" font-size="13" text-anchor="middle" font-weight="700">儿童 → 佝偻病(变形)</text>
+    <text x="300" y="51" fill="#fff" font-size="11" text-anchor="middle">方颅·肋骨串珠·鸡胸·O/X形腿</text>
+    <rect x="200" y="66" width="200" height="42" rx="10" fill="#e8743b"/>
+    <text x="300" y="84" fill="#fff" font-size="13" text-anchor="middle" font-weight="700">成人 → 骨软化(变软)</text>
+    <text x="300" y="101" fill="#fff" font-size="11" text-anchor="middle">脱钙·骨痛·肌无力(孕乳妇多)</text>
+    <rect x="200" y="114" width="200" height="42" rx="10" fill="#e0a83a"/>
+    <text x="300" y="132" fill="#fff" font-size="13" text-anchor="middle" font-weight="700">老人 → 骨质疏松(变脆)</text>
+    <text x="300" y="149" fill="#fff" font-size="11" text-anchor="middle">骨量丢失·易骨折</text>
+    <path d="M164 56 C182 40 182 37 198 37" stroke="#333" stroke-width="2" fill="none" marker-end="url(#a6)"/>
+    <path d="M164 56 L198 87" stroke="#333" stroke-width="2" marker-end="url(#a6)"/>
+    <path d="M164 56 C182 90 182 120 198 135" stroke="#333" stroke-width="2" fill="none" marker-end="url(#a6)"/>
+    <defs><marker id="a6" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#333"/></marker></defs>
+    <rect x="420" y="40" width="246" height="104" rx="10" fill="#fdf0ee" stroke="#d8443c"/>
+    <text x="543" y="66" fill="#b5302a" font-size="13" text-anchor="middle" font-weight="700">共性：血钙偏低</text>
+    <text x="543" y="90" fill="#b5302a" font-size="12" text-anchor="middle">→ 手足搐搦（抽筋痉挛）</text>
+    <text x="543" y="118" fill="#8a7f6e" font-size="11.5" text-anchor="middle">变形/变软/变脆——</text>
+    <text x="543" y="136" fill="#8a7f6e" font-size="11.5" text-anchor="middle">对应小孩/大人/老人</text>
+  </svg>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 缺乏症口诀</div>
+    <div class="big">小孩佝偻病(变形) · 大人骨软化(变软) · 老人骨松(变脆) · 血钙低会抽筋</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s6')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s7">
+    <div class="sec-head"><div class="no">7</div><h2>核心精讲六：过量与中毒（脂溶性的另一面）</h2><div class="sub">7分钟</div></div>
+    <div class="card">
+      <p class="narrate">维生素D和维生素A一样是脂溶性，会在体内蓄积，所以补太多也会中毒——这点和水溶性维生素很不一样。</p>
+      <p class="narrate">但有个让人安心的点：晒太阳晒再多也不会维生素D中毒，因为皮肤合成有自我调节，多了会分解掉。中毒基本都是‘吃出来的’——长期大剂量吃维生素D补充剂或鱼肝油，尤其是给婴幼儿过量补。</p>
+      <p class="narrate">中毒的核心机制是‘钙太多了’：维生素D过量→钙吸收过头→高血钙、高尿钙。表现为食欲减退、恶心呕吐、口渴多尿、烦躁；时间长了会软组织钙化，钙沉积到血管、肾脏，形成肾结石甚至肾功能损害，儿童还会生长停滞。</p>
+      <p class="narrate">所以给孩子补维D和鱼肝油要按推荐量，别自己加码，这是营养师和儿保门诊反复强调的。</p>
+      <p class="narrate">口诀：‘维D中毒吃出来(晒太阳不会)，钙多惹祸：高血钙、软组织钙化、肾结石’。</p>
+  <div class="trap"><div class="t">核心大坑</div>维生素D中毒<b>只来自过量口服（补剂/鱼肝油）</b>；<b>晒太阳不会</b>引起维生素D中毒（皮肤合成可自我调节）。婴幼儿过量补最常见。</div>
+  <table>
+    <thead><tr><th>环节</th><th>要点</th></tr></thead>
+    <tbody>
+      <tr><td>会不会中毒</td><td>脂溶性可蓄积 → 过量<b>会</b>中毒（不随尿排走）</td></tr>
+      <tr><td>中毒来源</td><td>长期大剂量补剂/鱼肝油；<b>晒太阳不会</b></td></tr>
+      <tr><td>核心机制</td><td>钙吸收过头 → <b>高血钙、高尿钙</b></td></tr>
+      <tr><td>表现</td><td>食欲减退、恶心呕吐、多尿口渴；<b>软组织钙化、肾结石</b>；儿童生长停滞</td></tr>
+    </tbody>
+  </table>
+  <div class="mnemonic">
+    <div class="label">🔑 中毒口诀</div>
+    <div class="big">维D中毒吃出来(晒太阳不会) · 钙多惹祸：高血钙·软组织钙化·肾结石</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s7')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s8">
+    <div class="sec-head"><div class="no">8</div><h2>核心精讲七：吃多少 &amp; 单位换算 &amp; 食物来源</h2><div class="sub">8分钟</div></div>
+    <div class="card">
+      <p class="narrate">最后量化一下：维生素D该吃多少？先记一个换算，年年考：1微克维生素D等于40国际单位，也就是40IU。这个换算一定要背死。</p>
+      <p class="narrate">中国居民膳食营养素参考摄入量2023版：成人，也就是18到64岁，推荐摄入量RNI是每天10微克，相当于400国际单位；65岁及以上老年人因为皮肤合成和吸收都下降，需要更多，提高到每天15微克，相当于600国际单位。可耐受最高摄入量UL，成人是每天50微克，相当于2000国际单位，超过就有中毒风险。</p>
+      <p class="narrate">再较真一句：0到64岁一般都是10微克每天，65岁以上15微克每天；很多婴儿从出生数天起就建议每天补充10微克维生素D，因为母乳里维D含量低、婴儿又晒不了多少太阳。</p>
+      <p class="narrate">食物来源上一节讲过，这里强调排序：鱼肝油含量最高，其次富脂海鱼、动物肝脏、蛋黄、奶油、强化奶，植物性食物几乎没有。所以对晒不到太阳的人、纯母乳婴儿、老年人，膳食加补充剂就很关键。</p>
+      <p class="narrate">口诀：‘1微克=40IU；成人10微克(400)、老人15微克(600)、UL50微克(2000)；鱼肝油海鱼蛋黄，婴儿要补’。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 单位换算 & 摄入量（DRIs 2023）</div>
+    <div class="big">1 µg 维生素D = 40 IU（务必背死）</div>
+    <div class="note">成人(18-64) RNI <b>10 µg/d（400 IU）</b>；<b>≥65岁 15 µg/d（600 IU）</b>；UL <b>50 µg/d（2000 IU）</b>。婴儿常规每天补 10 µg。</div>
+  </div>
+  <div class="svgwrap">
+  <svg viewBox="0 0 680 130" role="img" aria-label="维生素D参考摄入量标尺">
+    <line x1="40" y1="70" x2="640" y2="70" stroke="#c9bda3" stroke-width="4"/>
+    <circle cx="180" cy="70" r="9" fill="#2e9e6b"/>
+    <text x="180" y="52" fill="#1c6b45" font-size="13" text-anchor="middle" font-weight="700">成人 10µg</text>
+    <text x="180" y="98" fill="#3a5a4c" font-size="12" text-anchor="middle">400 IU</text>
+    <circle cx="330" cy="70" r="9" fill="#3a8dde"/>
+    <text x="330" y="52" fill="#1f5fa8" font-size="13" text-anchor="middle" font-weight="700">≥65岁 15µg</text>
+    <text x="330" y="98" fill="#1f5fa8" font-size="12" text-anchor="middle">600 IU</text>
+    <circle cx="560" cy="70" r="10" fill="#d8443c"/>
+    <text x="560" y="52" fill="#b5302a" font-size="13" text-anchor="middle" font-weight="700">UL 50µg</text>
+    <text x="560" y="98" fill="#b5302a" font-size="12" text-anchor="middle">2000 IU（上限）</text>
+    <text x="40" y="118" fill="#8a7f6e" font-size="11.5">↑ 数值越大需要/上限越高；1µg=40IU</text>
+  </svg>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s8')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s9">
+    <div class="sec-head"><div class="no">9</div><h2>红绿灯：高频易错点</h2><div class="sub">5分钟</div></div>
+    <div class="card">
+      <p class="narrate">红绿灯时间，把维生素D这章最爱丢分的坑集中点一遍。</p>
+      <p class="narrate">易错一：D2和D3别搞混。D2麦角钙化醇、来自麦角固醇、植物路线；D3胆钙化醇、来自7-脱氢胆固醇、动物和晒太阳路线。</p>
+      <p class="narrate">易错二：活化两步的器官和产物。第一步在肝，产25-羟维D，是营养状况指标；第二步在肾，产1,25-二羟维D，活性最强、像激素。别把肝肾、把两个产物张冠李戴。</p>
+      <p class="narrate">易错三：判断维D营养状况查哪个？查25-羟维D，不是1,25-二羟维D。因为25-羟维D在血里最稳定、含量最多。</p>
+      <p class="narrate">易错四：缺乏症按年龄分。小孩佝偻病、大人骨软化、老人骨质疏松，别把成人写成佝偻病。</p>
+      <p class="narrate">易错五：晒太阳能合成维D，但隔着玻璃晒没用，因为玻璃挡UVB；晒太阳也不会中毒，中毒只来自过量口服。</p>
+      <p class="narrate">易错六：维生素D是脂溶性、会蓄积、过量会中毒，不随尿排；这点区别于水溶性维生素。</p>
+      <p class="narrate">易错七：单位换算1微克=40IU；成人RNI10微克(400IU)、老人15微克(600IU)、UL50微克(2000IU)，别记错量级。</p>
+      <p class="narrate">易错八：补钙要配维D才吸收好；维D主要促进小肠钙磷吸收，是招牌功能。</p>
+  <div class="trap"><div class="t">易错1：D2/D3来源</div><b>D2麦角钙化醇</b>=麦角固醇(植物)；<b>D3胆钙化醇</b>=7-脱氢胆固醇(动物/皮肤)。名字来源打乱考你，别张冠李戴。</div>
+  <div class="trap"><div class="t">易错2：活化两步</div><b>肝</b>→25-羟维D(骨化二醇,指标)；<b>肾</b>→1,25-二羟维D(骨化三醇,活性最强/激素样)。器官与产物别配错。</div>
+  <div class="trap"><div class="t">易错3：营养状况指标</div>查缺不缺维D，测<b>25-羟维D</b>(最稳定/含量最多)，<b>不是</b>1,25-二羟维D。</div>
+  <div class="trap"><div class="t">易错4：缺乏症分年龄</div>小孩<b>佝偻病</b>、大人<b>骨软化</b>、老人<b>骨质疏松</b>；成人缺维D≠佝偻病。</div>
+  <div class="trap"><div class="t">易错5：晒太阳</div>隔<b>玻璃晒没用</b>(挡UVB)；晒太阳<b>不会</b>维D中毒，中毒只来自过量口服。</div>
+  <div class="trap"><div class="t">易错6：脂溶性</div>维D<b>脂溶性、会蓄积、过量中毒</b>，<b>不随尿排</b>；别当水溶性。</div>
+  <div class="trap"><div class="t">易错7：换算/摄入量</div><b>1µg=40IU</b>；成人RNI<b>10µg(400IU)</b>、老人<b>15µg(600IU)</b>、UL<b>50µg(2000IU)</b>。</div>
+  <div class="trap"><div class="t">易错8：招牌功能</div>维D主要<b>促进小肠钙、磷吸收</b>；补钙要配维D才吸收好。</div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s9')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s10">
+    <div class="sec-head"><div class="no">10</div><h2>解题三步法（注册营养师全是选择题）</h2><div class="sub">4分钟</div></div>
+    <div class="card">
+      <p class="narrate">注册营养师全是选择题，维生素D这章送你一套三步法。</p>
+      <p class="narrate">第一步，审题定性：先看问的是身份分类D2和D3、来源与合成、活化两步、生理功能、缺乏症、过量中毒，还是摄入量和换算，先定性，别急着看选项。</p>
+      <p class="narrate">第二步，定位考点：身份就背D2麦角、D3胆钙；来源就背晒太阳最主要加鱼肝油海鱼；活化就背肝出25是指标、肾出1,25最能干；功能就背促进钙磷吸收；缺乏就背小孩佝偻、大人软化、老人疏松；换算就背1微克等于40IU、成人10老人15UL50。</p>
+      <p class="narrate">第三步，排除反着坑：直接排除‘维D溶于水随尿排’‘晒太阳会维D中毒’‘查营养状况测1,25-二羟维D’‘成人缺维D得佝偻病’这些反向表述，剩下的就是答案。</p>
+  <div class="steps">
+    <div class="step"><div class="b"><b>第一步 · 审题定性：</b>先看问哪一类——D2/D3身份？来源合成？活化两步？生理功能？缺乏症？过量中毒？摄入量换算？先定性，不急看选项。</div></div>
+    <div class="step"><div class="b"><b>第二步 · 定位考点：</b>身份→D2麦角/D3胆钙；来源→晒太阳最主要+鱼肝油海鱼；活化→肝出25(指标)/肾出1,25(最能干)；功能→促钙磷吸收；缺乏→小孩佝偻/大人软化/老人疏松；换算→1µg=40IU、成10老15UL50。</div></div>
+    <div class="step"><div class="b"><b>第三步 · 排除反坑：</b>直接排除“维D溶于水随尿排”“晒太阳会维D中毒”“测1,25查营养状况”“成人缺维D得佝偻病”这类反向表述，剩下即答案。</div></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s10')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s11">
+    <div class="sec-head"><div class="no">11</div><h2>晓晓老师不定时提问 · 模拟课堂（费曼）</h2><div class="sub">互动</div></div>
+    <div class="card">
+      <p class="narrate">讲完重点，我们模拟上课提问。我先和班里的同学演练，再轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。</p>
+      <p class="narrate">第一个问题：用你自己的话解释，为什么医生查‘你缺不缺维生素D’时，抽血查的是25-羟维D，而不是活性最强的1,25-二羟维D？</p>
+      <p class="narrate">第二个问题：为什么同样是缺维生素D，小孩得的是佝偻病、大人却是骨软化症？把‘骨头还在不在长’这条逻辑讲清楚。</p>
+  <div class="chat">
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">小明，隔着玻璃在办公室晒一天太阳，能补够维生素D吗？</div></div></div>
+    <div class="msg stu"><div class="av stu">🧒</div><div><div class="who">学生·小明</div><div class="bubble">能吧？都晒一天了，晒得我都热了……</div></div></div>
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">这是个大坑！让皮肤合成维D的是紫外线里的<b>UVB</b>，普通<b>玻璃会把UVB挡掉</b>，所以隔着玻璃晒得再热也造不出维D。想靠晒太阳补，得让皮肤直接晒到户外阳光。而且晒太阳<b>不会</b>维D中毒，皮肤合成会自我调节——真正会中毒的是<b>过量口服</b>补剂/鱼肝油。</div></div></div>
+  </div>
+
+  <div class="ask" data-keywords="25|羟维D|25-羟|最稳定|含量最多|指标|营养状况|1,25|活性|激素|半衰期" data-model="因为<b>25-羟维D</b>在血液里<b>含量最多、最稳定</b>，能真实反映一段时间内维生素D的总体水平，所以是判断维D营养状况的‘金标准’。而<b>1,25-二羟维D</b>虽然活性最强，但它像激素一样受身体严格调控、含量低、波动大、半衰期短，血钙一变它就跟着变，反而不能代表你‘够不够’。所以查缺不缺，测25-羟维D。">
+    <div class="q">提问一：为什么查“你缺不缺维生素D”测的是25-羟维D，而不是活性最强的1,25-二羟维D？（打字回答，晓晓老师会点评）</div>
+    <textarea placeholder="例如：因为25-羟维D在血里……"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+  <div class="ask" data-keywords="佝偻病|骨软化|还在长|生长|变形|钙化|成人|儿童|脱钙|骨骼已长成" data-model="关键看<b>骨头还在不在长</b>。<b>儿童</b>骨骼正在生长发育，缺维D时新长的骨钙化不良，骨头软、承重就<b>变形</b>——方颅、肋骨串珠、O/X形腿，这叫<b>佝偻病</b>。<b>成人</b>骨骼已经长成、不再增长，缺维D不会变形，而是已经钙化好的骨头<b>脱钙、变软</b>，出现骨痛、易骨折，这叫<b>骨软化症</b>。所以是同一个病因、不同年龄的两种表现。">
+    <div class="q">提问二：为什么小孩缺维D是佝偻病、大人是骨软化症？把“骨头还在不在长”讲清楚。</div>
+    <textarea placeholder="先想：小孩骨头在干嘛？大人骨头在干嘛？"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s11')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s12">
+    <div class="sec-head"><div class="no">12</div><h2>改编练习题（单选，仿注册营养师真题）</h2><div class="sub">自测</div></div>
+    <div class="card">
+      <p class="narrate">下面8道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，维生素D3的化学名和前体。第二题，判断维D营养状况测哪个。第三题，维D两次活化的器官。第四题，儿童维D缺乏典型病。第五题，维D的招牌生理功能。第六题，单位换算。第七题，关于晒太阳与中毒。第八题，关于维生素D错误的说法。</p>
+  <div class="quiz" data-ans="C">
+    <div class="stem">1. 维生素D3的化学名称及其在皮肤中的前体分别是：</div>
+    <button class="opt" onclick="choose(this)">A. 麦角钙化醇；麦角固醇</button>
+    <button class="opt" onclick="choose(this)">B. 骨化三醇；胆固醇</button>
+    <button class="opt" onclick="choose(this)">C. 胆钙化醇；7-脱氢胆固醇</button>
+    <button class="opt" onclick="choose(this)">D. 视黄醇；β-胡萝卜素</button>
+    <div class="ans">✅ 答案：C。<b>D3=胆钙化醇</b>，皮肤中前体是<b>7-脱氢胆固醇</b>，经UVB照射生成。A是D2（麦角钙化醇/麦角固醇）。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">2.【改编真题】临床上判断人体维生素D营养状况，最常检测的指标是：</div>
+    <button class="opt" onclick="choose(this)">A. 1,25-二羟维生素D</button>
+    <button class="opt" onclick="choose(this)">B. 25-羟维生素D</button>
+    <button class="opt" onclick="choose(this)">C. 血清钙</button>
+    <button class="opt" onclick="choose(this)">D. 甲状旁腺激素</button>
+    <div class="ans">✅ 答案：B。<b>25-羟维D</b>在血中含量最多、最稳定，是评价维D营养状况的金标准；1,25-二羟维D虽活性最强但受激素调控、波动大，不宜作指标。</div>
+  </div>
+  <div class="quiz" data-ans="D">
+    <div class="stem">3. 维生素D经两次羟化活化，两步分别发生在：</div>
+    <button class="opt" onclick="choose(this)">A. 小肠 → 肝脏</button>
+    <button class="opt" onclick="choose(this)">B. 肾脏 → 肝脏</button>
+    <button class="opt" onclick="choose(this)">C. 皮肤 → 小肠</button>
+    <button class="opt" onclick="choose(this)">D. 肝脏 → 肾脏</button>
+    <div class="ans">✅ 答案：D。先在<b>肝脏</b>生成25-羟维D，再在<b>肾脏</b>生成活性最强的1,25-二羟维D。肝/肾疾病都会影响活化。</div>
+  </div>
+  <div class="quiz" data-ans="A">
+    <div class="stem">4. 儿童长期维生素D缺乏最典型的疾病是：</div>
+    <button class="opt" onclick="choose(this)">A. 佝偻病</button>
+    <button class="opt" onclick="choose(this)">B. 骨软化症</button>
+    <button class="opt" onclick="choose(this)">C. 骨质疏松症</button>
+    <button class="opt" onclick="choose(this)">D. 夜盲症</button>
+    <div class="ans">✅ 答案：A。儿童→<b>佝偻病</b>(方颅/肋骨串珠/鸡胸/O、X形腿)；成人→骨软化；老人→骨质疏松；夜盲是维生素A缺乏。</div>
+  </div>
+  <div class="quiz" data-ans="C">
+    <div class="stem">5. 维生素D最主要（招牌）的生理功能是：</div>
+    <button class="opt" onclick="choose(this)">A. 维持暗视觉</button>
+    <button class="opt" onclick="choose(this)">B. 抗氧化、清除自由基</button>
+    <button class="opt" onclick="choose(this)">C. 促进小肠对钙、磷的吸收</button>
+    <button class="opt" onclick="choose(this)">D. 参与血液凝固</button>
+    <div class="ans">✅ 答案：C。维D招牌功能是<b>促进小肠钙、磷吸收</b>，故补钙常配维D。A是维A，B是维E/类胡萝卜素，D是维K。</div>
+  </div>
+  <div class="quiz" data-ans="D">
+    <div class="stem">6.【改编】维生素D的单位换算，1 µg 维生素D 等于：</div>
+    <button class="opt" onclick="choose(this)">A. 4 IU</button>
+    <button class="opt" onclick="choose(this)">B. 10 IU</button>
+    <button class="opt" onclick="choose(this)">C. 12 IU</button>
+    <button class="opt" onclick="choose(this)">D. 40 IU</button>
+    <div class="ans">✅ 答案：D。<b>1 µg 维生素D = 40 IU</b>。成人RNI 10µg(400IU)，≥65岁15µg(600IU)，UL 50µg(2000IU)。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">7. 关于晒太阳与维生素D，正确的是：</div>
+    <button class="opt" onclick="choose(this)">A. 隔着玻璃晒太阳也能有效合成维生素D</button>
+    <button class="opt" onclick="choose(this)">B. 皮肤经紫外线合成维生素D，且晒太阳一般不会引起维D中毒</button>
+    <button class="opt" onclick="choose(this)">C. 晒太阳过量是维生素D中毒最常见原因</button>
+    <button class="opt" onclick="choose(this)">D. 深肤色、高纬度冬季不影响皮肤合成</button>
+    <div class="ans">✅ 答案：B。皮肤经UVB合成维D，且合成可自我调节，晒太阳<b>不会</b>中毒；中毒来自<b>过量口服</b>。玻璃挡UVB(A错)，深肤色/高纬冬季合成减少(D错)。</div>
+  </div>
+  <div class="quiz" data-ans="C">
+    <div class="stem">8. 关于维生素D，下列说法错误的是：</div>
+    <button class="opt" onclick="choose(this)">A. 属于脂溶性维生素，可在体内蓄积</button>
+    <button class="opt" onclick="choose(this)">B. 过量长期口服可致高血钙、软组织钙化、肾结石</button>
+    <button class="opt" onclick="choose(this)">C. 为水溶性维生素，过量可随尿排出、不会中毒</button>
+    <button class="opt" onclick="choose(this)">D. 植物性食物中含量很少，鱼肝油含量最高</button>
+    <div class="ans">✅ 答案：C。维D是<b>脂溶性</b>，会蓄积、过量<b>会中毒</b>，<b>不随尿排</b>；A/B/D均正确。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s12')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s13">
+    <div class="sec-head"><div class="no">13</div><h2>费曼记忆小测：用自己的话讲一遍</h2><div class="sub">收尾</div></div>
+    <div class="card">
+      <p class="narrate">最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。</p>
+      <p class="narrate">问题：为什么维生素D叫‘阳光维生素’又叫‘抗佝偻病维生素’？它造出来后为什么还要经过肝和肾两次活化？缺了它，小孩、大人、老人分别会怎样？一天该吃多少（成人10微克、老人15微克、1微克等于40IU）？把来源、活化、功能、缺乏、摄入量这条逻辑串起来。</p>
+      <p class="narrate">课堂小结口诀复习：身份‘D二麦角、D三胆钙，紫外线一照都变身’；来源‘晒太阳最主要隔玻璃没用，吃靠鱼肝油海鱼蛋黄，植物基本没有’；活化‘肝出25是指标、肾出1,25最能干，肝肾有病活化难’；功能‘肠吸收肾重吸收骨存取稳血钙，补钙别忘配维D’；缺乏‘小孩佝偻病变形、大人骨软化变软、老人骨松变脆，血钙低会抽筋’；中毒‘吃出来晒太阳不会，钙多惹祸高血钙软组织钙化肾结石’；摄入‘1微克等于40IU，成人10老人15UL50’。</p>
+  <div class="feynman">
+    <h3>🧠 费曼复述任务</h3>
+    <p>合上页面，试着给一个“完全不懂营养的朋友”讲清楚下面这个问题。能讲明白，说明你真懂了（费曼学习法：教是最好的学）。</p>
+    <p><b>问题：</b>“维生素D为什么叫阳光维生素、抗佝偻病维生素？造出来后为什么还要肝、肾两次活化？缺了它，小孩、大人、老人各会怎样？一天该吃多少？”</p>
+    <textarea id="feynmanBox" placeholder="在这里用大白话写一段 4-6 句话的解释……"></textarea>
+    <button class="btn" onclick="feynmanCheck()">自我对照 · 看评分清单</button>
+    <div class="feedback" id="feynmanFeedback"></div>
+    <ul class="rubric">
+      <li>✅ 提到 皮肤经紫外线(UVB)合成D3、故称“阳光维生素”；隔玻璃没用</li>
+      <li>✅ 提到 两次活化：肝→25-羟维D(营养状况指标)、肾→1,25-二羟维D(活性最强/像激素)</li>
+      <li>✅ 提到 招牌功能：促进小肠钙磷吸收；缺乏——小孩佝偻病、大人骨软化、老人骨质疏松</li>
+      <li>✅ 提到 摄入量：成人10µg(400IU)、老人15µg(600IU)、UL 50µg(2000IU)、1µg=40IU</li>
+    </ul>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="playSection('s13')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    本节为「营养刷题」第6课，依据「注册营养师考试宝典」公众号·考点|21 维生素D系列及历年真题整理改编，并对照《中国居民膳食营养素参考摄入量(2023版)》《营养与食品卫生学》第9版　｜　晓晓老师语音由 Edge-TTS XiaoxiaoNeural 神经网络语音合成，字幕固定底部不遮挡讲解　｜　仅供学习备考使用
+  </footer>
+</div>
+
+<div id="playerbar" class="hide">
+  <div class="subline" id="subline"><b>晓晓老师：</b>点击任意「▶ 听晓晓老师讲这段」，或点「📖 从头播放」，晓晓老师逐句讲解，字幕显示在此处，不遮挡上方讲解。</div>
+  <div class="pctrl">
+    <button onclick="prevSent()">⏮ 上一句</button>
+    <button id="playbtn" onclick="togglePlay()">▶ 播放</button>
+    <button onclick="nextSent()">下一句 ⏭</button>
+    <input id="seek" type="range" min="0" max="100" value="0" oninput="onSeek(this.value)" title="拖动可调整播放位置" />
+    <span id="idxlbl">0 / 0</span>
+    <span class="spd">语速
+      <button id="s08" onclick="Player.setSpeed(0.8)">0.8x</button>
+      <button id="s10" class="on" onclick="Player.setSpeed(1)">1x</button>
+      <button id="s12" onclick="Player.setSpeed(1.2)">1.2x</button>
+      <button id="s15" onclick="Player.setSpeed(1.5)">1.5x</button>
+    </span>
+    <button onclick="playAll()">📖 从头播放</button>
+    <button onclick="hidePlayer()">收起</button>
+  </div>
+</div>
+<button id="reopen" onclick="showPlayer()">▶ 晓晓老师</button>
+
+<script>
+const SECTIONS_AUDIO = {"s1": ["audio/s1_0.mp3", "audio/s1_1.mp3", "audio/s1_2.mp3", "audio/s1_3.mp3"], "s2": ["audio/s2_0.mp3", "audio/s2_1.mp3", "audio/s2_2.mp3", "audio/s2_3.mp3", "audio/s2_4.mp3"], "s3": ["audio/s3_0.mp3", "audio/s3_1.mp3", "audio/s3_2.mp3", "audio/s3_3.mp3", "audio/s3_4.mp3"], "s4": ["audio/s4_0.mp3", "audio/s4_1.mp3", "audio/s4_2.mp3", "audio/s4_3.mp3", "audio/s4_4.mp3"], "s5": ["audio/s5_0.mp3", "audio/s5_1.mp3", "audio/s5_2.mp3", "audio/s5_3.mp3", "audio/s5_4.mp3", "audio/s5_5.mp3"], "s6": ["audio/s6_0.mp3", "audio/s6_1.mp3", "audio/s6_2.mp3", "audio/s6_3.mp3", "audio/s6_4.mp3", "audio/s6_5.mp3", "audio/s6_6.mp3"], "s7": ["audio/s7_0.mp3", "audio/s7_1.mp3", "audio/s7_2.mp3", "audio/s7_3.mp3", "audio/s7_4.mp3"], "s8": ["audio/s8_0.mp3", "audio/s8_1.mp3", "audio/s8_2.mp3", "audio/s8_3.mp3", "audio/s8_4.mp3"], "s9": ["audio/s9_0.mp3", "audio/s9_1.mp3", "audio/s9_2.mp3", "audio/s9_3.mp3", "audio/s9_4.mp3", "audio/s9_5.mp3", "audio/s9_6.mp3", "audio/s9_7.mp3", "audio/s9_8.mp3"], "s10": ["audio/s10_0.mp3", "audio/s10_1.mp3", "audio/s10_2.mp3", "audio/s10_3.mp3"], "s11": ["audio/s11_0.mp3", "audio/s11_1.mp3", "audio/s11_2.mp3"], "s12": ["audio/s12_0.mp3"], "s13": ["audio/s13_0.mp3", "audio/s13_1.mp3", "audio/s13_2.mp3"]};
+const SECTIONS_TEXT  = {"s1": ["同学们好，我是晓晓老师。开始新课前先花五分钟串一遍前五课：蛋白质——必需氨基酸9种、谷类缺赖氨酸豆类缺蛋氨酸；碳水化合物——蔗无乳有麦也有、GI和GL、添加糖最好不超25克；脂类——必需脂肪酸只有亚油酸和α-亚麻酸、HDL好LDL坏；能量——1千卡等于4.184千焦、基础代谢是大头、BMI中国24超28胖；上一课维生素A——视杆细胞里的视紫红质、缺了先暗适应下降再夜盲，中毒只怪动物肝和补剂。", "上一课我们进了微量营养素的大门，讲了脂溶性维生素的老大——维生素A。今天讲脂溶性维生素里的第二位、也是这几年最火的一个：维生素D。", "为什么说它火？因为它有个响当当的外号叫‘阳光维生素’，还有个更贴切的别名——‘抗佝偻病维生素’。它是唯一一个我们身体能靠晒太阳自己造出来的维生素，又和高中生物学过的‘钙的吸收’‘骨骼发育’紧紧绑在一起，特别能出题。", "今天的主线：维生素D是什么、有D2和D3两兄弟 → 它从哪来（晒太阳自己合成 + 食物）→ 造出来还要经过肝、肾两次‘活化’才顶用 → 它主要帮我们干嘛（促进钙磷吸收、管骨头）→ 缺了会怎样（小孩佝偻病、大人骨软化、老人骨质疏松）→ 多了会中毒吗 → 该吃多少、从哪吃。跟着这条线，题就跑不掉了。"], "s2": ["先搞清维生素D的‘身份’。它是脂溶性维生素，化学上属于一类固醇类物质，最重要的成员有两个：维生素D2和维生素D3。", "维生素D2叫麦角钙化醇，来自植物、酵母和真菌。它的‘前身’是植物里的麦角固醇，麦角固醇被紫外线一照，就变成了D2。所以D2是‘植物路线’。", "维生素D3叫胆钙化醇，来自动物，也来自我们自己的皮肤。它的‘前身’是皮肤里的7-脱氢胆固醇，被阳光里的紫外线UVB一照，就变成了D3。所以D3是‘动物路线’，也是我们晒太阳自造的那种。", "记住这个对应关系特别重要，考试爱把D2和D3的名字、来源打乱了考你：D2麦角钙化醇、来自麦角固醇、走植物路线；D3胆钙化醇、来自7-脱氢胆固醇、走动物和晒太阳路线。两者进了身体作用一样，D3是人体主要利用的形式。", "口诀：‘D二麦角(D2麦角钙化醇)、来自麦角固醇；D三胆钙(D3胆钙化醇)、来自脱氢胆固醇；紫外线一照都变身’。"], "s3": ["维生素D最特别的地方，是它有两条来路，而且第一条别的维生素都没有。", "第一条，也是我们最主要的来源：晒太阳自己合成。皮肤里的7-脱氢胆固醇，被阳光中的紫外线UVB照射，就地变成维生素D3。所以只要经常晒太阳、皮肤够到阳光，正常人一般不容易缺。‘阳光维生素’这个外号就是这么来的。", "这里有几个爱考的点：隔着玻璃晒没用，因为普通玻璃会挡掉UVB；涂高倍防晒霜、空气污染重、纬度高冬天日照少、肤色深、老年人皮肤合成能力下降、婴儿捂太严不出门，这些都会让皮肤合成减少，是缺乏的高危因素。", "第二条来源是食物。维生素D在天然食物里分布不广，主要集中在动物性食物：含量最高的是鱼肝油，其次是富含脂肪的海鱼比如三文鱼、沙丁鱼，还有动物肝脏、蛋黄、奶油、以及强化维生素D的牛奶和配方奶。植物性食物几乎不含维生素D，这点和维生素A原、和B族都不一样。", "口诀：‘维D两条路：晒太阳最主要(隔玻璃没用)、吃靠鱼肝油海鱼蛋黄；植物基本没有’。"], "s4": ["这是本课最精彩、也最高频的一段：维生素D刚合成或吃进来时，其实是‘半成品’，没有活性，必须经过两次‘羟化’才变成能干活的‘成品’。这两次活化，一次在肝，一次在肾。", "第一步在肝脏：维生素D3先被加上一个羟基，变成25-羟维生素D3，又叫骨化二醇。请重点记住：25-羟维生素D是血液里含量最多、最稳定的形式，是判断一个人维生素D营养状况的‘金标准’指标。医院查你‘缺不缺维D’，抽血查的就是它——25-羟维生素D。", "第二步在肾脏：25-羟维生素D再被加上一个羟基，变成1,25-二羟维生素D3，又叫骨化三醇。它是维生素D活性最强的形式，作用起来像一种激素，真正去促进钙磷吸收、调节血钙的就是它。", "把它串成一条线：维生素D3（半成品）→ 肝脏羟化 → 25-羟维D（营养状况指标）→ 肾脏羟化 → 1,25-二羟维D（活性最强、像激素）。所以肝脏或肾脏有病，都会影响维生素D活化，导致缺乏。", "口诀：‘维D活化两道关：肝出25(骨化二醇)是指标，肾出1,25(骨化三醇)最能干；肝肾有病活化难’。"], "s5": ["维生素D的核心使命就俩字：管钙。更准确说，是维持血液里钙和磷的稳定，让骨头长得结实。具体记四条。", "第一条，也是最重要的：促进小肠对钙和磷的吸收。这是它的招牌功能——没有维生素D，你吃再多钙也吸收不进去，所以补钙常常要配着维生素D一起补。", "第二条：促进肾小管对钙和磷的重吸收，减少它们随尿排走，帮身体‘留住’钙磷。", "第三条：调节骨骼里的钙。血钙够时帮钙沉积到骨头里，让骨骼钙化、变硬；血钙不够时，又能动员骨里的钙释放到血里，维持血钙稳定。所以它是‘存取两不误’。", "第四条：和甲状旁腺激素、降钙素一起，共同精细地调节血钙血磷平衡。此外维生素D还参与免疫调节、细胞分化。一句话，维生素D是‘钙磷代谢的总调度’。", "口诀：‘维D管钙一条龙：肠吸收、肾重吸收、骨存取、稳血钙；补钙别忘配维D’。"], "s6": ["维生素D缺了，本质是钙磷吸收不足、骨头钙化不良。但不同年龄段，表现的名字不一样，这是超高频考点，一定要分清。", "第一，儿童——佝偻病。这是维生素D缺乏最经典的病。因为孩子在长身体、骨头在生长，钙化不良就会骨骼变形。典型表现：方颅、囟门闭合延迟、出牙延迟、肋骨和肋软骨交界处像串珠子一样鼓起叫‘肋骨串珠’、胸骨前突像鸡的胸脯叫‘鸡胸’、手腕脚踝钝圆隆起像戴了镯子叫‘手镯脚镯征’，会走路后两腿因承重变成O形腿或X形腿。", "第二，成人——骨软化症。成人骨头已经长成了，缺维D不会变形成佝偻病，而是已经钙化好的骨头脱钙、变软，表现为骨痛、肌无力、容易骨折，多见于孕妇、乳母这些需钙量大的人。", "第三，老年人尤其绝经后妇女——骨质疏松症。骨量丢失、骨头变‘脆’，轻轻一摔就骨折。", "还有一个共性：缺维D导致血钙偏低，可能引起手足搐搦，就是手脚肌肉不自主地抽搐痉挛。", "把这条线记牢：同样是缺维D，小孩佝偻病(变形)、大人骨软化(变软)、老人骨质疏松(变脆)、血钙低还会手足搐搦。", "口诀：‘缺维D三张脸：小孩佝偻病变形，大人骨软化变软，老人骨松变脆；血钙低会抽筋’。"], "s7": ["维生素D和维生素A一样是脂溶性，会在体内蓄积，所以补太多也会中毒——这点和水溶性维生素很不一样。", "但有个让人安心的点：晒太阳晒再多也不会维生素D中毒，因为皮肤合成有自我调节，多了会分解掉。中毒基本都是‘吃出来的’——长期大剂量吃维生素D补充剂或鱼肝油，尤其是给婴幼儿过量补。", "中毒的核心机制是‘钙太多了’：维生素D过量→钙吸收过头→高血钙、高尿钙。表现为食欲减退、恶心呕吐、口渴多尿、烦躁；时间长了会软组织钙化，钙沉积到血管、肾脏，形成肾结石甚至肾功能损害，儿童还会生长停滞。", "所以给孩子补维D和鱼肝油要按推荐量，别自己加码，这是营养师和儿保门诊反复强调的。", "口诀：‘维D中毒吃出来(晒太阳不会)，钙多惹祸：高血钙、软组织钙化、肾结石’。"], "s8": ["最后量化一下：维生素D该吃多少？先记一个换算，年年考：1微克维生素D等于40国际单位，也就是40IU。这个换算一定要背死。", "中国居民膳食营养素参考摄入量2023版：成人，也就是18到64岁，推荐摄入量RNI是每天10微克，相当于400国际单位；65岁及以上老年人因为皮肤合成和吸收都下降，需要更多，提高到每天15微克，相当于600国际单位。可耐受最高摄入量UL，成人是每天50微克，相当于2000国际单位，超过就有中毒风险。", "再较真一句：0到64岁一般都是10微克每天，65岁以上15微克每天；很多婴儿从出生数天起就建议每天补充10微克维生素D，因为母乳里维D含量低、婴儿又晒不了多少太阳。", "食物来源上一节讲过，这里强调排序：鱼肝油含量最高，其次富脂海鱼、动物肝脏、蛋黄、奶油、强化奶，植物性食物几乎没有。所以对晒不到太阳的人、纯母乳婴儿、老年人，膳食加补充剂就很关键。", "口诀：‘1微克=40IU；成人10微克(400)、老人15微克(600)、UL50微克(2000)；鱼肝油海鱼蛋黄，婴儿要补’。"], "s9": ["红绿灯时间，把维生素D这章最爱丢分的坑集中点一遍。", "易错一：D2和D3别搞混。D2麦角钙化醇、来自麦角固醇、植物路线；D3胆钙化醇、来自7-脱氢胆固醇、动物和晒太阳路线。", "易错二：活化两步的器官和产物。第一步在肝，产25-羟维D，是营养状况指标；第二步在肾，产1,25-二羟维D，活性最强、像激素。别把肝肾、把两个产物张冠李戴。", "易错三：判断维D营养状况查哪个？查25-羟维D，不是1,25-二羟维D。因为25-羟维D在血里最稳定、含量最多。", "易错四：缺乏症按年龄分。小孩佝偻病、大人骨软化、老人骨质疏松，别把成人写成佝偻病。", "易错五：晒太阳能合成维D，但隔着玻璃晒没用，因为玻璃挡UVB；晒太阳也不会中毒，中毒只来自过量口服。", "易错六：维生素D是脂溶性、会蓄积、过量会中毒，不随尿排；这点区别于水溶性维生素。", "易错七：单位换算1微克=40IU；成人RNI10微克(400IU)、老人15微克(600IU)、UL50微克(2000IU)，别记错量级。", "易错八：补钙要配维D才吸收好；维D主要促进小肠钙磷吸收，是招牌功能。"], "s10": ["注册营养师全是选择题，维生素D这章送你一套三步法。", "第一步，审题定性：先看问的是身份分类D2和D3、来源与合成、活化两步、生理功能、缺乏症、过量中毒，还是摄入量和换算，先定性，别急着看选项。", "第二步，定位考点：身份就背D2麦角、D3胆钙；来源就背晒太阳最主要加鱼肝油海鱼；活化就背肝出25是指标、肾出1,25最能干；功能就背促进钙磷吸收；缺乏就背小孩佝偻、大人软化、老人疏松；换算就背1微克等于40IU、成人10老人15UL50。", "第三步，排除反着坑：直接排除‘维D溶于水随尿排’‘晒太阳会维D中毒’‘查营养状况测1,25-二羟维D’‘成人缺维D得佝偻病’这些反向表述，剩下的就是答案。"], "s11": ["讲完重点，我们模拟上课提问。我先和班里的同学演练，再轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。", "第一个问题：用你自己的话解释，为什么医生查‘你缺不缺维生素D’时，抽血查的是25-羟维D，而不是活性最强的1,25-二羟维D？", "第二个问题：为什么同样是缺维生素D，小孩得的是佝偻病、大人却是骨软化症？把‘骨头还在不在长’这条逻辑讲清楚。"], "s12": ["下面8道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，维生素D3的化学名和前体。第二题，判断维D营养状况测哪个。第三题，维D两次活化的器官。第四题，儿童维D缺乏典型病。第五题，维D的招牌生理功能。第六题，单位换算。第七题，关于晒太阳与中毒。第八题，关于维生素D错误的说法。"], "s13": ["最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。", "问题：为什么维生素D叫‘阳光维生素’又叫‘抗佝偻病维生素’？它造出来后为什么还要经过肝和肾两次活化？缺了它，小孩、大人、老人分别会怎样？一天该吃多少（成人10微克、老人15微克、1微克等于40IU）？把来源、活化、功能、缺乏、摄入量这条逻辑串起来。", "课堂小结口诀复习：身份‘D二麦角、D三胆钙，紫外线一照都变身’；来源‘晒太阳最主要隔玻璃没用，吃靠鱼肝油海鱼蛋黄，植物基本没有’；活化‘肝出25是指标、肾出1,25最能干，肝肾有病活化难’；功能‘肠吸收肾重吸收骨存取稳血钙，补钙别忘配维D’；缺乏‘小孩佝偻病变形、大人骨软化变软、老人骨松变脆，血钙低会抽筋’；中毒‘吃出来晒太阳不会，钙多惹祸高血钙软组织钙化肾结石’；摄入‘1微克等于40IU，成人10老人15UL50’。"]};
+const SECTIONS_ORDER = ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11", "s12", "s13"];
+
+// 展平为全局播放列表（按章节顺序）
+const PLAYLIST = [];
+SECTIONS_ORDER.forEach(id=>{
+  const paths = SECTIONS_AUDIO[id]||[];
+  const texts = SECTIONS_TEXT[id]||[];
+  paths.forEach((p,i)=> PLAYLIST.push({src:p, text:texts[i]||'', sec:id}));
+});
+
+const Player = {
+  audio: new Audio(),
+  idx: 0,
+  playing: false,
+  speed: 1.0,
+  init(){
+    this.audio.preload='auto';
+    this.audio.addEventListener('timeupdate', ()=>this.onTime());
+    this.audio.addEventListener('ended', ()=>this.next(true));
+    this.audio.addEventListener('loadedmetadata', ()=>this.onTime());
+    this.audio.addEventListener('error', ()=>this.onErr());
+    this.updateIdx();
+    this.updateBtn();
+  },
+  load(i, autoplay){
+    if(i<0 || i>=PLAYLIST.length) return;
+    this.idx=i;
+    const item=PLAYLIST[i];
+    setSub(item.text);
+    this.audio.src=item.src;
+    this.audio.playbackRate=this.speed;
+    this.updateIdx();
+    if(autoplay){
+      const sec=document.getElementById(item.sec);
+      if(sec) sec.scrollIntoView({behavior:'smooth',block:'center'});
+      this.playing=true; this.updateBtn();
+      this.audio.play().catch(()=>{ this.fallback(item.text); });
+    }
+  },
+  play(){ if(!this.audio.src){ this.load(this.idx,false);} this.playing=true; this.updateBtn(); this.audio.play().catch(()=>{}); },
+  pause(){ this.playing=false; this.updateBtn(); this.audio.pause(); },
+  toggle(){ if(this.playing) this.pause(); else this.play(); },
+  next(auto){
+    if(auto && !this.playing) return;
+    const n=this.idx+1;
+    if(n>=PLAYLIST.length){ this.playing=false; this.updateBtn(); this.updateIdx();
+      setSub('—— 本课讲解结束啦，去做做改编题、用费曼法复述一遍 💡'); return; }
+    this.load(n,true);
+  },
+  prev(){ let n=this.idx-1; if(n<0) n=0; this.load(n,true); },
+  seek(v){ try{ this.audio.currentTime=parseFloat(v); }catch(e){} },
+  onTime(){
+    const a=this.audio;
+    const s=document.getElementById('seek');
+    if(a.duration && s){ s.max=Math.floor(a.duration); s.value=Math.floor(a.currentTime); }
+    if(PLAYLIST[this.idx]) setSub(PLAYLIST[this.idx].text);
+  },
+  onErr(){
+    if(this.playing){ this.fallback(PLAYLIST[this.idx] ? PLAYLIST[this.idx].text : ''); }
+  },
+  fallback(t){
+    if(!('speechSynthesis' in window)){ this.next(true); return; }
+    const u=new SpeechSynthesisUtterance(t); u.lang='zh-CN'; u.rate=this.speed; u.pitch=1.06;
+    u.onend=()=>{ this.next(true); };
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  },
+  setSpeed(v){
+    this.speed=v; this.audio.playbackRate=v;
+    document.querySelectorAll('#playerbar .spd button').forEach(b=>b.classList.remove('on'));
+    const map={0.8:'s08',1:'s10',1.2:'s12',1.5:'s15'};
+    const el=document.getElementById(map[v]); if(el) el.classList.add('on');
+  },
+  updateIdx(){ const e=document.getElementById('idxlbl'); if(e) e.textContent=(this.idx+1)+' / '+PLAYLIST.length; },
+  updateBtn(){ const b=document.getElementById('playbtn'); if(b) b.textContent=this.playing?'⏸ 暂停':'▶ 播放'; }
+};
+
+function setSub(t){ const e=document.getElementById('subline'); if(e) e.innerHTML='<b>晓晓老师：</b>'+t; }
+function playSection(id){
+  const i=PLAYLIST.findIndex(p=>p.sec===id);
+  document.getElementById('playerbar').classList.remove('hide');
+  document.getElementById('reopen').classList.remove('show');
+  if(i<0) return;
+  Player.load(i, true);
+}
+function playAll(){ Player.load(0,true); document.getElementById('playerbar').classList.remove('hide'); document.getElementById('reopen').classList.remove('show'); }
+function prevSent(){ Player.prev(); }
+function nextSent(){ Player.next(false); }
+function togglePlay(){ Player.toggle(); }
+function onSeek(v){ Player.seek(v); }
+function hidePlayer(){ document.getElementById('playerbar').classList.add('hide'); document.getElementById('reopen').classList.add('show'); }
+function showPlayer(){ document.getElementById('playerbar').classList.remove('hide'); document.getElementById('reopen').classList.remove('show'); }
+
+function checkAsk(btn){
+  const box=btn.closest('.ask'); const ta=box.querySelector('textarea'); const val=(ta.value||'').trim();
+  const fb=box.querySelector('.feedback'); const model=box.querySelector('.model');
+  const keys=(box.dataset.keywords||'').split('|').filter(Boolean);
+  if(!val){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写点什么再提交哦～哪怕一句话也行 😊</span>'; return; }
+  const hit=keys.some(k=>val.includes(k));
+  fb.className='feedback show';
+  fb.innerHTML = hit ? '<span class="ok">👍 说到位了！</span> 你抓住了关键词，晓晓老师给你点个赞。'
+                     : '<span class="tip">🤔 方向还差点意思～</span> 别急，看看下面的标准答案，再试着用自己的话讲一遍。';
+  model.className='model'; model.innerHTML='<b>晓晓老师的标准答案：</b>'+box.dataset.model;
+}
+function choose(btn){
+  const q=btn.closest('.quiz'); if(q.dataset.done) return;
+  const correct=q.dataset.ans;
+  q.querySelectorAll('.opt').forEach(o=>{ o.disabled=true;
+    const t=o.textContent.trim();
+    if(t.startsWith(correct+'.')||t.startsWith(correct+'．')) o.classList.add('correct');
+    else if(o===btn) o.classList.add('wrong');
+  });
+  q.dataset.done='1'; q.querySelector('.ans').classList.add('show');
+}
+function feynmanCheck(){
+  const v=(document.getElementById('feynmanBox').value||'').trim();
+  const fb=document.getElementById('feynmanFeedback');
+  if(!v){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写一段自己的解释，再对照清单 😉</span>'; return; }
+  const keys=['紫外线','UVB','阳光','皮肤','25','1,25','肝','肾','活化','钙','磷','吸收','佝偻','骨软化','骨质疏松','40','10','15','UL'];
+  const hit=keys.filter(k=>v.includes(k)).length;
+  fb.className='feedback show';
+  let msg;
+  if(hit>=5) msg='<span class="ok">🌟 很棒！</span> 你覆盖了关键概念，基本讲清楚了。可以录下来自己听一遍，卡壳的地方就是还没真懂的点。';
+  else if(hit>=3) msg='<span class="tip">📝 有进步～</span> 对照清单，看看是不是漏了“肝出25是指标、肾出1,25最能干”或“小孩佝偻、大人软化、老人疏松”这两点，补上就更完整了。';
+  else msg='<span class="tip">💡 再来一次～</span> 提示：想想“皮肤晒UVB造D3”“肝肾两次活化”“促钙磷吸收”“缺了分年龄：佝偻/软化/疏松”“1µg=40IU、成人10老人15”，把这条逻辑串起来。';
+  fb.innerHTML=msg;
+}
+
+Player.init();
+Player.setSpeed(1);
+
+</script>
+</body>
+</html>

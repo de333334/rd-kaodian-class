@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>碳水化合物精讲 · 晓晓老师的营养课堂（注册营养师考点）</title>
+<style>
+  :root{
+    --paper:#fbf7ee; --ink:#2f2a25; --board:#1f4d3a; --board2:#2c6b51; --chalk:#f3f7f2;
+    --accent:#e8743b; --accent2:#3a8dde; --warn:#d8443c; --ok:#2e9e6b; --gold:#e0a83a;
+    --card:#ffffff; --line:#e7ddc9; --soft:#f4ede0;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+    background:radial-gradient(1200px 500px at 80% -10%, #fff6e6 0%, transparent 60%),var(--paper);
+    color:var(--ink);line-height:1.85;font-size:17px;padding-bottom:84px;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 18px 40px;}
+  header.hero{background:linear-gradient(135deg,var(--board),var(--board2));color:var(--chalk);
+    border-radius:0 0 26px 26px;padding:30px 22px 26px;box-shadow:0 10px 30px rgba(31,77,58,.25);position:relative;overflow:hidden;}
+  header.hero::after{content:"🍚";position:absolute;right:-10px;top:-10px;font-size:120px;opacity:.10;transform:rotate(12deg);}
+  .hero .tag{display:inline-block;background:rgba(255,255,255,.15);padding:3px 12px;border-radius:20px;font-size:13px;letter-spacing:1px;}
+  .hero h1{margin:12px 0 6px;font-size:30px;letter-spacing:1px;}
+  .hero .meta{font-size:14px;opacity:.92;margin-top:6px;}
+  .hero .meta b{color:#ffe2b0;}
+  nav.toc{position:sticky;top:0;z-index:30;background:rgba(251,247,238,.92);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);padding:8px 0;margin:0 0 8px;}
+  nav.toc .inner{max-width:880px;margin:0 auto;padding:0 14px;display:flex;gap:8px;flex-wrap:wrap;}
+  nav.toc a{font-size:13.5px;text-decoration:none;color:var(--board);background:var(--soft);border:1px solid var(--line);
+    padding:4px 11px;border-radius:20px;transition:.2s;}
+  nav.toc a:hover{background:var(--board);color:#fff;}
+  section{margin:26px 0;}
+  .sec-head{display:flex;align-items:center;gap:10px;margin:6px 0 14px;}
+  .sec-head .no{background:var(--accent);color:#fff;font-weight:700;width:34px;height:34px;display:grid;place-items:center;
+    border-radius:10px;flex:none;font-size:17px;box-shadow:0 4px 10px rgba(232,116,59,.35);}
+  .sec-head h2{font-size:22px;margin:0;}
+  .sec-head .sub{font-size:13px;color:#8a7f6e;margin-left:auto;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:14px 0;box-shadow:0 6px 18px rgba(120,90,40,.06);}
+  .card h3{margin:0 0 8px;font-size:18px;color:var(--board);}
+  .card p{margin:8px 0;}
+  .mnemonic{background:linear-gradient(135deg,#fff4dd,#ffe9c4);border:1px dashed var(--gold);border-radius:14px;padding:14px 18px;margin:14px 0;position:relative;}
+  .mnemonic .label{font-size:12px;color:#a9791f;font-weight:700;letter-spacing:2px;}
+  .mnemonic .big{font-size:21px;font-weight:800;color:#9a5b00;margin:4px 0 2px;letter-spacing:1px;}
+  .mnemonic .note{font-size:14px;color:#6b5a3a;}
+  .trap{border-left:5px solid var(--warn);background:#fdf0ee;border-radius:0 12px 12px 0;padding:12px 16px;margin:12px 0;}
+  .trap .t{font-weight:800;color:var(--warn);font-size:15px;margin-bottom:4px;}
+  .trap .t::before{content:"⚠️ ";}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(120,90,40,.07);}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;}
+  th{background:var(--soft);color:var(--board);font-weight:700;}
+  .steps{counter-reset:s;margin:10px 0;}
+  .step{display:flex;gap:12px;align-items:flex-start;margin:10px 0;}
+  .step::before{counter-increment:s;content:counter(s);flex:none;width:28px;height:28px;background:var(--accent2);color:#fff;border-radius:50%;display:grid;place-items:center;font-weight:700;}
+  .step .b{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;flex:1;}
+  .chat{border:1px solid var(--line);border-radius:16px;background:#fff;padding:8px 14px;margin:14px 0;}
+  .msg{display:flex;gap:10px;margin:12px 0;align-items:flex-start;}
+  .msg .av{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:20px;color:#fff;}
+  .av.tea{background:linear-gradient(135deg,var(--board),var(--board2));}
+  .av.stu{background:linear-gradient(135deg,#f0a93b,#e8743b);}
+  .bubble{background:var(--soft);border-radius:14px;padding:9px 14px;max-width:88%;}
+  .msg.stu .bubble{background:#eef5fb;}
+  .who{font-size:12px;color:#9b8f7c;margin-bottom:2px;}
+  .ask{border:2px solid var(--accent2);border-radius:16px;background:#f3f9ff;padding:14px 16px;margin:16px 0;}
+  .ask .q{font-weight:700;color:#1f5fa8;}
+  .ask .q::before{content:"🙋 晓晓老师：";}
+  textarea{width:100%;min-height:64px;margin-top:10px;border:1px solid var(--line);border-radius:10px;padding:10px;font-family:inherit;font-size:15px;resize:vertical;background:#fff;}
+  .btn{display:inline-flex;align-items:center;gap:6px;cursor:pointer;border:none;border-radius:24px;padding:9px 18px;font-size:15px;font-weight:700;color:#fff;background:var(--accent);box-shadow:0 5px 14px rgba(232,116,59,.3);transition:.15s;margin-top:10px;}
+  .btn:hover{transform:translateY(-1px);}
+  .btn.blue{background:var(--accent2);box-shadow:0 5px 14px rgba(58,141,222,.3);}
+  .btn.ghost{background:#fff;color:var(--board);border:1px solid var(--board);box-shadow:none;}
+  .feedback{margin-top:10px;font-size:15px;display:none;}
+  .feedback.show{display:block;}
+  .feedback .ok{color:var(--ok);font-weight:700;}
+  .feedback .tip{color:var(--accent);}
+  .model{background:#fff;border:1px dashed var(--board2);border-radius:12px;padding:10px 14px;margin-top:10px;font-size:15px;color:#3a5a4c;}
+  .model b{color:var(--board);}
+  .quiz{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px 18px;margin:14px 0;}
+  .quiz .stem{font-weight:600;margin-bottom:10px;}
+  .opt{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:9px 13px;margin:7px 0;cursor:pointer;font-size:15px;transition:.15s;font-family:inherit;color:var(--ink);}
+  .opt:hover{background:#ecf3ff;}
+  .opt.correct{background:#e7f7ee;border-color:var(--ok);color:#1c6b45;font-weight:700;}
+  .opt.wrong{background:#fdeceb;border-color:var(--warn);}
+  .quiz .ans{display:none;margin-top:8px;font-size:14px;color:#4a4034;background:var(--soft);border-radius:10px;padding:9px 12px;}
+  .quiz .ans.show{display:block;}
+  .feynman{background:linear-gradient(135deg,#eef7ff,#eafaf1);border:1px solid #cfe6d8;border-radius:16px;padding:16px 18px;margin:14px 0;}
+  .feynman h3{color:var(--board);margin-top:0;}
+  .rubric{font-size:14px;color:#4a554c;margin:8px 0;}
+  .rubric li{margin:4px 0;}
+  #subbar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(20,28,24,.92);color:#eafff4;
+    padding:10px 16px;font-size:15.5px;line-height:1.5;display:flex;align-items:center;gap:12px;
+    box-shadow:0 -6px 18px rgba(0,0,0,.25);backdrop-filter:blur(4px);transform:translateY(0);transition:transform .25s;}
+  #subbar.hide{transform:translateY(110%);}
+  #subbar .spk{flex:none;font-size:20px;}
+  #subbar .txt{flex:1;}
+  #subbar .mini{flex:none;background:rgba(255,255,255,.16);border:none;color:#eafff4;border-radius:16px;padding:4px 12px;cursor:pointer;font-size:13px;}
+  .audiobar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:6px 0 0;}
+  .voicehint{font-size:13px;color:#9b8f7c;}
+  .badge{display:inline-block;background:var(--board);color:#fff;border-radius:20px;padding:2px 10px;font-size:12px;margin-left:6px;}
+  footer{text-align:center;color:#a89c87;font-size:13px;margin-top:30px;}
+  .divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:30px 0;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="tag">🎓 一节高中生物课的量 · 注册营养师考点</span>
+  <h1>碳水化合物（Carbohydrates）精讲</h1>
+  <div class="meta">
+    主讲：<b>晓晓老师</b>（XiaoxiaoNeural 神经网络语音）　|　课时：约 45 分钟（1 课时）　|　来源：<b>注册营养师考试宝典 · 营养学基础·碳水化合物考点</b>
+  </div>
+  <div class="meta">配套：口诀 + 易错点 + 解题三步法 + 不定时提问 + 改编练习题 + 费曼复述　<span class="badge">点 ▶ 听晓晓老师讲</span></div>
+</header>
+
+<nav class="toc"><div class="inner">
+    <a href="#s1">① 导入</a>
+    <a href="#s2">② 分类</a>
+    <a href="#s3">③ GI/GL</a>
+    <a href="#s4">④ 功能·代谢</a>
+    <a href="#s5">⑤ 消化·摄入</a>
+    <a href="#s6">⑥ 易错点</a>
+    <a href="#s7">⑦ 三步法</a>
+    <a href="#s8">⑧ 提问互动</a>
+    <a href="#s9">⑨ 改编题</a>
+    <a href="#s10">⑩ 费曼复述</a>
+</div></nav>
+
+<div class="wrap">
+  <section id="s1">
+    <div class="sec-head"><div class="no">1</div><h2>课前导入：你今天吃“糖”了吗？</h2><div class="sub">hook · 3分钟</div></div>
+    <div class="card">
+      <p class="narrate">同学们好，我是晓晓老师。先问大家一个特别生活化的问题——你今天吃的米饭、馒头、西瓜，还有牛奶，它们有什么共同点？</p>
+      <p class="narrate">答案就是：它们都富含一种叫“碳水化合物”的营养素，说白了，就是“糖”的一大家子。</p>
+      <p class="narrate">在高中生物里我们学过，糖类是生物体主要的能源物质。对注册营养师考试来说，碳水化合物是三大产能营养素里最便宜、最主力的能量来源。</p>
+      <p class="narrate">今天这一节课，我们就用高中生物课的方式，把“注册营养师考试”里关于碳水化合物的核心考点，深入浅出地讲透。</p>
+      <p class="narrate">记住一条主线：分类看清“谁是谁” → 升糖快慢看 GI 和 GL → 功能搞清楚“干嘛用” → 吃多少看参考摄入量。沿着这条线，考试题就跑不掉了。</p>
+      <div class="audiobar">
+        <button class="btn blue" onclick="Narrator.playSection('s1')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s2">
+    <div class="sec-head"><div class="no">2</div><h2>核心精讲一：碳水化合物的分类</h2><div class="sub">10分钟</div></div>
+    <div class="card">
+      <p class="narrate">先解决第一个问题：碳水化合物到底分哪几类？按聚合度，从少到多，分成四大类：单糖、双糖、寡糖，还有多糖。</p>
+      <p class="narrate">单糖是最简单的糖，不能再被水解，是糖的“最小积木”。最常见的三种是：葡萄糖、半乳糖，还有果糖。</p>
+      <p class="narrate">双糖由两个单糖脱水缩合而成。考试最爱考三种双糖的“组成”和“有没有还原性”。</p>
+      <p class="narrate">第一，蔗糖，等于葡萄糖加果糖，它没有还原性；第二，乳糖，等于葡萄糖加半乳糖，它有还原性；第三，麦芽糖，等于葡萄糖加葡萄糖，它也有还原性。</p>
+      <p class="narrate">来，记个口诀：“蔗无乳有麦也有”——蔗糖无还原性，乳糖和麦芽糖有还原性。再看组成：蔗是葡加果，乳是葡加半，麦是葡加葡。</p>
+      <p class="narrate">寡糖又叫低聚糖，由 3 到 9 个单糖组成，比如棉籽糖、水苏糖、低聚果糖，它的甜度大概只有蔗糖的百分之三十到六十。</p>
+      <p class="narrate">多糖是由很多单糖组成的大分子，主要有淀粉——分直链和支链两种；还有糖原，也就是动物的“糖储备”；以及膳食纤维。</p>
+      <p class="narrate">最后送你一个糖度排序的小彩蛋：果糖最甜，然后依次是蔗糖、葡萄糖、麦芽糖、半乳糖，记住“果蔗葡麦半”。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 必背口诀（双糖组成 & 还原性）</div>
+    <div class="big">蔗无 · 乳有 · 麦也有</div>
+    <div class="note">
+      蔗→葡萄糖+果糖（<b>无</b>还原性）　乳→葡萄糖+半乳糖（<b>有</b>还原性）　麦→葡萄糖+葡萄糖（<b>有</b>还原性）<br/>
+      组成顺口溜：<b>蔗是葡加果，乳是葡加半，麦是葡加葡</b>。
+    </div>
+  </div>
+  <table>
+    <thead><tr><th>分类</th><th>组成 / 举例</th><th>记忆点</th></tr></thead>
+    <tbody>
+      <tr><td>单糖</td><td>葡萄糖、半乳糖、果糖（不能再水解）</td><td>糖的“最小积木”</td></tr>
+      <tr><td>双糖</td><td>蔗糖=葡+果(无还原)；乳糖=葡+半(有还原)；麦芽糖=葡+葡(有还原)</td><td>蔗无，乳麦有</td></tr>
+      <tr><td>寡糖(低聚糖)</td><td>3–9 个单糖：棉籽糖、水苏糖、低聚果糖</td><td>甜度=蔗糖 30%–60%</td></tr>
+      <tr><td>多糖</td><td>淀粉(直链/支链)、糖原、膳食纤维</td><td>大分子储能/结构</td></tr>
+    </tbody>
+  </table>
+  <div class="mnemonic">
+    <div class="label">🔑 糖度排序（从甜到不甜）</div>
+    <div class="big">果 &gt; 蔗 &gt; 葡 &gt; 麦 &gt; 半</div>
+    <div class="note">果糖最甜，半乳糖最不甜。记四个字：<b>果蔗葡麦半</b>。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="Narrator.playSection('s2')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s3">
+    <div class="sec-head"><div class="no">3</div><h2>核心精讲二：GI 与 GL（升糖指数 / 负荷）</h2><div class="sub">9分钟</div></div>
+    <div class="card">
+      <p class="narrate">接下来是考试性价比最高的一节：血糖生成指数 GI，和血糖生成负荷 GL。</p>
+      <p class="narrate">GI 的意思是：吃了这种食物后两小时内，血糖曲线下的面积，除以吃等量的葡萄糖后血糖曲线下的面积，再乘百分之百。</p>
+      <p class="narrate">简单说，GI 衡量的是“这种食物让血糖升得快不快”。GI 大于 70 的是高升糖食物；55 到 70 是中升糖；小于 55 是低升糖。</p>
+      <p class="narrate">记口诀：“GI 高七低五五”——超过 70 算高，55 到 70 算中，低于 55 算低。</p>
+      <p class="narrate">但是 GI 只看了“质”，没看“量”。于是有了 GL，血糖生成负荷。GL 等于：你吃进去的碳水化合物重量，乘以这种食物的 GI，再除以 100。</p>
+      <p class="narrate">GL 大于 20 是高负荷，10 到 20 是中负荷，小于 10 是低负荷。口诀：“GL 二十封顶，十算中”。</p>
+      <p class="narrate">举个真题里的例子：西瓜 GI 是 72，看着挺高，但你吃 200 克，可食部碳水才 7 克每 100 克，算下来 GL 等于 200 乘 0.07 乘 72 除以 100，约等于 10，属于低负荷——所以西瓜能适量吃！</p>
+  <div class="mnemonic">
+    <div class="label">🔑 GI 速记</div>
+    <div class="big">高七 · 中五五 · 低五五以下</div>
+    <div class="note">GI&gt;70 高生糖；55–70 中生糖；&lt;55 低生糖。联想：“我在舞动(55)时吃了支冰淇淋(70)”。</div>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 GL 公式 & 分级</div>
+    <div class="big">GL = 碳水重量(g) × GI ÷ 100</div>
+    <div class="note">&gt;20 高负荷；10–20 中负荷；&lt;10 低负荷。联想：“中了十环(10)到二十环(20)”。</div>
+  </div>
+  <div class="trap"><div class="t">GI 高 ≠ 不能吃</div>GI 看“升糖速度(质)”，GL 看“实际摄入负荷(量×质)”。西瓜 GI 高但含水多、碳水少，GL 反而低，能适量吃。题干把“高 GI=禁忌”直接判错。</div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="Narrator.playSection('s3')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s4">
+    <div class="sec-head"><div class="no">4</div><h2>核心精讲三：功能与糖代谢（肝糖原 vs 肌糖原）</h2><div class="sub">10分钟</div></div>
+    <div class="card">
+      <p class="narrate">第三节，碳水化合物的功能，以及一点糖代谢的小知识。功能一共有五条，我帮你浓缩成一句话：供能、构形、省蛋白、抗生酮、还能解毒。</p>
+      <p class="narrate">第一，提供和储存能量，这是它最主要的功能，1 克碳水等于 4 千卡。第二，构成组织结构和生物活性物质，比如糖蛋白、糖脂，还有 DNA 和 RNA 里的核糖。</p>
+      <p class="narrate">第三，节约蛋白质作用——当碳水够吃，身体就不拿宝贵的蛋白质去烧来供能，把蛋白质省下来搞建设。第四，抗生酮作用——碳水不足时脂肪会乱代谢产生酮体，充足碳水能抑制它。</p>
+      <p class="narrate">第五，解毒作用，肝脏里葡萄糖醛酸能帮身体结合排出一些有毒物质。</p>
+      <p class="narrate">再说糖原：肝脏里的肝糖原，因为有葡萄糖-6-磷酸酶，分解后能把葡萄糖送进血液、维持血糖；但肌肉里的肌糖原没有这个酶，分解后只能自己肌肉用，不能直接维持血糖。</p>
+      <p class="narrate">考试还常顺带考糖代谢：糖原合成的活性形式是 UDPG，也就是尿苷二磷酸葡萄糖；糖异生的原料有乳酸、甘油、丙酮酸，还有生糖氨基酸——注意生酮氨基酸亮氨酸和赖氨酸要排除在外。</p>
+      <p class="narrate">还有磷酸戊糖途径，关键酶是葡萄糖-6-磷酸脱氢酶，产物 NADPH 用来合成胆固醇和脂肪酸；这条途径生成的核糖，是 DNA 和 RNA 的组成成分。</p>
+  <div class="mnemonic">
+    <div class="label">🔑 五大功能一句话</div>
+    <div class="big">供能 · 构形 · 省蛋白 · 抗生酮 · 解毒</div>
+    <div class="note">1g 碳水 = <b>4 kcal</b>（和蛋白一样，脂肪才是 9 kcal）。</div>
+  </div>
+  <div class="mnemonic">
+    <div class="label">🔑 肝糖原 vs 肌糖原</div>
+    <div class="big">肝糖升血糖 · 肌糖只自己用</div>
+    <div class="note">关键酶：<b>葡萄糖-6-磷酸酶</b>。肝有→葡萄糖能入血维持血糖；肌无→仅供肌肉自身。</div>
+  </div>
+  <div class="trap"><div class="t">糖原代谢小坑</div>糖异生原料排除<b>生酮氨基酸亮氨酸、赖氨酸</b>；糖原合成活性形式是 <b>UDPG</b>；磷酸戊糖途径关键酶 <b>G6PD</b>，生成 <b>NADPH</b> 和核糖。</div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="Narrator.playSection('s4')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s5">
+    <div class="sec-head"><div class="no">5</div><h2>核心精讲四：消化吸收 · 参考摄入量 · 膳食纤维</h2><div class="sub">8分钟</div></div>
+    <div class="card">
+      <p class="narrate">第四节讲怎么吃、吃多少。先看消化吸收：口腔里的唾液含有 α-淀粉酶，能先分解一点碳水；但胃液里没有任何能水解碳水的酶；真正的消化主战场在小肠，靠来自胰液的胰淀粉酶。</p>
+      <p class="narrate">葡萄糖吸收主要是主动吸收。这句话对应一道真题：选项说“胃液含碳水消化酶”就是错的。</p>
+      <p class="narrate">参考摄入量记住几个数：碳水化合物适宜供能比是总能量的 50% 到 65%，差不多六成左右；添加糖每天不超过 50 克，最好限制在 25 克以下。</p>
+      <p class="narrate">添加糖提供的能量，每天不超过总能量的 10%，最好不超过 5%。全谷物食品要求全谷物成分不低于 51%。</p>
+      <p class="narrate">膳食纤维是植物里不能消化的多糖加木质素，它的好处可多了：调节血糖、降低血脂、控制体重、防止便秘，还能降低慢性病风险。</p>
+      <p class="narrate">抗性淀粉是没被小肠消化、但能在大肠被发酵的淀粉。另外还有低碳水化合物膳食，简称 LCD，一般指碳水供能比低于 40% 的膳食。</p>
+  <table>
+    <thead><tr><th>要点</th><th>关键数字 / 结论</th></tr></thead>
+    <tbody>
+      <tr><td>消化场所</td><td>口腔(唾液α-淀粉酶)起步 → <b>小肠(胰淀粉酶)为主</b>；<b>胃液无碳水消化酶</b></td></tr>
+      <tr><td>吸收方式</td><td>葡萄糖主要为<b>主动吸收</b></td></tr>
+      <tr><td>适宜供能比</td><td>总能量 <b>50%–65%</b>（约六成）</td></tr>
+      <tr><td>添加糖限量</td><td>≤ <b>50 g/d</b>（上限）；<b>最好 &lt; 25 g/d</b>；供能 &lt;10%，最好 &lt;5%</td></tr>
+      <tr><td>全谷物</td><td>全谷物成分 ≥ <b>51%</b></td></tr>
+      <tr><td>膳食纤维功能</td><td>调节血糖、降脂、控体重、防便秘、降慢性病风险</td></tr>
+      <tr><td>LCD</td><td>低碳水化合物膳食，碳水供能比 &lt; 40%</td></tr>
+    </tbody>
+  </table>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="Narrator.playSection('s5')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s6">
+    <div class="sec-head"><div class="no">6</div><h2>红绿灯：高频易错点</h2><div class="sub">5分钟</div></div>
+    <div class="card">
+      <p class="narrate">好，现在进入红绿灯时间，我把最高频的易错点集中点一遍。</p>
+      <p class="narrate">易错一：双糖的还原性。蔗糖没有还原性，乳糖和麦芽糖有。考试常把“蔗糖有还原性”当正确选项挖你。</p>
+      <p class="narrate">易错二：胃液里没有碳水消化酶，消化主要在小肠。看见“胃液含淀粉酶”直接判错。</p>
+      <p class="narrate">易错三：肌糖原不能维持血糖，因为它缺葡萄糖-6-磷酸酶；能维持血糖的是肝糖原。</p>
+      <p class="narrate">易错四：GI 和 GL 别混。GI 看升糖“速度”，GL 看实际“量乘速度”。西瓜 GI 高但 GL 低，因为碳水含量少。</p>
+      <p class="narrate">易错五：添加糖最好限制在每天 25 克以下，50 克是上限不是推荐值。</p>
+      <p class="narrate">易错六：寡糖是 3 到 9 个单糖，不是 2 个；它的甜度是蔗糖的 30% 到 60%。</p>
+      <p class="narrate">易错七：糖异生排除生酮氨基酸亮氨酸和赖氨酸。</p>
+  <div class="trap"><div class="t">易错 1：双糖还原性</div>蔗糖<b>无</b>还原性；乳糖、麦芽糖<b>有</b>还原性。题目把“蔗糖有还原性”当正确→直接排除。</div>
+  <div class="trap"><div class="t">易错 2：胃液无碳水消化酶</div>碳水消化主战场在<b>小肠(胰淀粉酶)</b>；口腔唾液仅起步。“胃液含淀粉酶”必错（真题 2024RD）。</div>
+  <div class="trap"><div class="t">易错 3：肌糖原不升血糖</div>肌糖原缺<b>葡萄糖-6-磷酸酶</b>，分解产物仅供肌肉自身；能维持血糖的是<b>肝糖原</b>。</div>
+  <div class="trap"><div class="t">易错 4：GI ≠ GL</div>GI 看升糖“速度(质)”；GL=碳水重量×GI÷100 看“实际负荷(量×质)”。西瓜 GI 高(72)但 GL 低(≈10)。</div>
+  <div class="trap"><div class="t">易错 5：添加糖限量</div>最好 <b>&lt;25 g/d</b>；≤50 g/d 是<b>上限</b>不是推荐值。供能 &lt;10%，最好 &lt;5%。</div>
+  <div class="trap"><div class="t">易错 6：寡糖定义</div>寡糖= <b>3–9</b> 个单糖（不是 2 个！双糖才是 2 个）；甜度为蔗糖 30%–60%。</div>
+  <div class="trap"><div class="t">易错 7：糖异生原料</div>乳酸、甘油、丙酮酸、生糖氨基酸；排除<b>生酮氨基酸亮氨酸、赖氨酸</b>。</div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="Narrator.playSection('s6')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s7">
+    <div class="sec-head"><div class="no">7</div><h2>解题三步法（注册营养师全是选择题）</h2><div class="sub">4分钟</div></div>
+    <div class="card">
+      <p class="narrate">注册营养师全是选择题，送你一套通用三步法。</p>
+      <p class="narrate">第一步，审题定性：先看问的是分类、GI 和 GL、功能，还是参考摄入量，先给题目定性，别急着看选项。</p>
+      <p class="narrate">第二步，定位考点：双糖就背组成和还原性；GI 和 GL 就套公式算；糖原就区分肝和肌；添加糖就记 25 克最好、50 克封顶。</p>
+      <p class="narrate">第三步，排除反着坑：直接排除“蔗糖有还原”“胃液有酶”“肌糖原升血糖”“GL 只看质”这些反向表述，剩下的就是答案。</p>
+  <div class="steps">
+    <div class="step"><div class="b"><b>第一步 · 审题定性：</b>先看问哪一类——分类？GI/GL？功能？参考摄入量？先给题目定性，不急着看选项。</div></div>
+    <div class="step"><div class="b"><b>第二步 · 定位考点：</b>双糖→组成+还原性(蔗无/乳麦有)；GI/GL→套公式算；糖原→肝升血糖、肌不升；添加糖→25g 最好、50g 封顶。</div></div>
+    <div class="step"><div class="b"><b>第三步 · 排除反坑：</b>直接排除“蔗糖有还原”“胃液有酶”“肌糖原升血糖”“GL 只看质”这类反向表述，剩下的就是答案。</div></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="Narrator.playSection('s7')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s8">
+    <div class="sec-head"><div class="no">8</div><h2>晓晓老师不定时提问 · 模拟课堂</h2><div class="sub">互动</div></div>
+    <div class="card">
+      <p class="narrate">讲完重点，我们来模拟上课提问。我先和班里的同学演练，然后轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。</p>
+      <p class="narrate">第一个问题：用你自己的话，解释 GI 和 GL 到底有什么区别？为什么西瓜 GI 高，却还能适量吃？</p>
+      <p class="narrate">第二个问题：为什么运动后吃馒头或香蕉能很快升血糖，但光靠肌肉里自己的糖原却不行？</p>
+  <div class="chat">
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">小明，西瓜那么甜，GI 又高，糖尿病人是不是一口都不能碰？</div></div></div>
+    <div class="msg stu"><div class="av stu">🧒</div><div><div class="who">学生·小明</div><div class="bubble">嗯……西瓜甜，应该是糖多，那不就得少吃？</div></div></div>
+    <div class="msg tea"><div class="av tea">🧑‍🏫</div><div><div class="who">晓晓老师</div><div class="bubble">方向对，但漏了关键：西瓜水分大、碳水少。GI 只说它“升糖快”，可 GL 把“吃进去的碳水重量”也算上了，算下来西瓜 GL 才约 10，是低负荷。所以<b>适量吃</b>没问题，别被高 GI 吓住。</div></div></div>
+  </div>
+
+  <div class="ask" data-keywords="GI|GL|升糖|速度|量|西瓜|碳水|负荷|质" data-model="GI 看食物让血糖升得“快不快”(质)；GL=吃进去的碳水重量×GI÷100，看的是“实际负荷”(量×质)。西瓜 GI 高(72)但水分大、碳水少，算下来 GL 只有约 10，属于低负荷，所以能适量吃。">
+    <div class="q">提问一：用你自己的话，解释 GI 和 GL 到底有什么区别？为什么西瓜 GI 高，却还能适量吃？（打字回答，晓晓老师会点评）</div>
+    <textarea placeholder="在这里用大白话说说看，例如：因为……"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+  <div class="ask" data-keywords="肌糖原|葡萄糖-6-磷酸酶|肝糖原|血糖|维持|入血" data-model="肝糖原有葡萄糖-6-磷酸酶，分解后葡萄糖能入血维持血糖；肌糖原缺乏这个酶，分解产物只能供肌肉自身用，不能直接维持血糖。所以运动后吃馒头/香蕉(消化成葡萄糖入血)能快速升血糖，光靠肌糖原不行。">
+    <div class="q">提问二：为什么运动后吃馒头或香蕉能很快升血糖，但光靠肌肉里自己的糖原却不行？</div>
+    <textarea placeholder="先想清楚再写：肝糖原和肌糖原差在哪个酶？"></textarea>
+    <button class="btn" onclick="checkAsk(this)">提交，请晓晓老师点评</button>
+    <div class="feedback"></div>
+    <div class="model"></div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="Narrator.playSection('s8')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s9">
+    <div class="sec-head"><div class="no">9</div><h2>改编练习题（单选，仿注册营养师真题）</h2><div class="sub">自测</div></div>
+    <div class="card">
+      <p class="narrate">下面 8 道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，牛奶中最主要的碳水化合物是？第二题，关于碳水消化，说法错误的是？第三题，下列属于低聚糖的是？第四题，西瓜的 GL 约为多少？第五题，关于肌糖原正确的是？第六题，添加糖最好限制在什么水平？第七题，下列属于高 GI 食物的是？第八题，关于碳水功能错误的是？</p>
+  <div class="quiz" data-ans="B">
+    <div class="stem">1.【改编 2024RD】牛奶中最主要的碳水化合物分子是：</div>
+    <button class="opt" onclick="choose(this)">A. 葡萄糖</button>
+    <button class="opt" onclick="choose(this)">B. 乳糖（葡萄糖+半乳糖，有还原性）</button>
+    <button class="opt" onclick="choose(this)">C. 蔗糖</button>
+    <button class="opt" onclick="choose(this)">D. 麦芽糖</button>
+    <div class="ans">✅ 答案：B。乳糖由葡萄糖+β-半乳糖以 β-1,4 糖苷键结合，有还原性，主要存在于乳品中。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">2.【改编 2024RD】下列关于碳水化合物消化的说法，错误的是：</div>
+    <button class="opt" onclick="choose(this)">A. 口腔唾液含 α-淀粉酶，可部分分解碳水</button>
+    <button class="opt" onclick="choose(this)">B. 胃液中含有水解碳水化合物的酶</button>
+    <button class="opt" onclick="choose(this)">C. 小肠是消化的主要场所，靠胰淀粉酶</button>
+    <button class="opt" onclick="choose(this)">D. 葡萄糖吸收以主动吸收为主</button>
+    <div class="ans">✅ 答案：B。<b>胃液不含任何碳水消化酶</b>；消化主要在小肠，靠胰淀粉酶。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">3.【改编 2023RD】下列物质中，属于低聚糖（寡糖）的是：</div>
+    <button class="opt" onclick="choose(this)">A. 蔗糖</button>
+    <button class="opt" onclick="choose(this)">B. 棉籽糖</button>
+    <button class="opt" onclick="choose(this)">C. 葡萄糖</button>
+    <button class="opt" onclick="choose(this)">D. 淀粉</button>
+    <div class="ans">✅ 答案：B。寡糖由 3–9 个单糖组成，棉籽糖、水苏糖、低聚果糖都是；蔗糖是双糖，葡萄糖是单糖，淀粉是多糖。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">4.【改编 2018RD】西瓜 GI=72，食 200g（可食部碳水 7g/100g），其 GL 约为：</div>
+    <button class="opt" onclick="choose(this)">A. 5</button>
+    <button class="opt" onclick="choose(this)">B. 10</button>
+    <button class="opt" onclick="choose(this)">C. 14.4</button>
+    <button class="opt" onclick="choose(this)">D. 144</button>
+    <div class="ans">✅ 答案：B。GL=200×0.07×72÷100≈10，属低负荷。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">5.【改编】关于肌糖原，正确的是：</div>
+    <button class="opt" onclick="choose(this)">A. 可分解为葡萄糖直接维持血糖</button>
+    <button class="opt" onclick="choose(this)">B. 缺乏葡萄糖-6-磷酸酶，不能维持血糖</button>
+    <button class="opt" onclick="choose(this)">C. 主要储存在肝脏</button>
+    <button class="opt" onclick="choose(this)">D. 分解后大量入血升糖</button>
+    <div class="ans">✅ 答案：B。肌糖原缺葡萄糖-6-磷酸酶，仅供肌肉自身；能维持血糖的是肝糖原。</div>
+  </div>
+  <div class="quiz" data-ans="B">
+    <div class="stem">6. 成年人添加糖的推荐摄入量，最好限制在：</div>
+    <button class="opt" onclick="choose(this)">A. ≤ 50 g/d</button>
+    <button class="opt" onclick="choose(this)">B. &lt; 25 g/d</button>
+    <button class="opt" onclick="choose(this)">C. 占总能量 10%</button>
+    <button class="opt" onclick="choose(this)">D. 不设限</button>
+    <div class="ans">✅ 答案：B。添加糖最好 &lt;25 g/d；≤50 g/d 是上限；供能 &lt;10%，最好 &lt;5%。</div>
+  </div>
+  <div class="quiz" data-ans="A">
+    <div class="stem">7. 下列 GI 值中，属于高生糖指数食物的是：</div>
+    <button class="opt" onclick="choose(this)">A. GI = 82</button>
+    <button class="opt" onclick="choose(this)">B. GI = 62</button>
+    <button class="opt" onclick="choose(this)">C. GI = 50</button>
+    <button class="opt" onclick="choose(this)">D. GI = 40</button>
+    <div class="ans">✅ 答案：A。GI&gt;70 为高生糖；55–70 中；&lt;55 低。</div>
+  </div>
+  <div class="quiz" data-ans="D">
+    <div class="stem">8. 关于碳水化合物的功能，错误的是：</div>
+    <button class="opt" onclick="choose(this)">A. 1 g 供能约 4 kcal</button>
+    <button class="opt" onclick="choose(this)">B. 具有节约蛋白质作用</button>
+    <button class="opt" onclick="choose(this)">C. 具有抗生酮作用</button>
+    <button class="opt" onclick="choose(this)">D. 肌糖原分解可直接维持血糖</button>
+    <div class="ans">✅ 答案：D。肌糖原缺葡萄糖-6-磷酸酶，不能直接维持血糖；A/B/C 均为碳水正确功能。</div>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="Narrator.playSection('s9')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section id="s10">
+    <div class="sec-head"><div class="no">10</div><h2>费曼记忆小测：用自己的话讲一遍</h2><div class="sub">收尾</div></div>
+    <div class="card">
+      <p class="narrate">最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。</p>
+      <p class="narrate">问题：为什么营养师总劝你少吃添加糖、主食要粗细搭配、西瓜能吃但要控量？把 GI、GL、肌糖原、添加糖限量、膳食纤维这条逻辑串起来。</p>
+      <p class="narrate">课堂小结口诀复习：分类“蔗无乳有麦也有”；升糖“GI 高七低五五、GL 二十封顶十算中”；功能“供能构形省蛋白、抗生酮来还能解毒”；糖原“肝糖升血糖、肌糖只能自己用”；限量“添加糖最好二十五、供能五成到六成五”。</p>
+      <p class="narrate">这堂课就到这里，下节课我们讲脂类，记得复习哦！</p>
+  <div class="feynman">
+    <h3>🧠 费曼复述任务</h3>
+    <p>合上页面，试着给一个“完全不懂营养的朋友”讲清楚下面这个问题。能讲明白，说明你真懂了（费曼学习法：教是最好的学）。</p>
+    <p><b>问题：</b>“为什么营养师总劝你少吃添加糖、主食要粗细搭配、西瓜能吃但要控量？”</p>
+    <textarea id="feynmanBox" placeholder="在这里用大白话写一段 3-5 句话的解释……"></textarea>
+    <button class="btn" onclick="feynmanCheck()">自我对照 · 看评分清单</button>
+    <div class="feedback" id="feynmanFeedback"></div>
+    <ul class="rubric">
+      <li>✅ 提到 GI / GL（升糖速度 vs 实际负荷）</li>
+      <li>✅ 提到 肌糖原不能维持血糖（缺葡萄糖-6-磷酸酶），肝糖原可以</li>
+      <li>✅ 提到 添加糖最好 &lt;25 g/d</li>
+      <li>✅ 提到 膳食纤维好处 / 粗细搭配</li>
+    </ul>
+  </div>
+
+      <div class="audiobar">
+        <button class="btn blue" onclick="Narrator.playSection('s10')">▶ 听晓晓老师讲这段</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    本节内容依据「注册营养师考试宝典」公众号·营养学基础·碳水化合物考点（考点|7 上 / 8 中 / 9 下）整理改编，并对照《营养与食品卫生学》第9版　｜　晓晓老师语音由 Edge-TTS XiaoxiaoNeural 神经网络语音合成，字幕固定底部不遮挡讲解　｜　仅供学习备考使用
+  </footer>
+</div>
+
+<div id="subbar" class="hide">
+  <span class="spk">🧑‍🏫</span>
+  <span class="txt" id="subtxt">（点击任意“▶ 听晓晓老师讲”开始播放，晓晓老师逐句讲解，字幕显示在此处，不遮挡上方讲解）</span>
+  <button class="mini" onclick="toggleSub()">隐藏字幕</button>
+</div>
+
+<script>
+const SECTIONS_AUDIO = {"s1": ["audio/s1_0.mp3", "audio/s1_1.mp3", "audio/s1_2.mp3", "audio/s1_3.mp3", "audio/s1_4.mp3"], "s2": ["audio/s2_0.mp3", "audio/s2_1.mp3", "audio/s2_2.mp3", "audio/s2_3.mp3", "audio/s2_4.mp3", "audio/s2_5.mp3", "audio/s2_6.mp3", "audio/s2_7.mp3"], "s3": ["audio/s3_0.mp3", "audio/s3_1.mp3", "audio/s3_2.mp3", "audio/s3_3.mp3", "audio/s3_4.mp3", "audio/s3_5.mp3", "audio/s3_6.mp3"], "s4": ["audio/s4_0.mp3", "audio/s4_1.mp3", "audio/s4_2.mp3", "audio/s4_3.mp3", "audio/s4_4.mp3", "audio/s4_5.mp3", "audio/s4_6.mp3"], "s5": ["audio/s5_0.mp3", "audio/s5_1.mp3", "audio/s5_2.mp3", "audio/s5_3.mp3", "audio/s5_4.mp3", "audio/s5_5.mp3"], "s6": ["audio/s6_0.mp3", "audio/s6_1.mp3", "audio/s6_2.mp3", "audio/s6_3.mp3", "audio/s6_4.mp3", "audio/s6_5.mp3", "audio/s6_6.mp3", "audio/s6_7.mp3"], "s7": ["audio/s7_0.mp3", "audio/s7_1.mp3", "audio/s7_2.mp3", "audio/s7_3.mp3"], "s8": ["audio/s8_0.mp3", "audio/s8_1.mp3", "audio/s8_2.mp3"], "s9": ["audio/s9_0.mp3"], "s10": ["audio/s10_0.mp3", "audio/s10_1.mp3", "audio/s10_2.mp3", "audio/s10_3.mp3"]};
+const SECTIONS_TEXT  = {"s1": ["同学们好，我是晓晓老师。先问大家一个特别生活化的问题——你今天吃的米饭、馒头、西瓜，还有牛奶，它们有什么共同点？", "答案就是：它们都富含一种叫“碳水化合物”的营养素，说白了，就是“糖”的一大家子。", "在高中生物里我们学过，糖类是生物体主要的能源物质。对注册营养师考试来说，碳水化合物是三大产能营养素里最便宜、最主力的能量来源。", "今天这一节课，我们就用高中生物课的方式，把“注册营养师考试”里关于碳水化合物的核心考点，深入浅出地讲透。", "记住一条主线：分类看清“谁是谁” → 升糖快慢看 GI 和 GL → 功能搞清楚“干嘛用” → 吃多少看参考摄入量。沿着这条线，考试题就跑不掉了。"], "s2": ["先解决第一个问题：碳水化合物到底分哪几类？按聚合度，从少到多，分成四大类：单糖、双糖、寡糖，还有多糖。", "单糖是最简单的糖，不能再被水解，是糖的“最小积木”。最常见的三种是：葡萄糖、半乳糖，还有果糖。", "双糖由两个单糖脱水缩合而成。考试最爱考三种双糖的“组成”和“有没有还原性”。", "第一，蔗糖，等于葡萄糖加果糖，它没有还原性；第二，乳糖，等于葡萄糖加半乳糖，它有还原性；第三，麦芽糖，等于葡萄糖加葡萄糖，它也有还原性。", "来，记个口诀：“蔗无乳有麦也有”——蔗糖无还原性，乳糖和麦芽糖有还原性。再看组成：蔗是葡加果，乳是葡加半，麦是葡加葡。", "寡糖又叫低聚糖，由 3 到 9 个单糖组成，比如棉籽糖、水苏糖、低聚果糖，它的甜度大概只有蔗糖的百分之三十到六十。", "多糖是由很多单糖组成的大分子，主要有淀粉——分直链和支链两种；还有糖原，也就是动物的“糖储备”；以及膳食纤维。", "最后送你一个糖度排序的小彩蛋：果糖最甜，然后依次是蔗糖、葡萄糖、麦芽糖、半乳糖，记住“果蔗葡麦半”。"], "s3": ["接下来是考试性价比最高的一节：血糖生成指数 GI，和血糖生成负荷 GL。", "GI 的意思是：吃了这种食物后两小时内，血糖曲线下的面积，除以吃等量的葡萄糖后血糖曲线下的面积，再乘百分之百。", "简单说，GI 衡量的是“这种食物让血糖升得快不快”。GI 大于 70 的是高升糖食物；55 到 70 是中升糖；小于 55 是低升糖。", "记口诀：“GI 高七低五五”——超过 70 算高，55 到 70 算中，低于 55 算低。", "但是 GI 只看了“质”，没看“量”。于是有了 GL，血糖生成负荷。GL 等于：你吃进去的碳水化合物重量，乘以这种食物的 GI，再除以 100。", "GL 大于 20 是高负荷，10 到 20 是中负荷，小于 10 是低负荷。口诀：“GL 二十封顶，十算中”。", "举个真题里的例子：西瓜 GI 是 72，看着挺高，但你吃 200 克，可食部碳水才 7 克每 100 克，算下来 GL 等于 200 乘 0.07 乘 72 除以 100，约等于 10，属于低负荷——所以西瓜能适量吃！"], "s4": ["第三节，碳水化合物的功能，以及一点糖代谢的小知识。功能一共有五条，我帮你浓缩成一句话：供能、构形、省蛋白、抗生酮、还能解毒。", "第一，提供和储存能量，这是它最主要的功能，1 克碳水等于 4 千卡。第二，构成组织结构和生物活性物质，比如糖蛋白、糖脂，还有 DNA 和 RNA 里的核糖。", "第三，节约蛋白质作用——当碳水够吃，身体就不拿宝贵的蛋白质去烧来供能，把蛋白质省下来搞建设。第四，抗生酮作用——碳水不足时脂肪会乱代谢产生酮体，充足碳水能抑制它。", "第五，解毒作用，肝脏里葡萄糖醛酸能帮身体结合排出一些有毒物质。", "再说糖原：肝脏里的肝糖原，因为有葡萄糖-6-磷酸酶，分解后能把葡萄糖送进血液、维持血糖；但肌肉里的肌糖原没有这个酶，分解后只能自己肌肉用，不能直接维持血糖。", "考试还常顺带考糖代谢：糖原合成的活性形式是 UDPG，也就是尿苷二磷酸葡萄糖；糖异生的原料有乳酸、甘油、丙酮酸，还有生糖氨基酸——注意生酮氨基酸亮氨酸和赖氨酸要排除在外。", "还有磷酸戊糖途径，关键酶是葡萄糖-6-磷酸脱氢酶，产物 NADPH 用来合成胆固醇和脂肪酸；这条途径生成的核糖，是 DNA 和 RNA 的组成成分。"], "s5": ["第四节讲怎么吃、吃多少。先看消化吸收：口腔里的唾液含有 α-淀粉酶，能先分解一点碳水；但胃液里没有任何能水解碳水的酶；真正的消化主战场在小肠，靠来自胰液的胰淀粉酶。", "葡萄糖吸收主要是主动吸收。这句话对应一道真题：选项说“胃液含碳水消化酶”就是错的。", "参考摄入量记住几个数：碳水化合物适宜供能比是总能量的 50% 到 65%，差不多六成左右；添加糖每天不超过 50 克，最好限制在 25 克以下。", "添加糖提供的能量，每天不超过总能量的 10%，最好不超过 5%。全谷物食品要求全谷物成分不低于 51%。", "膳食纤维是植物里不能消化的多糖加木质素，它的好处可多了：调节血糖、降低血脂、控制体重、防止便秘，还能降低慢性病风险。", "抗性淀粉是没被小肠消化、但能在大肠被发酵的淀粉。另外还有低碳水化合物膳食，简称 LCD，一般指碳水供能比低于 40% 的膳食。"], "s6": ["好，现在进入红绿灯时间，我把最高频的易错点集中点一遍。", "易错一：双糖的还原性。蔗糖没有还原性，乳糖和麦芽糖有。考试常把“蔗糖有还原性”当正确选项挖你。", "易错二：胃液里没有碳水消化酶，消化主要在小肠。看见“胃液含淀粉酶”直接判错。", "易错三：肌糖原不能维持血糖，因为它缺葡萄糖-6-磷酸酶；能维持血糖的是肝糖原。", "易错四：GI 和 GL 别混。GI 看升糖“速度”，GL 看实际“量乘速度”。西瓜 GI 高但 GL 低，因为碳水含量少。", "易错五：添加糖最好限制在每天 25 克以下，50 克是上限不是推荐值。", "易错六：寡糖是 3 到 9 个单糖，不是 2 个；它的甜度是蔗糖的 30% 到 60%。", "易错七：糖异生排除生酮氨基酸亮氨酸和赖氨酸。"], "s7": ["注册营养师全是选择题，送你一套通用三步法。", "第一步，审题定性：先看问的是分类、GI 和 GL、功能，还是参考摄入量，先给题目定性，别急着看选项。", "第二步，定位考点：双糖就背组成和还原性；GI 和 GL 就套公式算；糖原就区分肝和肌；添加糖就记 25 克最好、50 克封顶。", "第三步，排除反着坑：直接排除“蔗糖有还原”“胃液有酶”“肌糖原升血糖”“GL 只看质”这些反向表述，剩下的就是答案。"], "s8": ["讲完重点，我们来模拟上课提问。我先和班里的同学演练，然后轮到你来答，答完我给你反馈——这就是费曼学习法：能讲出来才是真懂。", "第一个问题：用你自己的话，解释 GI 和 GL 到底有什么区别？为什么西瓜 GI 高，却还能适量吃？", "第二个问题：为什么运动后吃馒头或香蕉能很快升血糖，但光靠肌肉里自己的糖原却不行？"], "s9": ["下面 8 道题改编自注册营养师历年真题，都是单选，做完对照解析，看看自己踩没踩坑。第一题，牛奶中最主要的碳水化合物是？第二题，关于碳水消化，说法错误的是？第三题，下列属于低聚糖的是？第四题，西瓜的 GL 约为多少？第五题，关于肌糖原正确的是？第六题，添加糖最好限制在什么水平？第七题，下列属于高 GI 食物的是？第八题，关于碳水功能错误的是？"], "s10": ["最后，费曼记忆小测。合上页面，试着给一个完全不懂营养的朋友，讲清楚下面这个问题。", "问题：为什么营养师总劝你少吃添加糖、主食要粗细搭配、西瓜能吃但要控量？把 GI、GL、肌糖原、添加糖限量、膳食纤维这条逻辑串起来。", "课堂小结口诀复习：分类“蔗无乳有麦也有”；升糖“GI 高七低五五、GL 二十封顶十算中”；功能“供能构形省蛋白、抗生酮来还能解毒”；糖原“肝糖升血糖、肌糖只能自己用”；限量“添加糖最好二十五、供能五成到六成五”。", "这堂课就到这里，下节课我们讲脂类，记得复习哦！"]};
+
+const SECTIONS_AUDIO = __AUDIO__;
+const SECTIONS_TEXT  = __TEXT__;
+const Narrator = {
+  playing:false, queue:[], idx:0, timers:[],
+  playSection(id){
+    const paths = SECTIONS_AUDIO[id]||[];
+    const texts = SECTIONS_TEXT[id]||[];
+    if(!paths.length){ this.webSpeech(texts); return; }
+    document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});
+    this.stop(); this.queue = paths.map((p,i)=>({src:p,text:texts[i]||''}));
+    this.idx=0; this.playing=true; showSub(); this.next();
+  },
+  playAll(){
+    this.stop(); let all=[];
+    Object.keys(SECTIONS_AUDIO).forEach(id=>{
+      (SECTIONS_AUDIO[id]||[]).forEach((p,i)=>all.push({src:p,text:(SECTIONS_TEXT[id]||[])[i]||''}));
+    });
+    this.queue=all; this.idx=0; this.playing=true; showSub(); this.next();
+  },
+  next(){
+    if(this.idx>=this.queue.length){ this.playing=false; setSub('—— 讲解结束啦，记得做做改编题、用费曼法复述一遍 💡'); return; }
+    const item=this.queue[this.idx++];
+    setSub(item.text);
+    const au=new Audio(item.src);
+    au.preload='auto';
+    au.onended=()=>{ if(this.playing) this.next(); };
+    au.onerror=()=>{ // 音频加载失败 → 用浏览器语音兜底该句
+      if(this.playing){ this.webSpeechOne(item.text); }
+    };
+    this.current=au; au.play().catch(()=>{ if(this.playing) this.webSpeechOne(item.text); });
+  },
+  stop(){ this.playing=false; if(this.current){ try{this.current.pause();}catch(e){} } setSub('（已暂停）'); },
+  // —— Web Speech 兜底（无音频/加载失败时）——
+  pickVoice(){
+    const vs = window.speechSynthesis? speechSynthesis.getVoices():[];
+    if(!vs.length) return null;
+    return vs.find(v=>/xiao\s*xiao|晓晓/i.test(v.name)) || vs.find(v=>/xiaoxiao/i.test(v.name))
+        || vs.find(v=>/zh[-_]?CN/i.test(v.lang)&&/online|neural|natural/i.test(v.name))
+        || vs.find(v=>/zh[-_]?CN/i.test(v.lang)) || null;
+  },
+  webSpeechOne(t){
+    if(!('speechSynthesis'in window)){ setTimeout(()=>this.next(),1200); return; }
+    const u=new SpeechSynthesisUtterance(t); const v=this.pickVoice(); if(v)u.voice=v;
+    u.lang='zh-CN'; u.rate=1.0; u.pitch=1.06; u.onend=()=>{ if(this.playing) this.next(); };
+    u.onerror=()=>{ if(this.playing) this.next(); };
+    speechSynthesis.speak(u);
+  },
+  webSpeech(texts){
+    if(!('speechSynthesis'in window)){ setSub('（当前环境不支持语音）'); return; }
+    showSub(); this.playing=true; let i=0;
+    const speak=()=>{ if(i>=texts.length){ this.playing=false; return; } const u=new SpeechSynthesisUtterance(texts[i++]); const v=this.pickVoice(); if(v)u.voice=v; u.lang='zh-CN'; u.rate=1.0; u.pitch=1.06; u.onend=speak; speechSynthesis.speak(u); setSub(texts[i-1]); };
+    speak();
+  }
+};
+if('speechSynthesis'in window){ speechSynthesis.onvoiceschanged=()=>Narrator.pickVoice(); }
+function setSub(t){ const e=document.getElementById('subtxt'); if(e) e.textContent=t; }
+function showSub(){ document.getElementById('subbar').classList.remove('hide'); }
+function toggleSub(){ document.getElementById('subbar').classList.toggle('hide'); }
+
+function checkAsk(btn){
+  const box=btn.closest('.ask'); const ta=box.querySelector('textarea'); const val=(ta.value||'').trim();
+  const fb=box.querySelector('.feedback'); const model=box.querySelector('.model');
+  const keys=(box.dataset.keywords||'').split('|').filter(Boolean);
+  if(!val){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写点什么再提交哦～哪怕一句话也行 😊</span>'; return; }
+  const hit=keys.some(k=>val.includes(k));
+  fb.className='feedback show';
+  fb.innerHTML = hit ? '<span class="ok">👍 说到位了！</span> 你抓住了关键词，晓晓老师给你点个赞。'
+                     : '<span class="tip">🤔 方向还差点意思～</span> 别急，看看下面的标准答案，再试着用自己的话讲一遍。';
+  model.className='model'; model.innerHTML='<b>晓晓老师的标准答案：</b>'+box.dataset.model;
+}
+function choose(btn){
+  const q=btn.closest('.quiz'); if(q.dataset.done) return;
+  const correct=q.dataset.ans;
+  q.querySelectorAll('.opt').forEach(o=>{ o.disabled=true;
+    if(o.textContent.trim().startsWith(correct+'.')||o.textContent.trim().startsWith(correct+'．')) o.classList.add('correct');
+    else if(o===btn) o.classList.add('wrong');
+  });
+  q.dataset.done='1'; q.querySelector('.ans').classList.add('show');
+}
+function feynmanCheck(){
+  const v=(document.getElementById('feynmanBox').value||'').trim();
+  const fb=document.getElementById('feynmanFeedback');
+  if(!v){ fb.className='feedback show'; fb.innerHTML='<span class="tip">先写一段自己的解释，再对照清单 😉</span>'; return; }
+  const keys=['GI','GL','肌糖原','葡萄糖-6-磷酸酶','肝糖原','添加糖','25','膳食纤维'];
+  const hit=keys.filter(k=>v.includes(k)).length;
+  fb.className='feedback show';
+  let msg;
+  if(hit>=3) msg='<span class="ok">🌟 很棒！</span> 你覆盖了关键概念，基本讲清楚了。可以录下来自己听一遍，发现卡壳的地方就是还没真懂的点。';
+  else if(hit>=1) msg='<span class="tip">📝 有进步～</span> 对照清单，看看是不是漏了“肌糖原不升血糖”或“添加糖最好25g”这两点，补上就更完整了。';
+  else msg='<span class="tip">💡 再来一次～</span> 提示：想想“西瓜为什么能适量吃、运动后为什么靠食物升血糖、添加糖为什么限25g”，把这条逻辑串起来。';
+  fb.innerHTML=msg;
+}
+
+</script>
+</body>
+</html>
