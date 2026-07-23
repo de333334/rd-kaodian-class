@@ -597,10 +597,10 @@
     <input id="seek" type="range" min="0" max="100" value="0" oninput="onSeek(this.value)" title="拖动可调整播放位置" />
     <span id="idxlbl">0 / 0</span>
     <span class="spd">语速
-      <button id="s08" onclick="Player.setSpeed(0.8)">0.8x</button>
-      <button id="s10" class="on" onclick="Player.setSpeed(1)">1x</button>
-      <button id="s12" onclick="Player.setSpeed(1.2)">1.2x</button>
-      <button id="s15" onclick="Player.setSpeed(1.5)">1.5x</button>
+      <button id="spd08" onclick="Player.setSpeed(0.8)">0.8x</button>
+      <button id="spd10" class="on" onclick="Player.setSpeed(1)">1x</button>
+      <button id="spd12" onclick="Player.setSpeed(1.2)">1.2x</button>
+      <button id="spd15" onclick="Player.setSpeed(1.5)">1.5x</button>
     </span>
     <button onclick="playAll()">📖 从头播放</button>
     <button onclick="hidePlayer()">收起</button>
@@ -680,7 +680,7 @@ const Player = {
   setSpeed(v){
     this.speed=v; this.audio.playbackRate=v;
     document.querySelectorAll('#playerbar .spd button').forEach(b=>b.classList.remove('on'));
-    const map={0.8:'s08',1:'s10',1.2:'s12',1.5:'s15'};
+    const map={0.8:'spd08',1:'spd10',1.2:'spd12',1.5:'spd15'};
     const el=document.getElementById(map[v]); if(el) el.classList.add('on');
   },
   updateIdx(){ const e=document.getElementById('idxlbl'); if(e) e.textContent=(this.idx+1)+' / '+PLAYLIST.length; },
